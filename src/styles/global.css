@@ -1,0 +1,122 @@
+:root {
+	--bg: #FAFAF8;
+	--ink: #1A1917;
+	--accent: #B0512E;
+	--muted: #6B675F;
+	--fmuted: #4A463F;
+	--border: #E3E0D8;
+	--white: #FFF;
+
+	--font-body: 'Inter', Helvetica, sans-serif;
+	--font-display: 'Outfit', sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+}
+
+body {
+	font-family: var(--font-body);
+	color: var(--ink);
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: var(--ink);
+	text-decoration: none;
+	border-bottom: 1px solid var(--accent);
+}
+
+a:hover {
+	color: var(--accent);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Chrome doesn't reliably apply the UA [hidden] rule to inline <svg> elements. */
+svg[hidden] {
+	display: none !important;
+}
+
+@keyframes martaPulse {
+	0% { transform: scale(1); opacity: 0.8; }
+	100% { transform: scale(1.6); opacity: 0; }
+}
+
+@keyframes audioBounce {
+	0% { transform: scaleY(0.2); }
+	100% { transform: scaleY(1); }
+}
+
+@keyframes waveScrub {
+	0%, 100% { transform: scaleY(1); }
+	50% { transform: scaleY(1.35); }
+}
+
+@keyframes martaSpin {
+	to { transform: rotate(360deg); }
+}
+
+.reveal {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.nav-link {
+	transition: opacity 0.2s ease !important;
+}
+.nav-link:hover { opacity: 0.7 !important; }
+.nav-link:active { opacity: 0.5 !important; }
+
+.btn-simple {
+	transition: opacity 0.2s ease, transform 0.15s ease !important;
+}
+.btn-simple:hover { opacity: 0.8 !important; }
+.btn-simple:active { transform: scale(0.96) !important; }
+
+.btn-slide-gradient {
+	transition: background-position 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.15s ease-out, color 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+	background-size: 100% 200% !important;
+	background-position: top !important;
+}
+.btn-slide-gradient:hover { background-position: bottom !important; }
+.btn-slide-gradient:active { transform: scale(0.96) !important; }
+.btn-slide-outline:hover { color: var(--bg) !important; }
+
+.link-snap {
+	transition: transform 0.15s ease-out, opacity 0.2s ease !important;
+}
+.link-snap:hover { opacity: 0.7 !important; }
+.link-snap:active { transform: scale(0.96) !important; }
+
+.btn-hero-cta {
+	box-shadow: 0 4px 14px rgba(176, 81, 46, 0.25) !important;
+}
+.btn-hero-cta:hover {
+	transform: translateY(-3px) scale(1.03) !important;
+	box-shadow: 0 16px 34px rgba(138, 61, 34, 0.45) !important;
+	letter-spacing: 0.01em !important;
+}
+.btn-hero-cta:active {
+	transform: translateY(-1px) scale(0.98) !important;
+}
+
+.card-hover {
+	transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-hover:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.06);
+}

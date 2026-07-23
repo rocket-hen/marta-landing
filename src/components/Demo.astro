@@ -1,0 +1,240 @@
+---
+---
+
+<section id="demo" data-screen-label="Live demo" class="demo">
+	<div class="wrap">
+		<div class="reveal intro">
+			<div class="eyebrow">A real call</div>
+			<h2>Listen to Marta book a viewing.</h2>
+			<p>Recorded with the agent's permission. Marta introduces herself as an AI assistant on every call.</p>
+		</div>
+
+		<div class="player">
+			<div class="player-row">
+				<div class="play-zone">
+					<button type="button" class="btn-slide-gradient btn-slide-outline play-btn" data-play aria-label="Play call">▶</button>
+				</div>
+				<div class="wave-col">
+					<div class="wave-meta">
+						<span>Piso en Ruzafa, Valencia</span>
+						<span class="wave-time" data-time>0:00 / 0:34</span>
+					</div>
+					<div
+						class="wave"
+						data-wave
+						role="slider"
+						tabindex="0"
+						aria-label="Seek playback position"
+						aria-valuemin="0"
+						aria-valuemax="34"
+						aria-valuenow="0"
+					>
+					</div>
+				</div>
+			</div>
+
+			<div class="transcript-panel">
+				<div class="transcript-head">
+					<div class="eyebrow small">Transcript</div>
+					<div class="lang-switch">
+						<button type="button" class="btn-simple" data-transcript-lang="es">ES</button>
+						<button type="button" class="btn-simple" data-transcript-lang="en">EN</button>
+					</div>
+				</div>
+				<div class="transcript" data-transcript></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.demo {
+		border-bottom: 1px solid var(--border);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 80px 24px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 56px;
+	}
+
+	.intro {
+		flex: 1 1 300px;
+		min-width: 280px;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+	.eyebrow.small {
+		font-size: 11px;
+		letter-spacing: 0.18em;
+		margin-bottom: 0;
+	}
+
+	.intro h2 {
+		font-family: var(--font-display);
+		font-size: clamp(36px, 5vw, 56px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 24px;
+	}
+
+	.intro p {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1.6;
+		color: var(--muted);
+		max-width: 380px;
+		text-wrap: pretty;
+	}
+
+	.player {
+		flex: 1 1 420px;
+		min-width: 300px;
+		border: 1px solid var(--border);
+	}
+
+	.player-row {
+		display: flex;
+		align-items: center;
+		gap: 18px;
+		padding: 20px 24px;
+		border-bottom: 1px solid var(--border);
+	}
+
+	.play-zone {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 80px;
+		height: 80px;
+		margin-left: -12px;
+	}
+
+	.play-btn {
+		background: linear-gradient(to top, var(--ink) 50%, transparent 50%);
+		width: 56px;
+		height: 56px;
+		border: 1px solid var(--ink);
+		border-radius: 50%;
+		cursor: pointer;
+		font-size: 13px;
+		color: var(--ink);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: none;
+	}
+
+	.wave-col {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.wave-meta {
+		font-size: 14px;
+		margin-bottom: 8px;
+		display: flex;
+		justify-content: space-between;
+		color: var(--muted);
+		font-weight: 500;
+	}
+
+	.wave-time {
+		font-family: var(--font-mono);
+		font-size: 12px;
+	}
+
+	.wave {
+		height: 40px;
+		display: flex;
+		align-items: center;
+		gap: 3px;
+		width: 100%;
+		cursor: pointer;
+		outline: none;
+	}
+	.wave:focus-visible {
+		box-shadow: 0 0 0 2px rgba(176, 81, 46, 0.5);
+	}
+
+	.wave :global(.bar) {
+		flex: 1 1 0;
+		min-height: 3px;
+		background: #D8D4CC;
+		border-radius: 2px;
+		transform-origin: center bottom;
+		transition: background 0.25s linear;
+		pointer-events: none;
+	}
+
+	.transcript-panel {
+		padding: 20px 24px;
+	}
+
+	.transcript-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 18px;
+	}
+
+	.lang-switch {
+		display: flex;
+		border: 1px solid var(--border);
+	}
+
+	.lang-switch button {
+		border: none;
+		background: transparent;
+		color: var(--muted);
+		font-size: 11px;
+		letter-spacing: 0.08em;
+		padding: 5px 12px;
+		cursor: pointer;
+		font-family: 'Inter', sans-serif;
+	}
+	.lang-switch button:not(:first-child) {
+		border-left: 1px solid var(--border);
+	}
+	.lang-switch button[data-active='true'] {
+		background: var(--ink);
+		color: var(--bg);
+	}
+
+	.transcript {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+	}
+
+	.transcript :global(.line) {
+		display: flex;
+		gap: 14px;
+		align-items: baseline;
+		transition: opacity 0.35s ease;
+	}
+	.transcript :global(.who) {
+		font-size: 10px;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		flex: none;
+		width: 64px;
+	}
+	.transcript :global(.text) {
+		font-size: 14px;
+		line-height: 1.55;
+		color: var(--ink);
+		transition: font-weight 0.2s ease;
+	}
+</style>

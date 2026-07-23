@@ -1,0 +1,66 @@
+---
+interface Props {
+	lang?: boolean;
+}
+
+const { lang = false } = Astro.props;
+---
+
+<footer>
+	<div class="copy">
+		© 2026 Marta · Valencia, Spain · <a href="#" class="muted-link">Privacy</a> · <a href="#" class="muted-link">Terms</a>
+	</div>
+	{
+		lang && (
+			<div class="lang-toggle">
+				<button type="button" class="btn-simple" data-lang-btn="en">EN</button>
+				<button type="button" class="btn-simple" data-lang-btn="es">ES</button>
+			</div>
+		)
+	}
+</footer>
+
+<style>
+	footer {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 28px 24px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	.copy {
+		font-size: 12px;
+		color: var(--muted);
+	}
+
+	.muted-link {
+		border-bottom: 1px solid var(--border);
+		color: var(--muted);
+	}
+
+	.lang-toggle {
+		display: flex;
+		gap: 2px;
+		font-size: 12px;
+	}
+
+	.lang-toggle button {
+		border: none;
+		background: none;
+		cursor: pointer;
+		font-family: 'Inter', sans-serif;
+		font-size: 12px;
+		padding: 4px 8px;
+		color: var(--muted);
+		border-bottom: 1px solid transparent;
+	}
+
+	.lang-toggle button[data-active='true'] {
+		color: var(--ink);
+		border-bottom-color: var(--ink);
+	}
+</style>

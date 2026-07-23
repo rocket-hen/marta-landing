@@ -1,0 +1,127 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 3);
+---
+
+<section id="blog" data-screen-label="Blog" class="blog">
+	<div class="wrap">
+		<div class="head">
+			<div>
+				<div class="eyebrow">From the blog</div>
+				<h2>Renting in Spain, explained.</h2>
+			</div>
+			<a href="/blog" class="link-snap all-link">All articles ▸</a>
+		</div>
+		<div class="grid">
+			{
+				posts.map((post) => (
+					<a href={`/blog/${post.id}`} class="card-hover card">
+						<div class="meta">
+							{post.data.category} · {post.data.minutes} min
+						</div>
+						<div class="title">{post.data.title}</div>
+						<p class="excerpt">{post.data.excerpt}</p>
+						<div class="read">Read article ▸</div>
+					</a>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<style>
+	.blog {
+		border-bottom: 1px solid var(--border);
+		background: var(--white);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 100px 24px;
+	}
+
+	.head {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 24px;
+		flex-wrap: wrap;
+		margin-bottom: 56px;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+
+	.head h2 {
+		font-family: var(--font-display);
+		font-size: clamp(36px, 5vw, 56px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0;
+	}
+
+	.all-link {
+		font-size: 14px;
+		color: var(--ink);
+		border-bottom: 1px solid var(--accent);
+		padding-bottom: 2px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 24px;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid var(--border);
+		background: var(--bg);
+		padding: 28px;
+		color: var(--ink);
+	}
+
+	.meta {
+		font-size: 12px;
+		font-family: var(--font-mono);
+		color: var(--accent);
+		margin-bottom: 16px;
+	}
+
+	.title {
+		font-family: var(--font-display);
+		font-size: 22px;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+		margin-bottom: 12px;
+	}
+
+	.excerpt {
+		font-size: 14px;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0 0 20px;
+	}
+
+	.read {
+		margin-top: auto;
+		font-size: 13px;
+		color: var(--ink);
+		border-bottom: 1px solid var(--accent);
+		align-self: flex-start;
+		padding-bottom: 2px;
+	}
+</style>

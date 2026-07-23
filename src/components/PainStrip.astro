@@ -1,0 +1,75 @@
+---
+const stats = [
+	{ key: 'reply-rate', small: 'of flats go to whoever responds first', color: 'var(--ink)' },
+	{ key: 'applicants', small: 'applicants compete for every decent listing', color: 'var(--ink)' },
+	{ key: 'hours', small: 'and the best flats are gone', color: 'var(--ink)' },
+	{ key: 'cost', small: 'what searching from an Airbnb costs you. Marta starts at €49', color: 'var(--accent)' },
+];
+---
+
+<section id="pain" data-screen-label="Pain strip" class="pain">
+	<div class="wrap">
+		<h2 class="reveal">Nobody replies on Idealista. Here's why.</h2>
+	</div>
+	<div class="grid">
+		{
+			stats.map((s, i) => (
+				<div class="reveal stat" style={`transition-delay: ${i * 0.08}s;`}>
+					<div class="big" data-stat={s.key} style={`color: ${s.color};`}>0</div>
+					<div class="small">{s.small}</div>
+				</div>
+			))
+		}
+	</div>
+</section>
+
+<style>
+	.pain {
+		border-bottom: 1px solid var(--border);
+		position: relative;
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 100px 24px 0;
+	}
+
+	h2 {
+		font-family: var(--font-display);
+		font-size: clamp(36px, 5vw, 56px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 56px;
+		max-width: 640px;
+		color: var(--ink);
+	}
+
+	.grid {
+		max-width: 1100px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	}
+
+	.stat {
+		padding: 44px 24px;
+		border-left: 1px solid var(--border);
+	}
+
+	.big {
+		font-family: var(--font-display);
+		font-size: 48px;
+		font-weight: 800;
+		letter-spacing: -0.04em;
+		margin-bottom: 10px;
+	}
+
+	.small {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--muted);
+		line-height: 1.5;
+	}
+</style>

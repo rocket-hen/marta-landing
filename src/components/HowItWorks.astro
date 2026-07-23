@@ -1,0 +1,92 @@
+---
+const steps = [
+	{ num: '01', title: 'Send us your listings', body: "Found a flat on Idealista, Fotocasa or Habitaclia? Send us the link, or a whole list. We handle the rest." },
+	{ num: '02', title: 'Marta makes the call', body: 'She calls each agency in Spanish, confirms the flat is still available, asks about your dealbreakers — pets, deposit, requirements — and books you a viewing slot.' },
+	{ num: '03', title: 'Viewings land in your schedule', body: 'Dead listings are removed. You get confirmed appointments with the address, contact and time. You just show up.' },
+];
+---
+
+<section id="how" data-screen-label="How it works" class="how">
+	<div class="wrap">
+		<div class="reveal eyebrow">How it works</div>
+		<h2 class="reveal">From listing to confirmed viewing — without a single call.</h2>
+		<div class="grid">
+			{
+				steps.map((st, i) => (
+					<div class="reveal step" style={`transition-delay: ${i * 0.08}s;`}>
+						<div class="num">{st.num}</div>
+						<div class="title">{st.title}</div>
+						<p>{st.body}</p>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<style>
+	.how {
+		border-bottom: 1px solid var(--border);
+		background: var(--white);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 100px 24px;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-family: var(--font-display);
+		font-size: clamp(36px, 5vw, 56px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 64px;
+		max-width: 600px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 32px;
+	}
+
+	.step {
+		border-top: 2px solid var(--ink);
+		padding: 28px 0 8px 0;
+	}
+
+	.num {
+		font-size: 14px;
+		font-family: var(--font-mono);
+		color: var(--accent);
+		margin-bottom: 18px;
+		font-weight: 500;
+	}
+
+	.title {
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 12px;
+		letter-spacing: -0.01em;
+	}
+
+	p {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0;
+		text-wrap: pretty;
+	}
+</style>

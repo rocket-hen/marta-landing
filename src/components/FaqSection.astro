@@ -1,0 +1,133 @@
+---
+const faqs = [
+	{ q: 'Do agents and landlords mind talking to an AI?', a: "Most don't — Marta is polite, brief, and calls at reasonable hours. She discloses she is an AI in her first sentence, and anyone who prefers a human can request a callback from our team." },
+	{ q: "Why not just call myself?", a: "If you speak Spanish and can drop everything the moment a listing appears — go for it. But every decent flat gets 40–99 applicants, and locals are calling within minutes. Marta calls faster than you can open the translator." },
+	{ q: "I don't have a nómina / I have a dog. Can you still help?", a: 'Yes — this is where a good call matters most. Marta knows how to present your situation, asks about requirements up front, and filters out the flats that would reject you anyway. No wasted viewings.' },
+	{ q: 'How do I know the calls are real?', a: "Every call comes with the audio recording and a full transcript of what was said. And if we don't deliver your first report within 24 hours, you get your money back." },
+	{ q: 'How fast does Marta call?', a: 'On Hunter, within minutes of a matching listing going live — often before other applicants have seen it. On Blitz, your whole list is called within 24 hours.' },
+	{ q: 'Which cities do you cover?', a: 'All of Spain, no exceptions — Madrid, Barcelona, Valencia, Málaga, the islands, or a village in Asturias. If it has a phone number in the listing, Marta calls it.' },
+	{ q: 'What if I find a flat myself?', a: "Congrats — that's the goal! Both plans run for 3 months or until you're moved in, whichever comes first. Nothing to cancel, no strings." },
+];
+---
+
+<section id="faq" data-screen-label="Trust and FAQ" class="faq">
+	<div class="wrap">
+		<div class="intro">
+			<div class="eyebrow">Transparency</div>
+			<h2>Full disclosure on every single call.</h2>
+			<p>Marta discloses that she is an AI assistant at the start of every call. Fully transparent, EU AI Act compliant.</p>
+		</div>
+		<div class="list" data-faq-list>
+			{
+				faqs.map((f, i) => (
+					<div class="item">
+						<button type="button" class="nav-link toggle" data-faq-toggle aria-expanded="false">
+							<span>{f.q}</span>
+							<span class="glyph" data-faq-glyph>+</span>
+						</button>
+						<div class="answer" data-faq-answer hidden>
+							<p>{f.a}</p>
+						</div>
+					</div>
+				))
+			}
+			<div class="closing-rule"></div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.faq {
+		border-bottom: 1px solid var(--border);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 80px 24px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 56px;
+	}
+
+	.intro {
+		flex: 1 1 300px;
+		min-width: 280px;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+
+	.intro h2 {
+		font-family: var(--font-display);
+		font-size: clamp(36px, 5vw, 56px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 24px;
+		max-width: 560px;
+		text-wrap: balance;
+	}
+
+	.intro p {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1.6;
+		color: var(--muted);
+		max-width: 380px;
+		text-wrap: pretty;
+	}
+
+	.list {
+		flex: 1 1 420px;
+		min-width: 300px;
+	}
+
+	.item {
+		border-top: 1px solid var(--border);
+	}
+
+	.closing-rule {
+		border-top: 1px solid var(--border);
+	}
+
+	.toggle {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 16px;
+		background: none;
+		border: none;
+		padding: 18px 4px;
+		cursor: pointer;
+		font-family: 'Inter', sans-serif;
+		font-size: 15px;
+		font-weight: 500;
+		color: var(--ink);
+		text-align: left;
+	}
+
+	.glyph {
+		font-size: 16px;
+		font-weight: 400;
+		color: var(--muted);
+		flex: none;
+	}
+
+	.answer p {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0;
+		padding: 0 32px 20px 4px;
+		text-wrap: pretty;
+	}
+</style>

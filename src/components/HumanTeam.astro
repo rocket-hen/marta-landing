@@ -1,0 +1,90 @@
+---
+import { Image } from 'astro:assets';
+import teamCalling from '../assets/team-calling.png';
+---
+
+<section data-screen-label="Human Team" class="team">
+	<div class="wrap">
+		<div class="reveal copy">
+			<div class="eyebrow">Human in the loop</div>
+			<h2>Not just an AI.<br />A real team.</h2>
+			<p>
+				You're not buying software. You're hiring a calling team. If an agent is stubborn about
+				talking to an assistant, or if your requirements are highly complex, a native
+				Spanish-speaking human takes over the call. We make sure you get the viewing.
+			</p>
+		</div>
+		<div class="reveal image-col" style="transition-delay: 0.15s;">
+			<Image
+				src={teamCalling}
+				alt="Illustration of the Marta calling team wearing headsets at their desks"
+				widths={[400, 760]}
+				sizes="(max-width: 780px) 100vw, 380px"
+			/>
+		</div>
+	</div>
+</section>
+
+<style>
+	.team {
+		background: var(--ink);
+		color: var(--bg);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 80px 24px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 56px;
+		align-items: center;
+	}
+
+	.copy {
+		flex: 1 1 400px;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--border);
+		opacity: 0.7;
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-family: var(--font-display);
+		font-size: clamp(36px, 5vw, 56px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 24px;
+	}
+
+	p {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.6;
+		color: var(--border);
+		margin: 0;
+		max-width: 480px;
+		text-wrap: pretty;
+	}
+
+	.image-col {
+		flex: 1 1 380px;
+		min-width: 300px;
+	}
+
+	.image-col :global(img) {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		border-radius: 12px;
+	}
+</style>
