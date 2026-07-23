@@ -33,21 +33,23 @@ delay). This port keeps that behavior by default. To connect a real endpoint lat
 `app/api/routers/` there for the pattern to follow (e.g. `app/api/routers/waitlist.py`,
 registered in `app/main.py`), plus a `CORSMiddleware` entry allowing `https://callmarta.com`.
 
-## Deploying to Cloudflare Pages (manual steps — not done yet)
+## Deploying to Cloudflare Pages
 
-This repo is static (`astro build` → `dist/`, no adapter needed) and Pages-ready, but connecting
-the actual Cloudflare account and domain needs to happen from your Cloudflare dashboard/CLI:
+Connected via the Cloudflare dashboard's Git integration (**Workers & Pages → Create → Pages →
+Connect to Git**, repo `rocket-hen/marta-landing`) — every push to `main` auto-builds and deploys.
 
-1. **Push this repo to GitHub** (see below), then in the Cloudflare dashboard: **Workers & Pages
-   → Create → Pages → Connect to Git**, select `marta-landing`.
-2. Build settings: build command `npm run build`, build output directory `dist`, no framework
-   preset needed (or pick "Astro" if offered).
-3. Once deployed, go to the Pages project's **Custom domains** tab and add `callmarta.com` (and
-   `www.callmarta.com` if you want the redirect). If the domain is already on this Cloudflare
-   account, DNS records are added automatically; otherwise point the registrar's nameservers at
-   Cloudflare first.
-4. Optional: `PUBLIC_WAITLIST_ENDPOINT` (and any future env vars) go in the Pages project's
-   **Settings → Environment variables**, not in a committed `.env`.
+- Build command: `npm run build`
+- Build output directory: `dist`
+- No framework preset / adapter needed — this is a fully static site.
 
-Alternatively, once you've run `wrangler login`, `npm run build && npx wrangler pages deploy dist`
-deploys directly using the `wrangler.toml` in this repo.
+Don't add a `wrangler.toml` back for this project: its presence makes Cloudflare's Git-integration
+builder run a Wrangler-driven deploy step instead of its normal Pages asset upload, which fails in
+CI without extra Cloudflare API credentials configured. It's only relevant for a manual
+`wrangler pages deploy dist` CLI workflow, which this repo doesn't use.
+
+Custom domain: add `callmarta.com` (and `www.callmarta.com` for the redirect) under the Pages
+project's **Custom domains** tab. If the domain's already on this Cloudflare account, DNS records
+are added automatically; otherwise point the registrar's nameservers at Cloudflare first.
+
+Env vars (e.g. `PUBLIC_WAITLIST_ENDPOINT`, see `.env.example`) go in the Pages project's
+**Settings → Environment variables**, not in a committed `.env`.
