@@ -454,19 +454,9 @@ function initWaitlistModal() {
 		submitBtn.textContent = 'Joining...';
 
 		const data = new FormData(form);
-		const params = new URLSearchParams(window.location.search);
 		const payload = {
 			email: data.get('email'),
-			leadType: data.get('leadType'),
-			city: data.get('city'),
-			moveTimeline: data.get('moveTimeline'),
-			budget: data.get('budget'),
-			pain: data.get('pain'),
-			consent: data.get('consent') === 'on',
 			company: data.get('company'), // honeypot
-			referrer: document.referrer || undefined,
-			utmSource: params.get('utm_source') || undefined,
-			utmCampaign: params.get('utm_campaign') || undefined,
 		};
 
 		try {

@@ -2,45 +2,11 @@ import type { Env } from './env';
 
 interface WaitlistPayload {
 	email?: string;
-	leadType?: string;
-	city?: string;
-	moveTimeline?: string;
-	budget?: string;
-	pain?: string;
-	consent?: boolean;
 	company?: string; // honeypot — real users never fill this in
-	referrer?: string;
-	utmSource?: string;
-	utmCampaign?: string;
 }
 
 const RESEND_API = 'https://api.resend.com';
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-// These are also the exact values used for the <select>/<option> markup and the copy
-// shown in Resend's dashboard, so there's one canonical string per option, not a slug
-// that needs translating back to a label somewhere else.
-const ALLOWED_CITIES = [
-	'Madrid',
-	'Barcelona',
-	'Valencia',
-	'Málaga',
-	'Alicante',
-	'Sevilla',
-	'Palma',
-	'Las Palmas',
-	'Tenerife',
-	'Bilbao',
-	'Granada',
-	'Marbella',
-	'San Sebastián',
-	'Zaragoza',
-	'Other',
-];
-const ALLOWED_LEAD_TYPES = ['Renting', 'Buying'];
-const ALLOWED_TIMELINES = ['ASAP', 'Within 1 month', '1–3 months', 'Just exploring'];
-const ALLOWED_BUDGETS = ['Under €800', '€800–1200', '€1200–1800', '€1800+'];
-const MAX_PAIN_LENGTH = 1000;
 
 function json(body: unknown, status = 200): Response {
 	return new Response(JSON.stringify(body), {
@@ -116,41 +82,6 @@ export async function handleWaitlist(request: Request, env: Env): Promise<Respon
 	if (!EMAIL_RE.test(email)) {
 		return badRequest('Please enter a valid email address.');
 	}
-	if (payload.consent !== true) {
-		return badRequest('Please accept the privacy policy to join the waitlist.');
-	}
-	if (!ALLOWED_LEAD_TYPES.includes(payload.leadType ?? '')) {
-		return badRequest('Please select whether you are renting or buying.');
-	}
-	if (!ALLOWED_CITIES.includes(payload.city ?? '')) {
-		return badRequest('Please select a valid city.');
-	}
-	if (!ALLOWED_TIMELINES.includes(payload.moveTimeline ?? '')) {
-		return badRequest('Please select your move timeline.');
-	}
-	if (!ALLOWED_BUDGETS.includes(payload.budget ?? '')) {
-		return badRequest('Please select your budget range.');
-	}
-	const pain = (payload.pain ?? '').trim();
-	if (pain.length > MAX_PAIN_LENGTH) {
-		return badRequest(`That answer is a bit long — please keep it under ${MAX_PAIN_LENGTH} characters.`);
-	}
-
-	const sourceParts: string[] = [];
-	if (payload.referrer) sourceParts.push(`referrer=${payload.referrer}`);
-	if (payload.utmSource) sourceParts.push(`utm_source=${payload.utmSource}`);
-	if (payload.utmCampaign) sourceParts.push(`utm_campaign=${payload.utmCampaign}`);
-	const source = sourceParts.join(' | ');
-
-	const properties: Record<string, string> = {
-		lead_type: payload.leadType!,
-		city: payload.city!,
-		move_timeline: payload.moveTimeline!,
-		budget: payload.budget!,
-		consent_at: new Date().toISOString(),
-	};
-	if (pain) properties.pain = pain;
-	if (source) properties.source = source;
 
 	const resendHeaders = {
 		Authorization: `Bearer ${env.RESEND_API_KEY}`,
@@ -161,22 +92,23 @@ export async function handleWaitlist(request: Request, env: Env): Promise<Respon
 
 	try {
 		// Idempotent upsert: Resend's docs don't document what POST /contacts does with a
-		// duplicate email, so don't depend on that — update-by-email first (confirmed
-		// supported), and only create if the contact doesn't exist yet (404).
-		const updateRes = await fetch(`${RESEND_API}/contacts/${encodeURIComponent(email)}`, {
+		// duplicate email, so don't depend on that — check-by-email first (PATCH doubles as
+		// an existence check here, since there's nothing else to update), and only create if
+		// the contact doesn't exist yet (404).
+		const checkRes = await fetch(`${RESEND_API}/contacts/${encodeURIComponent(email)}`, {
 			method: 'PATCH',
 			headers: resendHeaders,
-			body: JSON.stringify({ properties }),
+			body: JSON.stringify({}),
 		});
 
-		if (updateRes.ok) {
-			const data = (await updateRes.json()) as { id?: string };
+		if (checkRes.ok) {
+			const data = (await checkRes.json()) as { id?: string };
 			contactId = data.id;
-		} else if (updateRes.status === 404) {
+		} else if (checkRes.status === 404) {
 			const createRes = await fetch(`${RESEND_API}/contacts`, {
 				method: 'POST',
 				headers: resendHeaders,
-				body: JSON.stringify({ email, properties }),
+				body: JSON.stringify({ email }),
 			});
 			if (!createRes.ok) {
 				console.error('Resend contact create failed', createRes.status, await createRes.text());
@@ -185,8 +117,8 @@ export async function handleWaitlist(request: Request, env: Env): Promise<Respon
 			const data = (await createRes.json()) as { id?: string };
 			contactId = data.id;
 		} else {
-			console.error('Resend contact update failed', updateRes.status, await updateRes.text());
-			return resendFailureResponse(updateRes.status);
+			console.error('Resend contact check failed', checkRes.status, await checkRes.text());
+			return resendFailureResponse(checkRes.status);
 		}
 
 		// Ensure segment membership regardless of which path above ran. Failure here is
@@ -237,10 +169,7 @@ export async function handleWaitlist(request: Request, env: Env): Promise<Respon
 	if (env.WAITLIST_KV) {
 		try {
 			const key = `lead:${Date.now()}:${email}`;
-			await env.WAITLIST_KV.put(
-				key,
-				JSON.stringify({ email, ...properties, submittedAt: new Date().toISOString() }),
-			);
+			await env.WAITLIST_KV.put(key, JSON.stringify({ email, submittedAt: new Date().toISOString() }));
 		} catch (err) {
 			console.error('WAITLIST_KV write failed', err);
 		}

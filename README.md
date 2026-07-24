@@ -38,12 +38,13 @@ own beyond the one `/api/waitlist` route.
 
 ## Waitlist backend
 
-The waitlist form (`src/components/WaitlistModal.astro`) POSTs JSON to `/api/waitlist`. That
-route is handled by `worker/waitlist.ts`; every other request falls through to
-`env.ASSETS.fetch(request)`, i.e. the static build (`worker/index.ts` is the routing entry
-point). It upserts a contact in Resend with the submitted qualification data, adds it to a
-waitlist segment, and sends a welcome email — plain `fetch` against `api.resend.com`, no Resend
-SDK. The Resend API key never reaches the browser.
+The waitlist form (`src/components/WaitlistModal.astro`) collects just an email address (plus an
+invisible honeypot field) and POSTs it to `/api/waitlist`. That route is handled by
+`worker/waitlist.ts`; every other request falls through to `env.ASSETS.fetch(request)`, i.e. the
+static build (`worker/index.ts` is the routing entry point). It upserts a contact in Resend by
+email, adds it to a waitlist segment, and sends a welcome email — plain `fetch` against
+`api.resend.com`, no Resend SDK. The Resend API key never reaches the browser. No custom contact
+properties are collected or stored — just the email and segment membership.
 
 **Why a Worker and not classic "Pages Functions"**: this project is provisioned in Cloudflare as
 a Worker (with static assets), not a classic Pages project — that distinction determines which
@@ -63,32 +64,22 @@ Pages project instead, the routing in `worker/index.ts` would need to move back 
    ```
    curl -X POST http://localhost:8788/api/waitlist \
      -H 'content-type: application/json' \
-     -d '{"email":"you@example.com","leadType":"Renting","city":"Valencia","moveTimeline":"ASAP","budget":"Under €800","pain":"","consent":true}'
+     -d '{"email":"you@example.com"}'
    ```
 
 ### One-time Resend setup
 
-Contact properties and segments must exist **before** the function can use them — sending an
-undefined property key is silently dropped by Resend, not an error, and there's no "create if
-missing" endpoint to call per-request. So this is a one-time setup step, done once via `curl`
-(swap in a real `RESEND_API_KEY`):
+The waitlist segment must exist before the function can add contacts to it — there's no
+"create if missing" endpoint to call per-request, so this is a one-time step. Either create it
+via the Resend dashboard (Audiences/Segments → new segment, e.g. named "Waitlist"), or:
 
 ```
-# The waitlist segment — its id becomes RESEND_SEGMENT_ID
 curl -X POST https://api.resend.com/segments \
   -H "Authorization: Bearer $RESEND_API_KEY" -H 'content-type: application/json' \
   -d '{"name":"Waitlist"}'
-
-# One contact property per field the form collects (repeat with each key below)
-curl -X POST https://api.resend.com/contact-properties \
-  -H "Authorization: Bearer $RESEND_API_KEY" -H 'content-type: application/json' \
-  -d '{"key":"lead_type","type":"string"}'
-# ...and again for: city, move_timeline, budget, pain, consent_at, source
 ```
 
-(All 7 properties are `type: "string"` — Resend only supports `string`/`number`, and
-`consent_at` is stored as an ISO timestamp string.) This can equally be done from the Resend
-dashboard if you'd rather click through it.
+The `id` in the response is your `RESEND_SEGMENT_ID`.
 
 ### Production environment variables
 
@@ -113,9 +104,8 @@ dashboard → Workers & Pages → KV → create a namespace, then your Worker �
 
 ### Where to review leads
 
-- **Resend dashboard** → Contacts → the waitlist segment — the primary, always-up-to-date view,
-  with every property (`lead_type`, `city`, `move_timeline`, `budget`, `pain`, `consent_at`,
-  `source`) visible per contact.
+- **Resend dashboard** → Contacts → the waitlist segment — the primary, always-up-to-date list
+  of who's signed up.
 - **KV namespace** (if bound) — raw JSON per submission, useful as a backup or for bulk export;
   browse via Cloudflare dashboard → Workers & Pages → KV → the namespace, or `wrangler kv key list`.
 
