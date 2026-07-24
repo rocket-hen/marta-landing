@@ -1,17 +1,17 @@
 import rss from '@astrojs/rss';
-import { getPostsForLang, postSlug } from '../lib/blog';
+import { getPostsForLang, postSlug } from '../../lib/blog';
 
 export async function GET(context) {
-	const posts = await getPostsForLang('en');
+	const posts = await getPostsForLang('es');
 	return rss({
 		title: 'Marta — Blog',
-		description: 'Practical notes from thousands of calls with Spanish agencies and landlords.',
+		description: 'Notas prácticas de miles de llamadas con agencias y propietarios en España.',
 		site: context.site,
 		items: posts.map((post) => ({
 			title: post.data.title,
 			description: post.data.excerpt,
 			pubDate: post.data.pubDate,
-			link: `/blog/${postSlug(post)}/`,
+			link: `/es/blog/${postSlug(post)}/`,
 		})),
 	});
 }

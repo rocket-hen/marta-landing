@@ -1,9 +1,16 @@
 // Vanilla-JS port of the landing page's interactive behavior (originally a single
 // stateful component in the source design). Runs only on the home page.
 
-type Lang = 'es' | 'en';
+import { copy, type Lang } from '../i18n/copy';
 
 const ACCENT = '#B0512E';
+
+// The demo transcript / hero caption toggle (data-transcript-lang) is a separate,
+// narrower "which language is the phone call shown in" control — decoupled from the
+// page's own language (document.documentElement.lang), which drives everything else.
+function pageLang(): Lang {
+	return document.documentElement.lang === 'es' ? 'es' : 'en';
+}
 
 const CAPTIONS: Record<Lang, string[]> = {
 	es: [
@@ -90,13 +97,15 @@ function startCount() {
 	const hoursEl = document.querySelector<HTMLElement>('[data-stat="hours"]');
 	const costEl = document.querySelector<HTMLElement>('[data-stat="cost"]');
 
+	const { hoursSuffix, weekSuffix } = copy[pageLang()].pain;
+
 	function tick(now: number) {
 		const p = Math.min(1, (now - start) / D);
 		const eased = 1 - Math.pow(1 - p, 3);
 		if (replyEl) replyEl.textContent = Math.round(78 * eased) + '%';
 		if (applicantsEl) applicantsEl.textContent = Math.round(40 * eased) + '–99';
-		if (hoursEl) hoursEl.textContent = Math.round(24 * eased) + ' hours';
-		if (costEl) costEl.textContent = '€' + Math.round(800 * eased) + '/week';
+		if (hoursEl) hoursEl.textContent = Math.round(24 * eased) + hoursSuffix;
+		if (costEl) costEl.textContent = '€' + Math.round(800 * eased) + weekSuffix;
 		if (p < 1) requestAnimationFrame(tick);
 	}
 	requestAnimationFrame(tick);
@@ -344,15 +353,12 @@ function initDemoPlayer(getLang: () => Lang) {
 	return { renderTranscript };
 }
 
-function initLangToggle(onChange: (lang: Lang) => void) {
-	let lang: Lang = 'es';
+function initTranscriptToggle(onChange: (lang: Lang) => void) {
+	let lang: Lang = pageLang();
 
 	function applyButtons() {
 		document.querySelectorAll<HTMLElement>('[data-transcript-lang]').forEach((btn) => {
 			btn.dataset.active = String(btn.dataset.transcriptLang === lang);
-		});
-		document.querySelectorAll<HTMLElement>('[data-lang-btn]').forEach((btn) => {
-			btn.dataset.active = String(btn.dataset.langBtn === lang);
 		});
 	}
 
@@ -362,9 +368,9 @@ function initLangToggle(onChange: (lang: Lang) => void) {
 		onChange(lang);
 	}
 
-	document.querySelectorAll<HTMLElement>('[data-transcript-lang], [data-lang-btn]').forEach((btn) => {
+	document.querySelectorAll<HTMLElement>('[data-transcript-lang]').forEach((btn) => {
 		btn.addEventListener('click', () => {
-			const next = (btn.dataset.transcriptLang || btn.dataset.langBtn) as Lang;
+			const next = btn.dataset.transcriptLang as Lang;
 			setLang(next);
 		});
 	});
@@ -410,6 +416,8 @@ function initWaitlistModal() {
 	const statusEl = document.querySelector<HTMLElement>('[data-form-status]');
 	if (!overlay) return;
 
+	const t = copy[pageLang()].waitlist;
+
 	function setStatus(message: string) {
 		if (!statusEl) return;
 		statusEl.textContent = message;
@@ -429,7 +437,7 @@ function initWaitlistModal() {
 		if (successWrap) successWrap.hidden = true;
 		if (submitBtn) {
 			submitBtn.disabled = false;
-			submitBtn.textContent = 'Join waitlist';
+			submitBtn.textContent = t.submit;
 		}
 	}
 
@@ -451,7 +459,7 @@ function initWaitlistModal() {
 
 		if (statusEl) statusEl.textContent = '';
 		submitBtn.disabled = true;
-		submitBtn.textContent = 'Joining...';
+		submitBtn.textContent = t.submitting;
 
 		const data = new FormData(form);
 		const payload = {
@@ -478,7 +486,7 @@ function initWaitlistModal() {
 				return;
 			}
 
-			let message = 'Something went wrong. Please try again.';
+			let message = t.errorGeneric;
 			try {
 				const body = (await res.json()) as { error?: string };
 				if (body.error) message = body.error;
@@ -487,10 +495,10 @@ function initWaitlistModal() {
 			}
 			setStatus(message);
 		} catch {
-			setStatus('Network error — please check your connection and try again.');
+			setStatus(t.errorNetwork);
 		} finally {
 			submitBtn.disabled = false;
-			submitBtn.textContent = 'Join waitlist';
+			submitBtn.textContent = t.submit;
 		}
 	});
 }
@@ -504,7 +512,7 @@ function init() {
 	// Lang state is shared between the hero caption and the demo transcript.
 	let heroApi: ReturnType<typeof initHeroCard>;
 	let demoApi: ReturnType<typeof initDemoPlayer>;
-	const langApi = initLangToggle((lang) => {
+	const langApi = initTranscriptToggle((lang) => {
 		if (heroApi) heroApi.typeCaption(heroApi.getCardStep(), lang);
 		demoApi?.renderTranscript();
 	});

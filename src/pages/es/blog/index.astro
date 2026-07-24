@@ -1,9 +1,9 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { copy } from '../../i18n/copy';
-import { getPostsForLang, postSlug } from '../../lib/blog';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { copy } from '../../../i18n/copy';
+import { getPostsForLang, postSlug } from '../../../lib/blog';
 
-const lang = 'en';
+const lang = 'es';
 const t = copy[lang].blog;
 const posts = await getPostsForLang(lang);
 ---
@@ -22,7 +22,7 @@ const posts = await getPostsForLang(lang);
 			<div class="grid">
 				{
 					posts.map((post) => (
-						<a href={`/blog/${postSlug(post)}`} class="card-hover card">
+						<a href={`/es/blog/${postSlug(post)}`} class="card-hover card">
 							<div class="meta">
 								{post.data.category} · {post.data.minutes} min
 							</div>

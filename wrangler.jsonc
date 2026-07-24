@@ -8,7 +8,7 @@
 		// The site is fully static except this one route — send it to the Worker
 		// first rather than letting Cloudflare try (and fail) to find a static
 		// file at /api/waitlist before ever reaching worker/index.ts.
-		"run_worker_first": ["/api/*"]
+		"run_worker_first": ["/api/*", "/", "/es/"]
 	},
 	"kv_namespaces": [
 		{

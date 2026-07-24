@@ -9,23 +9,22 @@ import Pricing from '../components/Pricing.astro';
 import FaqSection from '../components/FaqSection.astro';
 import BlogPreview from '../components/BlogPreview.astro';
 import WaitlistModal from '../components/WaitlistModal.astro';
+import { copy } from '../i18n/copy';
+
+const lang = 'en';
+const t = copy[lang].meta;
 ---
 
-<BaseLayout
-	title="Marta — Your AI calling agent for renting in Spain"
-	description="Marta calls Spanish landlords and agencies for you, filters dead listings, and books your viewings straight into your calendar."
-	isHome
-	langToggle
->
-	<Hero />
-	<PainStrip />
-	<HowItWorks />
-	<HumanTeam />
-	<Demo />
-	<Pricing />
-	<FaqSection />
-	<BlogPreview />
-	<WaitlistModal />
+<BaseLayout title={t.title} description={t.description} isHome lang={lang} showLangSwitch>
+	<Hero lang={lang} />
+	<PainStrip lang={lang} />
+	<HowItWorks lang={lang} />
+	<HumanTeam lang={lang} />
+	<Demo lang={lang} />
+	<Pricing lang={lang} />
+	<FaqSection lang={lang} />
+	<BlogPreview lang={lang} />
+	<WaitlistModal lang={lang} />
 </BaseLayout>
 
 <script src="../scripts/landing.ts"></script>

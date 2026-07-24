@@ -1,20 +1,32 @@
 ---
+import { copy, type Lang } from '../i18n/copy';
+
 interface Props {
-	lang?: boolean;
+	lang?: Lang;
+	showSwitch?: boolean;
 }
 
-const { lang = false } = Astro.props;
+const { lang = 'en', showSwitch = false } = Astro.props;
+const t = copy[lang].footer;
 ---
 
 <footer>
 	<div class="copy">
-		© 2026 Marta · Valencia, Spain · <a href="/privacy" class="muted-link">Privacy</a> · <a href="/terms" class="muted-link">Terms</a>
+		{t.copyright} · <a href="/privacy" class="muted-link">Privacy</a> · <a href="/terms" class="muted-link">Terms</a>
 	</div>
 	{
-		lang && (
+		showSwitch && (
 			<div class="lang-toggle">
-				<button type="button" class="btn-simple" data-lang-btn="en" data-gtm-id="footer_lang_en">EN</button>
-				<button type="button" class="btn-simple" data-lang-btn="es" data-gtm-id="footer_lang_es">ES</button>
+				{lang === 'en' ? (
+					<span class="btn-simple" data-active="true">EN</span>
+				) : (
+					<a href="/" class="btn-simple" data-gtm-id="footer_lang_en">EN</a>
+				)}
+				{lang === 'es' ? (
+					<span class="btn-simple" data-active="true">ES</span>
+				) : (
+					<a href="/es/" class="btn-simple" data-gtm-id="footer_lang_es">ES</a>
+				)}
 			</div>
 		)
 	}
@@ -48,10 +60,8 @@ const { lang = false } = Astro.props;
 		font-size: 12px;
 	}
 
-	.lang-toggle button {
-		border: none;
-		background: none;
-		cursor: pointer;
+	.lang-toggle a,
+	.lang-toggle span {
 		font-family: 'Inter', sans-serif;
 		font-size: 12px;
 		padding: 4px 8px;
@@ -59,7 +69,11 @@ const { lang = false } = Astro.props;
 		border-bottom: 1px solid transparent;
 	}
 
-	.lang-toggle button[data-active='true'] {
+	.lang-toggle a:hover {
+		color: var(--ink);
+	}
+
+	.lang-toggle span[data-active='true'] {
 		color: var(--ink);
 		border-bottom-color: var(--ink);
 	}

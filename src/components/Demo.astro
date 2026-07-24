@@ -1,12 +1,20 @@
 ---
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].demo;
 ---
 
 <section id="demo" data-screen-label="Live demo" class="demo">
 	<div class="wrap">
 		<div class="reveal intro">
-			<div class="eyebrow">A real call</div>
-			<h2>Listen to Marta book a viewing.</h2>
-			<p>Recorded with the agent's permission. Marta introduces herself as an AI assistant on every call.</p>
+			<div class="eyebrow">{t.eyebrow}</div>
+			<h2>{t.h2}</h2>
+			<p>{t.p}</p>
 		</div>
 
 		<div class="player">
@@ -35,7 +43,7 @@
 
 			<div class="transcript-panel">
 				<div class="transcript-head">
-					<div class="eyebrow small">Transcript</div>
+					<div class="eyebrow small">{t.transcriptLabel}</div>
 					<div class="lang-switch">
 						<button type="button" class="btn-simple" data-transcript-lang="es" data-gtm-id="demo_transcript_lang_es">ES</button>
 						<button type="button" class="btn-simple" data-transcript-lang="en" data-gtm-id="demo_transcript_lang_en">EN</button>

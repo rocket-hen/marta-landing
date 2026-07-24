@@ -1,21 +1,29 @@
 ---
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].waitlist;
 ---
 
 <div class="overlay" data-modal-overlay hidden>
 	<div class="modal" data-modal role="dialog" aria-modal="true" aria-labelledby="waitlist-title">
-		<button type="button" class="close" data-modal-close data-gtm-id="waitlist_close" data-gtm-label="Close waitlist modal" aria-label="Close">×</button>
+		<button type="button" class="close" data-modal-close data-gtm-id="waitlist_close" data-gtm-label="Close waitlist modal" aria-label={t.closeLabel}>×</button>
 
 		<div data-modal-success hidden>
-			<h3 tabindex="-1">You're on the list.</h3>
-			<p>We'll reach out as soon as Marta is ready to take on new clients. Keep an eye on your inbox.</p>
+			<h3 tabindex="-1">{t.successH3}</h3>
+			<p>{t.successP}</p>
 		</div>
 
 		<div data-modal-form>
-			<h3 id="waitlist-title">Marta is currently in private beta.</h3>
-			<p>We are slowly rolling out to new users to ensure the best experience with landlords. Leave your email to get early access.</p>
+			<h3 id="waitlist-title">{t.formH3}</h3>
+			<p>{t.formP}</p>
 
 			<form data-waitlist-form>
-				<input type="email" name="email" placeholder="Your email address" required />
+				<input type="email" name="email" placeholder={t.placeholder} required />
 
 				<div class="honeypot" aria-hidden="true">
 					<label for="wl-company">Company</label>
@@ -24,9 +32,9 @@
 
 				<div class="form-status" data-form-status role="status" aria-live="polite" tabindex="-1"></div>
 
-				<button type="submit" class="btn-slide-gradient submit" data-waitlist-submit data-gtm-id="waitlist_submit">Join waitlist</button>
+				<button type="submit" class="btn-slide-gradient submit" data-waitlist-submit data-gtm-id="waitlist_submit">{t.submit}</button>
 			</form>
-			<p class="fine-print">No spam. Unsubscribe anytime.</p>
+			<p class="fine-print">{t.finePrint}</p>
 		</div>
 	</div>
 </div>

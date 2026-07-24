@@ -1,30 +1,37 @@
 ---
-import { getCollection } from 'astro:content';
+import { copy, type Lang } from '../i18n/copy';
+import { getPostsForLang, postSlug } from '../lib/blog';
 
-const posts = (await getCollection('blog'))
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.slice(0, 3);
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].blog;
+const blogHref = lang === 'es' ? '/es/blog' : '/blog';
+
+const posts = (await getPostsForLang(lang)).slice(0, 3);
 ---
 
 <section id="blog" data-screen-label="Blog" class="blog">
 	<div class="wrap">
 		<div class="head">
 			<div>
-				<div class="eyebrow">From the blog</div>
-				<h2>Renting in Spain, explained.</h2>
+				<div class="eyebrow">{t.eyebrow}</div>
+				<h2>{t.h2}</h2>
 			</div>
-			<a href="/blog" class="link-snap all-link" data-gtm-id="blog_view_all">All articles ▸</a>
+			<a href={blogHref} class="link-snap all-link" data-gtm-id="blog_view_all">{t.allArticles}</a>
 		</div>
 		<div class="grid">
 			{
 				posts.map((post) => (
-					<a href={`/blog/${post.id}`} class="card-hover card">
+					<a href={`${blogHref}/${postSlug(post)}`} class="card-hover card">
 						<div class="meta">
 							{post.data.category} · {post.data.minutes} min
 						</div>
 						<div class="title">{post.data.title}</div>
 						<p class="excerpt">{post.data.excerpt}</p>
-						<div class="read">Read article ▸</div>
+						<div class="read">{t.readArticle}</div>
 					</a>
 				))
 			}

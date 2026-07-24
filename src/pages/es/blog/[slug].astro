@@ -1,14 +1,14 @@
 ---
 import { render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { copy } from '../../i18n/copy';
-import { getPostsForLang, postSlug } from '../../lib/blog';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { copy } from '../../../i18n/copy';
+import { getPostsForLang, postSlug } from '../../../lib/blog';
 
-const lang = 'en';
+const lang = 'es';
 const t = copy[lang].blog;
 
 export async function getStaticPaths() {
-	const posts = await getPostsForLang('en');
+	const posts = await getPostsForLang('es');
 	return posts.map((post) => ({ params: { slug: postSlug(post) }, props: { post } }));
 }
 
@@ -20,7 +20,7 @@ const dateLabel = post.data.pubDate.toLocaleDateString(t.dateLocale, { month: 'l
 <BaseLayout title={`${post.data.title} — Marta`} description={post.data.excerpt} activeNav="blog" lang={lang}>
 	<article class="post">
 		<div class="head">
-			<a href="/blog" class="link-snap back">{t.backLink}</a>
+			<a href="/es/blog" class="link-snap back">{t.backLink}</a>
 			<div class="meta">
 				{post.data.category} · {post.data.minutes} {t.minRead} · {dateLabel}
 			</div>
@@ -38,7 +38,7 @@ const dateLabel = post.data.pubDate.toLocaleDateString(t.dateLocale, { month: 'l
 					<div class="cta-title">{t.ctaTitle}</div>
 					<div class="cta-copy">{t.ctaCopy}</div>
 				</div>
-				<a href="/#pricing" class="cta-btn" data-gtm-id="blog_post_book_viewings">{copy[lang].nav.cta}</a>
+				<a href="/es/#pricing" class="cta-btn" data-gtm-id="blog_post_book_viewings">{copy[lang].nav.cta}</a>
 			</div>
 		</div>
 	</article>

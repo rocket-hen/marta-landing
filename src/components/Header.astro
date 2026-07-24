@@ -1,32 +1,38 @@
 ---
+import { copy, type Lang } from '../i18n/copy';
+
 interface Props {
 	activeNav?: 'blog';
 	isHome?: boolean;
+	lang?: Lang;
 }
 
-const { activeNav, isHome = false } = Astro.props;
-const prefix = isHome ? '' : '/';
+const { activeNav, isHome = false, lang = 'en' } = Astro.props;
+const t = copy[lang].nav;
+const home = lang === 'es' ? '/es/' : '/';
+const prefix = isHome ? '' : home;
+const blogHref = lang === 'es' ? '/es/blog' : '/blog';
 ---
 
 <header id="site-header">
 	<div class="bar">
-		<a href="/" class="logo">marta<span class="dot"></span></a>
+		<a href={home} class="logo">marta<span class="dot"></span></a>
 		<input type="checkbox" id="nav-toggle" class="nav-toggle" />
 		<div class="links">
-			<a href={`${prefix}#how`} class="nav-link">How it works</a>
-			<a href={`${prefix}#pricing`} class="nav-link">Pricing</a>
+			<a href={`${prefix}#how`} class="nav-link">{t.how}</a>
+			<a href={`${prefix}#pricing`} class="nav-link">{t.pricing}</a>
 			<a href={`${prefix}#faq`} class="nav-link">FAQ</a>
-			<a href="/blog" class="nav-link" class:list={[{ blog: activeNav === 'blog' }]}>Blog</a>
+			<a href={blogHref} class="nav-link" class:list={[{ blog: activeNav === 'blog' }]}>Blog</a>
 		</div>
 		<div class="actions">
 			{
 				isHome ? (
 					<a href="#pricing" data-open-waitlist data-gtm-id="header_book_viewings" class="btn-slide-gradient btn-slide-outline cta">
-						Book my viewings
+						{t.cta}
 					</a>
 				) : (
-					<a href="/#pricing" data-gtm-id="header_book_viewings" class="btn-slide-gradient btn-slide-outline cta">
-						Book my viewings
+					<a href={`${home}#pricing`} data-gtm-id="header_book_viewings" class="btn-slide-gradient btn-slide-outline cta">
+						{t.cta}
 					</a>
 				)
 			}

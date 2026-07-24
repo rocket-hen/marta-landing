@@ -1,15 +1,19 @@
 ---
-const steps = [
-	{ num: '01', title: 'Send us your listings', body: "Found a flat on Idealista, Fotocasa or Habitaclia? Send us the link, or a whole list. We handle the rest." },
-	{ num: '02', title: 'Marta makes the call', body: 'She calls each agency in Spanish, confirms the flat is still available, asks about your dealbreakers — pets, deposit, requirements — and books you a viewing slot.' },
-	{ num: '03', title: 'Viewings land in your schedule', body: 'Dead listings are removed. You get confirmed appointments with the address, contact and time. You just show up.' },
-];
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].howItWorks;
+const steps = t.steps;
 ---
 
 <section id="how" data-screen-label="How it works" class="how">
 	<div class="wrap">
-		<div class="reveal eyebrow">How it works</div>
-		<h2 class="reveal">From listing to confirmed viewing — without a single call.</h2>
+		<div class="reveal eyebrow">{t.eyebrow}</div>
+		<h2 class="reveal">{t.h2}</h2>
 		<div class="grid">
 			{
 				steps.map((st, i) => (

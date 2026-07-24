@@ -1,89 +1,46 @@
 ---
-const tiers = [
-	{
-		name: 'Blitz',
-		price: '€49',
-		term: 'for 3 months',
-		tagline: 'You found the listings. Marta gets you inside.',
-		note: '',
-		features: [
-			'Send up to 15 listings (one by one or as a list)',
-			'Calls in Spanish within hours',
-			'Full report within hours: status of every listing',
-			'Recordings & transcripts of every call',
-			'Viewings booked straight into your calendar',
-			'We present you as a reliable tenant (nómina, insurance, pets)',
-			'Real humans step in when needed',
-			'Money-back guarantee',
-		],
-		highlight: false,
-		btnText: 'Try free',
-		outline: true,
-	},
-	{
-		name: 'Hunter',
-		price: '€99',
-		term: 'for 3 months',
-		tagline: 'New listings get called in minutes — before anyone else replies.',
-		note: 'Free calls use listings you send manually. Monitoring activates with your payment.',
-		features: [
-			'Everything in Blitz',
-			'Unlimited listings',
-			'Set a search filter — new listings enter the call queue automatically',
-			'Calls within minutes of publication',
-			'Retries + WhatsApp follow-up when nobody picks up',
-			'Reschedule or confirm viewings anytime',
-			'Active until you find your home — up to 90 days',
-		],
-		highlight: true,
-		btnText: 'Try free',
-		outline: false,
-	},
-	{
-		name: 'Concierge',
-		price: '€399',
-		term: 'per signed contract',
-		tagline: 'A human by your side until the contract is signed.',
-		note: '',
-		features: [
-			'Everything in Hunter',
-			'Personal manager, priority queue',
-			'Price negotiation on your behalf',
-			'Help with documents & requisitos',
-			'Scam check on every listing',
-			'Support until you sign',
-		],
-		highlight: false,
-		btnText: 'Talk to us',
-		outline: true,
-	},
-];
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].pricing;
+const prices = ['€49', '€99', '€399'];
+const outlines = [true, false, true];
+const tiers = t.tiers.map((tier, i) => ({
+	...tier,
+	price: prices[i],
+	highlight: i === 1,
+	outline: outlines[i],
+}));
 ---
 
 <section id="pricing" data-screen-label="Pricing" class="pricing">
 	<div class="wrap">
 		<div class="reveal head">
-			<div class="eyebrow">Pricing</div>
-			<h2>Try Marta before you pay</h2>
-			<p>One flat fee covers your whole search — up to 3 months. No subscriptions, nothing to cancel.</p>
+			<div class="eyebrow">{t.eyebrow}</div>
+			<h2>{t.h2}</h2>
+			<p>{t.p}</p>
 		</div>
 
 		<div class="grid">
 			{
-				tiers.map((t) => (
-					<div class:list={['tier', 'card-hover', { highlight: t.highlight }]}>
-						{t.highlight && <div class="badge">Most Popular</div>}
+				tiers.map((tier) => (
+					<div class:list={['tier', 'card-hover', { highlight: tier.highlight }]}>
+						{tier.highlight && <div class="badge">{t.mostPopular}</div>}
 						<div class="tier-head">
-							<div class="tier-name">{t.name}</div>
+							<div class="tier-name">{tier.name}</div>
 						</div>
-						<p class="tagline">{t.tagline}</p>
+						<p class="tagline">{tier.tagline}</p>
 						<div class="price-row">
-							<span class="price">{t.price}</span>
-							<span class="term">{t.term}</span>
+							<span class="price">{tier.price}</span>
+							<span class="term">{tier.term}</span>
 						</div>
-						{t.note && <p class="note">{t.note}</p>}
+						{tier.note && <p class="note">{tier.note}</p>}
 						<ul>
-							{t.features.map((f) => (
+							{tier.features.map((f) => (
 								<li>
 									<span class="dash" aria-hidden="true">—</span>
 									<span>{f}</span>
@@ -93,10 +50,10 @@ const tiers = [
 						<a
 							href="#pricing"
 							data-open-waitlist
-							data-gtm-id={`pricing_${t.name.toLowerCase()}_cta`}
-							class:list={['btn-slide-gradient', 'tier-btn', t.outline ? 'btn-slide-outline outline' : 'solid']}
+							data-gtm-id={`pricing_${tier.name.toLowerCase()}_cta`}
+							class:list={['btn-slide-gradient', 'tier-btn', tier.outline ? 'btn-slide-outline outline' : 'solid']}
 						>
-							{t.btnText}
+							{tier.btnText}
 						</a>
 					</div>
 				))
@@ -113,8 +70,8 @@ const tiers = [
 					</div>
 				</div>
 				<div>
-					<div class="promise-label">Our promise</div>
-					<div class="promise-text"><b>Try free — no card needed. </b>Marta calls, you see the first result. Pay only if you want her to keep going.</div>
+					<div class="promise-label">{t.promiseLabel}</div>
+					<div class="promise-text"><b>{t.promiseBold}</b>{t.promiseRest}</div>
 				</div>
 			</div>
 		</div>

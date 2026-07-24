@@ -1,15 +1,23 @@
 ---
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].pain;
 const stats = [
-	{ key: 'reply-rate', small: 'of flats go to whoever responds first', color: 'var(--ink)' },
-	{ key: 'applicants', small: 'applicants compete for every decent listing', color: 'var(--ink)' },
-	{ key: 'hours', small: 'and the best flats are gone', color: 'var(--ink)' },
-	{ key: 'cost', small: 'what searching from an Airbnb costs you. Marta starts at €49', color: 'var(--accent)' },
+	{ key: 'reply-rate', small: t.stats[0], color: 'var(--ink)' },
+	{ key: 'applicants', small: t.stats[1], color: 'var(--ink)' },
+	{ key: 'hours', small: t.stats[2], color: 'var(--ink)' },
+	{ key: 'cost', small: t.stats[3], color: 'var(--accent)' },
 ];
 ---
 
 <section id="pain" data-screen-label="Pain strip" class="pain">
 	<div class="wrap">
-		<h2 class="reveal">Nobody replies on Idealista. Here's why.</h2>
+		<h2 class="reveal">{t.h2}</h2>
 	</div>
 	<div class="grid">
 		{
