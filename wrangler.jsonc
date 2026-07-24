@@ -9,5 +9,26 @@
 		// first rather than letting Cloudflare try (and fail) to find a static
 		// file at /api/waitlist before ever reaching worker/index.ts.
 		"run_worker_first": ["/api/*"]
+	},
+	"kv_namespaces": [
+		{
+			"binding": "WAITLIST_KV",
+			"id": "b0aa1bc507cb4e6d8cd729a594782702"
+		}
+	],
+	"observability": {
+		"enabled": false,
+		"head_sampling_rate": 1,
+		"logs": {
+			"enabled": true,
+			"head_sampling_rate": 1,
+			"persist": true,
+			"invocation_logs": true
+		},
+		"traces": {
+			"enabled": false,
+			"persist": true,
+			"head_sampling_rate": 1
+		}
 	}
 }
