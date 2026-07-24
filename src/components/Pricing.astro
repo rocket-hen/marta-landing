@@ -93,6 +93,7 @@ const tiers = [
 						<a
 							href="#pricing"
 							data-open-waitlist
+							data-gtm-id={`pricing_${t.name.toLowerCase()}_cta`}
 							class:list={['btn-slide-gradient', 'tier-btn', t.outline ? 'btn-slide-outline outline' : 'solid']}
 						>
 							{t.btnText}

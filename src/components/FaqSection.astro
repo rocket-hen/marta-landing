@@ -21,7 +21,7 @@ const faqs = [
 			{
 				faqs.map((f, i) => (
 					<div class="item">
-						<button type="button" class="nav-link toggle" data-faq-toggle aria-expanded="false">
+						<button type="button" class="nav-link toggle" data-faq-toggle data-gtm-id="faq_toggle" data-gtm-label={f.q} aria-expanded="false">
 							<span>{f.q}</span>
 							<span class="glyph" data-faq-glyph>+</span>
 						</button>

@@ -58,5 +58,27 @@ const { title, description, activeNav, isHome = false, langToggle = false } = As
 		<Header activeNav={activeNav} isHome={isHome} />
 		<slot />
 		<Footer lang={langToggle} />
+		<script>
+			// GTM click tracking: any element tagged data-gtm-id gets a `button_click` event
+			// pushed to the dataLayer on click. One delegated listener covers every page and
+			// every button, present or future — tagging a new button is just adding the
+			// attribute, no script changes needed. Configure a GTM trigger on Custom Event
+			// "button_click" and map button_id / button_text as event parameters.
+			// data-gtm-label overrides the auto-derived text when textContent would include
+			// unrelated child text (e.g. the FAQ toggle's +/− glyph span).
+			document.addEventListener('click', (e) => {
+				if (!(e.target instanceof Element)) return;
+				const el = e.target.closest<HTMLElement>('[data-gtm-id]');
+				if (!el) return;
+				const label = el.getAttribute('data-gtm-label') ?? el.textContent;
+				(window as unknown as { dataLayer: unknown[] }).dataLayer =
+					(window as unknown as { dataLayer: unknown[] }).dataLayer || [];
+				(window as unknown as { dataLayer: unknown[] }).dataLayer.push({
+					event: 'button_click',
+					button_id: el.getAttribute('data-gtm-id'),
+					button_text: (label || '').trim().replace(/\s+/g, ' ').slice(0, 100),
+				});
+			});
+		</script>
 	</body>
 </html>

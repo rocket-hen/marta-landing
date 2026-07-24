@@ -470,6 +470,11 @@ function initWaitlistModal() {
 				if (formWrap) formWrap.hidden = true;
 				if (successWrap) successWrap.hidden = false;
 				successHeading?.focus();
+				// Conversion event, distinct from the click-based tracking in BaseLayout —
+				// this only fires once the signup actually succeeds.
+				(window as unknown as { dataLayer: unknown[] }).dataLayer =
+					(window as unknown as { dataLayer: unknown[] }).dataLayer || [];
+				(window as unknown as { dataLayer: unknown[] }).dataLayer.push({ event: 'waitlist_signup_success' });
 				return;
 			}
 
