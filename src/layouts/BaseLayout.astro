@@ -7,10 +7,11 @@ interface Props {
 	title: string;
 	description: string;
 	activeNav?: 'blog';
+	isHome?: boolean;
 	langToggle?: boolean;
 }
 
-const { title, description, activeNav, langToggle = false } = Astro.props;
+const { title, description, activeNav, isHome = false, langToggle = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -31,7 +32,7 @@ const { title, description, activeNav, langToggle = false } = Astro.props;
 		/>
 	</head>
 	<body>
-		<Header activeNav={activeNav} />
+		<Header activeNav={activeNav} isHome={isHome} />
 		<slot />
 		<Footer lang={langToggle} />
 	</body>

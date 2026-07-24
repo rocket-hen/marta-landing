@@ -18,6 +18,11 @@ The app itself lives in the sibling `marta/` repo — this project has no backen
 - `src/pages/index.astro` — landing page, assembled from `src/components/*`
 - `src/pages/blog/index.astro`, `src/pages/blog/[slug].astro` — blog list/post, backed by the
   `blog` content collection at `src/content/blog/*.md` (schema in `src/content.config.ts`)
+- `src/pages/privacy.astro`, `src/pages/terms.astro` — legal pages, backed by the `legal`
+  content collection at `src/content/legal/{privacy,terms}.md`. To edit the copy, just edit
+  those Markdown files (directly on GitHub is fine) — frontmatter is `title` + `lastUpdated`,
+  everything else is the page body. Shared chrome (eyebrow, title, "Last updated" date) lives
+  in `src/layouts/LegalLayout.astro`.
 - `src/scripts/landing.ts` — all of the landing page's interactivity (hero call-status
   animation, waveform demo player, EN/ES toggle, FAQ accordion, waitlist modal). Loaded only
   on the home page.

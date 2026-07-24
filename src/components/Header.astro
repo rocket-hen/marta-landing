@@ -1,23 +1,24 @@
 ---
 interface Props {
 	activeNav?: 'blog';
+	isHome?: boolean;
 }
 
-const { activeNav } = Astro.props;
-const prefix = activeNav === 'blog' ? '/' : '';
-const isHome = activeNav !== 'blog';
+const { activeNav, isHome = false } = Astro.props;
+const prefix = isHome ? '' : '/';
 ---
 
 <header id="site-header">
 	<div class="bar">
 		<a href="/" class="logo">marta<span class="dot"></span></a>
 		<input type="checkbox" id="nav-toggle" class="nav-toggle" />
-		<label for="nav-toggle" class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></label>
 		<div class="links">
 			<a href={`${prefix}#how`} class="nav-link">How it works</a>
 			<a href={`${prefix}#pricing`} class="nav-link">Pricing</a>
 			<a href={`${prefix}#faq`} class="nav-link">FAQ</a>
 			<a href="/blog" class="nav-link" class:list={[{ blog: activeNav === 'blog' }]}>Blog</a>
+		</div>
+		<div class="actions">
 			{
 				isHome ? (
 					<a href="#pricing" data-open-waitlist class="btn-slide-gradient btn-slide-outline cta">
@@ -29,6 +30,7 @@ const isHome = activeNav !== 'blog';
 					</a>
 				)
 			}
+			<label for="nav-toggle" class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></label>
 		</div>
 	</div>
 </header>
@@ -101,6 +103,12 @@ const isHome = activeNav !== 'blog';
 		color: var(--accent);
 	}
 
+	.actions {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
 	.cta {
 		background: linear-gradient(to top, var(--ink) 50%, transparent 50%);
 		border: 1px solid var(--ink);
@@ -118,7 +126,6 @@ const isHome = activeNav !== 'blog';
 		cursor: pointer;
 		padding: 8px;
 		margin: -8px;
-		order: 2;
 	}
 
 	.nav-burger span {

@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import teamCalling from '../assets/team-calling.png';
 ---
 
 <section data-screen-label="Human Team" class="team">
@@ -15,11 +13,13 @@ import teamCalling from '../assets/team-calling.png';
 			</p>
 		</div>
 		<div class="reveal image-col" style="transition-delay: 0.15s;">
-			<Image
-				src={teamCalling}
+			<img
+				src="/team-calling.webp"
 				alt="Illustration of the Marta calling team wearing headsets at their desks"
-				widths={[400, 760]}
-				sizes="(max-width: 780px) 100vw, 380px"
+				width="1024"
+				height="683"
+				loading="lazy"
+				decoding="async"
 			/>
 		</div>
 	</div>

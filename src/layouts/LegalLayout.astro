@@ -1,0 +1,134 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+	title: string;
+	lastUpdated: Date;
+}
+
+const { title, lastUpdated } = Astro.props;
+const dateLabel = lastUpdated.toLocaleDateString('en-GB', {
+	day: 'numeric',
+	month: 'long',
+	year: 'numeric',
+});
+---
+
+<BaseLayout title={`${title} — Marta`} description={title}>
+	<article class="legal-page">
+		<div class="head">
+			<div class="eyebrow">Legal</div>
+			<h1>{title}</h1>
+			<div class="updated">Last updated: {dateLabel}</div>
+		</div>
+		<div class="legal">
+			<slot />
+		</div>
+	</article>
+</BaseLayout>
+
+<style>
+	.legal-page {
+		border-bottom: 1px solid var(--border);
+	}
+
+	.head {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 160px 24px 0;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+
+	h1 {
+		font-family: var(--font-display);
+		font-size: clamp(36px, 5.5vw, 56px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 16px;
+	}
+
+	.updated {
+		font-family: var(--font-mono);
+		font-size: 12px;
+		color: var(--accent);
+		margin-bottom: 32px;
+	}
+
+	.legal {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 0 24px 80px;
+	}
+
+	.legal :global(h2) {
+		font-family: var(--font-display);
+		font-size: 24px;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		margin: 40px 0 4px;
+	}
+
+	.legal :global(h3) {
+		font-family: var(--font-display);
+		font-size: 17px;
+		font-weight: 800;
+		letter-spacing: -0.01em;
+		margin: 24px 0 0;
+	}
+
+	.legal :global(p),
+	.legal :global(li) {
+		font-size: 15px;
+		line-height: 1.7;
+		color: var(--fmuted);
+		margin: 12px 0 0;
+	}
+
+	.legal :global(ul) {
+		margin: 12px 0 0;
+		padding-left: 22px;
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	.legal :global(strong) {
+		color: var(--ink);
+		font-weight: 600;
+	}
+
+	.legal :global(table) {
+		width: 100%;
+		border-collapse: collapse;
+		margin-top: 16px;
+		font-size: 13.5px;
+		line-height: 1.5;
+	}
+
+	.legal :global(th) {
+		text-align: left;
+		font-family: var(--font-mono);
+		font-size: 11px;
+		font-weight: 400;
+		letter-spacing: 0.04em;
+		color: var(--muted);
+		padding: 8px 12px 8px 0;
+		border-bottom: 1px solid var(--ink);
+	}
+
+	.legal :global(td) {
+		vertical-align: top;
+		padding: 10px 12px 10px 0;
+		border-bottom: 1px solid var(--border);
+		color: var(--fmuted);
+	}
+</style>
