@@ -404,9 +404,17 @@ function initWaitlistModal() {
 	const modal = document.querySelector<HTMLElement>('[data-modal]');
 	const formWrap = document.querySelector<HTMLElement>('[data-modal-form]');
 	const successWrap = document.querySelector<HTMLElement>('[data-modal-success]');
+	const successHeading = successWrap?.querySelector<HTMLElement>('h3');
 	const form = document.querySelector<HTMLFormElement>('[data-waitlist-form]');
 	const submitBtn = document.querySelector<HTMLButtonElement>('[data-waitlist-submit]');
+	const statusEl = document.querySelector<HTMLElement>('[data-form-status]');
 	if (!overlay) return;
+
+	function setStatus(message: string) {
+		if (!statusEl) return;
+		statusEl.textContent = message;
+		statusEl.focus();
+	}
 
 	function openModal(e?: Event) {
 		e?.preventDefault();
@@ -416,6 +424,7 @@ function initWaitlistModal() {
 	function closeModal() {
 		overlay!.hidden = true;
 		form?.reset();
+		if (statusEl) statusEl.textContent = '';
 		if (formWrap) formWrap.hidden = false;
 		if (successWrap) successWrap.hidden = true;
 		if (submitBtn) {
@@ -436,29 +445,55 @@ function initWaitlistModal() {
 		if (e.key === 'Escape' && !overlay!.hidden) closeModal();
 	});
 
-	// No real backend yet — set PUBLIC_WAITLIST_ENDPOINT to POST { email } once one exists.
-	const endpoint = import.meta.env.PUBLIC_WAITLIST_ENDPOINT as string | undefined;
-
 	form?.addEventListener('submit', async (e) => {
 		e.preventDefault();
 		if (!submitBtn) return;
+
+		if (statusEl) statusEl.textContent = '';
 		submitBtn.disabled = true;
 		submitBtn.textContent = 'Joining...';
-		const email = new FormData(form).get('email');
+
+		const data = new FormData(form);
+		const params = new URLSearchParams(window.location.search);
+		const payload = {
+			email: data.get('email'),
+			leadType: data.get('leadType'),
+			city: data.get('city'),
+			moveTimeline: data.get('moveTimeline'),
+			budget: data.get('budget'),
+			pain: data.get('pain'),
+			consent: data.get('consent') === 'on',
+			company: data.get('company'), // honeypot
+			referrer: document.referrer || undefined,
+			utmSource: params.get('utm_source') || undefined,
+			utmCampaign: params.get('utm_campaign') || undefined,
+		};
 
 		try {
-			if (endpoint) {
-				await fetch(endpoint, {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/json' },
-					body: JSON.stringify({ email }),
-				});
-			} else {
-				await new Promise((resolve) => setTimeout(resolve, 800));
+			const res = await fetch('/api/waitlist', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(payload),
+			});
+
+			if (res.ok) {
+				if (formWrap) formWrap.hidden = true;
+				if (successWrap) successWrap.hidden = false;
+				successHeading?.focus();
+				return;
 			}
-			if (formWrap) formWrap.hidden = true;
-			if (successWrap) successWrap.hidden = false;
+
+			let message = 'Something went wrong. Please try again.';
+			try {
+				const body = (await res.json()) as { error?: string };
+				if (body.error) message = body.error;
+			} catch {
+				// keep the generic fallback above
+			}
+			setStatus(message);
 		} catch {
+			setStatus('Network error — please check your connection and try again.');
+		} finally {
 			submitBtn.disabled = false;
 			submitBtn.textContent = 'Join waitlist';
 		}

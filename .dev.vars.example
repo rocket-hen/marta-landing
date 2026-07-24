@@ -1,0 +1,8 @@
+# Copy to .dev.vars for local `npm run preview` (wrangler pages dev) testing.
+# .dev.vars is gitignored — never commit real values.
+# See README.md "Waitlist backend" section for one-time Resend setup (segment + contact properties)
+# and how these same three vars are set as Cloudflare Pages secrets/vars in production.
+
+RESEND_API_KEY=
+RESEND_SEGMENT_ID=
+MAIL_FROM=

@@ -1,4 +1,23 @@
 ---
+const CITIES = [
+	'Madrid',
+	'Barcelona',
+	'Valencia',
+	'Málaga',
+	'Alicante',
+	'Sevilla',
+	'Palma',
+	'Las Palmas',
+	'Tenerife',
+	'Bilbao',
+	'Granada',
+	'Marbella',
+	'San Sebastián',
+	'Zaragoza',
+	'Other',
+];
+const TIMELINES = ['ASAP', 'Within 1 month', '1–3 months', 'Just exploring'];
+const BUDGETS = ['Under €800', '€800–1200', '€1200–1800', '€1800+'];
 ---
 
 <div class="overlay" data-modal-overlay hidden>
@@ -6,16 +25,71 @@
 		<button type="button" class="close" data-modal-close aria-label="Close">×</button>
 
 		<div data-modal-success hidden>
-			<h3>You're on the list.</h3>
+			<h3 tabindex="-1">You're on the list.</h3>
 			<p>We'll reach out as soon as Marta is ready to take on new clients. Keep an eye on your inbox.</p>
 		</div>
 
 		<div data-modal-form>
 			<h3 id="waitlist-title">Marta is currently in private beta.</h3>
-			<p>We are slowly rolling out to new users to ensure the best experience with landlords. Leave your email to get early access.</p>
+			<p>We are slowly rolling out to new users to ensure the best experience with landlords. Leave your details to get early access.</p>
 
 			<form data-waitlist-form>
-				<input type="email" name="email" placeholder="Your email address" required />
+				<div class="field">
+					<label for="wl-email" class="field-label">Email</label>
+					<input type="email" id="wl-email" name="email" class="field-input" placeholder="you@example.com" required />
+				</div>
+
+				<div class="field">
+					<span class="field-label" id="wl-leadtype-label">I am</span>
+					<div class="toggle-group" role="group" aria-labelledby="wl-leadtype-label">
+						<input type="radio" id="wl-renting" name="leadType" value="Renting" required />
+						<label for="wl-renting">Renting</label>
+						<input type="radio" id="wl-buying" name="leadType" value="Buying" />
+						<label for="wl-buying">Buying</label>
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="wl-city" class="field-label">City</label>
+					<select id="wl-city" name="city" class="field-input" required>
+						<option value="" disabled selected>Select a city</option>
+						{CITIES.map((city) => <option value={city}>{city}</option>)}
+					</select>
+				</div>
+
+				<div class="field">
+					<label for="wl-timeline" class="field-label">Move timeline</label>
+					<select id="wl-timeline" name="moveTimeline" class="field-input" required>
+						<option value="" disabled selected>Select a timeline</option>
+						{TIMELINES.map((t) => <option value={t}>{t}</option>)}
+					</select>
+				</div>
+
+				<div class="field">
+					<label for="wl-budget" class="field-label">Budget</label>
+					<select id="wl-budget" name="budget" class="field-input" required>
+						<option value="" disabled selected>Select a budget</option>
+						{BUDGETS.map((b) => <option value={b}>{b}</option>)}
+					</select>
+				</div>
+
+				<div class="field">
+					<label for="wl-pain" class="field-label">What's the hardest part of your search right now?</label>
+					<textarea id="wl-pain" name="pain" class="field-input" rows="3" maxlength="1000"></textarea>
+				</div>
+
+				<div class="field field-consent">
+					<input type="checkbox" id="wl-consent" name="consent" required />
+					<label for="wl-consent">I agree to the <a href="/privacy">privacy policy</a>.</label>
+				</div>
+
+				<div class="honeypot" aria-hidden="true">
+					<label for="wl-company">Company</label>
+					<input type="text" id="wl-company" name="company" tabindex="-1" autocomplete="off" />
+				</div>
+
+				<div class="form-status" data-form-status role="status" aria-live="polite" tabindex="-1"></div>
+
 				<button type="submit" class="btn-slide-gradient submit" data-waitlist-submit>Join waitlist</button>
 			</form>
 			<p class="fine-print">No spam. Unsubscribe anytime.</p>
@@ -44,6 +118,8 @@
 		padding: 40px;
 		max-width: 440px;
 		width: 100%;
+		max-height: calc(100vh - 48px);
+		overflow-y: auto;
 		position: relative;
 		border: 1px solid var(--border);
 		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -70,6 +146,9 @@
 		font-weight: 300;
 		margin: 0 0 16px;
 	}
+	h3:focus-visible {
+		outline: none;
+	}
 
 	p {
 		font-size: 15px;
@@ -88,13 +167,103 @@
 		gap: 16px;
 	}
 
-	input {
+	.field-label {
+		display: block;
+		font-size: 11px;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--muted);
+		font-weight: 500;
+		margin-bottom: 6px;
+	}
+
+	.field-input {
 		width: 100%;
 		padding: 14px 16px;
 		font-size: 15px;
 		border: 1px solid var(--border);
 		background: var(--white);
 		font-family: 'Inter', sans-serif;
+		color: var(--ink);
+		outline: none;
+	}
+
+	textarea.field-input {
+		resize: vertical;
+		min-height: 72px;
+	}
+
+	.toggle-group {
+		display: flex;
+		border: 1px solid var(--border);
+	}
+	.toggle-group input {
+		position: absolute;
+		opacity: 0;
+		pointer-events: none;
+	}
+	.toggle-group label {
+		flex: 1;
+		text-align: center;
+		background: transparent;
+		color: var(--muted);
+		font-size: 13px;
+		padding: 10px 12px;
+		cursor: pointer;
+		font-family: 'Inter', sans-serif;
+		transition: background 0.15s ease, color 0.15s ease;
+	}
+	.toggle-group label:not(:first-of-type) {
+		border-left: 1px solid var(--border);
+	}
+	.toggle-group input:checked + label {
+		background: var(--ink);
+		color: var(--bg);
+	}
+	.toggle-group input:focus-visible + label {
+		outline: 2px solid var(--accent);
+		outline-offset: -2px;
+	}
+
+	.field-consent {
+		display: flex;
+		align-items: flex-start;
+		gap: 10px;
+	}
+	.field-consent input {
+		margin-top: 3px;
+		flex: none;
+		width: 16px;
+		height: 16px;
+		accent-color: var(--ink);
+	}
+	.field-consent label {
+		font-size: 13px;
+		line-height: 1.5;
+		color: var(--muted);
+	}
+	.field-consent label a {
+		color: var(--muted);
+		border-bottom: 1px solid var(--border);
+	}
+
+	.honeypot {
+		position: absolute;
+		left: -9999px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+
+	.form-status {
+		font-size: 13px;
+		line-height: 1.5;
+		color: var(--accent);
+	}
+	.form-status:empty {
+		display: none;
+	}
+	.form-status:focus-visible {
 		outline: none;
 	}
 
