@@ -1,17 +1,19 @@
 # marta-landing
 
-Marketing site + blog for Marta (`callmarta.com`). Static Astro site, ported from the
-[Claude Design](https://claude.ai/design) mockup, intended to deploy to Cloudflare Pages.
-The app itself lives in the sibling `marta/` repo — this project has no backend of its own.
+Marketing site + blog for Marta (`callmarta.com`). Astro-built static site, ported from the
+[Claude Design](https://claude.ai/design) mockup, deployed to Cloudflare as a Worker with static
+assets. The app itself lives in the sibling `marta/` repo — this project has no backend of its
+own beyond the one `/api/waitlist` route.
 
 ## Commands
 
 | Command           | Action                                      |
 | :----------------- | :------------------------------------------ |
 | `npm install`       | Install dependencies                        |
-| `npm run dev`       | Start the dev server at `localhost:4321` (**does not** run the `/api/waitlist` function — see below) |
+| `npm run dev`       | Start the Astro dev server at `localhost:4321` (**does not** run `/api/waitlist` — see below) |
 | `npm run build`     | Build the static site to `./dist/`          |
-| `npm run preview`   | Build, then serve via `wrangler pages dev` at `localhost:8788` — this is the only way to exercise `functions/api/waitlist.ts` locally |
+| `npm run preview`   | Build, then serve via `wrangler dev` at `localhost:8788` — the only way to exercise `worker/` locally |
+| `npm run deploy`    | Build, then `wrangler deploy` — manual deploy; normally unnecessary, see "Deploying" below |
 
 ## Structure
 
@@ -28,28 +30,34 @@ The app itself lives in the sibling `marta/` repo — this project has no backen
   on the home page.
 - `src/styles/global.css` — design tokens (colors, fonts, shared button/link states) shared by
   every page.
-- `functions/api/waitlist.ts` — the waitlist backend. A Cloudflare Pages Function (not part of
-  the Astro build), so the site stays fully static while this one route runs server-side. See
-  "Waitlist backend" below.
+- `worker/` — the Cloudflare Worker that fronts the deployed site (see "Waitlist backend" and
+  "Deploying" below). Not part of the Astro build; has its own `tsconfig.json` since it runs on
+  the Workers runtime, not a browser, and needs different global types than `src/`.
+- `wrangler.jsonc` — Worker config: entry point (`worker/index.ts`), and the `assets` block that
+  points at `./dist` so the Worker also serves the static site.
 
 ## Waitlist backend
 
-The waitlist form (`src/components/WaitlistModal.astro`) POSTs JSON to `/api/waitlist`, a
-Cloudflare Pages Function at `functions/api/waitlist.ts`. It upserts a contact in Resend with
-the submitted qualification data, adds it to a waitlist segment, and sends a welcome email.
-No Resend SDK — it's plain `fetch` against `api.resend.com`, since this runs on the Workers
-runtime. The Resend API key never reaches the browser.
+The waitlist form (`src/components/WaitlistModal.astro`) POSTs JSON to `/api/waitlist`. That
+route is handled by `worker/waitlist.ts`; every other request falls through to
+`env.ASSETS.fetch(request)`, i.e. the static build (`worker/index.ts` is the routing entry
+point). It upserts a contact in Resend with the submitted qualification data, adds it to a
+waitlist segment, and sends a welcome email — plain `fetch` against `api.resend.com`, no Resend
+SDK. The Resend API key never reaches the browser.
 
-**This repo has no `wrangler.toml`, on purpose** — see the note in "Deploying to Cloudflare
-Pages" below. That means local dev and production get their environment variables from two
-different places:
+**Why a Worker and not classic "Pages Functions"**: this project is provisioned in Cloudflare as
+a Worker (with static assets), not a classic Pages project — that distinction determines which
+deploy model applies, and Workers-with-assets needs an explicit `wrangler.jsonc` + entry point
+rather than an auto-detected `/functions` directory. (If you ever recreate this as a classic
+Pages project instead, the routing in `worker/index.ts` would need to move back to a
+`functions/api/waitlist.ts` file export — ask before doing that, it's a real restructure.)
 
 ### Local development
 
 1. `cp .dev.vars.example .dev.vars` and fill in real (ideally sandbox/test) values.
    `.dev.vars` is gitignored — never commit it.
-2. `astro dev` does **not** run Pages Functions. Use `npm run preview` instead — it builds the
-   site and serves it via `wrangler pages dev dist`, which does run `functions/`, at
+2. `astro dev` does **not** run the Worker. Use `npm run preview` instead — it builds the site
+   and serves it via `wrangler dev`, which runs `worker/` and serves `dist/` through it, at
    `http://localhost:8788`.
 3. Test the endpoint directly:
    ```
@@ -84,7 +92,7 @@ dashboard if you'd rather click through it.
 
 ### Production environment variables
 
-Cloudflare dashboard → Pages project → **Settings → Environment variables**:
+Cloudflare dashboard → your Worker → **Settings → Variables and secrets**:
 
 | Variable | Value | Type |
 | :-- | :-- | :-- |
@@ -92,14 +100,16 @@ Cloudflare dashboard → Pages project → **Settings → Environment variables*
 | `RESEND_SEGMENT_ID` | the id from the `POST /segments` call above | Variable |
 | `MAIL_FROM` | e.g. `hello@callmarta.com` (must be a verified sending domain in Resend) | Variable |
 
+(This screen is disabled/greyed out if the Worker has no deployed Worker script yet — i.e.
+before the first successful deploy with `wrangler.jsonc` in place.)
+
 ### Optional: raw lead backup (KV)
 
 If a KV namespace bound as `WAITLIST_KV` exists, the function also writes each raw submission
 to it under `lead:<timestamp>:<email>` — a second copy of the lead list outside Resend. This is
 optional; if the binding is absent the function silently skips that step. To add it: Cloudflare
-dashboard → Workers & Pages → KV → create a namespace, then Pages project → **Settings →
-Functions → KV namespace bindings** → add `WAITLIST_KV` pointing at it. (This is a dashboard
-binding, not a `wrangler.toml` one, for the same reason described below.)
+dashboard → Workers & Pages → KV → create a namespace, then your Worker → **Settings → Bindings**
+→ add a KV namespace binding named `WAITLIST_KV` pointing at it.
 
 ### Where to review leads
 
@@ -109,26 +119,18 @@ binding, not a `wrangler.toml` one, for the same reason described below.)
 - **KV namespace** (if bound) — raw JSON per submission, useful as a backup or for bulk export;
   browse via Cloudflare dashboard → Workers & Pages → KV → the namespace, or `wrangler kv key list`.
 
-## Deploying to Cloudflare Pages
+## Deploying
 
-Connected via the Cloudflare dashboard's Git integration (**Workers & Pages → Create → Pages →
-Connect to Git**, repo `rocket-hen/marta-landing`) — every push to `main` auto-builds and deploys.
+Connected via Cloudflare Workers Builds (Git integration — **Workers & Pages → your project →
+Settings → Build**, repo `rocket-hen/marta-landing`). Every push to `main` auto-builds and
+deploys: build command `npm run build`, deploy command `npx wrangler deploy` (the default —
+reads `wrangler.jsonc` to know about `worker/index.ts` and the `./dist` assets directory, so
+there's nothing else to configure there).
 
-- Build command: `npm run build`
-- Build output directory: `dist`
-- No framework preset / adapter needed — this is a fully static site.
+Custom domain: add `callmarta.com` (and `www.callmarta.com` for the redirect) under the Worker's
+**Domains & Routes** (or **Custom domains**, depending on dashboard version). If the domain's
+already on this Cloudflare account, DNS records are added automatically; otherwise point the
+registrar's nameservers at Cloudflare first.
 
-Don't add a `wrangler.toml` back for this project: its presence makes Cloudflare's Git-integration
-builder run a Wrangler-driven deploy step instead of its normal Pages asset upload, which fails in
-CI without extra Cloudflare API credentials configured. It's only relevant for a manual
-`wrangler pages deploy dist` CLI workflow, which this repo doesn't use. This doesn't affect
-`functions/` — Cloudflare's Git-integration build auto-detects and deploys Pages Functions from
-that directory with no config file needed.
-
-Custom domain: add `callmarta.com` (and `www.callmarta.com` for the redirect) under the Pages
-project's **Custom domains** tab. If the domain's already on this Cloudflare account, DNS records
-are added automatically; otherwise point the registrar's nameservers at Cloudflare first.
-
-Env vars and the `WAITLIST_KV` binding go in the Pages project's **Settings** (Environment
-variables / Functions → KV namespace bindings), not in a committed file — see "Waitlist backend"
-above for the exact variables needed.
+Env vars and the `WAITLIST_KV` binding go in the Worker's **Settings** (Variables and secrets /
+Bindings), not in a committed file — see "Waitlist backend" above for the exact variables needed.

@@ -1,13 +1,4 @@
-// Cloudflare Pages Function — POST /api/waitlist
-// Exporting only `onRequestPost` makes Cloudflare answer every other method with 405
-// automatically; there's no need to hand-roll that check.
-
-interface Env {
-	RESEND_API_KEY: string;
-	RESEND_SEGMENT_ID: string;
-	MAIL_FROM: string;
-	WAITLIST_KV?: KVNamespace;
-}
+import type { Env } from './env';
 
 interface WaitlistPayload {
 	email?: string;
@@ -104,7 +95,11 @@ function welcomeText(): string {
 	].join('\n');
 }
 
-async function handlePost({ request, env }: { request: Request; env: Env }): Promise<Response> {
+export async function handleWaitlist(request: Request, env: Env): Promise<Response> {
+	if (request.method !== 'POST') {
+		return json({ error: 'Method not allowed.' }, 405);
+	}
+
 	let payload: WaitlistPayload;
 	try {
 		payload = await request.json();
@@ -253,13 +248,3 @@ async function handlePost({ request, env }: { request: Request; env: Env }): Pro
 
 	return json({ ok: true });
 }
-
-// wrangler's local Pages dev (and, per testing, the deployed router too) falls through to
-// the static-asset/SPA-fallback handler for methods with no matching onRequest* export —
-// it does not synthesize a 405 on its own. Handle method dispatch explicitly instead.
-export const onRequest: PagesFunction<Env> = async (context) => {
-	if (context.request.method !== 'POST') {
-		return json({ error: 'Method not allowed.' }, 405);
-	}
-	return handlePost(context);
-};
