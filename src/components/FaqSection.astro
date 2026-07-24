@@ -19,16 +19,16 @@ const faqs = copy[lang].faq;
 		</div>
 		<div class="list" data-faq-list>
 			{
-				faqs.map((f, i) => (
-					<div class="item">
-						<button type="button" class="nav-link toggle" data-faq-toggle data-gtm-id="faq_toggle" data-gtm-label={f.q} aria-expanded="false">
+				faqs.map((f) => (
+					<details class="item" data-gtm-id="faq_toggle" data-gtm-label={f.q}>
+						<summary class="toggle">
 							<span>{f.q}</span>
-							<span class="glyph" data-faq-glyph>+</span>
-						</button>
-						<div class="answer" data-faq-answer hidden>
+							<span class="glyph" aria-hidden="true" />
+						</summary>
+						<div class="answer">
 							<p>{f.a}</p>
 						</div>
-					</div>
+					</details>
 				))
 			}
 			<div class="closing-rule"></div>
@@ -103,15 +103,20 @@ const faqs = copy[lang].faq;
 		justify-content: space-between;
 		align-items: center;
 		gap: 16px;
-		background: none;
-		border: none;
 		padding: 18px 4px;
 		cursor: pointer;
 		font-family: 'Inter', sans-serif;
 		font-size: 15px;
 		font-weight: 500;
 		color: var(--ink);
-		text-align: left;
+		list-style: none;
+		transition: opacity 0.2s ease;
+	}
+	.toggle:hover {
+		opacity: 0.7;
+	}
+	.toggle::-webkit-details-marker {
+		display: none;
 	}
 
 	.glyph {
@@ -119,6 +124,12 @@ const faqs = copy[lang].faq;
 		font-weight: 400;
 		color: var(--muted);
 		flex: none;
+	}
+	.glyph::before {
+		content: '+';
+	}
+	.item[open] .glyph::before {
+		content: '\2212';
 	}
 
 	.answer p {

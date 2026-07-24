@@ -2,6 +2,7 @@
 // stateful component in the source design). Runs only on the home page.
 
 import { copy, type Lang } from '../i18n/copy';
+import { TRANSCRIPTS } from '../i18n/transcripts';
 
 const ACCENT = '#B0512E';
 
@@ -26,21 +27,6 @@ const CAPTIONS: Record<Lang, string[]> = {
 		'"Does Thursday at 17:30 work for you?"',
 		'"Perfect, it\'s booked. Thank you!"',
 		'',
-	],
-};
-
-const TRANSCRIPTS: Record<Lang, { who: string; color: string; text: string }[]> = {
-	es: [
-		{ who: 'Marta', color: ACCENT, text: 'Buenas tardes, soy Marta, una asistente de inteligencia artificial. Llamo de parte de un inquilino interesado en el piso de la calle Sueca.' },
-		{ who: 'Agente', color: '#6B675F', text: '¿Sigue disponible? Sí, sí. ¿Cuándo querría verlo?' },
-		{ who: 'Marta', color: ACCENT, text: 'Mi cliente puede el jueves a partir de las 17:00 o el viernes por la mañana. ¿Qué le viene mejor?' },
-		{ who: 'Agente', color: '#6B675F', text: 'El jueves a las 17:30 me va perfecto. ¿Me pasa su nombre?' },
-	],
-	en: [
-		{ who: 'Marta', color: ACCENT, text: "Good afternoon, I'm Marta, an AI assistant. I'm calling on behalf of a tenant interested in the flat on Calle Sueca." },
-		{ who: 'Agent', color: '#6B675F', text: 'Is it still available? Yes, yes. When would they like to see it?' },
-		{ who: 'Marta', color: ACCENT, text: 'My client is free Thursday from 5pm, or Friday morning. Which suits you better?' },
-		{ who: 'Agent', color: '#6B675F', text: 'Thursday at 5:30 works perfectly. Can I take their name?' },
 	],
 };
 
@@ -379,28 +365,17 @@ function initTranscriptToggle(onChange: (lang: Lang) => void) {
 	return { getLang: () => lang };
 }
 
+// Native <details> already makes every answer present, visible-on-open, and keyboard
+// operable with zero JS. This just adds the accordion behavior (opening one closes
+// the others) as a progressive enhancement on top.
 function initFaqAccordion() {
-	const items = document.querySelectorAll<HTMLElement>('[data-faq-list] .item');
+	const items = document.querySelectorAll<HTMLDetailsElement>('[data-faq-list] .item');
 	items.forEach((item) => {
-		const toggle = item.querySelector<HTMLButtonElement>('[data-faq-toggle]');
-		const answer = item.querySelector<HTMLElement>('[data-faq-answer]');
-		const glyph = item.querySelector<HTMLElement>('[data-faq-glyph]');
-
-		toggle?.addEventListener('click', () => {
-			const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-
+		item.addEventListener('toggle', () => {
+			if (!item.open) return;
 			items.forEach((other) => {
-				if (other === item) return;
-				other.querySelector('[data-faq-toggle]')?.setAttribute('aria-expanded', 'false');
-				const otherAnswer = other.querySelector<HTMLElement>('[data-faq-answer]');
-				if (otherAnswer) otherAnswer.hidden = true;
-				const otherGlyph = other.querySelector<HTMLElement>('[data-faq-glyph]');
-				if (otherGlyph) otherGlyph.textContent = '+';
+				if (other !== item) other.open = false;
 			});
-
-			toggle.setAttribute('aria-expanded', String(!isOpen));
-			if (answer) answer.hidden = isOpen;
-			if (glyph) glyph.textContent = isOpen ? '+' : '−';
 		});
 	});
 }

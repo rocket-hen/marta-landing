@@ -51,6 +51,17 @@ export const copy = {
 				},
 			],
 		},
+		comparison: {
+			eyebrow: 'How it compares',
+			h2: 'Messaging on Idealista vs Marta calling for you.',
+			headers: ['', 'Idealista messages', 'Alert services', 'Relocation agency', 'Marta'],
+			rows: [
+				['Who makes the call', 'You, in Spanish', 'You get an alert, then you call', 'Agency', 'Marta, in Spanish'],
+				['Speed to contact', 'Hours–days', 'Minutes to alert, then it\'s on you', 'Days', 'Minutes'],
+				['Cost', 'Free', '~€10–20/month', '€1,500+', 'From €49'],
+				['Result', 'Message lost among 40+ replies', 'Notification only', 'Full service', 'Confirmed viewing in your calendar'],
+			],
+		},
 		humanTeam: {
 			eyebrow: 'Human in the loop',
 			h2: ['Not just an AI.', 'A real team.'],
@@ -61,6 +72,8 @@ export const copy = {
 			h2: 'Listen to Marta book a viewing.',
 			p: "Recorded with the agent's permission. Marta introduces herself as an AI assistant on every call.",
 			transcriptLabel: 'Transcript',
+			readFullTranscript: 'Read the full call transcript',
+			transcriptLangLabels: { es: 'Spanish', en: 'English' },
 		},
 		pricing: {
 			eyebrow: 'Pricing',
@@ -235,6 +248,17 @@ export const copy = {
 				},
 			],
 		},
+		comparison: {
+			eyebrow: 'Cómo se compara',
+			h2: 'Escribir mensajes en Idealista frente a que Marta llame por ti.',
+			headers: ['', 'Mensajes en Idealista', 'Servicios de alertas', 'Agencia de relocation', 'Marta'],
+			rows: [
+				['Quién hace la llamada', 'Tú, en español', 'Te llega una alerta y luego llamas tú', 'La agencia', 'Marta, en español'],
+				['Velocidad de contacto', 'Horas–días', 'Minutos hasta la alerta, luego depende de ti', 'Días', 'Minutos'],
+				['Coste', 'Gratis', '~10–20 €/mes', '1.500 € o más', 'Desde 49 €'],
+				['Resultado', 'Mensaje perdido entre 40+ respuestas', 'Solo una notificación', 'Servicio completo', 'Visita confirmada en tu calendario'],
+			],
+		},
 		humanTeam: {
 			eyebrow: 'Con supervisión humana',
 			h2: ['No solo una IA.', 'Un equipo real.'],
@@ -245,6 +269,8 @@ export const copy = {
 			h2: 'Escucha a Marta reservar una visita.',
 			p: 'Grabada con permiso del agente. Marta se presenta como asistente de IA en todas las llamadas.',
 			transcriptLabel: 'Transcripción',
+			readFullTranscript: 'Leer la transcripción completa de la llamada',
+			transcriptLangLabels: { es: 'Español', en: 'Inglés' },
 		},
 		pricing: {
 			eyebrow: 'Precios',

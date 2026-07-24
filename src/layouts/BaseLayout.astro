@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Schema from '../components/Schema.astro';
 import type { Lang } from '../i18n/copy';
 
 interface Props {
@@ -11,10 +12,23 @@ interface Props {
 	isHome?: boolean;
 	lang?: Lang;
 	showLangSwitch?: boolean;
+	schema?: Record<string, unknown> | Record<string, unknown>[];
+	articleMeta?: { publishedTime: string; modifiedTime: string };
 }
 
-const { title, description, activeNav, isHome = false, lang = 'en', showLangSwitch = false } = Astro.props;
+const {
+	title,
+	description,
+	activeNav,
+	isHome = false,
+	lang = 'en',
+	showLangSwitch = false,
+	schema,
+	articleMeta,
+} = Astro.props;
 const rssHref = lang === 'es' ? '/es/rss.xml' : '/rss.xml';
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const ogLocale = lang === 'es' ? 'es_ES' : 'en_US';
 ---
 
 <!doctype html>
@@ -40,6 +54,7 @@ const rssHref = lang === 'es' ? '/es/rss.xml' : '/rss.xml';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalUrl} />
 		<link rel="alternate" type="application/rss+xml" title="Marta Blog" href={rssHref} />
 		{
 			showLangSwitch && (
@@ -50,6 +65,28 @@ const rssHref = lang === 'es' ? '/es/rss.xml' : '/rss.xml';
 				</>
 			)
 		}
+
+		<!-- Open Graph / Twitter -->
+		<meta property="og:site_name" content="Marta" />
+		<meta property="og:type" content={articleMeta ? 'article' : 'website'} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:locale" content={ogLocale} />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		{
+			articleMeta && (
+				<>
+					<meta property="article:published_time" content={articleMeta.publishedTime} />
+					<meta property="article:modified_time" content={articleMeta.modifiedTime} />
+				</>
+			)
+		}
+
+		{schema && <Schema schema={schema} />}
+
 		<!-- Self-hosted fonts (src/styles/fonts.css, bundled into global.css) — preload
 		     the Outfit file since it's used by the largest above-the-fold heading. -->
 		<link rel="preload" href="/fonts/outfit-var.woff2" as="font" type="font/woff2" crossorigin />

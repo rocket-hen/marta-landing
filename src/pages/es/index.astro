@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
 import PainStrip from '../../components/PainStrip.astro';
 import HowItWorks from '../../components/HowItWorks.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import HumanTeam from '../../components/HumanTeam.astro';
 import Demo from '../../components/Demo.astro';
 import Pricing from '../../components/Pricing.astro';
@@ -10,15 +11,18 @@ import FaqSection from '../../components/FaqSection.astro';
 import BlogPreview from '../../components/BlogPreview.astro';
 import WaitlistModal from '../../components/WaitlistModal.astro';
 import { copy } from '../../i18n/copy';
+import { organizationSchema, serviceSchema, faqSchema } from '../../lib/schema';
 
 const lang = 'es';
 const t = copy[lang].meta;
+const schema = [organizationSchema(lang), serviceSchema(lang), faqSchema(lang)];
 ---
 
-<BaseLayout title={t.title} description={t.description} isHome lang={lang} showLangSwitch>
+<BaseLayout title={t.title} description={t.description} isHome lang={lang} showLangSwitch schema={schema}>
 	<Hero lang={lang} />
 	<PainStrip lang={lang} />
 	<HowItWorks lang={lang} />
+	<ComparisonTable lang={lang} />
 	<HumanTeam lang={lang} />
 	<Demo lang={lang} />
 	<Pricing lang={lang} />

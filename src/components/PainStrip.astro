@@ -8,10 +8,10 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const t = copy[lang].pain;
 const stats = [
-	{ key: 'reply-rate', small: t.stats[0], color: 'var(--ink)' },
-	{ key: 'applicants', small: t.stats[1], color: 'var(--ink)' },
-	{ key: 'hours', small: t.stats[2], color: 'var(--ink)' },
-	{ key: 'cost', small: t.stats[3], color: 'var(--accent)' },
+	{ key: 'reply-rate', target: 78, final: '78%', small: t.stats[0], color: 'var(--ink)' },
+	{ key: 'applicants', target: 40, final: '40–99', small: t.stats[1], color: 'var(--ink)' },
+	{ key: 'hours', target: 24, final: `24${t.hoursSuffix}`, small: t.stats[2], color: 'var(--ink)' },
+	{ key: 'cost', target: 800, final: `€800${t.weekSuffix}`, small: t.stats[3], color: 'var(--accent)' },
 ];
 ---
 
@@ -23,7 +23,7 @@ const stats = [
 		{
 			stats.map((s, i) => (
 				<div class="reveal stat" style={`transition-delay: ${i * 0.08}s;`}>
-					<div class="big" data-stat={s.key} style={`color: ${s.color};`}>0</div>
+					<div class="big" data-stat={s.key} data-target={s.target} style={`color: ${s.color};`}>{s.final}</div>
 					<div class="small">{s.small}</div>
 				</div>
 			))

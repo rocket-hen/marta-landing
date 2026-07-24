@@ -1,5 +1,6 @@
 ---
 import { copy, type Lang } from '../i18n/copy';
+import { TRANSCRIPTS } from '../i18n/transcripts';
 
 interface Props {
 	lang?: Lang;
@@ -51,6 +52,22 @@ const t = copy[lang].demo;
 				</div>
 				<div class="transcript" data-transcript></div>
 			</div>
+
+			<details class="full-transcript">
+				<summary>{t.readFullTranscript}</summary>
+				{
+					(['es', 'en'] as const).map((transcriptLang) => (
+						<div class="full-transcript-block">
+							<div class="full-transcript-lang">{t.transcriptLangLabels[transcriptLang]}</div>
+							{TRANSCRIPTS[transcriptLang].map((line) => (
+								<p>
+									<strong>{line.who}:</strong> {line.text}
+								</p>
+							))}
+						</div>
+					))
+				}
+			</details>
 		</div>
 	</div>
 </section>
@@ -244,5 +261,51 @@ const t = copy[lang].demo;
 		line-height: 1.55;
 		color: var(--ink);
 		transition: font-weight 0.2s ease;
+	}
+
+	.full-transcript {
+		border-top: 1px solid var(--border);
+		padding: 16px 24px;
+	}
+
+	.full-transcript summary {
+		cursor: pointer;
+		font-size: 13px;
+		color: var(--muted);
+		list-style: none;
+	}
+	.full-transcript summary::-webkit-details-marker {
+		display: none;
+	}
+	.full-transcript summary:hover {
+		color: var(--ink);
+	}
+
+	.full-transcript-block {
+		margin-top: 16px;
+	}
+	.full-transcript-block + .full-transcript-block {
+		margin-top: 24px;
+		padding-top: 16px;
+		border-top: 1px solid var(--border);
+	}
+
+	.full-transcript-lang {
+		font-size: 11px;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--accent);
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+
+	.full-transcript p {
+		font-size: 13px;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0 0 8px;
+	}
+	.full-transcript p strong {
+		color: var(--ink);
 	}
 </style>

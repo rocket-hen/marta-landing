@@ -3,6 +3,7 @@ import { render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { copy } from '../../../i18n/copy';
 import { getPostsForLang, postSlug } from '../../../lib/blog';
+import { articleSchema, breadcrumbSchema } from '../../../lib/schema';
 
 const lang = 'es';
 const t = copy[lang].blog;
@@ -15,14 +16,31 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 const dateLabel = post.data.pubDate.toLocaleDateString(t.dateLocale, { month: 'long', year: 'numeric' });
+const isoDate = post.data.pubDate.toISOString();
+const pageUrl = `https://callmarta.com/es/blog/${postSlug(post)}/`;
+const schema = [
+	articleSchema(lang, post.data, pageUrl),
+	breadcrumbSchema([
+		{ name: 'Inicio', url: 'https://callmarta.com/es/' },
+		{ name: 'Blog', url: 'https://callmarta.com/es/blog' },
+		{ name: post.data.title, url: pageUrl },
+	]),
+];
 ---
 
-<BaseLayout title={`${post.data.title} — Marta`} description={post.data.excerpt} activeNav="blog" lang={lang}>
+<BaseLayout
+	title={`${post.data.title} — Marta`}
+	description={post.data.excerpt}
+	activeNav="blog"
+	lang={lang}
+	schema={schema}
+	articleMeta={{ publishedTime: isoDate, modifiedTime: isoDate }}
+>
 	<article class="post">
 		<div class="head">
 			<a href="/es/blog" class="link-snap back">{t.backLink}</a>
 			<div class="meta">
-				{post.data.category} · {post.data.minutes} {t.minRead} · {dateLabel}
+				{post.data.category} · {post.data.minutes} {t.minRead} · <time datetime={isoDate}>{dateLabel}</time>
 			</div>
 			<h1>{post.data.title}</h1>
 			<div class="cover" aria-hidden="true">

@@ -1,0 +1,91 @@
+import { copy, type Lang } from '../i18n/copy';
+
+const SITE_URL = 'https://callmarta.com';
+
+export function organizationSchema(lang: Lang) {
+	const m = copy[lang].meta;
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'Organization',
+		name: 'Marta',
+		url: SITE_URL,
+		description: m.description,
+		areaServed: { '@type': 'Country', name: 'Spain' },
+		address: { '@type': 'PostalAddress', addressLocality: 'Valencia', addressCountry: 'ES' },
+	};
+}
+
+export function serviceSchema(lang: Lang) {
+	const p = copy[lang].pricing;
+	const prices = ['49', '99', '399'];
+	const offers = p.tiers.map((tier, i) => ({
+		'@type': 'Offer',
+		name: tier.name,
+		price: prices[i],
+		priceCurrency: 'EUR',
+		description: `${tier.tagline} ${tier.features.slice(0, 3).join('. ')}. ${tier.term}.`,
+	}));
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'Service',
+		name:
+			lang === 'es'
+				? 'Marta — servicio de reserva de visitas de pisos en España'
+				: 'Marta — apartment viewing booking service in Spain',
+		serviceType:
+			lang === 'es'
+				? 'Asistencia en la búsqueda de alquiler / servicio de llamadas'
+				: 'Rental search assistance / calling service',
+		provider: { '@type': 'Organization', name: 'Marta', url: SITE_URL },
+		areaServed: { '@type': 'Country', name: 'Spain' },
+		audience: {
+			'@type': 'Audience',
+			audienceType: lang === 'es' ? 'Personas que alquilan en España' : 'Expats and foreigners renting in Spain',
+		},
+		offers,
+	};
+}
+
+export function faqSchema(lang: Lang) {
+	const faqs = copy[lang].faq;
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'FAQPage',
+		mainEntity: faqs.map((f) => ({
+			'@type': 'Question',
+			name: f.q,
+			acceptedAnswer: { '@type': 'Answer', text: f.a },
+		})),
+	};
+}
+
+export function articleSchema(
+	lang: Lang,
+	post: { title: string; excerpt: string; pubDate: Date },
+	url: string,
+) {
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'Article',
+		headline: post.title,
+		description: post.excerpt,
+		datePublished: post.pubDate.toISOString(),
+		dateModified: post.pubDate.toISOString(),
+		author: { '@type': 'Organization', name: 'Marta', url: SITE_URL },
+		inLanguage: lang,
+		mainEntityOfPage: url,
+	};
+}
+
+export function breadcrumbSchema(items: { name: string; url: string }[]) {
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: items.map((item, i) => ({
+			'@type': 'ListItem',
+			position: i + 1,
+			name: item.name,
+			item: item.url,
+		})),
+	};
+}
