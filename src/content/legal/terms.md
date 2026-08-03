@@ -1,9 +1,9 @@
 ---
 title: "Terms of Service"
-lastUpdated: 2026-07-24
+lastUpdated: 2026-08-03
 ---
 
-These Terms govern your use of Marta, a service operated by **SteelKiwi Inc.**, 1025 Alameda de Las Pulgas #535, Belmont, CA 94002, United States ("Marta", "we", "us", "our").
+These Terms govern your use of Marta, a service operated by **SteelKiwi Inc.**, 160 Greentree Drive, Suite 101, Dover, DE 19904, USA ("Marta", "we", "us", "our").
 
 By placing an order or creating an account you agree to these Terms. If you do not agree, do not use the service.
 

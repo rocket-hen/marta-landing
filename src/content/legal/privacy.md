@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-lastUpdated: 2026-07-24
+lastUpdated: 2026-08-03
 ---
 
 This Privacy Policy explains how we collect, use and protect personal data when you visit our website, join our waitlist, or use the Marta service.
@@ -11,8 +11,8 @@ We take privacy seriously for two groups of people: our **customers** (tenants l
 
 **Data controller:**
 SteelKiwi Inc.
-1025 Alameda de Las Pulgas #535
-Belmont, CA 94002, United States
+160 Greentree Drive, Suite 101
+Dover, DE 19904, USA
 
 **Email:** [privacy@callmarta.com](mailto:privacy@callmarta.com)
 **Website:** [https://callmarta.com](https://callmarta.com)
