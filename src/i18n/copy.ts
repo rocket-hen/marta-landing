@@ -186,6 +186,35 @@ export const copy = {
 			errorGeneric: 'Something went wrong. Please try again.',
 			errorNetwork: 'Network error — please check your connection and try again.',
 		},
+		cookieConsent: {
+			eyebrow: 'Cookies',
+			heading: 'We keep this short.',
+			descriptionPre: 'Essential cookies keep the site working. Analytics and advertising cookies are optional — they only load if you say yes. Details in our ',
+			privacyLinkText: 'Privacy Policy',
+			descriptionPost: '.',
+			acceptAll: 'Accept all',
+			essentialOnly: 'Essential only',
+			showSettings: 'Choose what loads',
+			hideSettings: 'Hide settings',
+			saveChoices: 'Save my choices',
+			categories: [
+				{
+					name: 'Strictly necessary',
+					desc: 'Needed for the site to work — page loading, security, your cookie choice itself.',
+				},
+				{
+					name: 'Analytics',
+					desc: 'Anonymous stats on which pages people read, so we know what to improve.',
+				},
+				{
+					name: 'Advertising',
+					desc: 'Measures whether our campaigns bring the right people. No profiles sold, ever.',
+				},
+			],
+			stateAlwaysOn: 'Always on',
+			stateOn: 'On',
+			stateOff: 'Off',
+		},
 	},
 	es: {
 		meta: {
@@ -371,6 +400,35 @@ export const copy = {
 			submitting: 'Enviando…',
 			errorGeneric: 'Algo salió mal. Inténtalo de nuevo.',
 			errorNetwork: 'Error de red — comprueba tu conexión e inténtalo de nuevo.',
+		},
+		cookieConsent: {
+			eyebrow: 'Cookies',
+			heading: 'Vamos al grano.',
+			descriptionPre: 'Las cookies esenciales hacen que el sitio funcione. Las de analítica y publicidad son opcionales — solo se activan si dices que sí. Más detalles en nuestra ',
+			privacyLinkText: 'Privacy Policy',
+			descriptionPost: '.',
+			acceptAll: 'Aceptar todas',
+			essentialOnly: 'Solo esenciales',
+			showSettings: 'Elegir qué se activa',
+			hideSettings: 'Ocultar ajustes',
+			saveChoices: 'Guardar mi elección',
+			categories: [
+				{
+					name: 'Estrictamente necesarias',
+					desc: 'Necesarias para que el sitio funcione — carga de la página, seguridad, y recordar tu elección de cookies.',
+				},
+				{
+					name: 'Analítica',
+					desc: 'Estadísticas anónimas sobre qué páginas se leen, para saber qué mejorar.',
+				},
+				{
+					name: 'Publicidad',
+					desc: 'Mide si nuestras campañas atraen al público adecuado. Nunca vendemos perfiles.',
+				},
+			],
+			stateAlwaysOn: 'Siempre activas',
+			stateOn: 'Activado',
+			stateOff: 'Desactivado',
 		},
 	},
 } as const satisfies Record<Lang, unknown>;

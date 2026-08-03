@@ -31,7 +31,10 @@ const CAPTIONS: Record<Lang, string[]> = {
 };
 
 function mm(n: number): string {
-	return '0:' + String(n).padStart(2, '0');
+	const total = Math.max(0, Math.floor(n));
+	const minutes = Math.floor(total / 60);
+	const seconds = total % 60;
+	return minutes + ':' + String(seconds).padStart(2, '0');
 }
 
 function initReveal() {
@@ -219,11 +222,15 @@ function initDemoPlayer(getLang: () => Lang) {
 	const demo = document.querySelector('[data-screen-label="Live demo"]');
 	if (!demo) return null;
 
-	const DUR = 34;
+	const audioEl = demo.querySelector<HTMLAudioElement>('[data-audio]');
 	const waveEl = demo.querySelector<HTMLElement>('[data-wave]');
 	const playBtn = demo.querySelector<HTMLButtonElement>('[data-play]');
 	const timeEl = demo.querySelector<HTMLElement>('[data-time]');
 	const transcriptEl = demo.querySelector<HTMLElement>('[data-transcript]');
+	if (!audioEl) return null;
+
+	// Fallback shown until the browser reports the real duration (metadata load).
+	const FALLBACK_DUR = Number(waveEl?.getAttribute('aria-valuemax')) || 0;
 
 	const audioBars = Array.from({ length: 48 }).map((_, i) => ({
 		h: Math.round(22 + (Math.abs(Math.sin(i * 0.7)) * 0.6 + Math.abs(Math.sin(i * 0.23)) * 0.4) * 78),
@@ -242,28 +249,40 @@ function initDemoPlayer(getLang: () => Lang) {
 		});
 	}
 
-	let t = 0;
-	let playing = false;
-	let playIv: ReturnType<typeof setInterval> | undefined;
+	function duration(): number {
+		return audioEl!.duration > 0 && Number.isFinite(audioEl!.duration) ? audioEl!.duration : FALLBACK_DUR;
+	}
 
 	function renderWave() {
+		const t = audioEl!.currentTime;
+		const dur = duration();
+		const playing = !audioEl!.paused;
 		barEls.forEach((bar, i) => {
 			const b = audioBars[i];
-			const on = (i + 0.5) / audioBars.length <= t / DUR;
+			const on = dur > 0 && (i + 0.5) / audioBars.length <= t / dur;
 			bar.style.background = on ? ACCENT : '#D8D4CC';
 			bar.style.animation = playing
 				? `audioBounce ${b.dur}s ease-in-out ${b.del}s infinite alternate`
 				: 'none';
 		});
-		if (timeEl) timeEl.textContent = `${mm(t)} / ${mm(DUR)}`;
-		waveEl?.setAttribute('aria-valuenow', String(t));
+		if (timeEl) timeEl.textContent = `${mm(t)} / ${mm(dur)}`;
+		waveEl?.setAttribute('aria-valuemax', String(Math.round(dur)));
+		waveEl?.setAttribute('aria-valuenow', String(Math.round(t)));
 	}
 
 	function renderTranscript() {
 		if (!transcriptEl) return;
+		const t = audioEl!.currentTime;
 		const lines = TRANSCRIPTS[getLang()];
-		const activeLine = t > 0 ? Math.min(lines.length - 1, Math.floor(t / (DUR / lines.length))) : -1;
+		// Lines carry their own real start time (matches /audio/call.mp3) — the
+		// active line is the last one whose timestamp has passed.
+		let activeLine = -1;
+		for (let i = 0; i < lines.length; i++) {
+			if (t + 0.001 >= lines[i].time) activeLine = i;
+			else break;
+		}
 		transcriptEl.innerHTML = '';
+		let activeRow: HTMLElement | null = null;
 		lines.forEach((line, i) => {
 			const rowOpacity = activeLine === -1 ? 1 : i === activeLine ? 1 : 0.4;
 			const weight = activeLine === i ? 500 : 300;
@@ -271,6 +290,7 @@ function initDemoPlayer(getLang: () => Lang) {
 			const row = document.createElement('div');
 			row.className = 'line';
 			row.style.opacity = String(rowOpacity);
+			if (i === activeLine) activeRow = row;
 
 			const who = document.createElement('div');
 			who.className = 'who';
@@ -285,37 +305,43 @@ function initDemoPlayer(getLang: () => Lang) {
 			row.append(who, text);
 			transcriptEl.appendChild(row);
 		});
+		if (activeRow) {
+			(activeRow as HTMLElement).scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+		}
 	}
 
 	function updatePlayBtn() {
-		if (playBtn) playBtn.textContent = playing ? '❚❚' : '▶';
+		if (playBtn) playBtn.textContent = audioEl!.paused ? '▶' : '❚❚';
 	}
 
 	function togglePlay() {
-		if (playing) {
-			clearInterval(playIv);
-			playing = false;
+		if (audioEl!.paused) {
+			void audioEl!.play();
 		} else {
-			playIv = setInterval(() => {
-				t += 1;
-				if (t >= DUR) {
-					clearInterval(playIv);
-					t = 0;
-					playing = false;
-				}
-				renderWave();
-			}, 1000);
-			playing = true;
+			audioEl!.pause();
 		}
-		renderWave();
-		updatePlayBtn();
 	}
 
 	function seekTo(frac: number) {
-		t = Math.max(0, Math.min(DUR, Math.round(frac * DUR)));
+		const dur = duration();
+		if (dur <= 0) return;
+		audioEl!.currentTime = Math.max(0, Math.min(dur, frac * dur));
 		renderWave();
 		renderTranscript();
 	}
+
+	audioEl.addEventListener('loadedmetadata', renderWave);
+	audioEl.addEventListener('timeupdate', () => {
+		renderWave();
+		renderTranscript();
+	});
+	audioEl.addEventListener('play', updatePlayBtn);
+	audioEl.addEventListener('pause', updatePlayBtn);
+	audioEl.addEventListener('ended', () => {
+		audioEl!.currentTime = 0;
+		renderWave();
+		renderTranscript();
+	});
 
 	playBtn?.addEventListener('click', togglePlay);
 	waveEl?.addEventListener('click', (e) => {
@@ -323,12 +349,14 @@ function initDemoPlayer(getLang: () => Lang) {
 		seekTo((e.clientX - r.left) / r.width);
 	});
 	waveEl?.addEventListener('keydown', (e) => {
+		const dur = duration();
+		if (dur <= 0) return;
 		if (e.key === 'ArrowRight') {
 			e.preventDefault();
-			seekTo((t + 1) / DUR);
+			seekTo((audioEl!.currentTime + 1) / dur);
 		} else if (e.key === 'ArrowLeft') {
 			e.preventDefault();
-			seekTo((t - 1) / DUR);
+			seekTo((audioEl!.currentTime - 1) / dur);
 		}
 	});
 

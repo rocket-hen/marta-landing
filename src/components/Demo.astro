@@ -8,6 +8,12 @@ interface Props {
 
 const { lang = 'en' } = Astro.props;
 const t = copy[lang].demo;
+
+function mm(seconds: number): string {
+	const m = Math.floor(seconds / 60);
+	const s = Math.floor(seconds % 60);
+	return `${m}:${String(s).padStart(2, '0')}`;
+}
 ---
 
 <section id="demo" data-screen-label="Live demo" class="demo">
@@ -25,8 +31,8 @@ const t = copy[lang].demo;
 				</div>
 				<div class="wave-col">
 					<div class="wave-meta">
-						<span>Piso en Ruzafa, Valencia</span>
-						<span class="wave-time" data-time>0:00 / 0:34</span>
+						<span>Chalet en Calle Creta</span>
+						<span class="wave-time" data-time>0:00 / 3:28</span>
 					</div>
 					<div
 						class="wave"
@@ -35,10 +41,11 @@ const t = copy[lang].demo;
 						tabindex="0"
 						aria-label="Seek playback position"
 						aria-valuemin="0"
-						aria-valuemax="34"
+						aria-valuemax="208"
 						aria-valuenow="0"
 					>
 					</div>
+					<audio data-audio src="/audio/call.mp3" preload="metadata"></audio>
 				</div>
 			</div>
 
@@ -61,7 +68,7 @@ const t = copy[lang].demo;
 							<div class="full-transcript-lang">{t.transcriptLangLabels[transcriptLang]}</div>
 							{TRANSCRIPTS[transcriptLang].map((line) => (
 								<p>
-									<strong>{line.who}:</strong> {line.text}
+									<span class="full-transcript-time">[{mm(line.time)}]</span> <strong>{line.who}:</strong> {line.text}
 								</p>
 							))}
 						</div>
@@ -241,6 +248,9 @@ const t = copy[lang].demo;
 		display: flex;
 		flex-direction: column;
 		gap: 14px;
+		max-height: 220px;
+		overflow-y: auto;
+		scroll-behavior: smooth;
 	}
 
 	.transcript :global(.line) {
@@ -307,5 +317,11 @@ const t = copy[lang].demo;
 	}
 	.full-transcript p strong {
 		color: var(--ink);
+	}
+
+	.full-transcript-time {
+		font-family: var(--font-mono);
+		font-size: 11px;
+		color: var(--accent);
 	}
 </style>
