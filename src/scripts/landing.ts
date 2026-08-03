@@ -270,7 +270,7 @@ function initDemoPlayer(getLang: () => Lang) {
 		waveEl?.setAttribute('aria-valuenow', String(Math.round(t)));
 	}
 
-	function renderTranscript() {
+	function renderTranscript(autoScroll = true) {
 		if (!transcriptEl) return;
 		const t = audioEl!.currentTime;
 		const lines = TRANSCRIPTS[getLang()];
@@ -305,7 +305,7 @@ function initDemoPlayer(getLang: () => Lang) {
 			row.append(who, text);
 			transcriptEl.appendChild(row);
 		});
-		if (activeRow) {
+		if (activeRow && autoScroll) {
 			(activeRow as HTMLElement).scrollIntoView({ block: 'nearest', behavior: 'smooth' });
 		}
 	}
@@ -361,7 +361,7 @@ function initDemoPlayer(getLang: () => Lang) {
 	});
 
 	renderWave();
-	renderTranscript();
+	renderTranscript(false);
 	updatePlayBtn();
 
 	return { renderTranscript };
@@ -517,7 +517,7 @@ function init() {
 	let demoApi: ReturnType<typeof initDemoPlayer>;
 	const langApi = initTranscriptToggle((lang) => {
 		if (heroApi) heroApi.typeCaption(heroApi.getCardStep(), lang);
-		demoApi?.renderTranscript();
+		demoApi?.renderTranscript(false);
 	});
 	heroApi = initHeroCard(langApi.getLang);
 	demoApi = initDemoPlayer(langApi.getLang);

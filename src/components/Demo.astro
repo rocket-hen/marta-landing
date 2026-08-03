@@ -45,7 +45,10 @@ function mm(seconds: number): string {
 						aria-valuenow="0"
 					>
 					</div>
-					<audio data-audio src="/audio/call.mp3" preload="metadata"></audio>
+					<audio data-audio preload="metadata">
+						<source src="/audio/call.ogg" type="audio/ogg; codecs=opus" />
+						<source src="/audio/call.mp3" type="audio/mpeg" />
+					</audio>
 				</div>
 			</div>
 
