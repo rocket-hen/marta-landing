@@ -2,7 +2,7 @@
 // stateful component in the source design). Runs only on the home page.
 
 import { copy, type Lang } from '../i18n/copy';
-import { TRANSCRIPTS } from '../i18n/transcripts';
+import { TRANSCRIPTS, type TranscriptLine } from '../i18n/transcripts';
 
 const ACCENT = '#B0512E';
 
@@ -270,27 +270,19 @@ function initDemoPlayer(getLang: () => Lang) {
 		waveEl?.setAttribute('aria-valuenow', String(Math.round(t)));
 	}
 
-	function renderTranscript(autoScroll = true) {
-		if (!transcriptEl) return;
-		const t = audioEl!.currentTime;
-		const lines = TRANSCRIPTS[getLang()];
-		// Lines carry their own real start time (matches /audio/call.mp3) — the
-		// active line is the last one whose timestamp has passed.
-		let activeLine = -1;
-		for (let i = 0; i < lines.length; i++) {
-			if (t + 0.001 >= lines[i].time) activeLine = i;
-			else break;
-		}
-		transcriptEl.innerHTML = '';
-		let activeRow: HTMLElement | null = null;
-		lines.forEach((line, i) => {
-			const rowOpacity = activeLine === -1 ? 1 : i === activeLine ? 1 : 0.4;
-			const weight = activeLine === i ? 500 : 300;
+	// Rows are built once per language and reused across playback ticks — rebuilding
+	// on every `timeupdate` (which fires several times a second) would reset
+	// scrollTop each time and never let the auto-scroll animation actually run.
+	let builtForLang: Lang | null = null;
+	let rowEls: HTMLElement[] = [];
+	let lastScrolledLine = -1;
 
+	function buildTranscriptRows(lines: TranscriptLine[]) {
+		if (!transcriptEl) return;
+		transcriptEl.innerHTML = '';
+		rowEls = lines.map((line) => {
 			const row = document.createElement('div');
 			row.className = 'line';
-			row.style.opacity = String(rowOpacity);
-			if (i === activeLine) activeRow = row;
 
 			const who = document.createElement('div');
 			who.className = 'who';
@@ -299,14 +291,62 @@ function initDemoPlayer(getLang: () => Lang) {
 
 			const text = document.createElement('div');
 			text.className = 'text';
-			text.style.fontWeight = String(weight);
 			text.textContent = line.text;
 
 			row.append(who, text);
-			transcriptEl.appendChild(row);
+			transcriptEl!.appendChild(row);
+			return row;
 		});
-		if (activeRow && autoScroll) {
-			(activeRow as HTMLElement).scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+	}
+
+	function renderTranscript(autoScroll = true) {
+		if (!transcriptEl) return;
+		const t = audioEl!.currentTime;
+		const lang = getLang();
+		const lines = TRANSCRIPTS[lang];
+
+		if (builtForLang !== lang) {
+			buildTranscriptRows(lines);
+			builtForLang = lang;
+			lastScrolledLine = -1; // rows are fresh (scrollTop is back to 0) — force a re-scroll
+		}
+
+		// Lines carry their own real start time (matches /audio/call.mp3) — the
+		// active line is the last one whose timestamp has passed.
+		let activeLine = -1;
+		for (let i = 0; i < lines.length; i++) {
+			if (t + 0.001 >= lines[i].time) activeLine = i;
+			else break;
+		}
+
+		rowEls.forEach((row, i) => {
+			row.style.opacity = activeLine === -1 ? '1' : i === activeLine ? '1' : '0.4';
+			(row.querySelector('.text') as HTMLElement).style.fontWeight = activeLine === i ? '500' : '300';
+		});
+
+		// Scroll only the transcript box itself — never scrollIntoView(), which walks
+		// up every scrollable ancestor and can drag the whole page along with it,
+		// fighting the visitor's own scrolling while a call is playing.
+		const activeRow = activeLine >= 0 ? rowEls[activeLine] : null;
+		// Only (re)trigger the scroll when the active line actually changes. Calling
+		// scrollTo({behavior:'smooth'}) again on every timeupdate tick (several times
+		// a second) restarts the animation each time before it can ever finish, so it
+		// never visibly moves at all.
+		if (activeRow && autoScroll && activeLine !== lastScrolledLine) {
+			lastScrolledLine = activeLine;
+			// getBoundingClientRect, not offsetTop — offsetTop is relative to the
+			// nearest positioned ancestor, which isn't necessarily .transcript.
+			const containerRect = transcriptEl.getBoundingClientRect();
+			const rowRect = activeRow.getBoundingClientRect();
+			const rowTop = rowRect.top - containerRect.top + transcriptEl.scrollTop;
+			const rowBottom = rowTop + rowRect.height;
+			const viewTop = transcriptEl.scrollTop;
+			const viewBottom = viewTop + transcriptEl.clientHeight;
+			if (rowTop < viewTop) {
+				transcriptEl.scrollTo({ top: rowTop, behavior: 'smooth' });
+			} else if (rowBottom > viewBottom) {
+				transcriptEl.scrollTo({ top: rowBottom - transcriptEl.clientHeight, behavior: 'smooth' });
+			}
 		}
 	}
 
@@ -368,7 +408,9 @@ function initDemoPlayer(getLang: () => Lang) {
 }
 
 function initTranscriptToggle(onChange: (lang: Lang) => void) {
-	let lang: Lang = pageLang();
+	// Always defaults to Spanish regardless of site language — the call
+	// recording itself is in Spanish, so that's what actually matches the audio.
+	let lang: Lang = 'es';
 
 	function applyButtons() {
 		document.querySelectorAll<HTMLElement>('[data-transcript-lang]').forEach((btn) => {
