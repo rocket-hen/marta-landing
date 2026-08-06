@@ -1,0 +1,12 @@
+---
+import { getEntry, render } from 'astro:content';
+import LegalLayout from '../layouts/LegalLayout.astro';
+
+const entry = await getEntry('legal', 'refund-policy');
+if (!entry) throw new Error('Missing legal/refund-policy content entry');
+const { Content } = await render(entry);
+---
+
+<LegalLayout title={entry.data.title} lastUpdated={entry.data.lastUpdated}>
+	<Content />
+</LegalLayout>
