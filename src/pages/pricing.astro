@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PricingCheckout from '../components/PricingCheckout.astro';
+
+const title = 'Pricing — Marta';
+const description = 'Choose Blitz, Hunter or Concierge and pay securely with Paddle. One flat fee, no subscriptions.';
+---
+
+<BaseLayout title={title} description={description}>
+	<PricingCheckout />
+</BaseLayout>
+
+<script src="../scripts/pricing-checkout.ts"></script>

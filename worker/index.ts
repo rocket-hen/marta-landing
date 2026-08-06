@@ -1,5 +1,6 @@
 import type { Env } from './env';
 import { handleWaitlist } from './waitlist';
+import { handleGeo } from './geo';
 import { maybeRedirectForLang, setLangCookie } from './lang';
 
 export default {
@@ -8,6 +9,10 @@ export default {
 
 		if (url.pathname === '/api/waitlist') {
 			return handleWaitlist(request, env);
+		}
+
+		if (url.pathname === '/api/geo') {
+			return handleGeo(request);
 		}
 
 		if (url.pathname === '/' || url.pathname === '/es/') {

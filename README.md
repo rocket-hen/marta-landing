@@ -30,6 +30,10 @@ own beyond the one `/api/waitlist` route.
   on the home page.
 - `src/styles/global.css` — design tokens (colors, fonts, shared button/link states) shared by
   every page.
+- `src/pages/pricing.astro` — real checkout page (`src/components/PricingCheckout.astro` for the
+  tier cards, `src/scripts/pricing-checkout.ts` for the Paddle.js wiring, `src/lib/pricingCheckout.ts`
+  for the tier content + Paddle price IDs). See "Pricing / Paddle checkout" below. The homepage's
+  `src/components/Pricing.astro` section is unrelated — it still just opens the waitlist modal.
 - `worker/` — the Cloudflare Worker that fronts the deployed site (see "Waitlist backend" and
   "Deploying" below). Not part of the Astro build; has its own `tsconfig.json` since it runs on
   the Workers runtime, not a browser, and needs different global types than `src/`.
@@ -108,6 +112,55 @@ dashboard → Workers & Pages → KV → create a namespace, then your Worker �
   of who's signed up.
 - **KV namespace** (if bound) — raw JSON per submission, useful as a backup or for bulk export;
   browse via Cloudflare dashboard → Workers & Pages → KV → the namespace, or `wrangler kv key list`.
+
+## Pricing / Paddle checkout
+
+`/pricing` is a real checkout page (`src/pages/pricing.astro`), separate from the waitlist flow —
+the homepage's pricing section (`src/components/Pricing.astro`) is untouched and still opens the
+waitlist modal. Tiers (Blitz, Hunter, Concierge) are one-time prices — no subscriptions, no
+monthly/yearly toggle — matching the copy on the homepage. Tier content and Paddle price IDs live
+in `src/lib/pricingCheckout.ts`; edit that file to change features, taglines, or swap in different
+Paddle price IDs.
+
+Client-side, `src/scripts/pricing-checkout.ts` uses `@paddle/paddle-js`:
+`Paddle.PricePreview()` fills in the displayed price per tier (only `formattedTotals.total` from
+the response is shown — no price math or re-formatting on the frontend), and `Paddle.Checkout.open()`
+opens the one-page overlay checkout for the clicked tier's price, redirecting to `/welcome` on
+success.
+
+Country for price localization comes from Cloudflare's `request.cf.country` via a small Worker
+route, `worker/geo.ts` (`GET /api/geo` → `{ "country": "ES" }` or `{ "country": null }`). If that
+route is unreachable — e.g. plain `astro dev`, which doesn't run `worker/` at all, see "Local
+development" above — `PricePreview()` still auto-detects location from the visitor's IP, just
+without the head start of an already-known country.
+
+### Environment variables
+
+Copy `.env.example` to `.env` (gitignored) and fill in:
+
+| Variable | Value |
+| :-- | :-- |
+| `PUBLIC_PADDLE_CLIENT_TOKEN` | A **client-side token** (`live_...` or `test_...`) from Paddle Dashboard → Developer Tools → Authentication → Client-side tokens. This is meant to be public — it's fine in client bundles — but still isn't hardcoded, so switching tokens never means editing code. |
+| `PUBLIC_PADDLE_ENVIRONMENT` | Exactly `production` or `sandbox`. `pricing-checkout.ts` throws at load if this is unset or misspelled — it must never silently default, since that risks running against the wrong Paddle account. |
+
+Astro/Vite only expose `PUBLIC_`-prefixed vars to client-side code — that prefix is required, not
+a style choice. Set the same two vars in Cloudflare's Worker **Settings → Variables and secrets**
+for production (as plain variables, not secrets — the client token is designed to be public).
+
+The Paddle **API key** used to create the product catalog and this client-side token is a
+separate, genuinely secret credential — it was only ever used from the local machine / a script
+to call the Paddle REST API, and never belongs in this repo, the Worker, or client code.
+
+### Before this goes live
+
+- **Approved domains**: Paddle Dashboard → Checkout → Checkout settings → add the production
+  domain (`callmarta.com`). Live overlay checkout refuses to open on unapproved domains —
+  `localhost` never works on live, only on sandbox.
+- **Default payment link**: same Checkout settings screen — set it to the live `/pricing` URL.
+  This can only be set in the dashboard, there's no API for it.
+- **Account verification**: live transactions can't complete until Paddle's verification passes
+  for the account — see Paddle Dashboard → "Test and go live" for status. Until then, checkout
+  opens and shows real prices, but a real payment won't complete.
 
 ## Deploying
 

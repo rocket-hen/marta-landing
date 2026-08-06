@@ -1,0 +1,232 @@
+---
+import { PRICING_TIERS } from '../lib/pricingCheckout';
+---
+
+<section class="checkout-pricing">
+	<div class="wrap">
+		<div class="head">
+			<div class="eyebrow">Pricing</div>
+			<h1>Choose your plan</h1>
+			<p>One flat fee covers your whole search. No subscriptions, nothing to cancel.</p>
+		</div>
+
+		<div class="grid">
+			{
+				PRICING_TIERS.map((tier) => (
+					<div class:list={['tier', 'card-hover', { highlight: tier.name === 'Hunter' }]}>
+						{tier.name === 'Hunter' && <div class="badge">Most Popular</div>}
+						<div class="tier-name">{tier.name}</div>
+						<p class="tagline">{tier.tagline}</p>
+						<div class="price-row">
+							<span class="price" data-price-id={tier.priceId} aria-live="polite">
+								···
+							</span>
+						</div>
+						<p class="term">{tier.term}</p>
+						<ul>
+							{tier.features.map((f) => (
+								<li>
+									<span class="dash" aria-hidden="true">
+										—
+									</span>
+									<span>{f}</span>
+								</li>
+							))}
+						</ul>
+						<button
+							type="button"
+							class:list={['btn-slide-gradient', 'tier-btn', tier.name === 'Hunter' ? 'solid' : 'btn-slide-outline outline']}
+							data-subscribe={tier.priceId}
+							data-gtm-id={`checkout_${tier.name.toLowerCase()}_cta`}
+						>
+							{tier.ctaLabel}
+						</button>
+					</div>
+				))
+			}
+		</div>
+
+		<p class="fine-print" data-checkout-error hidden role="alert">
+			Couldn't load live prices right now. Please refresh, or reach out if this keeps happening.
+		</p>
+	</div>
+</section>
+
+<style>
+	.checkout-pricing {
+		border-bottom: 1px solid var(--border);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 160px 24px 100px;
+	}
+
+	.head {
+		text-align: center;
+		margin-bottom: 64px;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+
+	.head h1 {
+		font-family: var(--font-display);
+		font-size: clamp(36px, 5vw, 56px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 24px;
+	}
+
+	.head p {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1.6;
+		color: var(--muted);
+		max-width: 460px;
+		margin: 0 auto;
+		text-wrap: pretty;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 24px;
+		align-items: stretch;
+	}
+
+	.tier {
+		border: 1px solid var(--border);
+		padding: 32px;
+		background: var(--bg);
+		color: var(--ink);
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	.tier.highlight {
+		background: var(--ink);
+		color: var(--bg);
+		border-color: var(--ink);
+	}
+
+	.badge {
+		position: absolute;
+		top: -12px;
+		left: 32px;
+		background: var(--accent);
+		color: var(--bg);
+		font-size: 11px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		padding: 4px 10px;
+	}
+
+	.tier-name {
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+
+	.tagline {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.5;
+		color: var(--muted);
+		margin: 0 0 24px;
+		text-wrap: pretty;
+	}
+	.tier.highlight .tagline {
+		color: var(--border);
+	}
+
+	.price-row {
+		display: flex;
+		align-items: baseline;
+		gap: 8px;
+		margin-bottom: 4px;
+		min-height: 53px;
+	}
+
+	.price {
+		font-size: 44px;
+		font-weight: 300;
+		letter-spacing: -0.02em;
+	}
+
+	.term {
+		font-size: 12px;
+		color: var(--muted);
+		margin: 0 0 20px;
+	}
+	.tier.highlight .term {
+		color: var(--border);
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		margin-bottom: 40px;
+		margin-top: 20px;
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		display: flex;
+		gap: 12px;
+		align-items: baseline;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.dash {
+		color: var(--accent);
+		font-size: 12px;
+	}
+
+	.tier-btn {
+		display: block;
+		margin-top: auto;
+		text-align: center;
+		width: 100%;
+		padding: 12px;
+		font-size: 14px;
+		font-weight: 500;
+		border-radius: 4px;
+		font-family: 'Inter', sans-serif;
+		cursor: pointer;
+	}
+	.tier-btn.outline {
+		background: linear-gradient(to top, var(--ink) 50%, transparent 50%);
+		border: 1px solid var(--ink);
+		color: var(--ink);
+	}
+	.tier-btn.solid {
+		background: linear-gradient(to top, #000 50%, var(--accent) 50%);
+		border: 1px solid var(--accent);
+		color: var(--bg);
+	}
+	.tier-btn:disabled {
+		opacity: 0.5;
+		cursor: default;
+	}
+
+	.fine-print {
+		font-size: 13px;
+		color: var(--accent);
+		text-align: center;
+		margin-top: 32px;
+	}
+	.fine-print[hidden] {
+		display: none;
+	}
+</style>
