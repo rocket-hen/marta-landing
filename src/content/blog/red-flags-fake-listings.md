@@ -6,6 +6,7 @@ minutes: 5
 pubDate: 2026-06-10
 image: "/og/blog/red-flags-fake-listings.jpg"
 imageAlt: "Red flags: spotting fake rental listings before you pay — Marta blog"
+imageSmall: "/og/blog/red-flags-fake-listings-800.jpg"
 ---
 
 Rental scams in Spain follow a small number of scripts, repeated with minor variations across every city. Once you've seen the pattern, it's easy to spot — the trouble is most people encounter it exactly once, at the worst possible moment: desperate, far away, and short on time.

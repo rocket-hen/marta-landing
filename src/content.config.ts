@@ -13,6 +13,10 @@ const blog = defineCollection({
 		// back to the site default (/og/default.jpg) when a post doesn't have one yet.
 		image: z.string().optional(),
 		imageAlt: z.string().optional(),
+		// Optional 800px-wide companion for the cover <img>'s srcset, so mobile
+		// doesn't download the full 1200x630 og:image size. Omit if you haven't
+		// generated one — the cover just falls back to the single `image` size.
+		imageSmall: z.string().optional(),
 		// Rendered as an FAQ accordion + FAQPage JSON-LD when present (see
 		// src/components/PostFaq.astro). Omit entirely for posts without one.
 		faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),

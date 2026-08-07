@@ -136,7 +136,9 @@ const ogLocale = lang === 'es' ? 'es_ES' : 'en_US';
 		</noscript>
 		<!-- End Google Tag Manager (noscript) -->
 		<Header activeNav={activeNav} isHome={isHome} lang={lang} />
-		<slot />
+		<main>
+			<slot />
+		</main>
 		<Footer lang={lang} showSwitch={showLangSwitch} />
 		<CookieConsent lang={lang} />
 		<script>

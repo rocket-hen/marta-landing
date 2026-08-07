@@ -49,9 +49,12 @@ const schema = [
 			<img
 				class="cover"
 				src={post.data.image ?? '/og/default.jpg'}
+				srcset={post.data.imageSmall ? `${post.data.imageSmall} 800w, ${post.data.image} 1200w` : undefined}
+				sizes={post.data.imageSmall ? '(max-width: 640px) 100vw, 720px' : undefined}
 				alt={post.data.imageAlt ?? post.data.title}
 				width="1200"
 				height="630"
+				fetchpriority="high"
 			/>
 		</div>
 
