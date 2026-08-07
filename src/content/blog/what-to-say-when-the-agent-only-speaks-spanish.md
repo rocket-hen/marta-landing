@@ -1,27 +1,39 @@
 ---
-title: "What to say when the agent only speaks Spanish"
-excerpt: "The exact phrases that keep a call alive — and the ones that end it."
+title: "What to Say When the Agent Only Speaks Spanish"
+excerpt: "The dozen Spanish phrases that keep a rental call alive in Spain, from the opening line through the qualifying questions to booking the viewing itself."
 category: "Language"
-minutes: 4
+minutes: 3
 pubDate: 2026-06-02
+image: "/og/default.jpg"
+imageAlt: "What to say when the agent only speaks Spanish — Marta blog"
+imageSmall: "/og/default-800.jpg"
+faq:
+  - q: "Do I need to speak fluent Spanish to rent an apartment in Spain?"
+    a: "No — a dozen memorized phrases covering the opening, the qualifying questions, and booking a viewing get you through nearly every rental call."
+  - q: "What's the first thing to say when calling about a rental listing in Spain?"
+    a: "\"Hola, buenas, llamo por el piso de [address]. ¿Sigue disponible?\" It confirms you're calling about the right flat and lets the agent take it from there."
+  - q: "What questions do Spanish rental agents usually ask on the phone?"
+    a: "How many people will live there, whether you have a nómina or aval, and when you need to move in. Have short, confident answers ready for all three before you dial."
+  - q: "What if the agent talks too fast to follow?"
+    a: "That's a real limit, not a personal failing — Marta runs these calls in fluent, native-level Spanish on your behalf, qualifying questions and all."
 ---
 
-Most rental calls in Spain follow a predictable shape: a greeting, a question about availability, a few qualifying questions, and — if it goes well — a proposed viewing time. You don't need fluent Spanish to survive that shape. You need about a dozen phrases, used confidently.
+When my creators moved to Spain in 2021, they assumed conversational Spanish would be enough to get through a rental call. It wasn't — understanding a real estate agent with a thick Andalusian accent over a bad line is nothing like ordering coffee. You don't need fluent Spanish to survive a Spanish rental call, though: you need about a dozen phrases, used with confidence. Here's exactly what to say, from hello to booking the viewing.
 
 ## Opening the call
 
-Start with something simple and clear: *"Hola, buenas, llamo por el piso de [address/reference]. ¿Sigue disponible?"* ("Hi, I'm calling about the flat on [address]. Is it still available?"). Agents ask this question all day — they'll answer plainly, and you've already shown you can hold a basic exchange.
+> You don't need perfect Spanish. You need to sound like someone who'll actually show up and sign.
+
+The safest opening line is also the simplest one: state the address, ask if it's still available, and let the agent do the talking from there. *"Hola, buenas, llamo por el piso de [address/reference]. ¿Sigue disponible?"* ("Hi, I'm calling about the flat on [address]. Is it still available?"). Agents field this exact question dozens of times a day — you asking it back doesn't make you stand out. Fumbling the next part does.
 
 ## The questions that come next
 
-Expect one or more of: *"¿Para cuántas personas?"* (how many people), *"¿Tiene nómina / aval?"* (do you have payslips / a guarantor), *"¿Para cuándo lo necesita?"* (when do you need it from). Prepare short, confident answers to all three before you dial — hesitation reads as uncertainty about your ability to rent, not about your Spanish.
+::img[phone call notepad]
 
-> A short, confident answer in imperfect Spanish beats a long, hesitant one in perfect Spanish. Agents are listening for reliability, not grammar.
+Expect one or more of: *"¿Para cuántas personas?"* (how many people), *"¿Tiene nómina / aval?"* (do you have payslips / a guarantor), *"¿Para cuándo lo necesita?"* (when do you need it from). Prepare short, confident answers to all three before you dial — a short, confident answer in imperfect Spanish beats a long, hesitant one in perfect Spanish. Agents are listening for reliability, not grammar.
 
-## Booking the viewing
+## When even the phrasebook runs out
 
-If things go well, you'll hear something like *"¿Cuándo le viene bien para verlo?"* (when suits you for a viewing). Have two or three real time slots ready — *"El jueves por la tarde, o el viernes por la mañana"* (Thursday afternoon, or Friday morning) — so you're not improvising under pressure.
+Some calls move faster than any script can survive — a fast-talking agent, traffic noise, a question you didn't rehearse. That's a legitimate limit, not a personal failure, and it's exactly why Marta exists: she runs this same conversation in fluent, native-level Spanish, asks the qualifying questions for you, and books the slot — so the call never has to be the thing standing between you and the flat.
 
-## When it's genuinely too hard
-
-Some calls move faster than any phrasebook can keep up with — a fast-talking agent, background noise, unexpected questions. That's a legitimate limit, not a personal failure, and it's exactly why Marta exists: she runs this same conversation in fluent, native-level Spanish, asks the qualifying questions on your behalf, and books the slot — so the call never has to be the thing standing between you and the flat.
+We can't teach you the subjunctive by Friday. We can make sure you never need it on the phone.

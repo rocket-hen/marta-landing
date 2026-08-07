@@ -1,23 +1,41 @@
 ---
-title: "Why nobody replies to your Idealista messages"
-excerpt: "The uncomfortable math behind Spanish rental listings — and what actually gets you a reply."
+title: "Why Nobody Replies to Your Idealista Messages"
+excerpt: "Agents don't read messages in order — they answer the phone instead. Here's the actual math behind Spanish rental listings, and what gets you a reply."
 category: "Strategy"
-minutes: 5
+minutes: 4
 pubDate: 2026-07-15
+image: "/og/default.jpg"
+imageAlt: "Why nobody replies to your Idealista messages — Marta blog"
+imageSmall: "/og/default-800.jpg"
+faq:
+  - q: "Why doesn't anyone reply to my messages on Idealista?"
+    a: "They're not being read in order, or often at all. A decent flat gets 40 to 99 contacts on its first day, and the agent works the phone first — messages sit in a pile that may not open until the viewings are already booked."
+  - q: "Is it better to call or message about a rental listing in Spain?"
+    a: "Call. 78% of flats go to whoever responds first, and \"responds\" almost always means \"calls,\" not \"messages.\""
+  - q: "How many people usually contact a rental listing in Spain?"
+    a: "Between 40 and 99 in the first day online for a decent flat in Valencia, Barcelona, or Madrid."
+  - q: "What actually gets an agent to reply?"
+    a: "Calling within minutes of publication, holding the qualifying conversation in confident Spanish, and sounding like a tenant who'll actually sign — stable income, clear dates, no surprises about pets or deposits."
 ---
 
-A decent flat in Valencia, Barcelona or Madrid gets between 40 and 99 contacts in its first day online. The agent managing it doesn't read them in order — they don't read most of them at all. They pick up the phone when it rings, book the first few credible viewings, and archive the rest.
+When my creators moved to Spain in 2021, a spreadsheet of 25 apartments got them five viewings — and every one of those five started with a phone call, not a message. Nobody's ignoring your Idealista message on purpose; agents are just answering the phone instead. A decent flat in Valencia, Barcelona, or Madrid gets 40 to 99 contacts on its first day online. Here's why calls beat messages, and what actually gets you a reply.
 
 ## Messages are a queue. Calls are a doorbell.
 
-A written message enters a pile that the agent may open tomorrow, after the viewings are already booked. A phone call interrupts their day right now — and in Spain, rental business still runs on the phone. Agents confirm availability, judge the tenant, and hand out viewing slots in a single three-minute conversation.
-
-That's why 78% of flats go to whoever responds first — and "responds" almost always means "calls."
-
 > The listing isn't gone because you were unqualified. It's gone because someone else called while you were typing.
+
+A message and a phone call get treated completely differently by the same agent, even though both say the same thing: "I'm interested." A written message enters a pile the agent may open tomorrow, after the day's viewings are already booked. A call interrupts right now — and in Spain, rental business still runs on the phone, with agents confirming availability, judging the tenant, and handing out slots in a single three-minute conversation. That's why 78% of flats go to whoever responds first, and "responds" almost always means "calls."
 
 ## What actually gets a reply
 
-Three things move you to the front of the line: calling within minutes of publication, speaking Spanish confidently enough to answer the agent's screening questions, and sounding like a tenant who will sign — stable income, clear dates, no surprises about pets or deposits.
+::img[unread message inbox]
 
-If you can do all three yourself, do them. If you can't — because you're at work, asleep in another timezone, or your Spanish stops at "hola" — that's exactly the gap Marta fills: she calls new listings within minutes, in fluent Spanish, and books the viewing before the pile of unread messages is ever opened.
+Three things move you to the front of the line: calling within minutes of publication, holding the qualifying conversation in confident Spanish, and sounding like a tenant who'll actually sign — stable income, a clear move-in date, no surprises about pets or deposits. Miss any one of the three and you're back in the pile with everyone else.
+
+## Why a strong message still isn't enough
+
+Even a well-written message can't outrun someone already on the phone — it just sits in the queue a little more politely. Somewhere out there is an inbox still holding a dozen unread "is this still available?" messages from a spreadsheet just like that one. We're not naming names. (We don't have to. The agent already knows.)
+
+If you can call within minutes yourself, do it — none of this applies to you. If you can't, because you're at work, asleep in another timezone, or your Spanish stops at "hola," that's exactly the gap Marta fills: she calls new listings within minutes, in fluent Spanish, before the pile of unread messages is ever opened.
+
+We don't write messages. We make calls — which is apparently a competitive advantage now.
