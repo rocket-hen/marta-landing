@@ -1,0 +1,16 @@
+[
+	{
+		"file": "apartments-for-rent-in-madrid-1.jpg",
+		"fileSmall": "apartments-for-rent-in-madrid-1-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Elegant residential apartment building with balconies in Madrid, Spain"
+	},
+	{
+		"file": "apartments-for-rent-in-madrid-2.jpg",
+		"fileSmall": "apartments-for-rent-in-madrid-2-800.jpg",
+		"width": 1600,
+		"height": 1067,
+		"alt": "Quiet residential street lined with classic architecture in a Madrid neighborhood"
+	}
+]

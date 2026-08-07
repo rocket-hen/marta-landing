@@ -4,7 +4,20 @@
       "Bash(npx astro *)",
       "Bash(nohup python3 -m http.server 8944)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8944/blog/red-flags-fake-listings/)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8944/)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8944/)",
+      "Bash(mkdir -p /private/tmp/claude-501/-Users-viacheslav-code-projects-marta-landing/05476a1b-7200-4b4d-b24d-2318b850ee21/scratchpad/pexels)",
+      "Bash(curl -s -H 'Authorization: __TRACKED_VAR__' 'https://api.pexels.com/v1/search?query=madrid+apartment+buildings&orientation=landscape&per_page=5')",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s -H 'Authorization: __TRACKED_VAR__' https://api.pexels.com/v1/photos/16205089)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d['src']['original']\\); print\\(d['photographer']\\); print\\(d['photographer_url']\\); print\\(d['url']\\)\")",
+      "Bash(set -e)",
+      "Bash(mkdir -p __TRACKED_VAR__/raw)",
+      "Bash(curl -sL https://images.pexels.com/photos/16205089/pexels-photo-16205089.jpeg -o __TRACKED_VAR__/raw/img1.jpg)",
+      "Bash(curl -sL https://images.pexels.com/photos/32314647/pexels-photo-32314647.jpeg -o __TRACKED_VAR__/raw/img2.jpg)",
+      "Bash(file __TRACKED_VAR__/raw/img1.jpg __TRACKED_VAR__/raw/img2.jpg)",
+      "Bash(lsof -ti:8951 -sTCP:LISTEN)",
+      "Bash(git add *)"
     ]
   }
 }

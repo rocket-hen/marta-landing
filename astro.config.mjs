@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import remarkDirective from 'remark-directive';
 import remarkCallouts from './src/lib/remark-callouts.mjs';
+import remarkInlineImages from './src/lib/remark-inline-images.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,8 +15,9 @@ export default defineConfig({
 		inlineStylesheets: 'always',
 	},
 	markdown: {
-		// Powers the ":::highlight ... :::" callout block from the content checklist —
-		// remarkDirective parses the ":::name" syntax, remarkCallouts turns it into HTML.
-		remarkPlugins: [remarkDirective, remarkCallouts],
+		// Powers the ":::highlight ... :::" callout block and "::img[...]" inline
+		// image markers from the content checklist — remarkDirective parses the
+		// ":name" syntax, the other two turn directives into real HTML.
+		remarkPlugins: [remarkDirective, remarkCallouts, remarkInlineImages],
 	},
 });
