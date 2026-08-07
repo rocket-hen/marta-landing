@@ -46,8 +46,7 @@ export function serviceSchema(lang: Lang) {
 	};
 }
 
-export function faqSchema(lang: Lang) {
-	const faqs = copy[lang].faq;
+export function faqSchema(faqs: { q: string; a: string }[]) {
 	return {
 		'@context': 'https://schema.org',
 		'@type': 'FAQPage',
@@ -59,9 +58,11 @@ export function faqSchema(lang: Lang) {
 	};
 }
 
+const PUBLISHER_LOGO_URL = `${SITE_URL}/og/logo.png`;
+
 export function articleSchema(
 	lang: Lang,
-	post: { title: string; excerpt: string; pubDate: Date },
+	post: { title: string; excerpt: string; pubDate: Date; image?: string },
 	url: string,
 ) {
 	return {
@@ -69,9 +70,16 @@ export function articleSchema(
 		'@type': 'Article',
 		headline: post.title,
 		description: post.excerpt,
+		image: [new URL(post.image ?? '/og/default.jpg', SITE_URL).toString()],
 		datePublished: post.pubDate.toISOString(),
 		dateModified: post.pubDate.toISOString(),
 		author: { '@type': 'Organization', name: 'Marta', url: SITE_URL },
+		publisher: {
+			'@type': 'Organization',
+			name: 'Marta',
+			url: SITE_URL,
+			logo: { '@type': 'ImageObject', url: PUBLISHER_LOGO_URL, width: 512, height: 512 },
+		},
 		inLanguage: lang,
 		mainEntityOfPage: url,
 	};

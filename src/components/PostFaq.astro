@@ -1,0 +1,95 @@
+---
+interface Props {
+	faq: { q: string; a: string }[];
+}
+
+const { faq } = Astro.props;
+---
+
+<div class="post-faq">
+	<h2>Frequently asked questions</h2>
+	<div class="list">
+		{
+			faq.map((f) => (
+				<details class="item">
+					<summary class="toggle">
+						<span>{f.q}</span>
+						<span class="glyph" aria-hidden="true" />
+					</summary>
+					<div class="answer">
+						<p>{f.a}</p>
+					</div>
+				</details>
+			))
+		}
+	</div>
+</div>
+
+<style>
+	.post-faq {
+		margin-top: 40px;
+	}
+
+	.post-faq h2 {
+		font-family: var(--font-display);
+		font-size: 28px;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		margin: 0 0 8px;
+	}
+
+	.list {
+		margin-top: 16px;
+	}
+
+	.item {
+		border-top: 1px solid var(--border);
+	}
+	.item:last-child {
+		border-bottom: 1px solid var(--border);
+	}
+
+	.toggle {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 16px;
+		padding: 18px 4px;
+		cursor: pointer;
+		font-family: 'Inter', sans-serif;
+		font-size: 15px;
+		font-weight: 500;
+		color: var(--ink);
+		list-style: none;
+	}
+	.toggle:hover {
+		opacity: 0.7;
+	}
+	.toggle::-webkit-details-marker {
+		display: none;
+	}
+
+	.glyph {
+		font-size: 16px;
+		font-weight: 400;
+		color: var(--muted);
+		flex: none;
+	}
+	.glyph::before {
+		content: '+';
+	}
+	.item[open] .glyph::before {
+		content: '\2212';
+	}
+
+	.answer p {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0;
+		padding: 0 32px 20px 4px;
+		text-wrap: pretty;
+	}
+</style>

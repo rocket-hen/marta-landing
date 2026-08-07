@@ -4,6 +4,8 @@ excerpt: "Deposits before viewings, prices too good, \"I'm abroad\" landlords �
 category: "Scams"
 minutes: 5
 pubDate: 2026-06-10
+image: "/og/blog/red-flags-fake-listings.jpg"
+imageAlt: "Red flags: spotting fake rental listings before you pay — Marta blog"
 ---
 
 Rental scams in Spain follow a small number of scripts, repeated with minor variations across every city. Once you've seen the pattern, it's easy to spot — the trouble is most people encounter it exactly once, at the worst possible moment: desperate, far away, and short on time.
@@ -19,6 +21,10 @@ Eventually, they ask for a deposit — sometimes the whole first month, sometime
 ## What to check before you send anything
 
 Never pay before an in-person or verified video viewing. Ask for the landlord's name and, ideally, the property's cadastral reference — a legitimate owner won't hesitate. Be suspicious of any listing where the price is meaningfully below comparable flats nearby; scammers price to attract volume, not to match the market. And treat "I'm currently abroad, we'll do everything remotely" as a hard stop, not a minor inconvenience.
+
+:::highlight
+TEST BLOCK — Never send a deposit before seeing the apartment in person. A landlord who's conveniently **"out of the country" and just needs the transfer first** is the most common rental scam in Spain right now.
+:::
 
 ## Where a phone call helps
 

@@ -1,9 +1,10 @@
 ---
 import { render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostFaq from '../../components/PostFaq.astro';
 import { copy } from '../../i18n/copy';
 import { getPostsForLang, postSlug } from '../../lib/blog';
-import { articleSchema, breadcrumbSchema } from '../../lib/schema';
+import { articleSchema, breadcrumbSchema, faqSchema } from '../../lib/schema';
 
 const lang = 'en';
 const t = copy[lang].blog;
@@ -25,6 +26,7 @@ const schema = [
 		{ name: 'Blog', url: 'https://callmarta.com/blog' },
 		{ name: post.data.title, url: pageUrl },
 	]),
+	...(post.data.faq ? [faqSchema(post.data.faq)] : []),
 ];
 ---
 
@@ -35,6 +37,7 @@ const schema = [
 	lang={lang}
 	schema={schema}
 	articleMeta={{ publishedTime: isoDate, modifiedTime: isoDate }}
+	ogImage={post.data.image}
 >
 	<article class="post">
 		<div class="head">
@@ -43,13 +46,19 @@ const schema = [
 				{post.data.category} · {post.data.minutes} {t.minRead} · <time datetime={isoDate}>{dateLabel}</time>
 			</div>
 			<h1>{post.data.title}</h1>
-			<div class="cover" aria-hidden="true">
-				<span>article cover image</span>
-			</div>
+			<img
+				class="cover"
+				src={post.data.image ?? '/og/default.jpg'}
+				alt={post.data.imageAlt ?? post.data.title}
+				width="1200"
+				height="630"
+			/>
 		</div>
 
 		<div class="body">
 			<Content />
+
+			{post.data.faq && <PostFaq faq={post.data.faq} />}
 
 			<div class="cta">
 				<div>
@@ -99,25 +108,11 @@ const schema = [
 
 	.cover {
 		width: 100%;
-		aspect-ratio: 16 / 8;
+		height: auto;
+		aspect-ratio: 1200 / 630;
+		object-fit: cover;
 		border: 1px solid var(--border);
-		background-color: #F2F0EA;
-		background-image: repeating-linear-gradient(
-			135deg,
-			rgba(26, 25, 23, 0.04) 0,
-			rgba(26, 25, 23, 0.04) 1px,
-			transparent 1px,
-			transparent 11px
-		);
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		margin-bottom: 48px;
-	}
-	.cover span {
-		font-family: var(--font-mono);
-		font-size: 12px;
-		color: var(--muted);
 	}
 
 	.body {
@@ -160,6 +155,26 @@ const schema = [
 	}
 	.body :global(blockquote p) {
 		margin: 0;
+	}
+
+	.body :global(.highlight-block) {
+		margin: 32px 0;
+		padding: 20px 24px;
+		background: rgba(176, 81, 46, 0.07);
+		border-left: 3px solid var(--accent);
+		font-size: 15px;
+		line-height: 1.7;
+	}
+	.body :global(.highlight-block p) {
+		margin: 0;
+		font-size: inherit;
+		color: var(--ink);
+	}
+	.body :global(.highlight-block p + p) {
+		margin-top: 12px;
+	}
+	.body :global(.highlight-block strong) {
+		color: var(--accent);
 	}
 
 	.cta {

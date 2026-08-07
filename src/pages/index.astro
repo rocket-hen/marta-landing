@@ -14,7 +14,7 @@ import { organizationSchema, serviceSchema, faqSchema } from '../lib/schema';
 
 const lang = 'en';
 const t = copy[lang].meta;
-const schema = [organizationSchema(lang), serviceSchema(lang), faqSchema(lang)];
+const schema = [organizationSchema(lang), serviceSchema(lang), faqSchema(copy[lang].faq)];
 ---
 
 <BaseLayout title={t.title} description={t.description} isHome lang={lang} showLangSwitch schema={schema}>
