@@ -61,8 +61,6 @@ const schema = [
 		<div class="body">
 			<Content />
 
-			{post.data.faq && <PostFaq faq={post.data.faq} />}
-
 			<div class="cta">
 				<div>
 					<div class="cta-title">{t.ctaTitle}</div>
@@ -70,6 +68,8 @@ const schema = [
 				</div>
 				<a href="/#pricing" class="cta-btn" data-gtm-id="blog_post_book_viewings">{copy[lang].nav.cta}</a>
 			</div>
+
+			{post.data.faq && <PostFaq faq={post.data.faq} />}
 		</div>
 	</article>
 </BaseLayout>
