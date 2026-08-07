@@ -142,8 +142,15 @@ const schema = [
 		font-weight: 800;
 		letter-spacing: -0.02em;
 		margin: 40px 0 0;
+		/* Fixed header is 75px tall — without this, clicking a TOC anchor
+		   (or any #heading link) scrolls the heading right underneath it. */
+		scroll-margin-top: 100px;
 	}
 	.body :global(h2 + p) {
+		margin-top: 24px;
+	}
+	.body :global(h2 + ul),
+	.body :global(h2 + ol) {
 		margin-top: 24px;
 	}
 
@@ -153,6 +160,7 @@ const schema = [
 		font-weight: 800;
 		letter-spacing: -0.01em;
 		margin: 32px 0 0;
+		scroll-margin-top: 100px;
 	}
 	.body :global(h3 + p) {
 		margin-top: 16px;
