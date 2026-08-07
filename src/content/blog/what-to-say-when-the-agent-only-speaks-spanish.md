@@ -4,9 +4,9 @@ excerpt: "The dozen Spanish phrases that keep a rental call alive in Spain, from
 category: "Language"
 minutes: 3
 pubDate: 2026-06-02
-image: "/og/default.jpg"
+image: "/og/blog/what-to-say-when-the-agent-only-speaks-spanish.jpg"
 imageAlt: "What to say when the agent only speaks Spanish — Marta blog"
-imageSmall: "/og/default-800.jpg"
+imageSmall: "/og/blog/what-to-say-when-the-agent-only-speaks-spanish-800.jpg"
 faq:
   - q: "Do I need to speak fluent Spanish to rent an apartment in Spain?"
     a: "No — a dozen memorized phrases covering the opening, the qualifying questions, and booking a viewing get you through nearly every rental call."

@@ -4,9 +4,9 @@ excerpt: "New Spanish rental listings get their heaviest call volume in the firs
 category: "Strategy"
 minutes: 3
 pubDate: 2026-06-20
-image: "/og/default.jpg"
+image: "/og/blog/first-15-minutes-why-speed-wins-flats.jpg"
 imageAlt: "The first 15 minutes: why speed wins flats — Marta blog"
-imageSmall: "/og/default-800.jpg"
+imageSmall: "/og/blog/first-15-minutes-why-speed-wins-flats-800.jpg"
 faq:
   - q: "Why do rental listings in Spain disappear so fast?"
     a: "Agents field calls the moment a listing goes live and offer viewing slots to the first two or three credible callers. In high-tension markets, 34% of contracts get signed within 24 hours."

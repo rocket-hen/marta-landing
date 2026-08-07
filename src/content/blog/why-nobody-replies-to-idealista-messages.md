@@ -4,9 +4,9 @@ excerpt: "Agents don't read messages in order — they answer the phone instead.
 category: "Strategy"
 minutes: 4
 pubDate: 2026-07-15
-image: "/og/default.jpg"
+image: "/og/blog/why-nobody-replies-to-idealista-messages.jpg"
 imageAlt: "Why nobody replies to your Idealista messages — Marta blog"
-imageSmall: "/og/default-800.jpg"
+imageSmall: "/og/blog/why-nobody-replies-to-idealista-messages-800.jpg"
 faq:
   - q: "Why doesn't anyone reply to my messages on Idealista?"
     a: "They're not being read in order, or often at all. A decent flat gets 40 to 99 contacts on its first day, and the agent works the phone first — messages sit in a pile that may not open until the viewings are already booked."

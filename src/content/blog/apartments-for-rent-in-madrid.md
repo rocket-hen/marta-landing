@@ -4,9 +4,9 @@ excerpt: "What documents you need, what apartments actually cost by neighborhood
 category: "Guides"
 minutes: 7
 pubDate: 2026-08-07
-image: "/og/default.jpg"
+image: "/og/blog/apartments-for-rent-in-madrid.jpg"
 imageAlt: "Apartments for rent in Madrid — Marta blog"
-imageSmall: "/og/default-800.jpg"
+imageSmall: "/og/blog/apartments-for-rent-in-madrid-800.jpg"
 faq:
   - q: "How much does it cost to rent an apartment in Madrid?"
     a: "A 70 m² apartment averages €1,250–1,400 a month citywide, according to Idealista's rental index. Prices range from €800–1,050 in Villaverde up to €1,600–2,200 in Salamanca, depending on the district."

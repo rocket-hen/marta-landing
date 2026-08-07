@@ -4,9 +4,9 @@ excerpt: "Fuenlabrada rents for nearly half of Madrid's average, but some towns 
 category: "Neighborhoods"
 minutes: 8
 pubDate: 2026-08-07
-image: "/og/default.jpg"
+image: "/og/blog/affordable-housing-near-madrid.jpg"
 imageAlt: "Affordable housing near Madrid — Marta blog"
-imageSmall: "/og/default-800.jpg"
+imageSmall: "/og/blog/affordable-housing-near-madrid-800.jpg"
 faq:
   - q: "What is the cheapest area to live near Madrid?"
     a: "Fuenlabrada, at roughly €13.2/m², though it comes with the longest commute of the group — about 52 minutes to Atocha by Cercanías."

@@ -4,9 +4,9 @@ excerpt: "Where to actually live in Madrid if you're a family, student, solo exp
 category: "Neighborhoods"
 minutes: 10
 pubDate: 2026-08-07
-image: "/og/default.jpg"
+image: "/og/blog/where-to-live-in-madrid.jpg"
 imageAlt: "Where to live in Madrid — Marta blog"
-imageSmall: "/og/default-800.jpg"
+imageSmall: "/og/blog/where-to-live-in-madrid-800.jpg"
 faq:
   - q: "Where should I live in Madrid as a foreigner?"
     a: "It depends on what you're optimizing for. Families tend to land in Retiro or Chamartín, solo expats and freelancers in Malasaña or Chamberí, students in Lavapiés or Tetuán, and Chueca specifically for LGBTQ+ residents."

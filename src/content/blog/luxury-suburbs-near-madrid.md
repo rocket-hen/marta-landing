@@ -4,9 +4,9 @@ excerpt: "La Moraleja, Puerta de Hierro, Pozuelo, Alcobendas, and more — real 
 category: "Neighborhoods"
 minutes: 8
 pubDate: 2026-08-07
-image: "/og/default.jpg"
+image: "/og/blog/luxury-suburbs-near-madrid.jpg"
 imageAlt: "Luxury suburbs near Madrid — Marta blog"
-imageSmall: "/og/default-800.jpg"
+imageSmall: "/og/blog/luxury-suburbs-near-madrid-800.jpg"
 faq:
   - q: "What is the most expensive suburb near Madrid?"
     a: "La Moraleja, inside Alcobendas, where villa listings average around €4.4 million and can reach €25.6 million for the largest estates."

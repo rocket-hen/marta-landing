@@ -4,9 +4,9 @@ excerpt: "Prices, competition, paperwork enforcement, and neighborhoods — how 
 category: "Cities"
 minutes: 8
 pubDate: 2026-06-28
-image: "/og/default.jpg"
+image: "/og/blog/renting-in-valencia-vs-barcelona.jpg"
 imageAlt: "Renting in Valencia vs Barcelona — Marta blog"
-imageSmall: "/og/default-800.jpg"
+imageSmall: "/og/blog/renting-in-valencia-vs-barcelona-800.jpg"
 faq:
   - q: "Is Barcelona or Valencia more expensive to rent in?"
     a: "Barcelona. Rents average €22.8 per square meter against Valencia's €16.5 — roughly 38% higher for a comparable flat."

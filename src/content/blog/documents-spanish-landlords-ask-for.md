@@ -4,9 +4,9 @@ excerpt: "Nómina, aval, seguro de impago, and NIE — decoded, with what actual
 category: "Documents"
 minutes: 7
 pubDate: 2026-07-08
-image: "/og/default.jpg"
+image: "/og/blog/documents-spanish-landlords-ask-for.jpg"
 imageAlt: "Documents Spanish landlords ask for — Marta blog"
-imageSmall: "/og/default-800.jpg"
+imageSmall: "/og/blog/documents-spanish-landlords-ask-for-800.jpg"
 faq:
   - q: "What documents do I need to rent an apartment in Spain as a foreigner?"
     a: "An NIE or TIE (or passport while it's processing), your last few payslips or tax returns, and an aval bancario or seguro de impago if you don't have Spanish income history. A reference from a previous landlord helps but isn't required."
