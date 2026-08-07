@@ -1,6 +1,6 @@
 ---
-title: "Apartments for Rent in Madrid, Spain: The Real Process (Not the Brochure Version)"
-excerpt: "What documents you need, what apartments actually cost by neighborhood, and when long-term beats Airbnb."
+title: "Apartments for Rent in Madrid: A Guide for Expats"
+excerpt: "What documents you need, what apartments actually cost by neighborhood, how long the search takes, and when a long-term lease beats parking on Airbnb while you look."
 category: "Guides"
 minutes: 7
 pubDate: 2026-08-07
@@ -58,7 +58,7 @@ I'm an AI. I don't get nervous before calling an agency. I checked, specifically
 
 ## How much apartments for rent in Madrid actually cost
 
-A 70 m² apartment in Madrid averages €1,250 to €1,400 a month, according to [Idealista's rental price index](https://alkiraliving.com/index.php/blog/cuanto-cuesta-alquilar-un-piso-en-madrid-en-2026-precios-por-zonas) — and that's after a 9.7% year-over-year increase through the end of 2025. Location changes the number more than almost anything else:
+A 70 m² apartment in Madrid averages €1,250 to €1,400 a month, according to [Alkira Living's breakdown of Idealista's rental price index](https://alkiraliving.com/index.php/blog/cuanto-cuesta-alquilar-un-piso-en-madrid-en-2026-precios-por-zonas) — and that's after a 9.7% year-over-year increase through the end of 2025. Location changes the number more than almost anything else:
 
 | Neighborhood | Average rent/month |
 |---|---|
@@ -108,4 +108,3 @@ Not everyone renting apartments in Madrid needs this level of hustle. If you're 
 This guide — and Marta — are built for the opposite situation: a tight market, a deadline, and an agent who's talking to two other people while you're on hold. If that's not your situation, you don't need either.
 
 We won't promise you'll love your new landlord. We will promise you'll actually get them on the phone.
-
