@@ -144,8 +144,13 @@ Copy `.env.example` to `.env` (gitignored) and fill in:
 | `PUBLIC_PADDLE_ENVIRONMENT` | Exactly `production` or `sandbox`. `pricing-checkout.ts` throws at load if this is unset or misspelled — it must never silently default, since that risks running against the wrong Paddle account. |
 
 Astro/Vite only expose `PUBLIC_`-prefixed vars to client-side code — that prefix is required, not
-a style choice. Set the same two vars in Cloudflare's Worker **Settings → Variables and secrets**
-for production (as plain variables, not secrets — the client token is designed to be public).
+a style choice. These are inlined into the client bundle at **build time** (`npm run build`), not
+read from the Worker's runtime `env` — so they must be set under Cloudflare's Worker
+**Settings → Build → Variables and secrets** (the build-time ones), *not* the top-level
+**Settings → Variables and secrets** section (that one is runtime-only and Vite never sees it —
+setting the vars there silently does nothing for `PUBLIC_`-prefixed values). Plain variables, not
+secrets — the client token is designed to be public. Setting or changing them doesn't rebuild
+automatically; trigger a new build (push a commit) afterwards for the change to take effect.
 
 The Paddle **API key** used to create the product catalog and this client-side token is a
 separate, genuinely secret credential — it was only ever used from the local machine / a script
