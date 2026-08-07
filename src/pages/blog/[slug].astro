@@ -147,6 +147,77 @@ const schema = [
 		margin-top: 24px;
 	}
 
+	.body :global(h3) {
+		font-family: var(--font-display);
+		font-size: 19px;
+		font-weight: 800;
+		letter-spacing: -0.01em;
+		margin: 32px 0 0;
+	}
+	.body :global(h3 + p) {
+		margin-top: 16px;
+	}
+
+	.body :global(ul),
+	.body :global(ol) {
+		margin: 0 0 24px;
+		padding-left: 22px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.body :global(li) {
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--ink);
+	}
+	.body :global(ul) {
+		list-style: none;
+		padding-left: 0;
+	}
+	.body :global(ul li) {
+		padding-left: 20px;
+		position: relative;
+	}
+	.body :global(ul li::before) {
+		content: '—';
+		position: absolute;
+		left: 0;
+		color: var(--accent);
+	}
+	.body :global(ol) {
+		list-style: decimal;
+	}
+	.body :global(ol li::marker) {
+		color: var(--accent);
+		font-weight: 500;
+	}
+
+	.body :global(table) {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 8px 0 24px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.body :global(th) {
+		text-align: left;
+		font-family: var(--font-mono);
+		font-size: 11px;
+		font-weight: 400;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--muted);
+		padding: 8px 16px 8px 0;
+		border-bottom: 1px solid var(--ink);
+	}
+	.body :global(td) {
+		vertical-align: top;
+		padding: 10px 16px 10px 0;
+		border-bottom: 1px solid var(--border);
+		color: var(--ink);
+	}
+
 	.body :global(blockquote) {
 		margin: 32px 0;
 		padding: 4px 0 4px 24px;
