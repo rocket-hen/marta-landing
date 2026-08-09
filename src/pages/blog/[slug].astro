@@ -303,4 +303,37 @@ const schema = [
 		border-radius: 4px;
 		flex: none;
 	}
+
+	.body :global(.inline-cta) {
+		margin: 40px 0;
+		border: 1px solid var(--border);
+		background: var(--white);
+		padding: 32px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.body :global(.inline-cta p) {
+		margin: 0;
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--ink);
+		max-width: 480px;
+	}
+	.body :global(.inline-cta-action) {
+		margin: 0;
+		flex: none;
+	}
+	.body :global(.inline-cta .cta-btn) {
+		display: inline-block;
+		background: var(--accent);
+		border: none;
+		padding: 14px 28px;
+		color: var(--bg);
+		font-size: 15px;
+		font-weight: 500;
+		border-radius: 4px;
+	}
 </style>

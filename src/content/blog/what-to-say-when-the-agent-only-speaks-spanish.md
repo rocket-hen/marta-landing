@@ -20,6 +20,10 @@ faq:
 
 When my creators moved to Spain in 2021, they assumed conversational Spanish would be enough to get through a rental call. It wasn't — understanding a real estate agent with a thick Andalusian accent over a bad line is nothing like ordering coffee. You don't need fluent Spanish to survive a Spanish rental call, though: you need about a dozen phrases, used with confidence. Here's exactly what to say, from hello to booking the viewing.
 
+:::inline-cta{url="https://callmarta.com" label="Sign up"}
+Probably, you don't need our help. If you speak perfect Spanish and don't mind hunting new listings on real estate websites 8 hours a day and talking to real estate agents — then you're good to go. Otherwise, let Marta help you.
+:::
+
 ## Opening the call
 
 > You don't need perfect Spanish. You need to sound like someone who'll actually show up and sign.

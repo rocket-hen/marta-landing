@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import remarkDirective from 'remark-directive';
 import remarkCallouts from './src/lib/remark-callouts.mjs';
 import remarkInlineImages from './src/lib/remark-inline-images.mjs';
+import remarkInlineCta from './src/lib/remark-inline-cta.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,9 +16,10 @@ export default defineConfig({
 		inlineStylesheets: 'always',
 	},
 	markdown: {
-		// Powers the ":::highlight ... :::" callout block and "::img[...]" inline
-		// image markers from the content checklist — remarkDirective parses the
-		// ":name" syntax, the other two turn directives into real HTML.
-		remarkPlugins: [remarkDirective, remarkCallouts, remarkInlineImages],
+		// Powers the ":::highlight ... :::" callout block, "::img[...]" inline
+		// image markers, and ":::inline-cta{url=... label=...} ... :::" CTA boxes
+		// from the content checklist — remarkDirective parses the ":name" syntax,
+		// the other three turn directives into real HTML.
+		remarkPlugins: [remarkDirective, remarkCallouts, remarkInlineImages, remarkInlineCta],
 	},
 });
