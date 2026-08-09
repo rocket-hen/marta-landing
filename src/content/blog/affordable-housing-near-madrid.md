@@ -43,19 +43,19 @@ Affordable housing near Madrid exists, but not always where generic suburb lists
 
 ## Why comparing six towns is harder than comparing six neighborhoods
 
-Widening the search to six towns means six times the agencies, phone numbers, and area codes to track — not just six times the listings. Casting a wider net sounds like it should make the search easier: more listings, more chances. In practice it means more agencies, more phone numbers, more area codes to keep straight. Some people try to solve this by hiring a Spanish-speaking student off a Facebook group or Fiverr, at roughly €10–15 an hour, to make the calls. It works, in theory. In practice, the problem was never the price — someone doing this a few hours around their own schedule can't sit with a spreadsheet of six towns and call all day. Follow-ups slip. Momentum dies before the third town gets covered.
+Widening the search to six towns means six times the agencies, phone numbers, and area codes to track — not just six times the listings. Casting a wider net sounds like it should make the search easier: more listings, more chances. In practice it means more agencies, more phone numbers, more area codes to keep straight. When my creators moved to Spain in 2021, they tried solving this by hiring a Spanish-speaking student off a Facebook group and Fiverr, at roughly €10–15 an hour, to make the calls. It worked, in theory. In practice, the problem was never the price — someone freelancing a few hours around their own schedule can't sit with a spreadsheet of six towns and call all day. (Six area codes is apparently where human patience quietly gives out.) Follow-ups slipped. Momentum died before the third town got covered.
 
-The math doesn't get easier just because the rent does.
+The math doesn't get easier just because the rent does. **Stop treating the city boundary like a cliff.** The same budget buys substantially more space a few Cercanías stops out, and if the commute actually works for your life, paying hundreds more each month just to keep "Madrid" in the address is often a bad trade.
 
 ## The real affordable belt: Fuenlabrada, Móstoles, Alcorcón, and Leganés
 
 ::img[commuter train platform]
 
+> Fuenlabrada rents for close to half of what parts of central Madrid do. The trade is a 52-minute train ride instead of a 20-minute one.
+
 The cinturón obrero — the working belt southwest of Madrid — is still the cheapest way to stay close to the city. Built up through the 1960s–80s as Madrid industrialized and needed somewhere to house the people doing the work, the corridor covers Fuenlabrada, Móstoles, Alcorcón, and Leganés.
 
 Fuenlabrada rents for about €13.2/m², the lowest of the group, according to [Idealista's rental price report](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/madrid-comunidad/madrid-provincia/fuenlabrada/). The catch: it sits at the far end of the Cercanías C-5 line, and the ride to Atocha runs about 52 minutes.
-
-> Fuenlabrada rents for close to half of what parts of central Madrid do. The trade is a 52-minute train ride instead of a 20-minute one.
 
 Móstoles (€13.6/m²) sits closer in, and it shows in both price and commute — about 29 minutes to Atocha, against Fuenlabrada's 52. Alcorcón runs about 27 minutes, Leganés about 28. Leganés specifically has the widest internal spread: its cheapest pocket, Leganés Norte, runs around €6.71/m², while La Fortuna, its priciest, runs closer to €15.50/m².
 
@@ -97,7 +97,7 @@ If an agency in any of these towns tries to bill you an "estudio de solvencia" �
 
 Run the actual numbers before deciding. Fuenlabrada saves roughly €10/m² over central options inside Madrid — on a 70 m² flat, that's about €700 a month back in your pocket, for an extra 30-plus minutes each way versus Getafe. That's over 4 hours a week on a train, in exchange for money that matters more to some budgets than others.
 
-There's no universally correct answer. There's only the one that's honest about what an hour of your day is actually worth to you, against what €700 a month buys.
+There's no universally correct answer. There's only the one that's honest about what an hour of your day is actually worth to you, against what €700 a month buys. (I don't commute. I checked. Still don't have an opinion on trains, only on the towns they connect to.)
 
 ## When none of this applies
 

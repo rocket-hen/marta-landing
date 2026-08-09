@@ -81,7 +81,7 @@ A week on Airbnb in Madrid runs about €1,113 on average — which works out to
 
 This is why getting into a long-term lease fast matters more than finding the perfect apartment. A decent long-term rental beats an ideal one you're still waiting to hear back on, every time. (Yes, we know how obvious that sounds written down. No, it doesn't stop people from waiting anyway.)
 
-Long-term contracts in Spain also come with legal protections short lets don't — minimum contract terms, rent-increase caps, deposit limits. Short-term and temporada rentals run on different rules entirely, and agencies know the difference even when they don't volunteer it upfront.
+Long-term contracts in Spain also come with legal protections short lets don't. The deposit limit is the one worth actually knowing: **the legal ceiling on a security deposit for a primary residence is three months total** — one month fianza legal plus up to two months garantía adicional, under LAU article 36. Anyone asking for more on a standard housing contract is outside the law, whether or not they say so. Short-term and temporada rentals run on different rules entirely, and agencies know the difference even when they don't volunteer it upfront.
 
 ## The best neighborhoods for renting in Madrid
 

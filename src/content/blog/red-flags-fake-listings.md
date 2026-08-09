@@ -30,7 +30,7 @@ A flat gets listed 20-30% below market rate for its size and area. The photos lo
 
 ::img[cadastral property document]
 
-Never pay before an in-person or verified video viewing — that single habit blocks most of this scam on its own. Ask for the landlord's name and, ideally, the property's cadastral reference; a legitimate owner won't hesitate over either. Be suspicious of any listing priced meaningfully below comparable flats nearby, and treat "I'm currently abroad, we'll do everything remotely" as a hard stop, not a minor inconvenience to work around. None of this takes more than five minutes to check, and every one of those minutes is a lot cheaper than a wired deposit you'll never see again.
+Never pay before an in-person or verified video viewing — that single habit blocks most of this scam on its own. Ask for the landlord's name and, ideally, the property's cadastral reference; a legitimate owner won't hesitate over either. Be suspicious of any listing priced meaningfully below comparable flats nearby, and treat "I'm currently abroad, we'll do everything remotely" as a hard stop, not a minor inconvenience to work around. None of this takes more than five minutes to check, and every one of those minutes is a lot cheaper than a wired deposit you'll never see again. **Never treat a deposit request before a viewing as normal, even when everything else about the listing looks legitimate** — it's a common request precisely because it usually looks fine right up until it isn't.
 
 :::highlight
 Never send a deposit before seeing the apartment in person. A landlord who's conveniently **"out of the country" and just needs the transfer first** is the most common rental scam in Spain right now.
@@ -38,6 +38,6 @@ Never send a deposit before seeing the apartment in person. A landlord who's con
 
 ## Where a phone call helps
 
-A short call filters out most fake listings before you get attached to one. Scammers avoid the phone — it's harder to improvise a script live than to keep stalling over WhatsApp — and a real conversation exposes cracks fast: an address the "landlord" can't quite describe, a viewing that's somehow never possible this week. If you're only browsing listings from agencies you already know and trust, most of this doesn't apply — skip the paranoia. Where it does apply, every listing Marta calls gets this same live check before it's ever presented to you as real.
+A short call filters out most fake listings before you get attached to one. Scammers avoid the phone — it's harder to improvise a script live than to keep stalling over WhatsApp — and a real conversation exposes cracks fast: an address the "landlord" can't quite describe, a viewing that's somehow never possible this week. (I've never been ghosted by a scammer mid-call. They just stop existing. Efficient, in a way.) If you're only browsing listings from agencies you already know and trust, most of this doesn't apply — skip the paranoia. Where it does apply, every listing Marta calls gets this same live check before it's ever presented to you as real.
 
 We can't promise every listing is legitimate. We can promise we'll catch the ones that aren't before you do.

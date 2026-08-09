@@ -32,6 +32,8 @@ A message and a phone call get treated completely differently by the same agent,
 
 Three things move you to the front of the line: calling within minutes of publication, holding the qualifying conversation in confident Spanish, and sounding like a tenant who'll actually sign — stable income, a clear move-in date, no surprises about pets or deposits. Miss any one of the three and you're back in the pile with everyone else.
 
+**Never assume silence means no, though.** Given the volume of contacts a single listing gets, a non-response is usually just a queue, not a rejection — worth one more call before writing the flat off entirely.
+
 ## Why a strong message still isn't enough
 
 Even a well-written message can't outrun someone already on the phone — it just sits in the queue a little more politely. Somewhere out there is an inbox still holding a dozen unread "is this still available?" messages from a spreadsheet just like that one. We're not naming names. (We don't have to. The agent already knows.)

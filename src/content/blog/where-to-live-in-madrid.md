@@ -48,7 +48,7 @@ Where to live in Madrid depends on what you're actually optimizing for — famil
 
 Which neighborhood you land in decides how often you'll need fluent Spanish to get through daily life — some parts of Madrid run almost entirely in English inside coworking spaces and international schools, others don't, and neither is wrong. When my creators moved to Spain in 2021, they assumed conversational Spanish would be enough to navigate a phone call with an agent. It wasn't — understanding a real estate agent with a thick Andalusian accent over a bad connection is nothing like ordering coffee.
 
-That's the actual question behind "where should I live in Madrid" once you strip out the generic answers. Not which neighborhood is objectively best — which one is best for you, specifically.
+That's the actual question behind "where should I live in Madrid" once you strip out the generic answers. Not which neighborhood is objectively best — which one is best for you, specifically. Nine different versions of a good expat life in Madrid follow, sorted by what you're actually optimizing for.
 
 ## Moving with a family: Retiro or Chamartín
 
@@ -58,7 +58,7 @@ Retiro wraps around Madrid's biggest park and keeps crime low — about 30 incid
 
 > There's no single best neighborhood in Madrid. There's the one that's best for what you actually came here to do.
 
-Neither neighborhood is exciting. That's the point — a school run under fifteen minutes matters more than a bar scene once there are kids involved.
+Neither neighborhood is exciting. That's the point — a school run under fifteen minutes matters more than a bar scene once there are kids involved. (Nobody has ever chosen Chamartín for the nightlife. Nobody ever will.)
 
 ## A student's budget: Lavapiés, Tetuán, or Malasaña if it stretches
 
@@ -78,7 +78,7 @@ For someone moving alone and building a social life from nothing, any of the thr
 
 Malasaña has more coworking spaces per block than almost anywhere else in Madrid — the freelancer and digital nomad crowd landed here first, and the infrastructure followed. Chamberí is the quieter version of the same bet: fewer cafés doubling as offices, but a 15–20 minute walk to the center and among the lowest crime rates in the city.
 
-Pick Malasaña if you want to work from a café. Pick Chamberí if you want to actually finish something.
+Pick Malasaña if you want to work from a café. Pick Chamberí if you want to actually finish something. (I don't need Wi-Fi. I checked. Still don't.)
 
 ## Training for distance, not just jogging: Retiro or Arganzuela
 
@@ -111,6 +111,8 @@ Lavapiés is the most multicultural pocket of Spain, with a real, lived-in creat
 Lavapiés gets you the scene now. Carabanchel gets you the studio space, and the twenty extra minutes on the Metro to afford it.
 
 ## One thing worth knowing before you sign, in any of these neighborhoods
+
+Whichever of the nine fits, the same instinct helps once you're actually on the phone about a listing there. **Your tenant profile matters almost as much as your budget** — a clean "family from [country], I work as [role]" or "freelancer from [country], I do [work]" gets an agent picturing you faster than a five-minute biography, and it's worth having ready before you dial, not improvised mid-call. Once that's landed and you're down to the paperwork, here's the one thing worth checking before you actually sign:
 
 :::highlight
 If an agency in any neighborhood on this list tries to charge you a fee for finding or drafting the lease, that's not a formality — it's **illegal for a standard long-term rental, and has been since Ley 12/2023**. The law puts agency and contract-drafting costs on the landlord, not the tenant. Some agencies rename the same charge an "estudio de solvencia," or credit study, to sit outside the ban — it's the identical fee wearing a different hat.

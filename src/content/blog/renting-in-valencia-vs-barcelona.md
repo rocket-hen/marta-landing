@@ -15,7 +15,7 @@ faq:
   - q: "Is it easier to find an apartment in Valencia than Barcelona?"
     a: "Somewhat. Valencia's market moves a little slower, but the flats that go fastest in either city are still the ones that get called first, not messaged first."
   - q: "What documents do I need to rent in Valencia or Barcelona?"
-    a: "The same everywhere in Spain: nómina, an aval bancario or seguro de impago, and NIE/TIE. Barcelona agencies tend to enforce the full list strictly; Valencia agencies are sometimes more flexible if the phone call goes well."
+    a: "The same everywhere in Spain: nómina, an aval bancario or seguro de impago, and NIE/TIE. Barcelona agencies tend to enforce the full list strictly; in our calls, Valencia agencies are sometimes more flexible if the phone call goes well."
   - q: "Which city is better for remote workers, Valencia or Barcelona?"
     a: "Valencia, for budget and pace. Barcelona makes more sense if the job, a partner, or the tech scene specifically requires being there."
   - q: "How fast do rental listings get taken in Barcelona?"
@@ -45,23 +45,23 @@ Barcelona rents average €22.8 per square meter against Valencia's €16.5 — 
 
 ::img[busy plaza terrace]
 
-Barcelona's competition is international by default — remote workers, students on Erasmus, and other newcomers, many calling in accented but functional Spanish. (Barcelona's applicant pool reads like a UN roll call some weeks.) Valencia's tenant pool skews more domestic and more price-sensitive, so landlords there weigh stability — long-term intent, steady income — more heavily than Barcelona's faster, more transactional market rewards.
+Barcelona's competition is international by default — remote workers, Erasmus students, and other newcomers, many calling in accented but functional Spanish. Every semester restarts the exact same contest with a fresh batch of twenty-three-year-olds — Groundhog Day, just with better tans. In our calls, we see Valencia's tenant pool lean more domestic and more price-sensitive, with landlords there seeming to weigh stability — long-term intent, steady income — more heavily than Barcelona's faster, more transactional market does. That's a pattern we notice on calls, not a published stat — we don't have Valencia-specific numbers to back it yet.
 
 ## Paperwork: same documents, different enforcement
 
-The documents are identical in both cities — nómina, an aval bancario or seguro de impago, NIE or TIE — but enforcement differs by volume. Barcelona agencies, used to high call volume, tend to standardize the process and reject incomplete files fast, sometimes on the same call. Valencia agencies are more likely to let a strong phone conversation substitute for a slightly thinner file, at least to get you to a viewing. (I've read both cities' rental contracts more times than any human should have to. I don't get bored. Checked.) See our [full breakdown of what Spanish landlords actually ask for](/blog/documents-spanish-landlords-ask-for) if you want the complete list before calling either city.
+The documents are identical in both cities — nómina, an aval bancario or seguro de impago, NIE or TIE — but enforcement differs by volume. Barcelona agencies, used to high call volume, tend to standardize the process and reject incomplete files fast, sometimes on the same call. Ask for the exact same document list twice in Barcelona and you'll get it back twice, verbatim; ask twice in Valencia and you might get it back with a shrug attached. In our calls, Valencia agencies seem more willing to let a strong phone conversation substitute for a slightly thinner file, at least enough to get you to a viewing — again, a pattern we're noticing, not a documented policy difference. See our [full breakdown of what Spanish landlords actually ask for](/blog/documents-spanish-landlords-ask-for) if you want the complete list before calling either city.
 
 ## Neighborhoods worth knowing
 
 ::img[narrow city street]
 
-Eixample and Gràcia are Barcelona's two most-searched central neighborhoods for newcomers — Eixample for the grid layout and central location, Gràcia for a quieter, more local feel a few Metro stops out. In Valencia, Ruzafa is the closest equivalent to that creative-neighborhood energy, while El Pla del Remei sits calmer and more residential, closer to the historic center.
+Eixample and Gràcia are Barcelona's two most-searched central neighborhoods for newcomers — Eixample for the grid layout and central location, Gràcia for a quieter, more local feel a few Metro stops out. Eixample's grid is orderly enough that getting lost there feels like a personal failing; Ruzafa, its closest Valencia equivalent for creative-neighborhood energy, extends no such courtesy. El Pla del Remei sits calmer and more residential, closer to the historic center.
 
 ## Which city fits your situation
 
 If budget is tight, Valencia's lower rents and slightly less frantic pace help more than they sound like they should. If you need to be in Barcelona specifically — for work, for a partner, for the ocean-meets-mountains combination nothing else in Spain quite matches — plan for both a higher price ceiling and a faster response time. Remote workers and freelancers tend to land more comfortably in Valencia's calmer market; people chasing Barcelona's tech and startup scene rarely have the option to pick the cheaper city anyway.
 
-Neither city is objectively right, and the choice rewards moving, not agonizing. **Search by probability, not by perfection**: put enough acceptable listings in front of an agent in whichever city actually fits your budget and situation, and let the market narrow it down — don't spend a week deciding between two flats that were both fine.
+Neither city is objectively right, and the choice rewards moving, not agonizing over it for another week. Once you've picked one, don't make the same mistake a level down: **search by probability, not by perfection** — put enough acceptable listings in front of an agent in whichever city you land in, and let the market narrow it down, rather than spending a second week deciding between two flats that were both fine.
 
 ## One thing worth checking before you sign
 

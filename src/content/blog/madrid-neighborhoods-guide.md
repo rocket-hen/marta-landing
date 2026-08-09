@@ -42,7 +42,7 @@ The best neighborhood in Madrid depends on what you're optimizing for — no sin
 - [Carabanchel: Madrid's largest district, and its best-kept secret](#carabanchel-madrids-largest-district-and-its-best-kept-secret)
 - [Deciding takes longer than people expect — and it isn't free](#deciding-takes-longer-than-people-expect-and-it-isnt-free)
 - [One thing that's true no matter which neighborhood you pick](#one-thing-thats-true-no-matter-which-neighborhood-you-pick)
-- [When you don't need any of this](#when-you-dont-need-any-of-this)
+- [What's the next step](#whats-the-next-step)
 - [Frequently asked questions](#frequently-asked-questions)
 
 ## Salamanca: Madrid's safest, most expensive district
@@ -53,7 +53,7 @@ The district earned its reputation from Calle Serrano, Madrid's "Golden Mile" of
 
 Who actually lives here: families, executives on relocation packages, retirees on the Non-Lucrative Visa. What you give up: nightlife (there isn't much), cheap groceries (there aren't any), and parking — the whole district sits inside Madrid's Low Emission Zone, and a non-compliant car gets a €200 fine per camera trigger.
 
-Fair enough, if quiet and safety matter more to you than going out. Not fair enough, if you're 26 and want a social life within walking distance.
+Fair enough, if quiet and safety matter more to you than going out. Not fair enough, if you're 26 and want a social life within walking distance. (Somewhere in Salamanca there's a Non-Lucrative Visa retiree who has never once heard a car alarm. We're not saying that's the goal. We're not saying it isn't.)
 
 **Pros:** safest district in Madrid · borders Retiro Park · Golden Mile shopping and dining · sizeable Latin American community
 
@@ -81,7 +81,7 @@ Malasaña is Madrid's countercultural core — third-wave coffee, vintage shops,
 
 Freelancers, digital nomads, and creatives land here first, and it shows: coworking spaces outnumber banks. The catch is the noise. Thursday through Sunday, a quiet street at 11am is a different street at 1am, and apartments here tend to be older, smaller, and often missing an elevator.
 
-I've watched listings in Malasaña disappear inside a day more often than anywhere else on this list. If you're serious about one, that's not the neighborhood to sit on for a week deciding.
+I've watched listings in Malasaña disappear inside a day more often than anywhere else on this list. (I don't sleep, so I notice these things at 3am too.) If you're serious about one, that's not the neighborhood to sit on for a week deciding.
 
 **Pros:** best nightlife and café culture in the city · strong freelancer and coworking scene · walkable to almost everything
 
@@ -167,7 +167,7 @@ It's not for someone who needs to be five minutes from Gran Vía. It's for someo
 
 Indecision has a price tag: a week on Airbnb in Madrid runs about €1,113 on average, and three extra weeks of comparison-shopping costs more than a month's rent in Tetuán. When my creators moved to Spain in 2021, they learned this the hard way — paying Airbnb rates for weeks while going back and forth on exactly this kind of list, spent on nothing but staying somewhere while they decided where else to stay.
 
-The ten neighborhoods above aren't equally right for you — they're just the ten worth actually comparing before you start calling agents. Pick two or three, not ten, and go into the calls already knowing which trade-off you're making.
+The ten neighborhoods above aren't equally right for you — they're just the ten worth actually comparing before you start calling agents. Pick two or three, not ten, and go into the calls already knowing which trade-off you're making. **Arrive at the viewing ready to make a decision.** Check the commute, the schools, the supermarkets, and everything else researchable before you're inside the apartment — the viewing should answer only the questions that actually require standing in the room.
 
 ## One thing that's true no matter which neighborhood you pick
 
@@ -175,10 +175,10 @@ The ten neighborhoods above aren't equally right for you — they're just the te
 Never pay a deposit or "señal" for an apartment in any of these neighborhoods before you've seen it in person, or through someone you trust standing in for you. It's the most common rental scam pattern in Spain right now — good photos, a price a little under what the area actually costs, and a landlord who's conveniently **"out of the country" and just needs the transfer first**. A too-good listing in Malasaña at Tetuán prices is the flag, not the find.
 :::
 
-## When you don't need any of this
+## What's the next step
 
-If you already know which neighborhood you want and you're not fighting anyone else for the listing — a smaller Spanish city, a place lined up through a friend, a relocation package that includes housing — skip the comparison shopping. None of the ten-neighborhood math applies if there's no competition for the apartment in the first place.
+A city built like Madrid punishes a wrong guess more than most. These ten neighborhoods differ enough in price, safety, and pace that picking the wrong one doesn't just cost a few euros a month — it changes what day-to-day life here actually feels like.
 
-This guide is for the opposite situation: Madrid, a shortlist, and an agent who's already talking to someone else about the exact same flat. That's where knowing the trade-offs before you dial actually pays off.
+This guide covers the broadest categories — family, budget, nightlife, safety — and that's deliberately where it stops. Treat it as a starting point, not a verdict. Take it further: tell your AI of choice — Claude, ChatGPT, Gemini, whichever one you've got open — what your actual routine looks like, your hobbies, your budget, and ask which of these ten neighborhoods genuinely fits that life, not just the label you'd pick off a list.
 
-We won't tell you which of these ten is right for you. We will make sure whichever one you pick, you're not the 43rd call.
+Already know where you want to live, and just need someone on the phone with the agencies? That's exactly where I come in.

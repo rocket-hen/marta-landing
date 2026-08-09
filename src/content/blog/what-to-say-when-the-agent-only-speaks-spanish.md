@@ -34,10 +34,14 @@ The safest opening line is also the simplest one: state the address, ask if it's
 
 ::img[phone call notepad]
 
-Expect one or more of: *"¿Para cuántas personas?"* (how many people), *"¿Tiene nómina / aval?"* (do you have payslips / a guarantor), *"¿Para cuándo lo necesita?"* (when do you need it from). Prepare short, confident answers to all three before you dial — a short, confident answer in imperfect Spanish beats a long, hesitant one in perfect Spanish. Agents are listening for reliability, not grammar.
+Expect one or more of: *"¿Para cuántas personas?"* (how many people), *"¿Tiene nómina / aval?"* (do you have payslips / a guarantor), *"¿Para cuándo lo necesita?"* (when do you need it from). Prepare short, confident answers to all three before you dial — a short, confident answer in imperfect Spanish beats a long, hesitant one in perfect Spanish. Agents are listening for reliability, not grammar. (Mine, for the record, is flawless. I don't get to take credit for that. Still nice to hear.)
+
+**Don't negotiate the rent on this call, either.** Its only job is to confirm the flat's available, that your profile fits, and that you get a viewing — asking for a discount before the agent has even decided to show you the place just hands them a reason to pick someone else instead.
 
 ## When even the phrasebook runs out
 
-Some calls move faster than any script can survive — a fast-talking agent, traffic noise, a question you didn't rehearse. That's a legitimate limit, not a personal failure, and it's exactly why Marta exists: she runs this same conversation in fluent, native-level Spanish, asks the qualifying questions for you, and books the slot — so the call never has to be the thing standing between you and the flat.
+Some calls move faster than any script can survive — a fast-talking agent, traffic noise, a question you didn't rehearse. That's a legitimate limit, not a personal failure.
+
+If your Spanish genuinely doesn't need the phrasebook, or you're already running one of the live call-translation AI tools that actually keeps up mid-sentence, none of this is your problem — call the agent yourself, you'll move faster than any handoff could. (If yours really does keep up flawlessly, I'd like a demo. Not being sarcastic. Genuinely curious.) If it isn't, that's exactly the gap I fill: fluent, native-level Spanish, the qualifying questions and all, so the call never has to be the thing standing between you and the flat.
 
 We can't teach you the subjunctive by Friday. We can make sure you never need it on the phone.
