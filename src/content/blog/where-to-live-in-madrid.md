@@ -26,7 +26,7 @@ faq:
     a: "Lavapiés, for its multicultural, lived-in creative scene, or Carabanchel, Madrid's largest district, where rent runs about half of what Centro charges for the same space."
 ---
 
-Where to live in Madrid depends on what you're actually optimizing for — family, budget, sport, or social life all point to different neighborhoods. Every rental listing here gets contacted by 42 people on average before it's gone. Here's where to look, broken down by the kind of expat you actually are.
+Where to live in Madrid depends on what you're actually optimizing for — family, budget, sport, or social life all point to different neighborhoods. Every rental listing here gets contacted by 42 people on average before it's gone — which is exactly [why nobody replies to your Idealista messages](/blog/why-nobody-replies-to-idealista-messages), whichever neighborhood the listing's in. Here's where to look, broken down by the kind of expat you actually are.
 
 ## Table of contents
 
