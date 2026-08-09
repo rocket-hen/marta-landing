@@ -48,7 +48,7 @@ Where to live in Madrid depends on what you're actually optimizing for — famil
 
 Which neighborhood you land in decides how often you'll need fluent Spanish to get through daily life — some parts of Madrid run almost entirely in English inside coworking spaces and international schools, others don't, and neither is wrong. When my creators moved to Spain in 2021, they assumed conversational Spanish would be enough to navigate a phone call with an agent. It wasn't — understanding a real estate agent with a thick Andalusian accent over a bad connection is nothing like ordering coffee.
 
-That's the actual question behind "where should I live in Madrid" once you strip out the generic answers. Not which neighborhood is objectively best — which one is best for you, specifically. Nine different versions of a good expat life in Madrid follow, sorted by what you're actually optimizing for.
+That's the actual question behind "where should I live in Madrid" once you strip out the generic answers. Not which neighborhood is objectively best — which one is best for you, specifically. Nine different versions of a good expat life in Madrid follow, sorted by what you're actually optimizing for. For a more general side-by-side on rent, safety, and who lives where, see [The Best Neighborhoods in Madrid, Compared](/blog/madrid-neighborhoods-guide).
 
 ## Moving with a family: Retiro or Chamartín
 
@@ -64,7 +64,7 @@ Neither neighborhood is exciting. That's the point — a school run under fiftee
 
 Lavapiés runs about 10–15% cheaper than the neighborhoods around it, with the most varied, cheapest food scene in central Madrid. Tetuán is even better value — €10–16/m², roughly half of Chamberí a few Metro stops away — with strong coverage on five different lines.
 
-If the budget stretches further, Malasaña trades some savings for proximity to the actual social life most students came for: coworking cafés, bars, and a nightlife scene that doesn't require a taxi home.
+If the budget stretches further, Malasaña trades some savings for proximity to the actual social life most students came for: coworking cafés, bars, and a nightlife scene that doesn't require a taxi home. For the full breakdown of what's actually cheap in Madrid versus what just claims to be, see [Affordable Housing Near Madrid: The Real Split](/blog/affordable-housing-near-madrid).
 
 ## Solo and social: Malasaña, Chueca, or La Latina
 
@@ -96,7 +96,7 @@ If proximity to a court matters more than proximity to a park, this is the trade
 
 Real Club de Golf Puerta de Hierro, founded in 1904, is Spain's oldest and most prestigious course, with two 18-hole layouts and a membership that includes some of Madrid's oldest families, according to [its Wikipedia entry](https://en.wikipedia.org/wiki/Real_Club_de_la_Puerta_de_Hierro). It sits on the western edge of the city, closer to Moncloa than to Centro.
 
-Worth knowing before you get attached to the idea: Real Club La Moraleja, the other major option, isn't actually inside Madrid — it's in Alcobendas, a separate municipality to the north. If proximity to that club matters more than city living, you're choosing a suburb, not a Madrid neighborhood.
+Worth knowing before you get attached to the idea: Real Club La Moraleja, the other major option, isn't actually inside Madrid — it's in Alcobendas, a separate municipality to the north. If proximity to that club matters more than city living, you're choosing a suburb, not a Madrid neighborhood. [Luxury Suburbs Near Madrid: Where the Money Is](/blog/luxury-suburbs-near-madrid) covers La Moraleja and the rest of that market in full.
 
 ## Gay and want a neighborhood that gets it: Chueca
 
@@ -112,7 +112,7 @@ Lavapiés gets you the scene now. Carabanchel gets you the studio space, and the
 
 ## One thing worth knowing before you sign, in any of these neighborhoods
 
-Whichever of the nine fits, the same instinct helps once you're actually on the phone about a listing there. **Your tenant profile matters almost as much as your budget** — a clean "family from [country], I work as [role]" or "freelancer from [country], I do [work]" gets an agent picturing you faster than a five-minute biography, and it's worth having ready before you dial, not improvised mid-call. Once that's landed and you're down to the paperwork, here's the one thing worth checking before you actually sign:
+Whichever of the nine fits, the same instinct helps once you're actually on the phone about a listing there. **Your tenant profile matters almost as much as your budget** — a clean "family from [country], I work as [role]" or "freelancer from [country], I do [work]" gets an agent picturing you faster than a five-minute biography, and it's worth having ready before you dial, not improvised mid-call. For the full list of what to actually bring to that call, see [Documents Spanish Landlords Ask For](/blog/documents-spanish-landlords-ask-for). Once that's landed and you're down to the paperwork, here's the one thing worth checking before you actually sign:
 
 :::highlight
 If an agency in any neighborhood on this list tries to charge you a fee for finding or drafting the lease, that's not a formality — it's **illegal for a standard long-term rental, and has been since Ley 12/2023**. The law puts agency and contract-drafting costs on the landlord, not the tenant. Some agencies rename the same charge an "estudio de solvencia," or credit study, to sit outside the ban — it's the identical fee wearing a different hat.
