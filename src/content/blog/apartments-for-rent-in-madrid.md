@@ -95,7 +95,7 @@ Redialling the same number for the ninth time trying to book a viewing in Salama
 
 Nationally, only 23% of renters find a place in under two weeks — down from 28% the year before. 43% take more than two months. Madrid's housing deficit sits at 203,743 homes, so the pressure here typically runs above that national average, not below it.
 
-If Mission: Impossible taught us anything, it's that the listing self-destructs in five seconds if nobody calls first. Realistically, budget more time than you'd like, and treat every week saved on the front end — documents ready, calls made fast — as a week you don't spend on Airbnb rates.
+If Mission: Impossible taught us anything, it's that the listing self-destructs in five seconds if nobody calls first. Realistically, budget more time than you'd like, and treat every week saved on the front end — documents ready, calls made fast — as a week you don't spend on Airbnb rates. [The First 15 Minutes: Why Speed Wins Flats](/blog/first-15-minutes-why-speed-wins-flats) covers exactly why that window is so short and what it takes to win it.
 
 ## One thing that should always be a red flag
 
