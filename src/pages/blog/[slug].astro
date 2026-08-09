@@ -310,21 +310,28 @@ const schema = [
 		background: var(--white);
 		padding: 32px;
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		gap: 24px;
-		align-items: center;
-		justify-content: space-between;
 	}
-	.body :global(.inline-cta p) {
+	.body :global(.inline-cta > p) {
 		margin: 0;
 		font-size: 16px;
 		line-height: 1.6;
 		color: var(--ink);
-		max-width: 480px;
 	}
-	.body :global(.inline-cta-action) {
-		margin: 0;
-		flex: none;
+	.body :global(.inline-cta-bottom) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+	}
+	.body :global(.inline-cta-title) {
+		font-family: var(--font-display);
+		font-size: 22px;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		color: var(--ink);
 	}
 	.body :global(.inline-cta .cta-btn) {
 		display: inline-block;
@@ -335,5 +342,6 @@ const schema = [
 		font-size: 15px;
 		font-weight: 500;
 		border-radius: 4px;
+		flex: none;
 	}
 </style>
