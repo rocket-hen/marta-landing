@@ -32,7 +32,7 @@ The difference between a temporada rental and a long-term lease in Spain isn't t
 
 A long-term lease in Spain comes with a mandatory minimum stay — the tenant can remain up to five years even if the contract itself says less, and can walk away after six months if their own plans change. A temporada contract carries none of that: it ends on the date it says it ends, full stop, and neither side gets to extend it by default. The security deposit works differently too. A vivienda habitual lease caps the deposit at three months total — one month legal, up to two more as extra guarantee, according to [Fotocasa's guide to the legal deposit cap](https://www.fotocasa.es/fotocasa-life/brain/es-legal-que-me-pidan-tres-meses-de-fianza-por-un-alquiler/). A temporada contract sits outside that same protective chapter of the law, so that ceiling isn't guaranteed the same way — worth confirming in writing before you hand over anything more than a month's rent.
 
-:::inline-cta{title="Only Getting Temporada Offers?" url="https://callmarta.com" label="Let Marta help"}
+:::inline-cta{title="Only Getting Temporada Offers?" url="https://callmarta.com/#pricing" label="Let Marta help"}
 Already resigned to every decent flat offering only a short-term contract? Let's call more of them together — Marta can help you find the lease you actually want.
 :::
 
