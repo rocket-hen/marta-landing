@@ -38,6 +38,8 @@ Los requisitos para alquilar un piso en España son casi siempre los mismos: nó
 
 Nómina o contrato de trabajo (o los últimos tres meses de facturación si eres autónomo), DNI o NIE, y una idea clara de cuándo puedes entrar a vivir. La mayoría de agencias no tiene un mínimo de ingresos fijado por ley, pero sí una convención no escrita que aplican casi todas: ingresos anuales de al menos [40 veces la renta mensual](https://rentbis.com/blog/cual-es-la-nomina-minima-para-alquilar-un-piso/), poco más de tres veces la renta al mes. No te lo van a enseñar en un documento — te lo van a preguntar de palabra.
 
+La nómina es solo la prueba de solvencia más común, no la única que vale. Un contrato con una empresa extranjera y nómina en otra divisa, un contrato temporal en vez de indefinido, las últimas facturas si trabajas como autónomo, una pensión, o incluso el alquiler que cobras por otra propiedad, sirven igual de bien si puedes acreditarlos con extractos bancarios de los últimos meses. A la agencia no le importa tanto la etiqueta del ingreso como que sea recurrente y que lo puedas demostrar por escrito — la nómina solo es la forma más fácil de enseñarlo, no la única que existe.
+
 > No te lo van a pedir por escrito en la primera llamada. Te lo van a preguntar de palabra, y tu respuesta decide si pasas a la siguiente fase.
 
 ## Si no tienes nómina: aval bancario vs seguro de impago
