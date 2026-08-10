@@ -1,13 +1,15 @@
 ---
 interface Props {
 	faq: { q: string; a: string }[];
+	heading?: string;
+	headingId?: string;
 }
 
-const { faq } = Astro.props;
+const { faq, heading = 'Frequently asked questions', headingId = 'frequently-asked-questions' } = Astro.props;
 ---
 
 <div class="post-faq">
-	<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+	<h2 id={headingId}>{heading}</h2>
 	<div class="list">
 		{
 			faq.map((f) => (

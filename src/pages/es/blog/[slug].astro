@@ -1,9 +1,10 @@
 ---
 import { render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PostFaq from '../../../components/PostFaq.astro';
 import { copy } from '../../../i18n/copy';
 import { getPostsForLang, postSlug } from '../../../lib/blog';
-import { articleSchema, breadcrumbSchema } from '../../../lib/schema';
+import { articleSchema, breadcrumbSchema, faqSchema } from '../../../lib/schema';
 
 const lang = 'es';
 const t = copy[lang].blog;
@@ -25,6 +26,7 @@ const schema = [
 		{ name: 'Blog', url: 'https://callmarta.com/es/blog' },
 		{ name: post.data.title, url: pageUrl },
 	]),
+	...(post.data.faq ? [faqSchema(post.data.faq)] : []),
 ];
 ---
 
@@ -35,6 +37,7 @@ const schema = [
 	lang={lang}
 	schema={schema}
 	articleMeta={{ publishedTime: isoDate, modifiedTime: isoDate }}
+	ogImage={post.data.image}
 >
 	<article class="post">
 		<div class="head">
@@ -43,9 +46,16 @@ const schema = [
 				{post.data.category} · {post.data.minutes} {t.minRead} · <time datetime={isoDate}>{dateLabel}</time>
 			</div>
 			<h1>{post.data.title}</h1>
-			<div class="cover" aria-hidden="true">
-				<span>article cover image</span>
-			</div>
+			<img
+				class="cover"
+				src={post.data.image ?? '/og/default.jpg'}
+				srcset={post.data.imageSmall ? `${post.data.imageSmall} 800w, ${post.data.image} 1200w` : undefined}
+				sizes={post.data.imageSmall ? '(max-width: 640px) 100vw, 720px' : undefined}
+				alt={post.data.imageAlt ?? post.data.title}
+				width="1200"
+				height="630"
+				fetchpriority="high"
+			/>
 		</div>
 
 		<div class="body">
@@ -58,6 +68,8 @@ const schema = [
 				</div>
 				<a href="/es/#pricing" class="cta-btn" data-gtm-id="blog_post_book_viewings">{copy[lang].nav.cta}</a>
 			</div>
+
+			{post.data.faq && <PostFaq faq={post.data.faq} heading="Preguntas frecuentes" headingId="preguntas-frecuentes" />}
 		</div>
 	</article>
 </BaseLayout>
@@ -99,25 +111,11 @@ const schema = [
 
 	.cover {
 		width: 100%;
-		aspect-ratio: 16 / 8;
+		height: auto;
+		aspect-ratio: 1200 / 630;
+		object-fit: cover;
 		border: 1px solid var(--border);
-		background-color: #F2F0EA;
-		background-image: repeating-linear-gradient(
-			135deg,
-			rgba(26, 25, 23, 0.04) 0,
-			rgba(26, 25, 23, 0.04) 1px,
-			transparent 1px,
-			transparent 11px
-		);
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		margin-bottom: 48px;
-	}
-	.cover span {
-		font-family: var(--font-mono);
-		font-size: 12px;
-		color: var(--muted);
 	}
 
 	.body {
@@ -144,9 +142,95 @@ const schema = [
 		font-weight: 800;
 		letter-spacing: -0.02em;
 		margin: 40px 0 0;
+		/* Fixed header is 75px tall — without this, clicking a TOC anchor
+		   (or any #heading link) scrolls the heading right underneath it. */
+		scroll-margin-top: 100px;
 	}
 	.body :global(h2 + p) {
 		margin-top: 24px;
+	}
+	.body :global(h2 + ul),
+	.body :global(h2 + ol) {
+		margin-top: 24px;
+	}
+
+	.body :global(h3) {
+		font-family: var(--font-display);
+		font-size: 19px;
+		font-weight: 800;
+		letter-spacing: -0.01em;
+		margin: 32px 0 0;
+		scroll-margin-top: 100px;
+	}
+	.body :global(h3 + p) {
+		margin-top: 16px;
+	}
+
+	.body :global(ul),
+	.body :global(ol) {
+		margin: 0 0 24px;
+		padding-left: 22px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.body :global(li) {
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--ink);
+	}
+	.body :global(ul) {
+		list-style: none;
+		padding-left: 0;
+	}
+	.body :global(ul li) {
+		padding-left: 20px;
+		position: relative;
+	}
+	.body :global(ul li::before) {
+		content: '—';
+		position: absolute;
+		left: 0;
+		color: var(--accent);
+	}
+	.body :global(ol) {
+		list-style: decimal;
+	}
+	.body :global(ol li::marker) {
+		color: var(--accent);
+		font-weight: 500;
+	}
+
+	.body :global(table) {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 8px 0 24px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.body :global(th) {
+		text-align: left;
+		font-family: var(--font-mono);
+		font-size: 11px;
+		font-weight: 400;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--muted);
+		padding: 8px 16px 8px 0;
+		border-bottom: 1px solid var(--ink);
+	}
+	.body :global(td) {
+		vertical-align: top;
+		padding: 10px 16px 10px 0;
+		border-bottom: 1px solid var(--border);
+		color: var(--ink);
+	}
+
+	.body :global(.inline-img) {
+		width: 100%;
+		height: auto;
+		border: 1px solid var(--border);
+		margin: 8px 0 32px;
 	}
 
 	.body :global(blockquote) {
@@ -160,6 +244,26 @@ const schema = [
 	}
 	.body :global(blockquote p) {
 		margin: 0;
+	}
+
+	.body :global(.highlight-block) {
+		margin: 32px 0;
+		padding: 20px 24px;
+		background: rgba(176, 81, 46, 0.07);
+		border-left: 3px solid var(--accent);
+		font-size: 15px;
+		line-height: 1.7;
+	}
+	.body :global(.highlight-block p) {
+		margin: 0;
+		font-size: inherit;
+		color: var(--ink);
+	}
+	.body :global(.highlight-block p + p) {
+		margin-top: 12px;
+	}
+	.body :global(.highlight-block strong) {
+		color: var(--accent);
 	}
 
 	.cta {
@@ -190,6 +294,47 @@ const schema = [
 	}
 
 	.cta-btn {
+		background: var(--accent);
+		border: none;
+		padding: 14px 28px;
+		color: var(--bg);
+		font-size: 15px;
+		font-weight: 500;
+		border-radius: 4px;
+		flex: none;
+	}
+
+	.body :global(.inline-cta) {
+		margin: 40px 0;
+		border: 1px solid var(--border);
+		background: var(--white);
+		padding: 32px;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	.body :global(.inline-cta > p) {
+		margin: 0;
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--ink);
+	}
+	.body :global(.inline-cta-bottom) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+	}
+	.body :global(.inline-cta-title) {
+		font-family: var(--font-display);
+		font-size: 22px;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		color: var(--ink);
+	}
+	.body :global(.inline-cta .cta-btn) {
+		display: inline-block;
 		background: var(--accent);
 		border: none;
 		padding: 14px 28px;
