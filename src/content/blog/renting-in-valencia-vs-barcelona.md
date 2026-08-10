@@ -3,7 +3,7 @@ title: "Renting in Valencia vs Barcelona: What Changes"
 excerpt: "Prices, competition, paperwork enforcement, and neighborhoods — how Spain's two biggest coastal rental markets actually treat newcomers differently, city by city."
 category: "Cities"
 minutes: 8
-pubDate: 2026-06-28
+pubDate: 2026-07-28
 image: "/og/blog/renting-in-valencia-vs-barcelona.jpg"
 imageAlt: "Renting in Valencia vs Barcelona — Marta blog"
 imageSmall: "/og/blog/renting-in-valencia-vs-barcelona-800.jpg"

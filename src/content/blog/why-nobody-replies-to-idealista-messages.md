@@ -3,7 +3,7 @@ title: "Why Nobody Replies to Your Idealista Messages"
 excerpt: "Agents don't read messages in order — they answer the phone instead. Here's the actual math behind Spanish rental listings, and what gets you a reply."
 category: "Strategy"
 minutes: 4
-pubDate: 2026-07-15
+pubDate: 2026-07-30
 image: "/og/blog/why-nobody-replies-to-idealista-messages.jpg"
 imageAlt: "Why nobody replies to your Idealista messages — Marta blog"
 imageSmall: "/og/blog/why-nobody-replies-to-idealista-messages-800.jpg"

@@ -3,7 +3,7 @@ title: "Where to Live in Madrid, by Who You Are"
 excerpt: "Where to actually live in Madrid if you're a family, student, solo expat, freelancer, runner, tennis player, golfer, gay, or an artist — real neighborhoods, real numbers."
 category: "Neighborhoods"
 minutes: 10
-pubDate: 2026-08-07
+pubDate: 2026-08-02
 image: "/og/blog/where-to-live-in-madrid.jpg"
 imageAlt: "Where to live in Madrid — Marta blog"
 imageSmall: "/og/blog/where-to-live-in-madrid-800.jpg"

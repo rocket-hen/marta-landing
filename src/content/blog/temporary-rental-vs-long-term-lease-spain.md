@@ -3,7 +3,7 @@ title: "Temporary Rental vs Long-Term Lease in Spain"
 excerpt: "A temporada contract and a long-term lease in Spain run under different law, with different protections. Here's what actually changes before you sign anything."
 category: "Documents"
 minutes: 4
-pubDate: 2026-08-09
+pubDate: 2026-08-05
 image: "/og/blog/temporary-rental-vs-long-term-lease-spain.jpg"
 imageAlt: "Temporary rental vs long-term lease in Spain — Marta blog"
 imageSmall: "/og/blog/temporary-rental-vs-long-term-lease-spain-800.jpg"

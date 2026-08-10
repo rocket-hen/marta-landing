@@ -3,7 +3,7 @@ title: "Documents Spanish Landlords Ask For"
 excerpt: "Nómina, aval, seguro de impago, and NIE — decoded, with what actually gets your rental file approved before you ever pick up the phone to call an agency."
 category: "Documents"
 minutes: 7
-pubDate: 2026-07-08
+pubDate: 2026-07-29
 image: "/og/blog/documents-spanish-landlords-ask-for.jpg"
 imageAlt: "Documents Spanish landlords ask for — Marta blog"
 imageSmall: "/og/blog/documents-spanish-landlords-ask-for-800.jpg"

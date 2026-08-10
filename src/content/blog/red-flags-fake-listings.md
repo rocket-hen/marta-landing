@@ -3,7 +3,7 @@ title: "Red Flags: Spotting Fake Listings Before You Pay"
 excerpt: "Deposits before viewings, prices too good, and landlords who are always conveniently abroad — the classic scam script, and how a phone call kills it fast."
 category: "Scams"
 minutes: 4
-pubDate: 2026-06-10
+pubDate: 2026-07-26
 image: "/og/blog/red-flags-fake-listings.jpg"
 imageAlt: "Red flags: spotting fake rental listings before you pay — Marta blog"
 imageSmall: "/og/blog/red-flags-fake-listings-800.jpg"

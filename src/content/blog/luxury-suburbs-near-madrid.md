@@ -3,7 +3,7 @@ title: "Luxury Suburbs Near Madrid: Where the Money Is"
 excerpt: "La Moraleja, Puerta de Hierro, Pozuelo, Alcobendas, and more — real prices, real schools, and why renting here is harder to win than buying."
 category: "Neighborhoods"
 minutes: 8
-pubDate: 2026-08-07
+pubDate: 2026-08-04
 image: "/og/blog/luxury-suburbs-near-madrid.jpg"
 imageAlt: "Luxury suburbs near Madrid — Marta blog"
 imageSmall: "/og/blog/luxury-suburbs-near-madrid-800.jpg"

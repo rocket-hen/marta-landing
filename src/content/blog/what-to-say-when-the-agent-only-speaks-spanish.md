@@ -3,7 +3,7 @@ title: "What to Say When the Agent Only Speaks Spanish"
 excerpt: "The dozen Spanish phrases that keep a rental call alive in Spain, from the opening line through the qualifying questions to booking the viewing itself."
 category: "Language"
 minutes: 3
-pubDate: 2026-06-02
+pubDate: 2026-07-25
 image: "/og/blog/what-to-say-when-the-agent-only-speaks-spanish.jpg"
 imageAlt: "What to say when the agent only speaks Spanish — Marta blog"
 imageSmall: "/og/blog/what-to-say-when-the-agent-only-speaks-spanish-800.jpg"

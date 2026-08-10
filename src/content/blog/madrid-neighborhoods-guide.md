@@ -3,7 +3,7 @@ title: "The Best Neighborhoods in Madrid, Compared"
 excerpt: "Compare rent, safety, and who actually lives in each of Madrid's ten most-searched neighborhoods, from Salamanca's Golden Mile to Tetuán's best-value streets."
 category: "Neighborhoods"
 minutes: 10
-pubDate: 2026-08-07
+pubDate: 2026-08-01
 image: "/og/blog/madrid-neighborhoods-guide.jpg"
 imageAlt: "Best neighborhoods in Madrid — Marta blog"
 imageSmall: "/og/blog/madrid-neighborhoods-guide-800.jpg"

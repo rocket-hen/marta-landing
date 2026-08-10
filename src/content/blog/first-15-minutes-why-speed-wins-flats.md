@@ -3,7 +3,7 @@ title: "The First 15 Minutes: Why Speed Wins Flats"
 excerpt: "It was never really about a 15-minute clock — it's about being caller two, three, or four. A saved search with instant alerts beats checking manually, every time."
 category: "Strategy"
 minutes: 3
-pubDate: 2026-06-20
+pubDate: 2026-07-27
 image: "/og/blog/first-15-minutes-why-speed-wins-flats.jpg"
 imageAlt: "The first 15 minutes: why speed wins flats — Marta blog"
 imageSmall: "/og/blog/first-15-minutes-why-speed-wins-flats-800.jpg"

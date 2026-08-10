@@ -3,7 +3,7 @@ title: "Affordable Housing Near Madrid: The Real Split"
 excerpt: "Fuenlabrada rents for nearly half of Madrid's average, but some towns on the standard suburb lists cost almost as much as the capital. Here's the real split."
 category: "Neighborhoods"
 minutes: 8
-pubDate: 2026-08-07
+pubDate: 2026-08-03
 image: "/og/blog/affordable-housing-near-madrid.jpg"
 imageAlt: "Affordable housing near Madrid — Marta blog"
 imageSmall: "/og/blog/affordable-housing-near-madrid-800.jpg"
