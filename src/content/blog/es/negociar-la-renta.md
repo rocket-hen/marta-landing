@@ -3,7 +3,7 @@ title: "Cuándo (y cómo) negociar la renta sin perder el piso"
 excerpt: "Negociar mal puede costarte la visita. Estas son las señales de que hay margen — y las que dicen que no."
 category: "Negociación"
 minutes: 4
-pubDate: 2026-07-10
+pubDate: 2026-08-02
 image: "/og/blog/negociar-la-renta.jpg"
 imageAlt: "Cuándo y cómo negociar la renta sin perder el piso — Marta blog"
 imageSmall: "/og/blog/negociar-la-renta-800.jpg"

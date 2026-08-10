@@ -5,5 +5,12 @@
 		"width": 1600,
 		"height": 1000,
 		"alt": "Calle con edificios de una ciudad española"
+	},
+	{
+		"file": "madrid-valencia-malaga-2.jpg",
+		"fileSmall": "madrid-valencia-malaga-2-800.jpg",
+		"width": 1600,
+		"height": 1067,
+		"alt": "Calle residencial arbolada en un barrio de las afueras"
 	}
 ]

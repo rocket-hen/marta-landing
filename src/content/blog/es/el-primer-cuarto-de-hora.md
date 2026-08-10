@@ -3,7 +3,7 @@ title: "El primer cuarto de hora decide quién ve el piso"
 excerpt: "En los pisos buenos, la ventana real para conseguir una visita se cierra en minutos. Así funciona de verdad."
 category: "Estrategia"
 minutes: 4
-pubDate: 2026-06-05
+pubDate: 2026-07-29
 image: "/og/blog/el-primer-cuarto-de-hora.jpg"
 imageAlt: "El primer cuarto de hora decide quién ve el piso — Marta blog"
 imageSmall: "/og/blog/el-primer-cuarto-de-hora-800.jpg"

@@ -1,39 +1,81 @@
 ---
 title: "Estafas al Alquilar un Piso: Cómo Detectarlas"
-excerpt: "Los patrones se repiten: precio imposible, casero \"en el extranjero\", prisa por cobrar. Aprende a verlos venir."
+excerpt: "Los patrones de estafa al alquilar un piso se repiten: precio imposible, casero que dice estar fuera del país, prisa por cobrar. Así se detectan a tiempo."
 category: "Estafas"
-minutes: 5
-pubDate: 2026-06-22
+minutes: 7
+pubDate: 2026-07-27
 image: "/og/blog/fianza-antes-de-ver-el-piso.jpg"
 imageAlt: "Estafas al alquilar un piso: cómo detectarlas — Marta blog"
 imageSmall: "/og/blog/fianza-antes-de-ver-el-piso-800.jpg"
 faq:
   - q: "¿Cómo saber si un anuncio de alquiler es falso?"
-    a: "Desconfía de un precio muy por debajo del resto de la zona, un propietario que dice estar fuera de España y no puede enseñar el piso en persona, y mensajes que meten prisa para cerrarlo hoy mismo."
+    a: "Desconfía de un precio muy por debajo del resto de la zona, un propietario que dice estar fuera de España y no puede enseñar el piso en persona, y mensajes que meten prisa para cerrarlo hoy mismo. Los tres juntos son casi siempre el mismo patrón."
   - q: "¿Es seguro pagar una señal antes de ver el piso?"
     a: "No. Nunca pagues nada, ni siquiera una reserva simbólica, antes de haber entrado físicamente en el piso o comprobado por videollamada en directo que quien te atiende tiene control real sobre la vivienda."
   - q: "¿Qué debo comprobar antes de dar datos bancarios a un propietario?"
     a: "Confirma la dirección exacta en Google Maps y en la sede electrónica del catastro, y pide una videollamada en tiempo real desde dentro del piso, no un vídeo grabado."
   - q: "¿Qué hago si el propietario no puede enseñarme el piso en persona?"
     a: "Pide una videollamada en directo donde puedas indicar que giren la cámara. Si se niega o pone excusas, es la señal más clara de que algo no cuadra."
+  - q: "¿Por qué hay tantas estafas de alquiler en España ahora mismo?"
+    a: "Cada anuncio recibe una media de 40 contactos antes de retirarse (segundo trimestre de 2026). Con ese nivel de competencia, la prisa se vuelve normal, y los estafadores explotan justo esa prisa."
+  - q: "¿Qué hago si ya he pagado y sospecho que es una estafa?"
+    a: "Contacta con tu banco de inmediato para intentar frenar o reclamar la transferencia, y presenta una denuncia en la Policía Nacional o la Guardia Civil. Cuanto antes actúes, más opciones reales tienes."
 ---
 
-Las estafas al alquilar un piso siguen el mismo patrón en toda España: precio muy por debajo del mercado, casero que dice estar "fuera del país" y prisa por cobrar. El mercado está tan tensionado que basta con bajar la guardia un momento. Una vez conoces las señales, se reconocen casi de un vistazo.
+Una estafa de alquiler en España casi siempre sigue el mismo patrón: precio muy por debajo del mercado, casero que dice estar fuera del país, y prisa por cobrar. Cada anuncio recibe una media de 40 contactos antes de retirarse (segundo trimestre de 2026), y esa presión es justo lo que explotan los estafadores. Esto es lo que hay que comprobar antes de mandar un euro.
 
-## Las tres señales que casi nunca fallan
+## Índice
 
-Un precio muy por debajo del resto de la zona, sin motivo aparente. Un propietario que "está fuera de España" y no puede enseñar el piso en persona — pero te propone mandarte las llaves por mensajería en cuanto hagas una transferencia. Y prisa: mensajes que insisten en cerrarlo "hoy mismo" porque "hay otras diez personas interesadas".
+- [Por qué las estafas de alquiler funcionan tan bien ahora mismo](#por-qué-las-estafas-de-alquiler-funcionan-tan-bien-ahora-mismo)
+- [Las tres señales que casi nunca fallan](#las-tres-señales-que-casi-nunca-fallan)
+- [Cómo comprobar que el piso y el propietario son reales](#cómo-comprobar-que-el-piso-y-el-propietario-son-reales)
+- [El precio y la prisa: los dos indicadores más fiables](#el-precio-y-la-prisa-los-dos-indicadores-más-fiables)
+- [Qué hacer si algo no cuadra en la llamada](#qué-hacer-si-algo-no-cuadra-en-la-llamada)
+- [Cuándo no necesitas tanta cautela](#cuándo-no-necesitas-tanta-cautela)
+- [Preguntas frecuentes](#preguntas-frecuentes)
+
+## Por qué las estafas de alquiler funcionan tan bien ahora mismo
+
+El mercado de alquiler en España está tan tensionado que la prisa se ha vuelto la norma, no la excepción. Cada anuncio recibe una media de 40 contactos antes de retirarse, según datos de idealista del segundo trimestre de 2026 — un 18% más que un año antes. Con esa cantidad de gente compitiendo por el mismo piso, cualquiera baja la guardia en algún momento: nadie quiere ser el que "lo pensó demasiado" y perdió la oportunidad.
+
+Los estafadores no necesitan ser sofisticados. Solo necesitan que tengas prisa (y en este mercado, todo el mundo la tiene).
 
 > Un propietario real prefiere perder un día antes que perder la fianza de un inquilino que nunca vio el piso. Un estafador prefiere justo lo contrario.
 
-## Lo que sí puedes comprobar tú mismo
-
-Busca la dirección exacta en Google Maps y en el catastro (sede electrónica del catastro, es gratuito y público) para confirmar que el piso existe y coincide con las fotos. Pide una videollamada en directo desde dentro del piso — no un vídeo grabado, sino en tiempo real, donde puedas pedir que giren la cámara.
+## Las tres señales que casi nunca fallan
 
 ::img[Persona haciendo una videollamada para ver un piso en alquiler]
 
+Un precio muy por debajo del resto de la zona, sin motivo aparente, es la primera señal — y la más fácil de comprobar: compara con dos o tres anuncios similares de la misma zona antes de escribir. Un propietario que "está fuera de España" y no puede enseñar el piso en persona es la segunda, sobre todo si la explicación llega antes de que preguntes tú. Y la tercera es la prisa: mensajes que insisten en cerrarlo "hoy mismo" porque "hay otras diez personas interesadas" — lo cual, dado que un piso real medio recibe 40 contactos, hasta podría ser verdad. La diferencia está en qué te piden a cambio de esa urgencia.
+
+## Cómo comprobar que el piso y el propietario son reales
+
+Busca la dirección exacta en Google Maps y en la sede electrónica del catastro — es gratuito, público, y confirma en segundos si el piso existe y coincide con las fotos del anuncio. Si el catastro no encuentra nada en esa dirección, o las fotos no coinciden con el edificio real, ya tienes la respuesta.
+
+Pide una videollamada en directo desde dentro del piso — no un vídeo grabado, sino en tiempo real, donde puedas pedir que giren la cámara hacia la ventana o el contador de la luz, algo que un vídeo preparado de antemano no cubriría. Un propietario o agencia real no tiene motivo para negarse; alguien que solo tiene fotos robadas de otro anuncio, sí.
+
+También puedes hacer una búsqueda inversa de las fotos del anuncio (clic derecho, "buscar imagen" en Google, o subirlas a una herramienta de búsqueda por imagen). Si las mismas fotos aparecen en un anuncio de otra ciudad, con otro precio, o publicadas hace tres años, ya tienes tu respuesta sin necesidad de hablar con nadie. Es el equivalente inmobiliario de pedirle el DNI a un desconocido antes de dejarle entrar en casa — incómodo la primera vez, y luego se hace en cinco minutos sin pensarlo.
+
+## El precio y la prisa: los dos indicadores más fiables
+
+::img[Carpeta con documentos y llaves sobre una mesa]
+
+De las señales de arriba, combinadas valen más que por separado. Un precio bajo por sí solo puede ser un propietario que no sabe valorar su piso — pasa más de lo que parece. Prisa por sí sola puede ser simplemente un mercado tensionado — ya hemos visto que lo es. Pero precio bajo *y* prisa *y* imposibilidad de ver el piso en persona, los tres a la vez, es casi siempre el mismo patrón: alguien que necesita tu dinero antes de que compruebes que no hay piso, o que el piso no es suyo.
+
+Según la Policía Nacional, [este es el patrón de estafa de alquiler más frecuente en España ahora mismo](https://www.elespanol.com/sociedad/20240303/policia-alerta-estafas-alquiler-pisos-trucos-evitar-fraudes/837166283_0.html) — y no varía mucho de una ciudad a otra ni de una temporada a otra.
+
+## Qué hacer si algo no cuadra en la llamada
+
+Si algo no cuadra — evasivas, prisa, una historia que cambia de un mensaje a otro — cuelga y sigue mirando. Un piso real puede esperar veinticuatro horas más para que lo veas en persona o por videollamada. Uno falso, no (y tampoco necesita que le hagas ese favor).
+
 :::highlight
-Nunca pagues nada — ni una "reserva simbólica" — antes de haber entrado físicamente al piso o comprobado por videollamada que quien te atiende tiene control real sobre la vivienda. Ninguna urgencia real justifica saltarse este paso.
+**Nunca envíes dinero a nadie antes de haber visto el piso en persona** — o a través de alguien de confianza que te represente. Es el patrón de estafa de alquiler más común en España ahora mismo: un buen reportaje de fotos, un precio un poco demasiado bueno, y un propietario que convenientemente "está fuera del país" y solo necesita la transferencia primero. Si no puedes visitarlo, esa es la señal de alarma — no un inconveniente que rodear.
 :::
 
-Si algo no cuadra en la llamada — evasivas, prisa, una historia que cambia de un mensaje a otro — cuelga y sigue mirando. Un piso real puede esperar veinticuatro horas más. Uno falso, no (y tampoco necesita que le hagas ese favor).
+## Cuándo no necesitas tanta cautela
+
+Si el piso lo publica una agencia con oficina física, número fijo y años de reseñas verificables, o si ya conoces a alguien que ha alquilado con ellos antes, el nivel de sospecha baja bastante — comprobar el catastro sigue sin costar nada, pero no hace falta tratar cada mensaje como una posible trampa. La cautela es para el anuncio suelto de un particular al que no puedes verificar de ninguna otra forma, no para cualquier conversación sobre un piso.
+
+Marta no investiga estafas ni verifica identidades — eso sigue siendo cosa tuya, con el catastro y la videollamada. Lo que hace es llamar a la agencia o al propietario en los primeros minutos tras la publicación, para que consigas la visita real antes de que la prisa del mercado te empuje a saltarte un paso que no deberías saltarte.
+
+Piénsalo como el reparto de un capítulo de La que se avecina: hay un vecino honesto, uno con prisa, y uno que definitivamente no debería tener las llaves de nada. La diferencia es que aquí tú decides quién es quién antes de mandar el dinero, no después de la temporada dos.

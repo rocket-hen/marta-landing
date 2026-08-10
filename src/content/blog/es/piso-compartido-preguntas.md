@@ -3,7 +3,7 @@ title: "Piso compartido: las preguntas que hay que hacer antes de firmar"
 excerpt: "Gastos, visitas, silencio a las 2 de la madrugada: lo que un anuncio nunca cuenta sobre tus futuros compañeros de piso."
 category: "Piso compartido"
 minutes: 5
-pubDate: 2026-07-20
+pubDate: 2026-07-28
 image: "/og/blog/piso-compartido-preguntas.jpg"
 imageAlt: "Piso compartido: las preguntas antes de firmar — Marta blog"
 imageSmall: "/og/blog/piso-compartido-preguntas-800.jpg"
