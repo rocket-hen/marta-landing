@@ -1,0 +1,16 @@
+[
+	{
+		"file": "ley-de-vivienda-1.jpg",
+		"fileSmall": "ley-de-vivienda-1-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Edificio residencial con balcones en Madrid"
+	},
+	{
+		"file": "ley-de-vivienda-2.jpg",
+		"fileSmall": "ley-de-vivienda-2-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Persona firmando un documento en una oficina"
+	}
+]

@@ -1,0 +1,16 @@
+[
+	{
+		"file": "precio-alquiler-valencia-1.jpg",
+		"fileSmall": "precio-alquiler-valencia-1-800.jpg",
+		"width": 1600,
+		"height": 1072,
+		"alt": "Calle soleada de un barrio de Valencia"
+	},
+	{
+		"file": "precio-alquiler-valencia-2.jpg",
+		"fileSmall": "precio-alquiler-valencia-2-800.jpg",
+		"width": 1600,
+		"height": 1072,
+		"alt": "Vista panorámica de la ciudad de Valencia"
+	}
+]

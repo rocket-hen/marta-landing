@@ -1,0 +1,16 @@
+[
+	{
+		"file": "precio-alquiler-barcelona-1.jpg",
+		"fileSmall": "precio-alquiler-barcelona-1-800.jpg",
+		"width": 1600,
+		"height": 1067,
+		"alt": "Vista panorámica del skyline de Barcelona"
+	},
+	{
+		"file": "precio-alquiler-barcelona-2.jpg",
+		"fileSmall": "precio-alquiler-barcelona-2-800.jpg",
+		"width": 1600,
+		"height": 1045,
+		"alt": "Persona usando una calculadora y un portátil"
+	}
+]

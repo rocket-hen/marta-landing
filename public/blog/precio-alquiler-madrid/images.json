@@ -1,0 +1,16 @@
+[
+	{
+		"file": "precio-alquiler-madrid-1.jpg",
+		"fileSmall": "precio-alquiler-madrid-1-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Vista aérea de Madrid con el Palacio de Cibeles"
+	},
+	{
+		"file": "precio-alquiler-madrid-2.jpg",
+		"fileSmall": "precio-alquiler-madrid-2-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Mujer calculando gastos con recibos y calculadora"
+	}
+]
