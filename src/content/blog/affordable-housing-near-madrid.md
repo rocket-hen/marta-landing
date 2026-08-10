@@ -79,7 +79,7 @@ The trade-off: it's a genuinely different town, not a Madrid neighborhood with a
 
 For people who only need to be in Madrid a few days a week, the math changes completely. Toledo runs about €824 a month for an 80 m² flat, 35 minutes away by AVE. Valladolid drops to about €760 a month, an hour out. Zaragoza, the furthest at an hour and 15 minutes, comes in around €912.
 
-None of these are commuter towns in the daily sense — the AVE isn't cheap enough to ride twice a day, every day, without a company covering it. This is a hybrid-work bet, not a budget-rental one.
+None of these are commuter towns in the daily sense — the AVE isn't cheap enough to ride twice a day, every day, without a company covering it. This is a hybrid-work bet, not a budget-rental one, and it's also exactly the kind of arrangement that legitimately qualifies for [a temporada contract instead of a long-term lease](/blog/temporary-rental-vs-long-term-lease-spain) — worth knowing which one you're actually being offered.
 
 ## The "suburb" guides that aren't actually about affordability
 
