@@ -57,6 +57,8 @@ Un aval bancario cubre al propietario si dejas de pagar, respaldado por tu banco
 
 Ninguna de las tres opciones es automática — cada una tiene sus propios requisitos de aprobación, así que conviene empezar el trámite antes de encontrar el piso, no después. Ten en cuenta que ninguna sustituye la fianza habitual: [la legal nunca puede superar tres meses de renta en total](/es/blog/fianza-alquiler), sea cual sea el documento que uses para demostrar solvencia.
 
+Otra forma de reducir la barrera de entrada es compartir piso, donde el filtro de ingresos suele ser menos estricto por persona — [aquí tienes las preguntas clave que conviene hacer antes de firmar uno](/es/blog/piso-compartido-preguntas).
+
 ## Documentos que sí puedes aportar siendo autónomo o freelance
 
 Si facturas como autónomo, la última declaración de IRPF junto con los recibos trimestrales de IVA demuestran ingresos tan bien como una nómina, solo que en otro formato. Añade extractos bancarios de los últimos tres a seis meses y, si los tienes, contratos o facturas recurrentes con clientes estables.
