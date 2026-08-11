@@ -7,6 +7,17 @@ pubDate: 2026-08-10
 image: "/og/blog/alquilar-piso-sin-nomina.jpg"
 imageAlt: "Alquilar piso sin nómina en España — Marta blog"
 imageSmall: "/og/blog/alquilar-piso-sin-nomina-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Cómo alquilar un piso si no tengo nómina?"
     a: "Con un aval bancario, un seguro de impago, o documentos que demuestren ingresos regulares aunque no vengan de una nómina — declaración de IRPF, extractos bancarios, facturación como autónomo. Lo importante es llevarlos preparados antes de la primera llamada."

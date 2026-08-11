@@ -7,6 +7,17 @@ pubDate: 2026-08-10
 image: "/og/blog/actualizar-renta-alquiler.jpg"
 imageAlt: "Actualizar renta alquiler en España — Marta blog"
 imageSmall: "/og/blog/actualizar-renta-alquiler-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Cuánto es lo máximo que te pueden aumentar el alquiler?"
     a: "Depende del índice que te aplique. Si tu contrato es anterior al 26 de mayo de 2023, el límite es el IPC interanual (en torno al 3,2-3,4% en 2026). Si es posterior, se aplica el IRAV, más moderado, en torno al 2,47%."

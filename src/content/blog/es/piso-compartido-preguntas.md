@@ -7,6 +7,17 @@ pubDate: 2026-07-28
 image: "/og/blog/piso-compartido-preguntas.jpg"
 imageAlt: "Piso compartido: las preguntas antes de firmar — Marta blog"
 imageSmall: "/og/blog/piso-compartido-preguntas-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Qué preguntar antes de firmar un piso compartido?"
     a: "Cómo se reparten los gastos, si hay una cuenta común, qué pasa si alguien se va antes de tiempo, y si el contrato es conjunto o individual por inquilino."

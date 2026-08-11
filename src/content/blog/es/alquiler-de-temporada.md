@@ -7,6 +7,17 @@ pubDate: 2026-08-10
 image: "/og/blog/alquiler-de-temporada.jpg"
 imageAlt: "Alquiler de temporada vs habitual en España — Marta blog"
 imageSmall: "/og/blog/alquiler-de-temporada-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Qué es un contrato de alquiler de temporada?"
     a: "Es un alquiler regulado por el artículo 3.2 de la LAU para cubrir una necesidad temporal — un trabajo, unos estudios, un tratamiento médico — no tu vivienda permanente. La duración es la que pacten las partes, sin las prórrogas obligatorias de un alquiler habitual."

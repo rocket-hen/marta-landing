@@ -7,6 +7,17 @@ pubDate: 2026-08-10
 image: "/og/blog/aval-bancario-alquiler.jpg"
 imageAlt: "Aval bancario alquiler o seguro de impago — Marta blog"
 imageSmall: "/og/blog/aval-bancario-alquiler-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Cuánto cuesta contratar un seguro de impago de alquiler?"
     a: "Suele costar entre el 3% y el 5% de la renta anual, según fuentes del sector. Para una renta de 1.000 € al mes, serían entre 360 € y 600 € al año — lo paga el propietario, pero el coste puede acabar afectando la negociación de la renta."

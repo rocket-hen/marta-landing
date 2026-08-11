@@ -7,6 +7,17 @@ pubDate: 2026-08-04
 image: "/og/blog/derechos-del-inquilino.jpg"
 imageAlt: "Derechos del inquilino en España — Marta blog"
 imageSmall: "/og/blog/derechos-del-inquilino-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Cuáles son los derechos de un inquilino de una casa?"
     a: "Entre otros: prórroga del contrato hasta 5 o 7 años, poder marcharte a los 6 meses avisando con 30 días, inviolabilidad del domicilio, reparaciones a cargo del propietario, devolución de la fianza, y derecho de tanteo y retracto si el propietario vende."

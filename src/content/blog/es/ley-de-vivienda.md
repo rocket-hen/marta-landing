@@ -7,6 +7,17 @@ pubDate: 2026-08-03
 image: "/og/blog/ley-de-vivienda.jpg"
 imageAlt: "Ley de Vivienda en España — Marta blog"
 imageSmall: "/og/blog/ley-de-vivienda-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Qué dice la nueva Ley de la vivienda?"
     a: "Limita los precios en zonas de mercado tensionado, obliga al propietario a pagar los gastos de gestión inmobiliaria, define reglas más estrictas para los grandes tenedores, y añade pasos de protección antes de un desahucio."

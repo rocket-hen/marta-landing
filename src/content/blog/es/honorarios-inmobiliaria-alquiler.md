@@ -7,6 +7,17 @@ pubDate: 2026-08-07
 image: "/og/blog/honorarios-inmobiliaria-alquiler.jpg"
 imageAlt: "Honorarios de inmobiliaria en un alquiler: quién paga — Marta blog"
 imageSmall: "/og/blog/honorarios-inmobiliaria-alquiler-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Quién paga los honorarios de la inmobiliaria en un alquiler?"
     a: "El propietario, siempre que sea un alquiler de vivienda habitual. Desde la Ley 12/2023, los gastos de gestión inmobiliaria y de formalización del contrato ya no pueden cargarse al inquilino."

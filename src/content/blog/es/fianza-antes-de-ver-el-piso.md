@@ -7,6 +7,17 @@ pubDate: 2026-07-27
 image: "/og/blog/fianza-antes-de-ver-el-piso.jpg"
 imageAlt: "Estafas al alquilar un piso: cómo detectarlas — Marta blog"
 imageSmall: "/og/blog/fianza-antes-de-ver-el-piso-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Cómo saber si un anuncio de alquiler es falso?"
     a: "Desconfía de un precio muy por debajo del resto de la zona, un propietario que dice estar fuera de España y no puede enseñar el piso en persona, y mensajes que meten prisa para cerrarlo hoy mismo. Los tres juntos son casi siempre el mismo patrón."
