@@ -62,7 +62,7 @@ Las agencias que cobran esto a un inquilino de vivienda habitual están incumpli
 
 Entender cuánto cobra una agencia ayuda a entender por qué insisten tanto en cobrártelo a ti. Housfy cita un 10% de la renta anual como la cifra más habitual. Zazume maneja un rango algo más amplio, del 8% al 12% de la renta anual, o alternativamente una mensualidad completa. Fotocasa da un ejemplo concreto: si se cobra por mensualidad, puede ser una sola (unos 1.500€ en un alquiler medio) o dos (unos 3.000€) según el caso.
 
-Es dinero real que la agencia deja de cobrar si no puede cargártelo a ti — de ahí la insistencia, y de ahí también que renombrar el cobro sea tan tentador para quien no quiere renunciar a ese ingreso.
+Es dinero real que la agencia deja de cobrar si no puede cargártelo a ti — de ahí la insistencia, y de ahí también que renombrar el cobro sea tan tentador para quien no quiere renunciar a ese ingreso. Esa presión suele notarse más si tu perfil ya tiene otro punto débil aparente, como no tener nómina fija — [aquí explicamos cómo demostrar solvencia sin ella](/es/blog/alquilar-piso-sin-nomina), sin que eso te deje en peor posición para negociar también esto.
 
 ## Las excepciones donde el inquilino sí puede pagar
 
