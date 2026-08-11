@@ -1,0 +1,16 @@
+[
+	{
+		"file": "cost-of-living-in-barcelona-1.jpg",
+		"fileSmall": "cost-of-living-in-barcelona-1-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Classic residential balconies in Barcelona"
+	},
+	{
+		"file": "cost-of-living-in-barcelona-2.jpg",
+		"fileSmall": "cost-of-living-in-barcelona-2-800.jpg",
+		"width": 1600,
+		"height": 1030,
+		"alt": "Bar terrace lit by lanterns in the evening"
+	}
+]
