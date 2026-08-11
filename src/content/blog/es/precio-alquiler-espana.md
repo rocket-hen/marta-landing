@@ -126,7 +126,7 @@ Este cruce importa más de lo que parece a primera vista: dos comunidades pueden
 
 ## Cómo se compara tu ciudad con la media nacional
 
-Si buscas piso en Madrid, Barcelona o Valencia, la media nacional te sirve de poco — el precio real de tu ciudad puede duplicar o quedarse muy por debajo de esa cifra. Tenemos una [comparativa de precio y ritmo de mercado entre las tres](/es/blog/madrid-valencia-malaga) si buscas en alguna de ellas.
+Si buscas piso en Madrid, Barcelona o Valencia, la media nacional te sirve de poco — el precio real de tu ciudad puede duplicar o quedarse muy por debajo de esa cifra. Tenemos guías propias con el desglose por barrio de [Madrid](/es/blog/precio-alquiler-madrid), [Barcelona](/es/blog/precio-alquiler-barcelona) y [Valencia](/es/blog/precio-alquiler-valencia), además de una [comparativa de precio y ritmo de mercado entre las tres](/es/blog/madrid-valencia-malaga) si buscas en alguna de ellas.
 
 :::highlight
 España tiene un rango de precios tan amplio que, si el presupuesto no da para Madrid o Barcelona, la alternativa real no siempre es la corona metropolitana de la misma ciudad — puede ser directamente otra comunidad. Castilla-La Mancha o Aragón no son un premio de consolación: para quien puede trabajar desde cualquier sitio, son una opción con números propios.
