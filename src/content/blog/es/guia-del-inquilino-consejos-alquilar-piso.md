@@ -16,6 +16,8 @@ guides:
       href: "/es/blog/la-carpeta-del-inquilino"
     - title: "Cuándo (y cómo) negociar la renta"
       href: "/es/blog/negociar-la-renta"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
 faq:
   - q: "¿Qué hay que saber antes de alquilar un piso?"
     a: "Tu presupuesto real, los documentos que te van a pedir, y que la velocidad para llamar y decidir importa tanto como el piso en sí — el mercado se mueve rápido y premia a quien llega preparado."
