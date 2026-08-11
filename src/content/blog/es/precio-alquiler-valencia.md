@@ -64,4 +64,6 @@ Con 16,5€/m² de media, Valencia queda bastante por debajo de Madrid (23,7€/
 El precio medio de ciudad subió de 1.674€ a 1.900€/mes en poco más de un año. Valencia sigue siendo la opción más asequible de las tres grandes ciudades, pero "asequible" ya no significa "sin prisa" — el margen se está cerrando.
 :::
 
+El alquiler mensual tampoco es el único gasto a presupuestar: súmale la fianza ([normalmente un mes, con las reglas exactas explicadas aquí](/es/blog/fianza-alquiler)), y si no tienes nómina fija, cuenta con un aval bancario o un seguro de impago ([comparamos las dos opciones aquí](/es/blog/aval-bancario-alquiler)). Lo que no deberías pagar de tu bolsillo son los honorarios de la agencia — [desde 2023 le corresponden al propietario](/es/blog/honorarios-inmobiliaria-alquiler).
+
 Marta llama a las agencias en cuanto sale un piso en el rango y zona que buscas, en Valencia igual que en Madrid o Barcelona — la estrategia de velocidad no cambia solo porque el precio sea más bajo (el mercado no te hace descuento por venir de una ciudad más cara).

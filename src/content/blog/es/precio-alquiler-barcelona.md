@@ -84,4 +84,6 @@ Lo que sí es verificable es que el índice ha cambiado la conversación: hoy es
 Saber el precio máximo legal de tu zona te da un argumento real frente a un propietario que pide de más. No te da la llamada: Barcelona es de las ciudades con más rotación exprés de España, con el 39% de los contratos firmados en menos de 24 horas. El índice ayuda a negociar; la velocidad decide quién llega a negociar.
 :::
 
+El alquiler mensual tampoco es el único gasto a presupuestar: súmale la fianza ([normalmente un mes, con las reglas exactas explicadas aquí](/es/blog/fianza-alquiler)), y si no tienes nómina fija, cuenta con un aval bancario o un seguro de impago ([comparamos las dos opciones aquí](/es/blog/aval-bancario-alquiler)). Lo que no deberías pagar de tu bolsillo son los honorarios de la agencia — [desde 2023 le corresponden al propietario](/es/blog/honorarios-inmobiliaria-alquiler).
+
 Marta llama a las agencias en cuanto sale un piso en la zona y rango de precio que buscas — no sustituye el índice de referencia, ayuda con la parte que el índice no resuelve: llegar a tiempo.

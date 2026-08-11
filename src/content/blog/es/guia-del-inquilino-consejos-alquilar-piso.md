@@ -50,6 +50,8 @@ La regla más citada es simple: la renta no debería superar el 30-35% de tu sue
 
 Este número, calculado con calma antes de empezar, es lo que evita que te enamores de un piso que se sale de tu presupuesto real a mitad de búsqueda — un error de cálculo mucho más caro que perder diez minutos con una calculadora al principio.
 
+Lo que no deberías sumar es la comisión de la agencia: [desde 2023 le corresponde pagarla al propietario, no a ti](/es/blog/honorarios-inmobiliaria-alquiler).
+
 ## Ten los documentos listos antes de la primera llamada
 
 ::img[carpeta con documentos]
@@ -57,6 +59,8 @@ Este número, calculado con calma antes de empezar, es lo que evita que te enamo
 Nómina o ingresos demostrables, DNI o NIE, y una fecha clara de entrada son lo mínimo que te van a pedir en cualquier llamada. Algunas agencias piden también la declaración de la renta, sobre todo si eres autónomo o tus ingresos no vienen de una nómina tradicional — mejor saberlo antes de que te pillen sin ella a mitad de conversación. [Lo cubrimos con detalle —incluidas las alternativas si no tienes nómina española— en nuestra guía de requisitos para alquilar un piso](/es/blog/la-carpeta-del-inquilino); no lo repetimos aquí para no alargar esta guía con algo que ya está bien explicado en otro sitio.
 
 Si tienes mascota, prepárate para presentarla como parte de tu perfil, igual que el resto de tus datos — no la escondas hasta la firma. [Aquí explicamos cuándo puede prohibirla el propietario y cómo presentarla para que digan que sí](/es/blog/alquilar-con-mascota).
+
+Si tus ingresos no llegan a la convención habitual, un aval bancario o un seguro de impago cubren ese hueco en la mayoría de los casos — [aquí comparamos las dos opciones a fondo](/es/blog/aval-bancario-alquiler).
 
 ## Busca por probabilidad, no por perfección
 

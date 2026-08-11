@@ -40,6 +40,8 @@ Nómina o contrato de trabajo (o los últimos tres meses de facturación si eres
 
 La nómina es solo la prueba de solvencia más común, no la única que vale. Un contrato con una empresa extranjera y nómina en otra divisa, un contrato temporal en vez de indefinido, las últimas facturas si trabajas como autónomo, una pensión, o incluso el alquiler que cobras por otra propiedad, sirven igual de bien si puedes acreditarlos con extractos bancarios de los últimos meses. A la agencia no le importa tanto la etiqueta del ingreso como que sea recurrente y que lo puedas demostrar por escrito — la nómina solo es la forma más fácil de enseñarlo, no la única que existe.
 
+También te van a preguntar por la fianza que puedes aportar — normalmente un mes, [con hasta dos más de garantía adicional según marca la ley](/es/blog/fianza-alquiler).
+
 > No te lo van a pedir por escrito en la primera llamada. Te lo van a preguntar de palabra, y tu respuesta decide si pasas a la siguiente fase.
 
 ## Si no tienes nómina: aval bancario vs seguro de impago
@@ -48,7 +50,7 @@ La nómina es solo la prueba de solvencia más común, no la única que vale. Un
 
 Si tus ingresos no llegan a esa convención, o no tienes nómina española, un aval bancario o un seguro de impago cubren el hueco en la mayoría de los casos — pero no son lo mismo. Un aval bancario inmoviliza parte de tu propio dinero como garantía en tu banco: normalmente un porcentaje de la renta anual, bloqueado mientras dure el contrato. Un seguro de impago no toca tus ahorros: es una prima que, [según cubre la póliza, protege al propietario frente a un impago](https://www.allianzntwrk.com/seguro-impago-alquiler-extranjeros-espana/), no a ti — aunque sea tu perfil el que hace falta lucir bien para que te lo concedan.
 
-Pregunta cuál de los dos te están pidiendo y por qué antes de aceptar cualquiera. El trámite de ambos suele resolverse en un día, así que no es un motivo real para retrasar la llamada — pero el compromiso que asumes no es igual, y merece un minuto de leer la letra pequeña antes de firmar cualquiera de los dos.
+Pregunta cuál de los dos te están pidiendo y por qué antes de aceptar cualquiera. El trámite de ambos suele resolverse en un día, así que no es un motivo real para retrasar la llamada — pero el compromiso que asumes no es igual, y merece un minuto de leer la letra pequeña antes de firmar cualquiera de los dos. [Aquí los comparamos con más detalle](/es/blog/aval-bancario-alquiler).
 
 ## NIE o TIE: qué pasa si aún está en trámite
 
@@ -65,6 +67,8 @@ Hay una tercera pregunta que casi nunca se dice en voz alta pero que decide igua
 ## Cómo montar la carpeta antes de la primera llamada
 
 Ten esta información escrita en una nota del móvil, no en la cabeza: nómina o últimos ingresos, DNI o NIE (o el resguardo si está en trámite), fecha de entrada, si hay mascota, y si vas a compartir piso, quién firma. La mayoría de las llamadas que se caen no se caen por el piso — se caen porque el inquilino no tiene a mano lo que le están pidiendo, hay un silencio de cinco segundos, y esa duda ya cuenta en tu contra frente al siguiente candidato que sí responde sin pensar.
+
+Y si una agencia te pide que le pagues su comisión de gestión, no es parte de esta carpeta — [desde 2023 ese gasto le corresponde al propietario, no a ti](/es/blog/honorarios-inmobiliaria-alquiler).
 
 :::highlight
 Si tus ingresos no llegan a la convención de las 40 veces la renta anual, no dejes que la conversación se corte ahí: un aval bancario, un avalista o un seguro de impago cubren ese hueco en la mayoría de los casos, y el trámite se resuelve en un día.
