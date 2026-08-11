@@ -7,6 +7,17 @@ pubDate: 2026-07-30
 image: "/og/blog/madrid-valencia-malaga.jpg"
 imageAlt: "Alquilar en Madrid, Valencia y Málaga — Marta blog"
 imageSmall: "/og/blog/madrid-valencia-malaga-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Es más barato alquilar en Valencia que en Madrid?"
     a: "Sí, todavía: un dormitorio estándar ronda los 900€ en Valencia frente a 1.300€ en Madrid. La diferencia se está cerrando rápido, sobre todo en zonas como Ruzafa o El Carmen."

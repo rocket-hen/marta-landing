@@ -21,14 +21,14 @@ faq:
 guides:
   title: "Nuestras guías"
   links:
-    - title: "Precio Alquiler Madrid 2026"
-      href: "/es/blog/precio-alquiler-madrid"
-    - title: "Precio Alquiler Barcelona 2026"
-      href: "/es/blog/precio-alquiler-barcelona"
-    - title: "Precio del Alquiler en Valencia 2026"
-      href: "/es/blog/precio-alquiler-valencia"
-    - title: "Cuándo (y cómo) negociar la renta"
-      href: "/es/blog/negociar-la-renta"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 ---
 
 El alquiler en España ronda los 14,5-14,8€/m² de media, pero esa cifra nacional esconde diferencias enormes: en Barcelona el alquiler se lleva hasta el 65% de un sueldo medio, mientras que en comunidades como Castilla-La Mancha o Aragón el mismo presupuesto rinde mucho más. Esta guía reúne el precio medio actual y el desglose por comunidad autónoma.
