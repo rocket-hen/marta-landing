@@ -45,7 +45,7 @@ Cuánto puede subir tu alquiler depende de una sola fecha: si firmaste antes o d
 
 ## De qué depende cuánto puede subir tu alquiler
 
-Todo se reduce a una fecha: el 26 de mayo de 2023, cuando entró en vigor la Ley por el Derecho a la Vivienda. Si tu contrato es anterior, la actualización sigue el IPC. Si es posterior, sigue el IRAV — un índice distinto, pensado para moderar subidas frente al IPC.
+Todo se reduce a una fecha: el 26 de mayo de 2023, cuando entró en vigor la [Ley por el Derecho a la Vivienda](/es/blog/ley-de-vivienda). Si tu contrato es anterior, la actualización sigue el IPC. Si es posterior, sigue el IRAV — un índice distinto, pensado para moderar subidas frente al IPC.
 
 > No es tu casero quien decide cuánto sube tu alquiler. Es la fecha en la que firmaste.
 

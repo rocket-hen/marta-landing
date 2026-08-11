@@ -58,6 +58,8 @@ Una zona puede declararse de mercado tensionado cuando el alquiler supera el 30%
 
 Que tu zona esté declarada tensionada no significa que el precio esté congelado sin más: significa que existe un tope legal de referencia, y que un propietario que lo supera de forma injustificada está fuera de la ley, no solo siendo poco razonable. Saberlo cambia el tono de una negociación, aunque no siempre cambie el resultado en un mercado con tanta demanda.
 
+La misma fecha, el 26 de mayo de 2023, también decide qué índice se aplica cuando te suben la renta cada año dentro de un contrato ya firmado — [aquí explicamos cómo calcular esa subida exacta](/es/blog/actualizar-renta-alquiler).
+
 ## Grandes tenedores: qué cambia si tu casero tiene varias viviendas
 
 Si tu propietario tiene 10 o más inmuebles urbanos — o 5 o más en una zona declarada tensionada — se le aplican reglas de contención de precios más estrictas que a un propietario particular con un solo piso. Vale la pena preguntar, o simplemente fijarte si el anuncio lo publica una empresa o un particular: cambia qué margen de negociación legal tiene el precio que te están pidiendo.
