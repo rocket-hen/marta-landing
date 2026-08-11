@@ -10,14 +10,12 @@ imageSmall: "/og/blog/guia-del-inquilino-consejos-alquilar-piso-800.jpg"
 guides:
   title: "Nuestras guías"
   links:
-    - title: "Requisitos para alquilar un piso"
-      href: "/es/blog/la-carpeta-del-inquilino"
-    - title: "El primer cuarto de hora"
-      href: "/es/blog/el-primer-cuarto-de-hora"
-    - title: "Fianza del alquiler"
-      href: "/es/blog/fianza-alquiler"
-    - title: "Qué preguntar en la visita"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
       href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
+    - title: "Cuándo (y cómo) negociar la renta"
+      href: "/es/blog/negociar-la-renta"
 faq:
   - q: "¿Qué hay que saber antes de alquilar un piso?"
     a: "Tu presupuesto real, los documentos que te van a pedir, y que la velocidad para llamar y decidir importa tanto como el piso en sí — el mercado se mueve rápido y premia a quien llega preparado."
@@ -56,13 +54,15 @@ Este número, calculado con calma antes de empezar, es lo que evita que te enamo
 
 Nómina o ingresos demostrables, DNI o NIE, y una fecha clara de entrada son lo mínimo que te van a pedir en cualquier llamada. Algunas agencias piden también la declaración de la renta, sobre todo si eres autónomo o tus ingresos no vienen de una nómina tradicional — mejor saberlo antes de que te pillen sin ella a mitad de conversación. [Lo cubrimos con detalle —incluidas las alternativas si no tienes nómina española— en nuestra guía de requisitos para alquilar un piso](/es/blog/la-carpeta-del-inquilino); no lo repetimos aquí para no alargar esta guía con algo que ya está bien explicado en otro sitio.
 
+Si tienes mascota, prepárate para presentarla como parte de tu perfil, igual que el resto de tus datos — no la escondas hasta la firma. [Aquí explicamos cuándo puede prohibirla el propietario y cómo presentarla para que digan que sí](/es/blog/alquilar-con-mascota).
+
 ## Busca por probabilidad, no por perfección
 
 Buscar piso en un mercado tensionado es un embudo: muchos anuncios contactados, menos disponibles, menos agentes que responden, menos visitas, y al final un piso que de verdad puedes alquilar. No malgastes tres días eligiendo los cinco anuncios "perfectos" — mete suficientes pisos aceptables en la parte de arriba del embudo y deja que el mercado los reduzca por ti.
 
 Esto no es pereza, es estadística: cuantas más puertas llamas, antes se abre una (y ninguna de las cinco perfectas te va a abrir la puerta si ya la ha cogido otro candidato mientras la seguías mirando en Idealista).
 
-Fijar un umbral razonable de antemano —"si cumple estas tres condiciones, llamo"— evita el efecto contrario: perder horas dudando sobre anuncios que de todas formas nunca ibas a descartar del todo.
+Fijar un umbral razonable de antemano —"si cumple estas tres condiciones, llamo"— evita el efecto contrario: perder horas dudando sobre anuncios que de todas formas nunca ibas a descartar del todo. Y si un anuncio concreto lleva tiempo publicado sin moverse, [puede que haya margen para negociar el precio](/es/blog/negociar-la-renta) antes de descartarlo y pasar al siguiente.
 
 ## Llama rápido y a la hora correcta
 
