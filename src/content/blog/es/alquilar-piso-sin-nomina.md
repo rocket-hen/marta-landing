@@ -73,6 +73,8 @@ El aval bancario inmoviliza parte de tus propios ahorros como garantía en el ba
 Si un propietario te ofrece **saltarse toda la documentación a cambio de pagar varios meses por adelantado en efectivo**, trátalo con la misma cautela que cualquier otro trato "demasiado fácil" en el alquiler en España. Verifica igualmente su identidad y que la vivienda es suya antes de pagar nada — evitar el papeleo no es un favor, es quitarte las garantías que ese papeleo existe para darte.
 :::
 
+Si quieres profundizar en las señales de alarma antes de dar ese paso, [aquí tienes la guía completa para detectar estafas al alquilar un piso](/es/blog/fianza-antes-de-ver-el-piso).
+
 ## Cómo presentarlo en la llamada, no solo en el papel
 
 Tener los documentos listos no basta si en la llamada suenas dudoso al explicarlos. Antes de llamar, prepara una frase corta y clara: "soy autónomo, facturo X al mes, lo puedo demostrar con la declaración de la renta y los últimos extractos." Una respuesta segura en diez segundos convence más que un documento perfecto explicado con dudas.

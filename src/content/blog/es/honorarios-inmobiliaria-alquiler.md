@@ -74,6 +74,8 @@ La ley no prohíbe cobrar honorarios al inquilino en todos los casos, solo en el
 
 Si una agencia te pide que pagues la gestión de un alquiler de vivienda habitual, la primera respuesta es simplemente negarte y citar la Ley 12/2023 — la mayoría retrocede en cuanto ve que conoces la norma, porque saben que no tienen razón. Pide que el desglose de gastos conste por escrito antes de firmar nada; un cobro que no se atreven a poner en un documento formal suele ser la señal más clara de que saben que no deberían cobrarlo.
 
+No es la única señal de alarma que conviene vigilar antes de firmar — [aquí tienes las más comunes de una estafa de alquiler y cómo detectarlas](/es/blog/fianza-antes-de-ver-el-piso).
+
 :::highlight
 **Si una agencia te pide el pago disfrazado de "estudio de solvencia", "asesoramiento legal" o cualquier otro nombre, sigue siendo el mismo cobro que la ley prohíbe cargarte a ti.** El nombre que le pongan en la factura no cambia lo que dice la ley. Si insisten después de que lo señales, puedes presentar una reclamación en la oficina de consumo de tu comunidad autónoma.
 :::

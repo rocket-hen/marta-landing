@@ -66,6 +66,8 @@ Esto no es pereza, es estadística: cuantas más puertas llamas, antes se abre u
 
 Fijar un umbral razonable de antemano —"si cumple estas tres condiciones, llamo"— evita el efecto contrario: perder horas dudando sobre anuncios que de todas formas nunca ibas a descartar del todo. Y si un anuncio concreto lleva tiempo publicado sin moverse, [puede que haya margen para negociar el precio](/es/blog/negociar-la-renta) antes de descartarlo y pasar al siguiente.
 
+Moverte rápido tampoco significa bajar la guardia: revisa siempre que el anuncio y quien te atiende sean reales antes de dar ningún paso. [Aquí tienes las señales de estafa de alquiler más comunes y cómo detectarlas](/es/blog/fianza-antes-de-ver-el-piso).
+
 ## Llama rápido y a la hora correcta
 
 ::img[persona llamando por teléfono]
