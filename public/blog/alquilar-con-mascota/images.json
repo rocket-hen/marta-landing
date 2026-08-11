@@ -1,0 +1,16 @@
+[
+	{
+		"file": "alquilar-con-mascota-1.jpg",
+		"fileSmall": "alquilar-con-mascota-1-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Perro pequeño en un salón con plantas"
+	},
+	{
+		"file": "alquilar-con-mascota-2.jpg",
+		"fileSmall": "alquilar-con-mascota-2-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Persona paseando a un perro por la calle"
+	}
+]
