@@ -132,4 +132,6 @@ Si buscas piso en Madrid, Barcelona o Valencia, la media nacional te sirve de po
 España tiene un rango de precios tan amplio que, si el presupuesto no da para Madrid o Barcelona, la alternativa real no siempre es la corona metropolitana de la misma ciudad — puede ser directamente otra comunidad. Castilla-La Mancha o Aragón no son un premio de consolación: para quien puede trabajar desde cualquier sitio, son una opción con números propios.
 :::
 
+El alquiler mensual tampoco es el único gasto a presupuestar: súmale la fianza ([normalmente un mes, con las reglas exactas explicadas aquí](/es/blog/fianza-alquiler)), y si no tienes nómina fija, cuenta con un aval bancario o un seguro de impago ([comparamos las dos opciones aquí](/es/blog/aval-bancario-alquiler)). Lo que no deberías pagar de tu bolsillo son los honorarios de la agencia — [desde 2023 le corresponden al propietario](/es/blog/honorarios-inmobiliaria-alquiler).
+
 Marta ayuda a moverse rápido en la búsqueda, en la ciudad que elijas — el reto de llegar a tiempo a la llamada es el mismo en Madrid que en Toledo, solo cambia cuánta gente compite contigo por el mismo piso. Ninguna cifra de este artículo cambia sola tu situación; solo te dice dónde vale la pena mirar antes de decidir dónde buscar.
