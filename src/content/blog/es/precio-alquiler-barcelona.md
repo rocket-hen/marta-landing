@@ -7,6 +7,17 @@ pubDate: 2026-08-09
 image: "/og/blog/precio-alquiler-barcelona.jpg"
 imageAlt: "Precio del alquiler en Barcelona — Marta blog"
 imageSmall: "/og/blog/precio-alquiler-barcelona-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Cuánto vale un alquiler promedio en Barcelona?"
     a: "Unos 22,8€/m² de media, lo que sitúa un piso estándar en torno a 1.147€/mes según datos del Ajuntament de Barcelona — con barrios bastante por encima y por debajo de esa cifra."

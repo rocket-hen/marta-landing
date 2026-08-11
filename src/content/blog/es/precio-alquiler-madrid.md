@@ -7,6 +7,17 @@ pubDate: 2026-08-05
 image: "/og/blog/precio-alquiler-madrid.jpg"
 imageAlt: "Precio del alquiler en Madrid — Marta blog"
 imageSmall: "/og/blog/precio-alquiler-madrid-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Cuánto cuesta un alquiler promedio en Madrid?"
     a: "Un piso mediano ronda los 1.292€/mes, con el 80% de las propiedades entre 673€ y 4.505€ según el tipo y la zona. Una habitación sale por unos 673€/mes, un estudio por 1.465€ y un piso entero por unos 2.240€."

@@ -7,6 +7,17 @@ pubDate: 2026-08-08
 image: "/og/blog/precio-alquiler-valencia.jpg"
 imageAlt: "Precio del alquiler en Valencia — Marta blog"
 imageSmall: "/og/blog/precio-alquiler-valencia-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora"
+    - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino"
 faq:
   - q: "¿Cuál es la media de alquiler en Valencia?"
     a: "Entre 14 y 18€/m² al mes, según la zona — coincide con la media de 16,5€/m² que maneja el sector para el conjunto de la ciudad."
