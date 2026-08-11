@@ -40,36 +40,58 @@ const schema = [
 	ogImage={post.data.image}
 >
 	<article class="post">
-		<div class="head">
-			<a href="/blog" class="link-snap back">{t.backLink}</a>
-			<div class="meta">
-				{post.data.category} · {post.data.minutes} {t.minRead} · <time datetime={isoDate}>{dateLabel}</time>
-			</div>
-			<h1>{post.data.title}</h1>
-			<img
-				class="cover"
-				src={post.data.image ?? '/og/default.jpg'}
-				srcset={post.data.imageSmall ? `${post.data.imageSmall} 800w, ${post.data.image} 1200w` : undefined}
-				sizes={post.data.imageSmall ? '(max-width: 640px) 100vw, 720px' : undefined}
-				alt={post.data.imageAlt ?? post.data.title}
-				width="1200"
-				height="630"
-				fetchpriority="high"
-			/>
-		</div>
-
-		<div class="body">
-			<Content />
-
-			<div class="cta">
-				<div>
-					<div class="cta-title">{t.ctaTitle}</div>
-					<div class="cta-copy">{t.ctaCopy}</div>
+		<div class:list={['layout', { 'has-guides': !!post.data.guides }]}>
+			<div class="head">
+				<a href="/blog" class="link-snap back">{t.backLink}</a>
+				<div class="meta">
+					{post.data.category} · {post.data.minutes} {t.minRead} · <time datetime={isoDate}>{dateLabel}</time>
 				</div>
-				<a href="/#pricing" class="cta-btn" data-gtm-id="blog_post_book_viewings">{copy[lang].nav.cta}</a>
+				<h1>{post.data.title}</h1>
+				<img
+					class="cover"
+					src={post.data.image ?? '/og/default.jpg'}
+					srcset={post.data.imageSmall ? `${post.data.imageSmall} 800w, ${post.data.image} 1200w` : undefined}
+					sizes={post.data.imageSmall ? '(max-width: 640px) 100vw, 720px' : undefined}
+					alt={post.data.imageAlt ?? post.data.title}
+					width="1200"
+					height="630"
+					fetchpriority="high"
+				/>
 			</div>
 
-			{post.data.faq && <PostFaq faq={post.data.faq} />}
+			<div class="body">
+				<Content />
+
+				<div class="cta">
+					<div>
+						<div class="cta-title">{t.ctaTitle}</div>
+						<div class="cta-copy">{t.ctaCopy}</div>
+					</div>
+					<a href="/#pricing" class="cta-btn" data-gtm-id="blog_post_book_viewings">{copy[lang].nav.cta}</a>
+				</div>
+
+				{post.data.faq && <PostFaq faq={post.data.faq} />}
+			</div>
+
+			{post.data.guides && (
+				<aside class="aside">
+					<input type="checkbox" id="guides-toggle" class="guides-toggle" />
+					<div class="guides-slider">
+						<label for="guides-toggle" class="guides-tab" aria-label={post.data.guides.title}>{post.data.guides.title}</label>
+						<div class="guides-panel">
+							<div class="guides-head">
+								<span class="guides-title">{post.data.guides.title}</span>
+								<span class="guides-count">{String(post.data.guides.links.length).padStart(2, '0')}</span>
+							</div>
+							<div class="guides-list">
+								{post.data.guides.links.map((link) => (
+									<a href={link.href} class="guide-link">{link.title}</a>
+								))}
+							</div>
+						</div>
+					</div>
+				</aside>
+			)}
 		</div>
 	</article>
 </BaseLayout>
@@ -79,9 +101,20 @@ const schema = [
 		border-bottom: 1px solid var(--border);
 	}
 
-	.head {
-		max-width: 720px;
+	.layout {
+		display: grid;
+		grid-template-columns: minmax(0, 720px);
+		gap: 64px;
+		max-width: 1100px;
 		margin: 0 auto;
+		justify-content: center;
+	}
+	.layout.has-guides {
+		grid-template-columns: minmax(0, 720px) 264px;
+	}
+
+	.head {
+		grid-column: 1;
 		padding: 160px 24px 40px;
 	}
 
@@ -119,8 +152,7 @@ const schema = [
 	}
 
 	.body {
-		max-width: 720px;
-		margin: 0 auto;
+		grid-column: 1;
 		padding: 0 24px 80px;
 	}
 
@@ -343,5 +375,133 @@ const schema = [
 		font-weight: 500;
 		border-radius: 4px;
 		flex: none;
+	}
+
+	.aside {
+		grid-column: 2;
+		position: sticky;
+		top: 116px;
+		align-self: start;
+	}
+
+	.guides-toggle {
+		display: none;
+	}
+
+	.guides-panel {
+		border: 1px solid var(--border);
+		background: var(--white);
+	}
+
+	.guides-head {
+		padding: 18px 20px;
+		border-bottom: 1px solid var(--border);
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 12px;
+	}
+
+	.guides-title {
+		font-family: var(--font-display);
+		font-size: 16px;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+	}
+
+	.guides-count {
+		font-family: var(--font-mono);
+		font-size: 11px;
+		color: var(--accent);
+	}
+
+	.guides-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.guide-link {
+		border-bottom: 1px solid var(--border);
+		padding: 16px 20px;
+		font-size: 14px;
+		line-height: 1.45;
+		color: var(--ink);
+		text-wrap: pretty;
+		transition: background-color 0.18s ease, color 0.18s ease;
+	}
+	.guide-link:last-child {
+		border-bottom: none;
+	}
+	.guide-link:hover {
+		background: var(--accent);
+		color: var(--bg);
+	}
+
+	.guides-tab {
+		display: none;
+	}
+
+	@media (max-width: 1040px) {
+		.layout.has-guides {
+			grid-template-columns: minmax(0, 100%);
+		}
+		.head {
+			grid-column: 1;
+		}
+		.body {
+			grid-column: 1;
+		}
+		.aside {
+			grid-column: 1;
+			position: static;
+			height: 0;
+		}
+		.guides-slider {
+			position: fixed;
+			top: 50%;
+			right: 0;
+			display: flex;
+			align-items: center;
+			transform: translate(min(300px, 82vw), -50%);
+			transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+			pointer-events: auto;
+			z-index: 90;
+		}
+		.guides-toggle:checked ~ .guides-slider {
+			transform: translate(0, -50%);
+		}
+		.guides-panel {
+			width: min(300px, 82vw);
+			box-shadow: -10px 10px 0 rgba(26, 25, 23, 0.1);
+		}
+		.guides-tab {
+			display: block;
+			background: linear-gradient(180deg, var(--accent) 0%, #d4623a 25%, var(--accent) 50%, #d4623a 75%, var(--accent) 100%);
+			background-size: 100% 300%;
+			animation: guides-sheen 4s linear infinite;
+			color: var(--bg);
+			font-family: var(--font-display);
+			font-weight: 800;
+			font-size: 14px;
+			line-height: 1.25;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			padding: 20px 14px 30px;
+			cursor: pointer;
+			writing-mode: vertical-rl;
+			transform: rotate(180deg);
+			user-select: none;
+			box-shadow: 6px 0 20px rgba(176, 81, 46, 0.35);
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 15px), 0 100%);
+		}
+	}
+
+	@keyframes guides-sheen {
+		0% {
+			background-position: 0% 0%;
+		}
+		100% {
+			background-position: 0% -200%;
+		}
 	}
 </style>

@@ -20,6 +20,14 @@ const blog = defineCollection({
 		// Rendered as an FAQ accordion + FAQPage JSON-LD when present (see
 		// src/components/PostFaq.astro). Omit entirely for posts without one.
 		faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
+		// Sticky sidebar box linking to related posts. Omit entirely for posts
+		// without one — the two-column layout only activates when this is set.
+		guides: z
+			.object({
+				title: z.string(),
+				links: z.array(z.object({ title: z.string(), href: z.string() })).min(2).max(4),
+			})
+			.optional(),
 	}),
 });
 

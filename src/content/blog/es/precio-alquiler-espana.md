@@ -18,6 +18,17 @@ faq:
     a: "No. En Andalucía, por ejemplo, Málaga (16,1€/m²) es más cara que la propia capital, Sevilla (13,5€/m²). Conviene mirar la ciudad concreta, no solo la comunidad."
   - q: "¿Cuánto del sueldo se va en alquiler en España?"
     a: "Varía mucho por comunidad: en Cataluña el alquiler puede representar hasta el 65% de un sueldo medio anual en Barcelona, y en Baleares hasta el 63% — muy por encima de lo que se considera un gasto de vivienda razonable."
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Precio Alquiler Madrid 2026"
+      href: "/es/blog/precio-alquiler-madrid"
+    - title: "Precio Alquiler Barcelona 2026"
+      href: "/es/blog/precio-alquiler-barcelona"
+    - title: "Precio del Alquiler en Valencia 2026"
+      href: "/es/blog/precio-alquiler-valencia"
+    - title: "Cuándo (y cómo) negociar la renta"
+      href: "/es/blog/negociar-la-renta"
 ---
 
 El alquiler en España ronda los 14,5-14,8€/m² de media, pero esa cifra nacional esconde diferencias enormes: en Barcelona el alquiler se lleva hasta el 65% de un sueldo medio, mientras que en comunidades como Castilla-La Mancha o Aragón el mismo presupuesto rinde mucho más. Esta guía reúne el precio medio actual y el desglose por comunidad autónoma.
