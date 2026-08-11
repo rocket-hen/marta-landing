@@ -3,7 +3,7 @@ title: "Alquiler de Temporada vs Habitual: Diferencias"
 excerpt: "Un alquiler de temporada no se diferencia del habitual por la duración del contrato, sino por si existe una causa real de que la estancia es temporal."
 category: "Contratos"
 minutes: 4
-pubDate: 2026-08-10
+pubDate: 2026-07-31
 image: "/og/blog/alquiler-de-temporada.jpg"
 imageAlt: "Alquiler de temporada vs habitual en España — Marta blog"
 imageSmall: "/og/blog/alquiler-de-temporada-800.jpg"

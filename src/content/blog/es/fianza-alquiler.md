@@ -3,7 +3,7 @@ title: "Fianza Alquiler en España: Guía Completa"
 excerpt: "La fianza legal es de un mes, con hasta dos más de garantía si el propietario los pide. El trámite para depositarla y recuperarla cambia según tu región."
 category: "Documentos"
 minutes: 7
-pubDate: 2026-08-10
+pubDate: 2026-08-03
 image: "/og/blog/fianza-alquiler.jpg"
 imageAlt: "Fianza alquiler en España — Marta blog"
 imageSmall: "/og/blog/fianza-alquiler-800.jpg"

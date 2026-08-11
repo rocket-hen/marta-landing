@@ -3,7 +3,7 @@ title: "Aval Bancario Alquiler o Seguro de Impago"
 excerpt: "Cuando no tienes nómina fija, el casero suele pedir una de estas dos garantías. Casi toda la información que existe está escrita para el propietario, no para ti."
 category: "Documentos"
 minutes: 7
-pubDate: 2026-08-10
+pubDate: 2026-07-26
 image: "/og/blog/aval-bancario-alquiler.jpg"
 imageAlt: "Aval bancario alquiler o seguro de impago — Marta blog"
 imageSmall: "/og/blog/aval-bancario-alquiler-800.jpg"

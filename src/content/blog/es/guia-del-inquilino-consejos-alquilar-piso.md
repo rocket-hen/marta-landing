@@ -3,7 +3,7 @@ title: "Guía del Inquilino: Consejos para Alquilar un Piso"
 excerpt: "Encontrar piso no depende de la suerte: depende de llegar a cada paso —presupuesto, documentos, llamada, visita— más preparado que el resto de candidatos."
 category: "Guías"
 minutes: 8
-pubDate: 2026-08-13
+pubDate: 2026-08-01
 image: "/og/blog/guia-del-inquilino-consejos-alquilar-piso.jpg"
 imageAlt: "Guía del inquilino: consejos para alquilar un piso — Marta blog"
 imageSmall: "/og/blog/guia-del-inquilino-consejos-alquilar-piso-800.jpg"

@@ -3,7 +3,7 @@ title: "Alquilar con Mascota: Guía Completa"
 excerpt: "El propietario solo puede prohibir mascotas si lo dice el contrato. Cómo presentar la tuya para que digan que sí desde la primera llamada, sin esconderla."
 category: "Mascotas"
 minutes: 7
-pubDate: 2026-08-11
+pubDate: 2026-07-29
 image: "/og/blog/alquilar-con-mascota.jpg"
 imageAlt: "Alquilar un piso con mascota — Marta blog"
 imageSmall: "/og/blog/alquilar-con-mascota-800.jpg"

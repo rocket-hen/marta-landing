@@ -3,7 +3,7 @@ title: "Qué Preguntar al Visitar un Piso de Alquiler"
 excerpt: "La visita debería responder solo lo que exige estar allí en persona. Qué investigar antes, qué preguntar en el sitio, y cómo decidir sin irte a pensarlo."
 category: "Estrategia"
 minutes: 7
-pubDate: 2026-08-12
+pubDate: 2026-08-05
 image: "/og/blog/como-preparar-visita-piso-alquiler.jpg"
 imageAlt: "Qué preguntar al visitar un piso de alquiler — Marta blog"
 imageSmall: "/og/blog/como-preparar-visita-piso-alquiler-800.jpg"
