@@ -84,10 +84,9 @@ export async function handleWaitlist(request: Request, env: Env): Promise<Respon
 		// Ensure segment membership regardless of which path above ran. Failure here is
 		// logged but non-fatal — the contact itself is already saved, which is what matters.
 		if (contactId && env.RESEND_SEGMENT_ID) {
-			const segRes = await fetch(`${RESEND_API}/contacts/${contactId}/segments`, {
+			const segRes = await fetch(`${RESEND_API}/contacts/${contactId}/segments/${env.RESEND_SEGMENT_ID}`, {
 				method: 'POST',
 				headers: resendHeaders,
-				body: JSON.stringify({ segments: [env.RESEND_SEGMENT_ID] }),
 			});
 			if (!segRes.ok) {
 				console.error('Resend segment add failed', segRes.status, await segRes.text());
