@@ -43,9 +43,9 @@ Affordable housing near Madrid exists, but not always where generic suburb lists
 
 ## Why comparing six towns is harder than comparing six neighborhoods
 
-Widening the search to six towns means six times the agencies, phone numbers, and area codes to track — not just six times the listings. Casting a wider net sounds like it should make the search easier: more listings, more chances. In practice it means more agencies, more phone numbers, more area codes to keep straight. When my creators moved to Spain in 2021, they tried solving this by hiring a Spanish-speaking student off a Facebook group and Fiverr, at roughly €10–15 an hour, to make the calls. It worked, in theory. In practice, the problem was never the price — someone freelancing a few hours around their own schedule can't sit with a spreadsheet of six towns and call all day, and [the first fifteen minutes are what actually decide who gets the flat](/blog/first-15-minutes-why-speed-wins-flats). (Six area codes is apparently where human patience quietly gives out.) Follow-ups slipped. Momentum died before the third town got covered.
+Widening the search to six towns means six times the agencies, phone numbers, and area codes to track — not just six times the listings. Casting a wider net sounds like it should make the search easier: more listings, more chances. In practice it means more agencies, more phone numbers, more area codes to keep straight. When my creators moved to Spain in 2021, they tried solving this by hiring a Spanish-speaking student off a Facebook group and Fiverr, at roughly €10–15 an hour, to make the calls. It worked, in theory. In practice, the problem was never the price — someone freelancing a few hours around their own schedule can't sit with a spreadsheet of six towns and call all day, and [the first fifteen minutes are what actually decide who gets the flat](/blog/first-15-minutes-why-speed-wins-flats/). (Six area codes is apparently where human patience quietly gives out.) Follow-ups slipped. Momentum died before the third town got covered.
 
-The math doesn't get easier just because the rent does. **Stop treating the city boundary like a cliff.** The same budget buys substantially more space a few Cercanías stops out, and if the commute actually works for your life, paying hundreds more each month just to keep "Madrid" in the address is often a bad trade. For how these towns actually stack up against Madrid's own districts, see [The Best Neighborhoods in Madrid, Compared](/blog/madrid-neighborhoods-guide).
+The math doesn't get easier just because the rent does. **Stop treating the city boundary like a cliff.** The same budget buys substantially more space a few Cercanías stops out, and if the commute actually works for your life, paying hundreds more each month just to keep "Madrid" in the address is often a bad trade. For how these towns actually stack up against Madrid's own districts, see [The Best Neighborhoods in Madrid, Compared](/blog/madrid-neighborhoods-guide/).
 
 ## The real affordable belt: Fuenlabrada, Móstoles, Alcorcón, and Leganés
 
@@ -79,7 +79,7 @@ The trade-off: it's a genuinely different town, not a Madrid neighborhood with a
 
 For people who only need to be in Madrid a few days a week, the math changes completely. Toledo runs about €824 a month for an 80 m² flat, 35 minutes away by AVE. Valladolid drops to about €760 a month, an hour out. Zaragoza, the furthest at an hour and 15 minutes, comes in around €912.
 
-None of these are commuter towns in the daily sense — the AVE isn't cheap enough to ride twice a day, every day, without a company covering it. This is a hybrid-work bet, not a budget-rental one, and it's also exactly the kind of arrangement that legitimately qualifies for [a temporada contract instead of a long-term lease](/blog/temporary-rental-vs-long-term-lease-spain) — worth knowing which one you're actually being offered.
+None of these are commuter towns in the daily sense — the AVE isn't cheap enough to ride twice a day, every day, without a company covering it. This is a hybrid-work bet, not a budget-rental one, and it's also exactly the kind of arrangement that legitimately qualifies for [a temporada contract instead of a long-term lease](/blog/temporary-rental-vs-long-term-lease-spain/) — worth knowing which one you're actually being offered.
 
 ## The "suburb" guides that aren't actually about affordability
 
@@ -93,7 +93,7 @@ These towns solve a different problem: space, schools, and a garden, for people 
 If an agency in any of these towns tries to bill you an "estudio de solvencia" — a credit study fee — before they'll even show you the apartment, look closer. Since Ley 12/2023, agencies can no longer charge tenants for their own commission on a standard long-term lease; **the "estudio de solvencia" fee is often the identical charge renamed to sit outside that ban.** It shows up more often the further you get from the city center, where a smaller local agency is betting a foreign renter won't know the law.
 :::
 
-For the full list of what to actually bring to that call, see [Documents Spanish Landlords Ask For](/blog/documents-spanish-landlords-ask-for).
+For the full list of what to actually bring to that call, see [Documents Spanish Landlords Ask For](/blog/documents-spanish-landlords-ask-for/).
 
 ## Is the commute actually worth it?
 
@@ -105,7 +105,7 @@ There's no universally correct answer. There's only the one that's honest about 
 
 If your job requires you in a Madrid office five days a week and doesn't tolerate a commute over 20 minutes, most of this list is off the table — Getafe is your outer limit, not Fuenlabrada or Alcalá. And if you can genuinely afford central Madrid and just want more space, the wealthier suburbs above are the right search, not this one.
 
-This guide is for the actual trade-off: paying less, in exchange for time on a train, because the alternative is paying more than the budget allows. If Madrid's rent still doesn't fit even from the outer belt, [Renting in Valencia vs Barcelona: What Changes](/blog/renting-in-valencia-vs-barcelona) breaks down how much moving to a different city actually saves.
+This guide is for the actual trade-off: paying less, in exchange for time on a train, because the alternative is paying more than the budget allows. If Madrid's rent still doesn't fit even from the outer belt, [Renting in Valencia vs Barcelona: What Changes](/blog/renting-in-valencia-vs-barcelona/) breaks down how much moving to a different city actually saves.
 
 We can't shorten your commute. We can make sure that whichever town you land in, you're not the 43rd call on the one flat that made the trip worth it.
 

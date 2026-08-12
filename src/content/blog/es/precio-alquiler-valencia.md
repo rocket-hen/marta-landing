@@ -11,13 +11,13 @@ guides:
   title: "Nuestras guías"
   links:
     - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
-      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
     - title: "El primer cuarto de hora decide quién ve el piso"
-      href: "/es/blog/el-primer-cuarto-de-hora"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
     - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
-      href: "/es/blog/como-preparar-visita-piso-alquiler"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
     - title: "Requisitos para Alquilar un Piso en España"
-      href: "/es/blog/la-carpeta-del-inquilino"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Cuál es la media de alquiler en Valencia?"
     a: "Entre 14 y 18€/m² al mes, según la zona — coincide con la media de 16,5€/m² que maneja el sector para el conjunto de la ciudad."
@@ -121,6 +121,6 @@ El precio medio de la ciudad ha subido con fuerza en poco más de un año: de 1.
 Ruzafa no es el peaje que hay que pagar para tener vida social en Valencia. Benimaclet y Patraix están a quince minutos en bici de los mismos bares y restaurantes, por bastante menos alquiler — la diferencia de precio compra cercanía y reputación, no acceso a la ciudad en sí.
 :::
 
-El alquiler mensual tampoco es el único gasto a presupuestar: súmale la fianza ([normalmente un mes, con las reglas exactas explicadas aquí](/es/blog/fianza-alquiler)), y si no tienes nómina fija, cuenta con un aval bancario o un seguro de impago ([comparamos las dos opciones aquí](/es/blog/aval-bancario-alquiler)). Lo que no deberías pagar de tu bolsillo son los honorarios de la agencia — [desde 2023 le corresponden al propietario](/es/blog/honorarios-inmobiliaria-alquiler).
+El alquiler mensual tampoco es el único gasto a presupuestar: súmale la fianza ([normalmente un mes, con las reglas exactas explicadas aquí](/es/blog/fianza-alquiler/)), y si no tienes nómina fija, cuenta con un aval bancario o un seguro de impago ([comparamos las dos opciones aquí](/es/blog/aval-bancario-alquiler/)). Lo que no deberías pagar de tu bolsillo son los honorarios de la agencia — [desde 2023 le corresponden al propietario](/es/blog/honorarios-inmobiliaria-alquiler/).
 
 Marta llama a las agencias en cuanto sale un piso en el rango y zona que buscas, en Valencia igual que en Madrid o Barcelona — la estrategia de velocidad no cambia solo porque el precio sea más bajo (el mercado no te hace descuento por venir de una ciudad más cara).

@@ -11,13 +11,13 @@ guides:
   title: "Nuestras guías"
   links:
     - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
-      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
     - title: "El primer cuarto de hora decide quién ve el piso"
-      href: "/es/blog/el-primer-cuarto-de-hora"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
     - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
-      href: "/es/blog/como-preparar-visita-piso-alquiler"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
     - title: "Requisitos para Alquilar un Piso en España"
-      href: "/es/blog/la-carpeta-del-inquilino"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Cuánto cuesta un alquiler promedio en Madrid?"
     a: "Un piso mediano ronda los 1.292€/mes, con el 80% de las propiedades entre 673€ y 4.505€ según el tipo y la zona. Una habitación sale por unos 673€/mes, un estudio por 1.465€ y un piso entero por unos 2.240€."
@@ -86,6 +86,6 @@ Saber el precio por barrio ayuda a fijar expectativas antes de llamar, pero no r
 Si tu presupuesto no llega a los barrios caros del centro, moverte a una zona bien comunicada pero más económica —Vicálvaro, Villaverde, Villa de Vallecas— puede rendir el doble de espacio por el mismo dinero. La corona metropolitana es una opción real, no un plan B.
 :::
 
-El alquiler mensual tampoco es el único gasto a presupuestar: súmale la fianza ([normalmente un mes, con las reglas exactas explicadas aquí](/es/blog/fianza-alquiler)), y si no tienes nómina fija, cuenta con un aval bancario o un seguro de impago ([comparamos las dos opciones aquí](/es/blog/aval-bancario-alquiler)). Lo que no deberías pagar de tu bolsillo son los honorarios de la agencia — [desde 2023 le corresponden al propietario](/es/blog/honorarios-inmobiliaria-alquiler).
+El alquiler mensual tampoco es el único gasto a presupuestar: súmale la fianza ([normalmente un mes, con las reglas exactas explicadas aquí](/es/blog/fianza-alquiler/)), y si no tienes nómina fija, cuenta con un aval bancario o un seguro de impago ([comparamos las dos opciones aquí](/es/blog/aval-bancario-alquiler/)). Lo que no deberías pagar de tu bolsillo son los honorarios de la agencia — [desde 2023 le corresponden al propietario](/es/blog/honorarios-inmobiliaria-alquiler/).
 
 Marta llama a las agencias en cuanto sale un piso en el rango de precio y zona que buscas — no cambia el precio del mercado, pero sí las probabilidades de que llegues a tiempo a la llamada. No puede negociarte un descuento en Salamanca que el mercado no está dando. Puede asegurarse de que, si aparece un piso decente en tu rango, seas de los primeros en enterarte.

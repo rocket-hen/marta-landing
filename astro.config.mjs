@@ -9,6 +9,11 @@ import remarkInlineCta from './src/lib/remark-inline-cta.mjs';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://callmarta.com',
+	// Cloudflare Workers Static Assets 307-redirects any request missing the trailing
+	// slash to the folder/index.html route it actually serves — so every internal link
+	// must be built with one. This makes astro dev match that behavior instead of
+	// silently accepting both forms.
+	trailingSlash: 'always',
 	integrations: [sitemap()],
 	build: {
 		// Inline page CSS directly into HTML instead of separate <link rel="stylesheet">

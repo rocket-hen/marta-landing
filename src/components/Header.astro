@@ -11,7 +11,7 @@ const { activeNav, isHome = false, lang = 'en' } = Astro.props;
 const t = copy[lang].nav;
 const home = lang === 'es' ? '/es/' : '/';
 const prefix = isHome ? '' : home;
-const blogHref = lang === 'es' ? '/es/blog' : '/blog';
+const blogHref = lang === 'es' ? '/es/blog/' : '/blog/';
 ---
 
 <header id="site-header">

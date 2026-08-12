@@ -94,7 +94,7 @@ Beyond Section 6 and Section 7, we handle refund requests case by case. Where th
 
 ## 10. Calls and recording
 
-Calls made for you may be recorded and transcribed so we can report accurately and resolve disputes. Recordings and transcripts are handled as described in our [Privacy Policy](/privacy). You may not publish, broadcast or distribute a recording we provide to you without our written consent, and you are responsible for complying with the law if you do.
+Calls made for you may be recorded and transcribed so we can report accurately and resolve disputes. Recordings and transcripts are handled as described in our [Privacy Policy](/privacy/). You may not publish, broadcast or distribute a recording we provide to you without our written consent, and you are responsible for complying with the law if you do.
 
 ## 11. AI limitations
 
@@ -123,7 +123,7 @@ We may suspend or terminate your access if you breach these Terms, use the servi
 
 ## 16. Changes to these Terms
 
-We may update these Terms. The current version is always at [https://callmarta.com/terms](https://callmarta.com/terms). For material changes affecting an active plan we will give at least 30 days' notice by email. Changes never apply retroactively to an order already placed.
+We may update these Terms. The current version is always at [https://callmarta.com/terms/](https://callmarta.com/terms/). For material changes affecting an active plan we will give at least 30 days' notice by email. Changes never apply retroactively to an order already placed.
 
 ## 17. Governing law and disputes
 

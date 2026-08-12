@@ -3,7 +3,7 @@ title: "Refund Policy"
 lastUpdated: 2026-08-06
 ---
 
-Marta is a service, not a physical product — there is nothing to ship back. This page explains when you're entitled to a refund and how to request one. It's a summary of the fuller terms in Sections 6–8 of our [Terms of Service](/terms); where the two differ, the Terms govern.
+Marta is a service, not a physical product — there is nothing to ship back. This page explains when you're entitled to a refund and how to request one. It's a summary of the fuller terms in Sections 6–8 of our [Terms of Service](/terms/); where the two differ, the Terms govern.
 
 Contact: [support@callmarta.com](mailto:support@callmarta.com)
 

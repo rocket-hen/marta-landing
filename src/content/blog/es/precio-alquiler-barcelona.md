@@ -11,13 +11,13 @@ guides:
   title: "Nuestras guías"
   links:
     - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
-      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
     - title: "El primer cuarto de hora decide quién ve el piso"
-      href: "/es/blog/el-primer-cuarto-de-hora"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
     - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
-      href: "/es/blog/como-preparar-visita-piso-alquiler"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
     - title: "Requisitos para Alquilar un Piso en España"
-      href: "/es/blog/la-carpeta-del-inquilino"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Cuánto vale un alquiler promedio en Barcelona?"
     a: "Unos 22,8€/m² de media, lo que sitúa un piso estándar en torno a 1.147€/mes según datos del Ajuntament de Barcelona — con barrios bastante por encima y por debajo de esa cifra."
@@ -90,7 +90,7 @@ Son estimaciones construidas a partir del precio medio de alquiler por m² de ca
 
 Barcelona tiene zonas declaradas oficialmente de mercado tensionado, donde el precio de un contrato **nuevo** no lo decide libremente el propietario: lo limita un índice de referencia que calcula la Generalitat por sección censal. La diferencia entre secciones es enorme — en Torre Baró, la sección más barata, el alquiler máximo medio ronda los 478€; en las secciones más caras, supera los 3.020€, más de seis veces más por, en teoría, la misma ciudad.
 
-Este índice de referencia es distinto del índice de actualización de rentas (IRAV), que se aplica a contratos **ya firmados**, no a contratos nuevos — confundir los dos es fácil, y son mecanismos con reglas distintas. Si lo que buscas es cuánto puede subirte la renta un propietario que ya es tu casero, [lo cubrimos en detalle en nuestra guía sobre actualizar la renta del alquiler](/es/blog/actualizar-renta-alquiler).
+Este índice de referencia es distinto del índice de actualización de rentas (IRAV), que se aplica a contratos **ya firmados**, no a contratos nuevos — confundir los dos es fácil, y son mecanismos con reglas distintas. Si lo que buscas es cuánto puede subirte la renta un propietario que ya es tu casero, [lo cubrimos en detalle en nuestra guía sobre actualizar la renta del alquiler](/es/blog/actualizar-renta-alquiler/).
 
 El [sistema oficial de la Generalitat (agenciahabitatge.gencat.cat)](https://agenciahabitatge.gencat.cat) permite consultar el índice de referencia de cualquier dirección de Barcelona introduciendo la sección censal o la calle. El resultado incluye un rango de precio máximo legal por metro cuadrado y por vivienda completa, según las características del piso — año de construcción, ascensor, estado de conservación. Para un contrato nuevo en zona tensionada, además puedes pedir un certificado informativo de referencia de precios de alquiler, gratuito y online en unos minutos, que acredita cuál es el precio legal aplicable a esa vivienda concreta.
 
@@ -122,6 +122,6 @@ Lo que sí es verificable es que el índice ha cambiado la conversación: hoy es
 Saber el precio máximo legal de tu zona te da un argumento real frente a un propietario que pide de más. No te da la llamada: Barcelona es de las ciudades con más rotación exprés de España, con el 39% de los contratos firmados en menos de 24 horas. El índice ayuda a negociar; la velocidad decide quién llega a negociar.
 :::
 
-El alquiler mensual tampoco es el único gasto a presupuestar: súmale la fianza ([normalmente un mes, con las reglas exactas explicadas aquí](/es/blog/fianza-alquiler)), y si no tienes nómina fija, cuenta con un aval bancario o un seguro de impago ([comparamos las dos opciones aquí](/es/blog/aval-bancario-alquiler)). Lo que no deberías pagar de tu bolsillo son los honorarios de la agencia — [desde 2023 le corresponden al propietario](/es/blog/honorarios-inmobiliaria-alquiler).
+El alquiler mensual tampoco es el único gasto a presupuestar: súmale la fianza ([normalmente un mes, con las reglas exactas explicadas aquí](/es/blog/fianza-alquiler/)), y si no tienes nómina fija, cuenta con un aval bancario o un seguro de impago ([comparamos las dos opciones aquí](/es/blog/aval-bancario-alquiler/)). Lo que no deberías pagar de tu bolsillo son los honorarios de la agencia — [desde 2023 le corresponden al propietario](/es/blog/honorarios-inmobiliaria-alquiler/).
 
 Marta llama a las agencias en cuanto sale un piso en la zona y rango de precio que buscas — no sustituye el índice de referencia, ayuda con la parte que el índice no resuelve: llegar a tiempo.

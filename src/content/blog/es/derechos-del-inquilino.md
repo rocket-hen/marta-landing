@@ -11,13 +11,13 @@ guides:
   title: "Nuestras guías"
   links:
     - title: "El primer cuarto de hora decide quién ve el piso"
-      href: "/es/blog/el-primer-cuarto-de-hora"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
     - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
-      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
     - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
-      href: "/es/blog/como-preparar-visita-piso-alquiler"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
     - title: "Requisitos para Alquilar un Piso en España"
-      href: "/es/blog/la-carpeta-del-inquilino"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Cuáles son los derechos de un inquilino de una casa?"
     a: "Entre otros: prórroga del contrato hasta 5 o 7 años, poder marcharte a los 6 meses avisando con 30 días, inviolabilidad del domicilio, reparaciones a cargo del propietario, devolución de la fianza, y derecho de tanteo y retracto si el propietario vende."
@@ -33,7 +33,7 @@ faq:
     a: "Sí, si no hay desperfectos más allá del desgaste normal ni deudas pendientes. Te lo explicamos con más detalle, incluyendo plazos y qué hacer si el propietario no la devuelve, en nuestra guía sobre la fianza del alquiler."
 ---
 
-En España, los derechos del inquilino los fija la Ley de Arrendamientos Urbanos y la [Ley de Vivienda](/es/blog/ley-de-vivienda): el contrato dura hasta 5 años si el propietario es un particular (7 si es empresa), puedes marcharte a los 6 meses avisando con un mes de antelación, y el propietario paga las reparaciones necesarias sin poder subirte la renta por ello.
+En España, los derechos del inquilino los fija la Ley de Arrendamientos Urbanos y la [Ley de Vivienda](/es/blog/ley-de-vivienda/): el contrato dura hasta 5 años si el propietario es un particular (7 si es empresa), puedes marcharte a los 6 meses avisando con un mes de antelación, y el propietario paga las reparaciones necesarias sin poder subirte la renta por ello.
 
 ## Índice
 
@@ -52,7 +52,7 @@ Un contrato de alquiler de vivienda habitual se prorroga obligatoriamente, año 
 
 Pasado ese plazo máximo de prórroga obligatoria, el contrato puede entrar en una prórroga tácita adicional si ninguna de las partes avisa de que quiere terminarlo, con condiciones algo distintas a las de la prórroga obligatoria inicial — vale la pena revisar qué dice el tuyo concretamente sobre este punto, porque no todos los contratos lo redactan igual.
 
-Todo esto aplica al alquiler de vivienda habitual. Si tu contrato es de temporada —por trabajo, estudios o vacaciones—, las reglas de duración y prórroga son distintas. [Aquí explicamos las diferencias entre ambos tipos de contrato](/es/blog/alquiler-de-temporada).
+Todo esto aplica al alquiler de vivienda habitual. Si tu contrato es de temporada —por trabajo, estudios o vacaciones—, las reglas de duración y prórroga son distintas. [Aquí explicamos las diferencias entre ambos tipos de contrato](/es/blog/alquiler-de-temporada/).
 
 ## Reparaciones: qué le toca pagar al propietario y qué a ti
 
@@ -66,9 +66,9 @@ Un consejo práctico que no aparece en ningún texto legal: comunica cualquier a
 
 ## Fianza, recibos y otros derechos económicos
 
-Al final del contrato tienes derecho a que te devuelvan la fianza si no hay desperfectos más allá del desgaste normal ni deudas pendientes — [lo explicamos con detalle, incluyendo qué hacer si el propietario se resiste a devolverla, en nuestra guía sobre la fianza del alquiler](/es/blog/fianza-alquiler). También tienes derecho a exigir un recibo o comprobante de cada pago que hagas, incluso en efectivo — un derecho pequeño en apariencia que se vuelve importante el día que necesitas demostrar que pagaste.
+Al final del contrato tienes derecho a que te devuelvan la fianza si no hay desperfectos más allá del desgaste normal ni deudas pendientes — [lo explicamos con detalle, incluyendo qué hacer si el propietario se resiste a devolverla, en nuestra guía sobre la fianza del alquiler](/es/blog/fianza-alquiler/). También tienes derecho a exigir un recibo o comprobante de cada pago que hagas, incluso en efectivo — un derecho pequeño en apariencia que se vuelve importante el día que necesitas demostrar que pagaste.
 
-La renta tampoco puede subir cuando y cuanto le apetezca al propietario: la actualización anual sigue reglas concretas, no una decisión libre. [Aquí explicamos cómo se calcula y cuánto puede subir en 2026](/es/blog/actualizar-renta-alquiler).
+La renta tampoco puede subir cuando y cuanto le apetezca al propietario: la actualización anual sigue reglas concretas, no una decisión libre. [Aquí explicamos cómo se calcula y cuánto puede subir en 2026](/es/blog/actualizar-renta-alquiler/).
 
 ## Derecho de tanteo y retracto si el propietario vende
 

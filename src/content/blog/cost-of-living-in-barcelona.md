@@ -11,11 +11,11 @@ guides:
   title: "Our guides"
   links:
     - title: "Documents Spanish Landlords Ask For"
-      href: "/blog/documents-spanish-landlords-ask-for"
+      href: "/blog/documents-spanish-landlords-ask-for/"
     - title: "Why Nobody Replies to Your Idealista Messages"
-      href: "/blog/why-nobody-replies-to-idealista-messages"
+      href: "/blog/why-nobody-replies-to-idealista-messages/"
     - title: "The First 15 Minutes: Why Speed Wins Flats"
-      href: "/blog/first-15-minutes-why-speed-wins-flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "What salary do you need to live in Barcelona?"
     a: "For a single person, a net salary of around €2,000-2,200 a month covers rent on a full apartment plus a comfortable budget. Sharing a room drops that floor significantly — closer to €1,300-1,500."
@@ -112,7 +112,7 @@ Groceries run €300-350 per person a month, and this barely moves by neighborho
 
 A beer at a local bar runs €2.50-4, a mid-range dinner for two around €60, and two nights out a week adds up to roughly €80-130 a month. Fashion runs about 8% cheaper than the EU average, with Zara specifically 20-30% below US prices — €40-60 a month is a reasonable estimate for basics, treated as a planning number, not a fact someone measured.
 
-These figures assume a standard long-term lease. [Short stays and seasonal contracts run by different rules entirely](/blog/temporary-rental-vs-long-term-lease-spain), often at a markup that makes this whole budget look conservative. Renting in nearby Valencia runs meaningfully cheaper across the board if the city itself isn't the requirement — [we cover that comparison in detail here](/blog/renting-in-valencia-vs-barcelona).
+These figures assume a standard long-term lease. [Short stays and seasonal contracts run by different rules entirely](/blog/temporary-rental-vs-long-term-lease-spain/), often at a markup that makes this whole budget look conservative. Renting in nearby Valencia runs meaningfully cheaper across the board if the city itself isn't the requirement — [we cover that comparison in detail here](/blog/renting-in-valencia-vs-barcelona/).
 
 ## Per person vs. per family: adjusting the numbers
 
@@ -122,4 +122,4 @@ A single person renting a room in a mid-range district, budgeting groceries, tra
 Stop treating the Barcelona city line like a cliff edge. The real budget lever isn't cutting groceries or going out less — it's the district. Moving from Eixample to Nou Barris or Sant Andreu can cut your single biggest cost by 30-40% without changing anything else about how you live.
 :::
 
-If you've read this far, you're probably still deciding whether to move, not calling agencies yet — fair enough, that's what this guide is for. Once you've got a realistic budget and a district in mind, the next bottleneck is finding an actual apartment before someone else does: each listing gets roughly 40 contacts before it's taken down, and [documents landlords ask for](/blog/documents-spanish-landlords-ask-for) matter as much as budget once you're calling. If your Spanish is shaky, [here's what to say when the agent only speaks Spanish](/blog/what-to-say-when-the-agent-only-speaks-spanish) — but that's a problem for a different day than this one.
+If you've read this far, you're probably still deciding whether to move, not calling agencies yet — fair enough, that's what this guide is for. Once you've got a realistic budget and a district in mind, the next bottleneck is finding an actual apartment before someone else does: each listing gets roughly 40 contacts before it's taken down, and [documents landlords ask for](/blog/documents-spanish-landlords-ask-for/) matter as much as budget once you're calling. If your Spanish is shaky, [here's what to say when the agent only speaks Spanish](/blog/what-to-say-when-the-agent-only-speaks-spanish/) — but that's a problem for a different day than this one.

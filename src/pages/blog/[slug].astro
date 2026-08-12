@@ -23,7 +23,7 @@ const schema = [
 	articleSchema(lang, post.data, pageUrl),
 	breadcrumbSchema([
 		{ name: 'Home', url: 'https://callmarta.com/' },
-		{ name: 'Blog', url: 'https://callmarta.com/blog' },
+		{ name: 'Blog', url: 'https://callmarta.com/blog/' },
 		{ name: post.data.title, url: pageUrl },
 	]),
 	...(post.data.faq ? [faqSchema(post.data.faq)] : []),
@@ -42,7 +42,7 @@ const schema = [
 	<article class="post">
 		<div class:list={['layout', { 'has-guides': !!post.data.guides }]}>
 			<div class="head">
-				<a href="/blog" class="link-snap back">{t.backLink}</a>
+				<a href="/blog/" class="link-snap back">{t.backLink}</a>
 				<div class="meta">
 					{post.data.category} · {post.data.minutes} {t.minRead} · <time datetime={isoDate}>{dateLabel}</time>
 				</div>

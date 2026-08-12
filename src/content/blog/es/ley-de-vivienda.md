@@ -11,13 +11,13 @@ guides:
   title: "Nuestras guías"
   links:
     - title: "El primer cuarto de hora decide quién ve el piso"
-      href: "/es/blog/el-primer-cuarto-de-hora"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
     - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
-      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
     - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
-      href: "/es/blog/como-preparar-visita-piso-alquiler"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
     - title: "Requisitos para Alquilar un Piso en España"
-      href: "/es/blog/la-carpeta-del-inquilino"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Qué dice la nueva Ley de la vivienda?"
     a: "Limita los precios en zonas de mercado tensionado, obliga al propietario a pagar los gastos de gestión inmobiliaria, define reglas más estrictas para los grandes tenedores, y añade pasos de protección antes de un desahucio."
@@ -58,7 +58,7 @@ Una zona puede declararse de mercado tensionado cuando el alquiler supera el 30%
 
 Que tu zona esté declarada tensionada no significa que el precio esté congelado sin más: significa que existe un tope legal de referencia, y que un propietario que lo supera de forma injustificada está fuera de la ley, no solo siendo poco razonable. Saberlo cambia el tono de una negociación, aunque no siempre cambie el resultado en un mercado con tanta demanda.
 
-La misma fecha, el 26 de mayo de 2023, también decide qué índice se aplica cuando te suben la renta cada año dentro de un contrato ya firmado — [aquí explicamos cómo calcular esa subida exacta](/es/blog/actualizar-renta-alquiler).
+La misma fecha, el 26 de mayo de 2023, también decide qué índice se aplica cuando te suben la renta cada año dentro de un contrato ya firmado — [aquí explicamos cómo calcular esa subida exacta](/es/blog/actualizar-renta-alquiler/).
 
 ## Grandes tenedores: qué cambia si tu casero tiene varias viviendas
 

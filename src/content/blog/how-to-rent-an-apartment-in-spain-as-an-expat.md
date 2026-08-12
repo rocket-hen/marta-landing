@@ -11,13 +11,13 @@ guides:
   title: "Our guides"
   links:
     - title: "Documents Spanish Landlords Ask For"
-      href: "/blog/documents-spanish-landlords-ask-for"
+      href: "/blog/documents-spanish-landlords-ask-for/"
     - title: "Aval Bancario vs Seguro de Impago in Spain"
-      href: "/blog/spain-rental-guarantees-explained"
+      href: "/blog/spain-rental-guarantees-explained/"
     - title: "Cost of Living in Barcelona, by Neighborhood"
-      href: "/blog/cost-of-living-in-barcelona"
+      href: "/blog/cost-of-living-in-barcelona/"
     - title: "Red Flags: Spotting Fake Listings Before You Pay"
-      href: "/blog/red-flags-fake-listings"
+      href: "/blog/red-flags-fake-listings/"
 faq:
   - q: "Can a US citizen rent an apartment in Spain?"
     a: "Yes. There's no citizenship requirement to sign a lease — a passport is enough for a short stay, and most landlords will ask for a NIE for anything longer than a few months, which any foreigner can apply for regardless of visa status."
@@ -51,7 +51,7 @@ You need less than most guides imply: a passport gets you through a short lease,
 
 > Almost none of this paperwork is legally required to rent in Spain. Almost all of it is practically required to get a callback.
 
-[We cover the full document list — nómina, NIE, what substitutes for a payslip if you're self-employed — in detail here](/blog/documents-spanish-landlords-ask-for), since it's worth getting right before your first call, not after.
+[We cover the full document list — nómina, NIE, what substitutes for a payslip if you're self-employed — in detail here](/blog/documents-spanish-landlords-ask-for/), since it's worth getting right before your first call, not after.
 
 ## Aval bancario vs seguro de impago: the guarantee question
 
@@ -59,13 +59,13 @@ You need less than most guides imply: a passport gets you through a short lease,
 
 If your income doesn't clear that 40-times convention, or you don't have Spanish payslips yet, landlords typically ask for one of two guarantees: an aval bancario (a bank guarantee you arrange and effectively pay for) or a seguro de impago (default-payment insurance the landlord pays for, but you still have to pass its screening). They solve the same problem in different ways, and which one fits depends on whether you'd rather freeze savings or clear an income-ratio check.
 
-[The full breakdown — cost, who pays what, and which one to pick — is here](/blog/spain-rental-guarantees-explained); it's a genuinely confusing part of the process and worth reading before an agent asks you to choose on the spot.
+[The full breakdown — cost, who pays what, and which one to pick — is here](/blog/spain-rental-guarantees-explained/); it's a genuinely confusing part of the process and worth reading before an agent asks you to choose on the spot.
 
 ## Budgeting: what rent actually costs by city
 
 A one-bedroom in Barcelona runs €1,100-1,600+ depending on the neighborhood; in Málaga, €650-1,400. Neither number is "the" Spain rental price — the two cities alone span nearly the full range most expats will encounter, and Madrid runs higher still.
 
-[Full monthly budgets, broken down by neighborhood, are here for Barcelona](/blog/cost-of-living-in-barcelona) and [here for Málaga](/blog/cost-of-living-in-malaga) — both cover rent, groceries, transport, and going out, not just a single average that hides more than it tells you.
+[Full monthly budgets, broken down by neighborhood, are here for Barcelona](/blog/cost-of-living-in-barcelona/) and [here for Málaga](/blog/cost-of-living-in-malaga/) — both cover rent, groceries, transport, and going out, not just a single average that hides more than it tells you.
 
 ## Choosing a neighborhood
 
@@ -80,11 +80,11 @@ Both cost-of-living guides linked above include a dedicated section per neighbor
 A standard long-term lease in Spain runs up to five years by default if your landlord is an individual, seven if it's a company — you're not locked in for that whole stretch, though: you can leave after six months with 30 days' notice. The deposit is capped at three months total, one month legal plus up to two more as guarantee. Anyone asking for more than that, upfront, in cash, is outside the law.
 
 :::highlight
-**Never send money to anyone before you've seen the apartment in person, or by a live video call where you can ask them to walk the space.** A price that looks too good, a landlord who's conveniently "out of the country" right when payment comes up, and pressure to pay today or lose the flat — that combination is the single most common rental scam pattern in Spain, and it works because the market is tight enough that hesitating feels like the risk. [More red flags, and how to check a listing before you commit to anything, are here](/blog/red-flags-fake-listings).
+**Never send money to anyone before you've seen the apartment in person, or by a live video call where you can ask them to walk the space.** A price that looks too good, a landlord who's conveniently "out of the country" right when payment comes up, and pressure to pay today or lose the flat — that combination is the single most common rental scam pattern in Spain, and it works because the market is tight enough that hesitating feels like the risk. [More red flags, and how to check a listing before you commit to anything, are here](/blog/red-flags-fake-listings/).
 :::
 
 ## How to actually move fast in a competitive market
 
-Every one of the sections above solves a real problem — but none of them get you the apartment if you're slow. Each rental listing in Spain gets a median of 40 contacts before it comes down, up 18% year over year. Agencies work through interested callers roughly in the order they called, not the order they liked best. [We wrote a full breakdown of why the first fifteen minutes decide who gets the viewing](/blog/first-15-minutes-why-speed-wins-flats) — it's the one part of this process that has nothing to do with paperwork and everything to do with timing.
+Every one of the sections above solves a real problem — but none of them get you the apartment if you're slow. Each rental listing in Spain gets a median of 40 contacts before it comes down, up 18% year over year. Agencies work through interested callers roughly in the order they called, not the order they liked best. [We wrote a full breakdown of why the first fifteen minutes decide who gets the viewing](/blog/first-15-minutes-why-speed-wins-flats/) — it's the one part of this process that has nothing to do with paperwork and everything to do with timing.
 
 This is where Marta actually helps: documents, guarantee, budget, and neighborhood are things you sort out once. Being first to call on a listing that fits all four is something you have to do again every single time a new one appears — and that's the part worth automating once the rest of this guide is checked off.

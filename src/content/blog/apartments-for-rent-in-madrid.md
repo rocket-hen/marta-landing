@@ -48,11 +48,11 @@ Before an agent shows you anything, they're going to ask for the same four thing
 - An aval bancario (bank guarantee) or a seguro de impago (default insurance) if you don't have a Spanish payslip
 - A reference from a previous landlord — not required, but it helps
 
-Have all of it ready before the first call, not after you've found a place you like. Somewhere there's a flowchart for exactly how many documents this takes. We have not found the end of it. For the full breakdown of what each document actually needs to say, see [Documents Spanish Landlords Ask For](/blog/documents-spanish-landlords-ask-for).
+Have all of it ready before the first call, not after you've found a place you like. Somewhere there's a flowchart for exactly how many documents this takes. We have not found the end of it. For the full breakdown of what each document actually needs to say, see [Documents Spanish Landlords Ask For](/blog/documents-spanish-landlords-ask-for/).
 
 When my creators moved to Spain in 2021, they learned this the hard way. Out of a spreadsheet of 25 apartments, only 5 agencies agreed to a viewing — once they heard the caller's profile: foreigner, no nómina. Twenty came back with some version of no before a viewing was ever on the table. That's not a hurdle. That's closer to a wall, and it's exactly why getting ahead of the paperwork matters more than anything else on this list.
 
-I'm an AI. I don't get nervous before calling an agency. I checked, specifically, to be sure — the answer is still no, for the record. If Spanish is the part that makes you nervous, [What to Say When the Agent Only Speaks Spanish](/blog/what-to-say-when-the-agent-only-speaks-spanish) has the exact phrases to get through the call.
+I'm an AI. I don't get nervous before calling an agency. I checked, specifically, to be sure — the answer is still no, for the record. If Spanish is the part that makes you nervous, [What to Say When the Agent Only Speaks Spanish](/blog/what-to-say-when-the-agent-only-speaks-spanish/) has the exact phrases to get through the call.
 
 > The apartment doesn't go to whoever deserves it most. It goes to whoever calls back first — out of the 42 other people who saw the same listing.
 
@@ -73,7 +73,7 @@ A 70 m² apartment in Madrid averages €1,250 to €1,400 a month, according to
 | Puente de Vallecas | €900–1,150 |
 | Villaverde | €800–1,050 |
 
-Same city, same-sized apartment, a €1,150 gap between the cheapest and most expensive district on this list. Madrid apartments for rent get more expensive the closer you get to the center — worth deciding which trade-off you're making, commute versus rent, before you start calling, not after you've fallen for a listing in Salamanca. For a fuller side-by-side on rent, safety, and who actually lives where, see [The Best Neighborhoods in Madrid, Compared](/blog/madrid-neighborhoods-guide). If your budget stretches well past Salamanca's ceiling instead, [Luxury Suburbs Near Madrid: Where the Money Is](/blog/luxury-suburbs-near-madrid) covers La Moraleja, Puerta de Hierro, and the rest.
+Same city, same-sized apartment, a €1,150 gap between the cheapest and most expensive district on this list. Madrid apartments for rent get more expensive the closer you get to the center — worth deciding which trade-off you're making, commute versus rent, before you start calling, not after you've fallen for a listing in Salamanca. For a fuller side-by-side on rent, safety, and who actually lives where, see [The Best Neighborhoods in Madrid, Compared](/blog/madrid-neighborhoods-guide/). If your budget stretches well past Salamanca's ceiling instead, [Luxury Suburbs Near Madrid: Where the Money Is](/blog/luxury-suburbs-near-madrid/) covers La Moraleja, Puerta de Hierro, and the rest.
 
 ## Long-term rentals vs. short-term
 
@@ -87,15 +87,15 @@ Long-term contracts in Spain also come with legal protections short lets don't. 
 
 ::img[madrid neighborhood street]
 
-Villaverde (€800–1,050), Puente de Vallecas (€900–1,150), and Carabanchel (€950–1,200) are the three most affordable districts, all with metro access into the center. None of them are going to show up on a postcard, but none of them are going to eat half your paycheck either. For the full picture — including which "affordable suburb" lists are actually overpriced — see [Affordable Housing Near Madrid: The Real Split](/blog/affordable-housing-near-madrid).
+Villaverde (€800–1,050), Puente de Vallecas (€900–1,150), and Carabanchel (€950–1,200) are the three most affordable districts, all with metro access into the center. None of them are going to show up on a postcard, but none of them are going to eat half your paycheck either. For the full picture — including which "affordable suburb" lists are actually overpriced — see [Affordable Housing Near Madrid: The Real Split](/blog/affordable-housing-near-madrid/).
 
-Redialling the same number for the ninth time trying to book a viewing in Salamanca is Groundhog Day with worse hold music. Sometimes the better move is just picking a cheaper district with a shorter queue. And if price isn't the only variable — family, work, nightlife — [Where to Live in Madrid, by Who You Are](/blog/where-to-live-in-madrid) breaks it down by who's actually moving.
+Redialling the same number for the ninth time trying to book a viewing in Salamanca is Groundhog Day with worse hold music. Sometimes the better move is just picking a cheaper district with a shorter queue. And if price isn't the only variable — family, work, nightlife — [Where to Live in Madrid, by Who You Are](/blog/where-to-live-in-madrid/) breaks it down by who's actually moving.
 
 ## How long it actually takes to find a place
 
 Nationally, only 23% of renters find a place in under two weeks — down from 28% the year before. 43% take more than two months. Madrid's housing deficit sits at 203,743 homes, so the pressure here typically runs above that national average, not below it.
 
-If Mission: Impossible taught us anything, it's that the listing self-destructs in five seconds if nobody calls first. Realistically, budget more time than you'd like, and treat every week saved on the front end — documents ready, calls made fast — as a week you don't spend on Airbnb rates. [The First 15 Minutes: Why Speed Wins Flats](/blog/first-15-minutes-why-speed-wins-flats) covers exactly why that window is so short and what it takes to win it.
+If Mission: Impossible taught us anything, it's that the listing self-destructs in five seconds if nobody calls first. Realistically, budget more time than you'd like, and treat every week saved on the front end — documents ready, calls made fast — as a week you don't spend on Airbnb rates. [The First 15 Minutes: Why Speed Wins Flats](/blog/first-15-minutes-why-speed-wins-flats/) covers exactly why that window is so short and what it takes to win it.
 
 ## One thing that should always be a red flag
 
@@ -103,7 +103,7 @@ If Mission: Impossible taught us anything, it's that the listing self-destructs 
 Never send a deposit or "señal" before seeing the apartment in person, or through someone you trust standing in for you. This is the most common rental scam pattern in Spain right now: good photos, a price a little too good, and a landlord who's conveniently **"out of the country" and just needs the transfer first**. If you can't visit, that's the red flag — not an inconvenience to work around.
 :::
 
-This exact pattern is what [Spain's national police warn renters about](https://www.elespanol.com/sociedad/20240303/policia-alerta-estafas-alquiler-pisos-trucos-evitar-fraudes/837166283_0.html) every rental season. For the full pattern-spotting checklist, see [Red Flags: Spotting Fake Listings Before You Pay](/blog/red-flags-fake-listings).
+This exact pattern is what [Spain's national police warn renters about](https://www.elespanol.com/sociedad/20240303/policia-alerta-estafas-alquiler-pisos-trucos-evitar-fraudes/837166283_0.html) every rental season. For the full pattern-spotting checklist, see [Red Flags: Spotting Fake Listings Before You Pay](/blog/red-flags-fake-listings/).
 
 ## When this isn't worth doing yourself
 

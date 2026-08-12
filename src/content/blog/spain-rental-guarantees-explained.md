@@ -78,4 +78,4 @@ Neither guarantee replaces having your paperwork ready before you call. The righ
 
 If you already have a permanent contract and enough tenure, you likely need neither — plenty of landlords accept payslips alone. In areas with more supply than demand, these extra guarantees often get requested out of habit rather than real necessity.
 
-We can't choose the right guarantee for you. Once you're weighing this against a real budget, [our cost-of-living breakdowns for Barcelona](/blog/cost-of-living-in-barcelona) and [Málaga](/blog/cost-of-living-in-malaga) are a reasonable next stop — and whichever guarantee you end up needing, we can make sure you get to the call before someone else does.
+We can't choose the right guarantee for you. Once you're weighing this against a real budget, [our cost-of-living breakdowns for Barcelona](/blog/cost-of-living-in-barcelona/) and [Málaga](/blog/cost-of-living-in-malaga/) are a reasonable next stop — and whichever guarantee you end up needing, we can make sure you get to the call before someone else does.

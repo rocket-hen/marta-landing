@@ -75,7 +75,7 @@ American School of Madrid has operated here since 1961 and consistently ranks in
 
 ## Alcobendas: business money, not just old money
 
-Alcobendas is where a lot of the multinationals with Madrid offices actually put their regional headquarters — rent runs around €22.90/m², the highest on this list outside La Moraleja itself, which technically sits inside its borders. This is less about inherited wealth than about executives who need to be near an office park and are willing to pay for it. Not every one of those postings is permanent, either — worth checking whether the lease on offer is a standard long-term contract or [a temporada one](/blog/temporary-rental-vs-long-term-lease-spain) before you sign, since the two run under very different rules.
+Alcobendas is where a lot of the multinationals with Madrid offices actually put their regional headquarters — rent runs around €22.90/m², the highest on this list outside La Moraleja itself, which technically sits inside its borders. This is less about inherited wealth than about executives who need to be near an office park and are willing to pay for it. Not every one of those postings is permanent, either — worth checking whether the lease on offer is a standard long-term contract or [a temporada one](/blog/temporary-rental-vs-long-term-lease-spain/) before you sign, since the two run under very different rules.
 
 Metro, Cercanías, and bus connections are all solid here, which matters more than it does in La Moraleja, where most people simply drive.
 

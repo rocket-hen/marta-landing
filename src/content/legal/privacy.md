@@ -188,7 +188,7 @@ Our service is not directed at people under 18, and we do not knowingly collect 
 
 ## 15. Changes to this policy
 
-We may update this policy. The current version is always at [https://callmarta.com/privacy](https://callmarta.com/privacy) with the date of the last update at the top. If we make a material change, we will notify customers by email.
+We may update this policy. The current version is always at [https://callmarta.com/privacy/](https://callmarta.com/privacy/) with the date of the last update at the top. If we make a material change, we will notify customers by email.
 
 ## 16. Contact
 

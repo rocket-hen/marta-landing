@@ -11,13 +11,13 @@ guides:
   title: "Nuestras guías"
   links:
     - title: "El primer cuarto de hora decide quién ve el piso"
-      href: "/es/blog/el-primer-cuarto-de-hora"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
     - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
-      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
     - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
-      href: "/es/blog/como-preparar-visita-piso-alquiler"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
     - title: "Requisitos para Alquilar un Piso en España"
-      href: "/es/blog/la-carpeta-del-inquilino"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Cómo alquilar un piso si no tengo nómina?"
     a: "Con un aval bancario, un seguro de impago, o documentos que demuestren ingresos regulares aunque no vengan de una nómina — declaración de IRPF, extractos bancarios, facturación como autónomo. Lo importante es llevarlos preparados antes de la primera llamada."
@@ -55,9 +55,9 @@ Esa costumbre se ha vuelto casi automática en agencias que gestionan muchos pis
 
 Un aval bancario cubre al propietario si dejas de pagar, respaldado por tu banco. Un seguro de impago hace lo mismo a través de una aseguradora, con una prima que suele rondar el 3-5% de la renta anual. Un aval de un familiar con nómina propia también funciona en muchos casos, aunque compromete a esa persona igual que a ti.
 
-Ninguna de las tres opciones es automática — cada una tiene sus propios requisitos de aprobación, así que conviene empezar el trámite antes de encontrar el piso, no después. Ten en cuenta que ninguna sustituye la fianza habitual: [la legal nunca puede superar tres meses de renta en total](/es/blog/fianza-alquiler), sea cual sea el documento que uses para demostrar solvencia.
+Ninguna de las tres opciones es automática — cada una tiene sus propios requisitos de aprobación, así que conviene empezar el trámite antes de encontrar el piso, no después. Ten en cuenta que ninguna sustituye la fianza habitual: [la legal nunca puede superar tres meses de renta en total](/es/blog/fianza-alquiler/), sea cual sea el documento que uses para demostrar solvencia.
 
-Otra forma de reducir la barrera de entrada es compartir piso, donde el filtro de ingresos suele ser menos estricto por persona — [aquí tienes las preguntas clave que conviene hacer antes de firmar uno](/es/blog/piso-compartido-preguntas).
+Otra forma de reducir la barrera de entrada es compartir piso, donde el filtro de ingresos suele ser menos estricto por persona — [aquí tienes las preguntas clave que conviene hacer antes de firmar uno](/es/blog/piso-compartido-preguntas/).
 
 ## Documentos que sí puedes aportar siendo autónomo o freelance
 
@@ -69,13 +69,13 @@ El objetivo no es un solo documento perfecto — es un conjunto que, juntos, cue
 
 ::img[llamada telefónica agente]
 
-El aval bancario inmoviliza parte de tus propios ahorros como garantía en el banco. El seguro de impago no toca tu dinero — pagas una prima y una aseguradora responde por ti, pero pasas por un estudio de solvencia distinto al del banco. Ninguno es mejor en abstracto; depende de si prefieres comprometer ahorros o pagar una prima recurrente. [Aquí comparamos las dos opciones con más detalle, incluida la letra pequeña de cada una](/es/blog/aval-bancario-alquiler).
+El aval bancario inmoviliza parte de tus propios ahorros como garantía en el banco. El seguro de impago no toca tu dinero — pagas una prima y una aseguradora responde por ti, pero pasas por un estudio de solvencia distinto al del banco. Ninguno es mejor en abstracto; depende de si prefieres comprometer ahorros o pagar una prima recurrente. [Aquí comparamos las dos opciones con más detalle, incluida la letra pequeña de cada una](/es/blog/aval-bancario-alquiler/).
 
 :::highlight
 Si un propietario te ofrece **saltarse toda la documentación a cambio de pagar varios meses por adelantado en efectivo**, trátalo con la misma cautela que cualquier otro trato "demasiado fácil" en el alquiler en España. Verifica igualmente su identidad y que la vivienda es suya antes de pagar nada — evitar el papeleo no es un favor, es quitarte las garantías que ese papeleo existe para darte.
 :::
 
-Si quieres profundizar en las señales de alarma antes de dar ese paso, [aquí tienes la guía completa para detectar estafas al alquilar un piso](/es/blog/fianza-antes-de-ver-el-piso).
+Si quieres profundizar en las señales de alarma antes de dar ese paso, [aquí tienes la guía completa para detectar estafas al alquilar un piso](/es/blog/fianza-antes-de-ver-el-piso/).
 
 ## Cómo presentarlo en la llamada, no solo en el papel
 
@@ -87,6 +87,6 @@ El orden importa tanto como el contenido: sitúa primero lo que genera confianza
 
 Si ya tienes nómina fija y contrato indefinido, nada de esto te afecta — preséntala y sigue con el proceso normal. Y si el mercado en tu zona tiene más oferta que demanda, es probable que ningún propietario te pida más que lo básico, con o sin nómina.
 
-Independientemente de cómo demuestres solvencia, recuerda que los honorarios de gestión de la agencia no son responsabilidad tuya en un alquiler de vivienda habitual — [aquí explicamos quién debe pagarlos realmente](/es/blog/honorarios-inmobiliaria-alquiler).
+Independientemente de cómo demuestres solvencia, recuerda que los honorarios de gestión de la agencia no son responsabilidad tuya en un alquiler de vivienda habitual — [aquí explicamos quién debe pagarlos realmente](/es/blog/honorarios-inmobiliaria-alquiler/).
 
 No podemos crearte una nómina que no tienes. Podemos asegurarnos de que quien te pregunta por tus ingresos te escuche antes de colgar.

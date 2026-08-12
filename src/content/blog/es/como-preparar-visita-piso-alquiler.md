@@ -51,11 +51,11 @@ Abre los grifos, tira de la cadena, enciende las luces de cada habitación. Pare
 
 ::img[documentos y calculadora]
 
-El coste total mensual, no solo la renta: pregunta si la comunidad de vecinos y el IBI van incluidos o van aparte, y si agua, luz y gas están dados de alta o hay que gestionarlos tú. Pregunta también los meses de fianza y depósito exactos — [la fianza legal tiene un límite claro que conviene conocer antes de que te pidan más de la cuenta](/es/blog/fianza-alquiler) — y si hay honorarios de agencia de por medio, [que desde 2023 le corresponden al propietario, no a ti, en una vivienda habitual](/es/blog/honorarios-inmobiliaria-alquiler).
+El coste total mensual, no solo la renta: pregunta si la comunidad de vecinos y el IBI van incluidos o van aparte, y si agua, luz y gas están dados de alta o hay que gestionarlos tú. Pregunta también los meses de fianza y depósito exactos — [la fianza legal tiene un límite claro que conviene conocer antes de que te pidan más de la cuenta](/es/blog/fianza-alquiler/) — y si hay honorarios de agencia de por medio, [que desde 2023 le corresponden al propietario, no a ti, en una vivienda habitual](/es/blog/honorarios-inmobiliaria-alquiler/).
 
 ## Preguntas sobre mascotas y normas de convivencia
 
-Si tienes mascota, pregúntalo directamente en la visita, no lo dejes para la firma — [hay una regla concreta sobre cuándo el propietario puede prohibirlas y cuándo no](/es/blog/alquilar-con-mascota) que conviene conocer antes de esa conversación. Aprovecha también para preguntar por normas de convivencia si el edificio o la comunidad las tiene: horarios, ruido, uso de zonas comunes — mejor sabido antes de firmar que descubierto al segundo mes.
+Si tienes mascota, pregúntalo directamente en la visita, no lo dejes para la firma — [hay una regla concreta sobre cuándo el propietario puede prohibirlas y cuándo no](/es/blog/alquilar-con-mascota/) que conviene conocer antes de esa conversación. Aprovecha también para preguntar por normas de convivencia si el edificio o la comunidad las tiene: horarios, ruido, uso de zonas comunes — mejor sabido antes de firmar que descubierto al segundo mes.
 
 ## Decide en el sitio: cómo llegar con la respuesta lista antes de irte
 

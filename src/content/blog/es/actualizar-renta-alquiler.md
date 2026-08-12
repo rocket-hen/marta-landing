@@ -11,13 +11,13 @@ guides:
   title: "Nuestras guías"
   links:
     - title: "El primer cuarto de hora decide quién ve el piso"
-      href: "/es/blog/el-primer-cuarto-de-hora"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
     - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
-      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
     - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
-      href: "/es/blog/como-preparar-visita-piso-alquiler"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
     - title: "Requisitos para Alquilar un Piso en España"
-      href: "/es/blog/la-carpeta-del-inquilino"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Cuánto es lo máximo que te pueden aumentar el alquiler?"
     a: "Depende del índice que te aplique. Si tu contrato es anterior al 26 de mayo de 2023, el límite es el IPC interanual (en torno al 3,2-3,4% en 2026). Si es posterior, se aplica el IRAV, más moderado, en torno al 2,47%."
@@ -45,7 +45,7 @@ Cuánto puede subir tu alquiler depende de una sola fecha: si firmaste antes o d
 
 ## De qué depende cuánto puede subir tu alquiler
 
-Todo se reduce a una fecha: el 26 de mayo de 2023, cuando entró en vigor la [Ley por el Derecho a la Vivienda](/es/blog/ley-de-vivienda). Si tu contrato es anterior, la actualización sigue el IPC. Si es posterior, sigue el IRAV — un índice distinto, pensado para moderar subidas frente al IPC.
+Todo se reduce a una fecha: el 26 de mayo de 2023, cuando entró en vigor la [Ley por el Derecho a la Vivienda](/es/blog/ley-de-vivienda/). Si tu contrato es anterior, la actualización sigue el IPC. Si es posterior, sigue el IRAV — un índice distinto, pensado para moderar subidas frente al IPC.
 
 > No es tu casero quien decide cuánto sube tu alquiler. Es la fecha en la que firmaste.
 

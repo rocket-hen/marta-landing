@@ -11,11 +11,11 @@ guides:
   title: "Our guides"
   links:
     - title: "Documents Spanish Landlords Ask For"
-      href: "/blog/documents-spanish-landlords-ask-for"
+      href: "/blog/documents-spanish-landlords-ask-for/"
     - title: "How to Rent an Apartment in Spain as an Expat"
-      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
     - title: "Spain Rental Guarantees Explained"
-      href: "/blog/spain-rental-guarantees-explained"
+      href: "/blog/spain-rental-guarantees-explained/"
 faq:
   - q: "How much do I need to live comfortably in Valencia, Spain?"
     a: "A single person can live comfortably on €1,600-1,800 a month including rent. A family of four should budget €3,700-4,100 a month all-in — noticeably less than the same household would need in Barcelona."
@@ -49,7 +49,7 @@ Valencia gets pitched as the "cheaper Barcelona" — beach city, same Mediterran
 
 ## How much does it cost to live in Valencia?
 
-Excluding rent, a single person spends €720-850 a month in Valencia, and a family of four €2,600-3,000 — Numbeo, Wise, and Expatistan all converge in that range. Including rent, that's €1,600-1,800 for a single person and €3,700-4,100 for a family of four. [Barcelona's equivalent numbers run noticeably higher across the board](/blog/cost-of-living-in-barcelona), and even [Málaga](/blog/cost-of-living-in-malaga) — usually the budget pick of the three — runs close to Valencia rather than clearly below it. Valencia's real pitch as the "cheaper coastal alternative" holds up in the data, not just the marketing.
+Excluding rent, a single person spends €720-850 a month in Valencia, and a family of four €2,600-3,000 — Numbeo, Wise, and Expatistan all converge in that range. Including rent, that's €1,600-1,800 for a single person and €3,700-4,100 for a family of four. [Barcelona's equivalent numbers run noticeably higher across the board](/blog/cost-of-living-in-barcelona/), and even [Málaga](/blog/cost-of-living-in-malaga/) — usually the budget pick of the three — runs close to Valencia rather than clearly below it. Valencia's real pitch as the "cheaper coastal alternative" holds up in the data, not just the marketing.
 
 > The same four neighborhood names show up in every Valencia guide. The other fifteen districts are where most of the city actually lives — and rents for meaningfully less.
 
@@ -81,7 +81,7 @@ These are estimates built from each district's average €/m² asking price (55m
 
 Eixample is the 19th-century grid, and its best-known name is **Ruzafa** — every source from Uniplaces to US News independently calls it Valencia's main expat and young-professional neighborhood. What most of that coverage skips: Ruzafa is also the most expensive rental zone in the city, not the affordable hipster pick people assume from the write-ups. **El Pla del Remei**, in the same district, is upscale and quiet, built around Colón Market's high-end shopping. **Gran Vía** is wide, elegant boulevards, more residential and institutional than Ruzafa's bar-and-café density.
 
-A popular district like Ruzafa also means competition for listings, and a common frustration once you start calling: [here's why so many messages on Idealista never get a reply](/blog/why-nobody-replies-to-idealista-messages), and what to do differently.
+A popular district like Ruzafa also means competition for listings, and a common frustration once you start calling: [here's why so many messages on Idealista never get a reply](/blog/why-nobody-replies-to-idealista-messages/), and what to do differently.
 
 ## Just outside the walls: Extramurs and El Pla del Real
 
@@ -119,4 +119,4 @@ Groceries run €200-300 a person a month, depending on whether you're shopping 
 Ruzafa isn't a toll you pay to have a social life in Valencia. Benimaclet and Patraix are a fifteen-minute bike ride from the same bars and restaurants, for noticeably less rent — the premium buys proximity and reputation, not access to the city itself.
 :::
 
-None of this changes much district to district — which is exactly why, once you've picked a few districts within budget, the real bottleneck becomes finding an available apartment before someone else does, not shaving euros off groceries. [The full process — documents, guarantees, and how to move fast once you've narrowed it down — is covered here](/blog/how-to-rent-an-apartment-in-spain-as-an-expat), and it's worth knowing [the red flags of a fake listing](/blog/red-flags-fake-listings) before you start calling, not after you've paid something you shouldn't have.
+None of this changes much district to district — which is exactly why, once you've picked a few districts within budget, the real bottleneck becomes finding an available apartment before someone else does, not shaving euros off groceries. [The full process — documents, guarantees, and how to move fast once you've narrowed it down — is covered here](/blog/how-to-rent-an-apartment-in-spain-as-an-expat/), and it's worth knowing [the red flags of a fake listing](/blog/red-flags-fake-listings/) before you start calling, not after you've paid something you shouldn't have.

@@ -22,7 +22,7 @@ const posts = await getPostsForLang(lang);
 			<div class="grid">
 				{
 					posts.map((post) => (
-						<a href={`/es/blog/${postSlug(post)}`} class="card-hover card">
+						<a href={`/es/blog/${postSlug(post)}/`} class="card-hover card">
 							<div class="meta">
 								{post.data.category} · {post.data.minutes} min
 							</div>

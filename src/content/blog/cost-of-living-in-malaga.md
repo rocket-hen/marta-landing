@@ -11,9 +11,9 @@ guides:
   title: "Our guides"
   links:
     - title: "Documents Spanish Landlords Ask For"
-      href: "/blog/documents-spanish-landlords-ask-for"
+      href: "/blog/documents-spanish-landlords-ask-for/"
     - title: "The First 15 Minutes: Why Speed Wins Flats"
-      href: "/blog/first-15-minutes-why-speed-wins-flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "What are the best areas to live in Málaga?"
     a: "It depends on what you want. La Malagueta and El Limonar for upscale and beachside, Soho for central and artsy, Pedregalejo or El Palo for a more local seafront feel, Teatinos for practical and residential."
@@ -51,7 +51,7 @@ Excluding rent, a single person in Málaga spends €700-850 a month, per Numbeo
 
 > Málaga's headline number looks cheap next to Barcelona. It's the neighborhood, not the city average, that decides whether it actually is.
 
-One couple documenting their move in 2026 reported €1,700-1,900 a month total, rent included, with €950 going to a one-bedroom — a real anchor for what "comfortable but not extravagant" looks like here. [We ran the same breakdown for Barcelona](/blog/cost-of-living-in-barcelona) if you're weighing the two against each other.
+One couple documenting their move in 2026 reported €1,700-1,900 a month total, rent included, with €950 going to a one-bedroom — a real anchor for what "comfortable but not extravagant" looks like here. [We ran the same breakdown for Barcelona](/blog/cost-of-living-in-barcelona/) if you're weighing the two against each other.
 
 ## Groceries, dining, transport, and utilities
 
@@ -65,7 +65,7 @@ None of this shifts much by neighborhood. A supermarket in Teatinos and one in L
 
 Málaga's old town, home to the Alcazaba, is the densest and most historic part of the city — everything is walkable, which is both the appeal and the catch, since it's also the most tourist-heavy neighborhood on this list. Rent here sits toward the higher end of the €900-1,400 city-center range, and you're paying partly for the address, partly for never needing a bus.
 
-The rent figures throughout this guide assume a standard long-term lease. [Short stays and seasonal contracts run under different rules entirely](/blog/temporary-rental-vs-long-term-lease-spain), often at a markup that makes these numbers look conservative.
+The rent figures throughout this guide assume a standard long-term lease. [Short stays and seasonal contracts run under different rules entirely](/blog/temporary-rental-vs-long-term-lease-spain/), often at a markup that makes these numbers look conservative.
 
 The residents are a mix of longtime locals who never left, a growing number of remote workers and retirees, and, during the day, a heavy flow of tourists — the streets are clean, well-maintained, and busy enough late into the evening that it reads as safe, with the usual city-center caution once the crowds thin out. 
 
@@ -127,4 +127,4 @@ The same idea that applies to choosing a city applies inside Málaga too. La Mal
 
 If walkability and history matter most, Centro Histórico or Soho put you in the middle of it, at a real premium. If the beach is the point, El Palo and Pedregalejo get you there for meaningfully less than La Malagueta. If you'd rather have space and don't need to be central, Teatinos stretches the budget furthest.
 
-This is a guide for someone still deciding whether and where to move, not calling agencies yet — fair enough, that decision comes first. Once you've got a neighborhood and a number in mind, the next bottleneck is finding an actual apartment before someone else does — and [knowing the red flags of a fake listing](/blog/red-flags-fake-listings) matters as much as budget once you start calling. That's a problem for a different guide than this one.
+This is a guide for someone still deciding whether and where to move, not calling agencies yet — fair enough, that decision comes first. Once you've got a neighborhood and a number in mind, the next bottleneck is finding an actual apartment before someone else does — and [knowing the red flags of a fake listing](/blog/red-flags-fake-listings/) matters as much as budget once you start calling. That's a problem for a different guide than this one.

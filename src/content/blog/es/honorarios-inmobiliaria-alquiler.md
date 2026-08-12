@@ -11,13 +11,13 @@ guides:
   title: "Nuestras guías"
   links:
     - title: "El primer cuarto de hora decide quién ve el piso"
-      href: "/es/blog/el-primer-cuarto-de-hora"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
     - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
-      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
     - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
-      href: "/es/blog/como-preparar-visita-piso-alquiler"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
     - title: "Requisitos para Alquilar un Piso en España"
-      href: "/es/blog/la-carpeta-del-inquilino"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Quién paga los honorarios de la inmobiliaria en un alquiler?"
     a: "El propietario, siempre que sea un alquiler de vivienda habitual. Desde la Ley 12/2023, los gastos de gestión inmobiliaria y de formalización del contrato ya no pueden cargarse al inquilino."
@@ -62,19 +62,19 @@ Las agencias que cobran esto a un inquilino de vivienda habitual están incumpli
 
 Entender cuánto cobra una agencia ayuda a entender por qué insisten tanto en cobrártelo a ti. Housfy cita un 10% de la renta anual como la cifra más habitual. Zazume maneja un rango algo más amplio, del 8% al 12% de la renta anual, o alternativamente una mensualidad completa. Fotocasa da un ejemplo concreto: si se cobra por mensualidad, puede ser una sola (unos 1.500€ en un alquiler medio) o dos (unos 3.000€) según el caso.
 
-Es dinero real que la agencia deja de cobrar si no puede cargártelo a ti — de ahí la insistencia, y de ahí también que renombrar el cobro sea tan tentador para quien no quiere renunciar a ese ingreso. Esa presión suele notarse más si tu perfil ya tiene otro punto débil aparente, como no tener nómina fija — [aquí explicamos cómo demostrar solvencia sin ella](/es/blog/alquilar-piso-sin-nomina), sin que eso te deje en peor posición para negociar también esto.
+Es dinero real que la agencia deja de cobrar si no puede cargártelo a ti — de ahí la insistencia, y de ahí también que renombrar el cobro sea tan tentador para quien no quiere renunciar a ese ingreso. Esa presión suele notarse más si tu perfil ya tiene otro punto débil aparente, como no tener nómina fija — [aquí explicamos cómo demostrar solvencia sin ella](/es/blog/alquilar-piso-sin-nomina/), sin que eso te deje en peor posición para negociar también esto.
 
 ## Las excepciones donde el inquilino sí puede pagar
 
 ::img[persona firmando contrato de alquiler]
 
-La ley no prohíbe cobrar honorarios al inquilino en todos los casos, solo en el de vivienda habitual. Hay tres excepciones reales. La primera es el alquiler de temporada — no es vivienda habitual, así que no está cubierto por esta prohibición; [lo explicamos con más detalle en nuestra guía sobre alquiler de temporada](/es/blog/alquiler-de-temporada). La segunda son los locales comerciales y las oficinas, fuera del ámbito de la ley de vivienda residencial. La tercera es cuando el propio inquilino contrata de forma explícita y directa a un agente —una especie de "personal shopper" inmobiliario— para que le busque un piso concreto: ahí sí existe una relación de servicio directa entre inquilino y agente, distinta de la gestión estándar del contrato.
+La ley no prohíbe cobrar honorarios al inquilino en todos los casos, solo en el de vivienda habitual. Hay tres excepciones reales. La primera es el alquiler de temporada — no es vivienda habitual, así que no está cubierto por esta prohibición; [lo explicamos con más detalle en nuestra guía sobre alquiler de temporada](/es/blog/alquiler-de-temporada/). La segunda son los locales comerciales y las oficinas, fuera del ámbito de la ley de vivienda residencial. La tercera es cuando el propio inquilino contrata de forma explícita y directa a un agente —una especie de "personal shopper" inmobiliario— para que le busque un piso concreto: ahí sí existe una relación de servicio directa entre inquilino y agente, distinta de la gestión estándar del contrato.
 
 ## Qué hacer si una agencia te exige el pago
 
 Si una agencia te pide que pagues la gestión de un alquiler de vivienda habitual, la primera respuesta es simplemente negarte y citar la Ley 12/2023 — la mayoría retrocede en cuanto ve que conoces la norma, porque saben que no tienen razón. Pide que el desglose de gastos conste por escrito antes de firmar nada; un cobro que no se atreven a poner en un documento formal suele ser la señal más clara de que saben que no deberían cobrarlo.
 
-No es la única señal de alarma que conviene vigilar antes de firmar — [aquí tienes las más comunes de una estafa de alquiler y cómo detectarlas](/es/blog/fianza-antes-de-ver-el-piso).
+No es la única señal de alarma que conviene vigilar antes de firmar — [aquí tienes las más comunes de una estafa de alquiler y cómo detectarlas](/es/blog/fianza-antes-de-ver-el-piso/).
 
 :::highlight
 **Si una agencia te pide el pago disfrazado de "estudio de solvencia", "asesoramiento legal" o cualquier otro nombre, sigue siendo el mismo cobro que la ley prohíbe cargarte a ti.** El nombre que le pongan en la factura no cambia lo que dice la ley. Si insisten después de que lo señales, puedes presentar una reclamación en la oficina de consumo de tu comunidad autónoma.

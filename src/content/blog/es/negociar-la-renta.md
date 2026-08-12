@@ -24,7 +24,7 @@ Negociar la renta es posible, pero solo en ciertas condiciones. Intentarlo en el
 
 Un anuncio que lleva publicado más de dos o tres semanas casi siempre tiene margen: si no se ha alquilado a ese precio, el propietario ya sabe que está por encima del mercado. También hay margen en temporada baja (octubre a diciembre, y de nuevo en verano fuera de las zonas turísticas), y en pisos que necesitan una reforma visible — pintura, electrodomésticos antiguos, humedad leve.
 
-Una excepción importante: un precio que parece demasiado bueno para ser cierto no siempre es margen de negociación — a veces es la primera señal de una estafa. [Aquí explicamos cómo distinguir un precio bajo real de uno sospechoso](/es/blog/fianza-antes-de-ver-el-piso).
+Una excepción importante: un precio que parece demasiado bueno para ser cierto no siempre es margen de negociación — a veces es la primera señal de una estafa. [Aquí explicamos cómo distinguir un precio bajo real de uno sospechoso](/es/blog/fianza-antes-de-ver-el-piso/).
 
 > La negociación que funciona casi nunca es "¿me lo bajas?". Es "puedo firmar ya, sin condiciones, si ajustamos esto un poco" — eso sí suena a una oferta real.
 

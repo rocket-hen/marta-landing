@@ -11,13 +11,13 @@ guides:
   title: "Nuestras guías"
   links:
     - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
-      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
     - title: "El primer cuarto de hora decide quién ve el piso"
-      href: "/es/blog/el-primer-cuarto-de-hora"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
     - title: "Cómo preparar una visita para poder decidir el piso allí mismo"
-      href: "/es/blog/como-preparar-visita-piso-alquiler"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
     - title: "Requisitos para Alquilar un Piso en España"
-      href: "/es/blog/la-carpeta-del-inquilino"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Es más barato alquilar en Valencia que en Madrid?"
     a: "Sí, todavía: un dormitorio estándar ronda los 900€ en Valencia frente a 1.300€ en Madrid. La diferencia se está cerrando rápido, sobre todo en zonas como Ruzafa o El Carmen."
@@ -79,7 +79,7 @@ La frontera de la ciudad no es un muro: en las tres, moverse a un municipio bien
 
 Cambia el precio, cambia la competencia, pero no cambia lo que decide quién consigue la visita: nómina o ingresos demostrables, DNI o NIE, y una respuesta clara sobre cuándo puedes entrar a vivir. En Madrid ese filtro se aplica más rápido porque hay más gente esperando detrás de ti en la cola; en Valencia y Málaga el margen es un poco mayor, pero solo un poco (el filtro es el mismo examen, solo que en Madrid te lo toman con cronómetro).
 
-Si no tienes nómina fija, un aval bancario o un seguro de impago cubren ese hueco en las tres ciudades por igual — [aquí comparamos las dos opciones](/es/blog/aval-bancario-alquiler). Y la fianza sigue el mismo límite legal en cualquiera de ellas: [nunca más de tres meses de renta en total](/es/blog/fianza-alquiler).
+Si no tienes nómina fija, un aval bancario o un seguro de impago cubren ese hueco en las tres ciudades por igual — [aquí comparamos las dos opciones](/es/blog/aval-bancario-alquiler/). Y la fianza sigue el mismo límite legal en cualquiera de ellas: [nunca más de tres meses de renta en total](/es/blog/fianza-alquiler/).
 
 Lo que sí cambia entre ciudades es cuánto tarda una agencia en devolver la llamada si no coges a la primera. En Madrid, con decenas de candidatos detrás de ti, esa segunda oportunidad puede no llegar nunca. En Valencia o Málaga, con un poco de margen de más, suele haber una segunda ventana — pero contar con ella en vez de estar listo a la primera es apostar con las cartas boca abajo.
 
@@ -91,6 +91,6 @@ Si tu trabajo, tu pareja o tu familia ya te atan a una ciudad concreta, comparar
 El piso ideal en Madrid puede ser el piso barato en Valencia y el piso imposible en Málaga. La estrategia tiene que cambiar según la ciudad, no solo el presupuesto — y quien llama primero y demuestra que puede firmar ya sigue ganando la visita en las tres.
 :::
 
-Lo que no deberías pagar en ninguna de las tres es la comisión de la agencia — [desde 2023 le corresponde al propietario, no a ti](/es/blog/honorarios-inmobiliaria-alquiler).
+Lo que no deberías pagar en ninguna de las tres es la comisión de la agencia — [desde 2023 le corresponde al propietario, no a ti](/es/blog/honorarios-inmobiliaria-alquiler/).
 
 Marta llama en las tres ciudades igual de rápido — no cambia de estrategia según el código postal, solo según lo que cada agencia pide primero.
