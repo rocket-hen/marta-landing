@@ -44,7 +44,25 @@ Excluding rent, a single person spends €720-850 a month in Valencia, and a fam
 
 > The same four neighborhood names show up in every Valencia guide. The other fifteen districts are where most of the city actually lives — and rents for meaningfully less.
 
-A one-bedroom in the city center runs €1,100-1,450 a month; outside the center, €800-1,050. A three-bedroom in the center runs €1,750-2,250. Which end of any of these ranges you land on depends almost entirely on which of Valencia's 19 official districts you're in.
+A one-bedroom in the city center runs €1,100-1,450 a month; outside the center, €800-1,050. A three-bedroom in the center runs €1,750-2,250. Which end of any of these ranges you land on depends almost entirely on which of Valencia's 19 official districts you're in — here's the estimated monthly rent by district and apartment size:
+
+| District | 1BR | 2BR | 3-4BR |
+|---|---:|---:|---:|
+| Ciutat Vella | €1,050 | €1,550 | €2,100 |
+| Eixample | €1,000 | €1,450 | €2,000 |
+| Poblats Marítims | €900 | €1,300 | €1,800 |
+| Extramurs | €850 | €1,250 | €1,700 |
+| Quatre Carreres | €850 | €1,200 | €1,700 |
+| El Pla del Real | €800 | €1,200 | €1,650 |
+| Benicalap | €800 | €1,200 | €1,600 |
+| L'Olivereta | €800 | €1,150 | €1,550 |
+| Algirós | €750 | €1,100 | €1,500 |
+| Rascanya | €750 | €1,100 | €1,550 |
+| Patraix | €750 | €1,050 | €1,450 |
+| Jesús | €750 | €1,050 | €1,450 |
+| Benimaclet | €750 | €1,050 | €1,450 |
+
+These are estimates built from each district's average €/m² asking price (55m² for a 1BR, 80m² for a 2BR, 110m² for a 3-4BR), not listings-based averages — treat them as a starting point for budgeting, not a quote. Campanar, La Zaidía, Camins al Grau, and the three Poblados groups aren't in this table because there isn't enough formal rental-market data to estimate them reliably — itself a signal about how thin the rental market is out there.
 
 ## The historic core: Ciutat Vella and Eixample
 
