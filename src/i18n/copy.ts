@@ -7,12 +7,12 @@ export const copy = {
 			description:
 				'Marta calls Spanish landlords and agencies for you, filters dead listings, and books your viewings straight into your calendar.',
 		},
-		nav: { how: 'How it works', pricing: 'Pricing', cta: 'Book my viewings' },
+		nav: { how: 'How it works', pricing: 'Pricing', cta: 'Join the waitlist' },
 		hero: {
 			eyebrow: 'AI Voice Agent · Renting in Spain',
 			h1: 'She calls the landlords. You get the viewings.',
 			lede: "Marta calls agents and landlords in Spanish within minutes of your request, filters out dead listings, and books viewings straight into your calendar. First report within hours — during Spanish business hours, often right away.",
-			cta: 'Book my viewings',
+			cta: 'Join the waitlist',
 			demoLink: 'Hear a real call ▸',
 			trackerLabel: 'Live Call Status',
 			steps: ['New listing detected', 'Marta is calling...', 'Qualifying requirements', 'Viewing booked'],
@@ -222,12 +222,12 @@ export const copy = {
 			description:
 				'Marta llama a propietarios y agencias españolas por ti, descarta anuncios muertos y agenda tus visitas directamente en tu calendario.',
 		},
-		nav: { how: 'Cómo funciona', pricing: 'Precios', cta: 'Reserva mis visitas' },
+		nav: { how: 'Cómo funciona', pricing: 'Precios', cta: 'Únete a la lista de espera' },
 		hero: {
 			eyebrow: 'Agente de voz IA · Alquiler en España',
 			h1: 'Ella llama a los propietarios. Tú consigues las visitas.',
 			lede: 'Marta llama a agencias y propietarios en español a los pocos minutos de tu solicitud, descarta los anuncios muertos y agenda las visitas directamente en tu calendario. Primer informe en cuestión de horas — en horario laboral español, muchas veces al momento.',
-			cta: 'Reserva mis visitas',
+			cta: 'Únete a la lista de espera',
 			demoLink: 'Escucha una llamada real ▸',
 			trackerLabel: 'Estado de la llamada',
 			steps: ['Nuevo anuncio detectado', 'Marta está llamando…', 'Verificando requisitos', 'Visita reservada'],
