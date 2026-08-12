@@ -10,6 +10,10 @@
 		// file at /api/waitlist before ever reaching worker/index.ts.
 		"run_worker_first": ["/api/*", "/", "/es/"]
 	},
+	"vars": {
+		"MAIL_FROM": "hello@callmarta.com",
+		"RESEND_SEGMENT_ID": "ba4bf4aa-753b-4125-91e0-fb0e65a2e1bd"
+	},
 	"kv_namespaces": [
 		{
 			"binding": "WAITLIST_KV",

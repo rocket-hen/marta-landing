@@ -87,13 +87,18 @@ The `id` in the response is your `RESEND_SEGMENT_ID`.
 
 ### Production environment variables
 
+`MAIL_FROM` and `RESEND_SEGMENT_ID` are plain (non-secret) values, so they live in `wrangler.jsonc`'s
+`vars` block and get committed — **do not** set them as plain variables via the Cloudflare dashboard
+instead. `wrangler deploy` (which is what Cloudflare Workers Builds runs on every push) fully syncs
+plain vars from `wrangler.jsonc` on each deploy — anything set only via the dashboard's "Variables
+and secrets" screen gets silently wiped out on the next push. Only `RESEND_API_KEY` goes in the
+dashboard, because secrets aren't touched by `wrangler deploy` and shouldn't be committed:
+
 Cloudflare dashboard → your Worker → **Settings → Variables and secrets**:
 
 | Variable | Value | Type |
 | :-- | :-- | :-- |
 | `RESEND_API_KEY` | from the Resend dashboard | **Secret** (not a plain variable) |
-| `RESEND_SEGMENT_ID` | the id from the `POST /segments` call above | Variable |
-| `MAIL_FROM` | e.g. `hello@callmarta.com` (must be a verified sending domain in Resend) | Variable |
 
 (This screen is disabled/greyed out if the Worker has no deployed Worker script yet — i.e.
 before the first successful deploy with `wrangler.jsonc` in place.)
