@@ -6,6 +6,7 @@ interface WaitlistPayload {
 }
 
 const RESEND_API = 'https://api.resend.com';
+const WELCOME_TEMPLATE_ID = 'marta-beta-invite';
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function json(body: unknown, status = 200): Response {
@@ -17,48 +18,6 @@ function json(body: unknown, status = 200): Response {
 
 function badRequest(message: string): Response {
 	return json({ error: message }, 400);
-}
-
-function resendFailureResponse(status: number): Response {
-	if (status === 429) {
-		return json({ error: 'Too many requests. Please try again in a moment.' }, 429);
-	}
-	return json({ error: 'Something went wrong saving your details. Please try again.' }, 500);
-}
-
-function welcomeHtml(): string {
-	// Deliberately dumb: no web fonts, no background images, fixed 600px table layout,
-	// every style inline — this needs to render correctly in the worst email clients.
-	return `<!doctype html>
-<html>
-<body style="margin:0;padding:0;background-color:#FAFAF8;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FAFAF8;">
-<tr><td align="center" style="padding:40px 20px;">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border:1px solid #E3E0D8;">
-<tr><td style="padding:40px 32px;font-family:Helvetica,Arial,sans-serif;color:#1A1917;">
-<p style="margin:0 0 24px;font-size:20px;font-weight:bold;">marta<span style="color:#B0512E;">.</span></p>
-<p style="margin:0 0 16px;font-size:16px;line-height:1.6;">Hi,</p>
-<p style="margin:0 0 16px;font-size:16px;line-height:1.6;">You're on the Marta waitlist. Thanks for your patience while we get ready.</p>
-<p style="margin:0 0 16px;font-size:16px;line-height:1.6;">We'll write to you as soon as we're live in your city. In the meantime, if you want to tell us more about your search — or just say hi — hit reply. A real person reads these.</p>
-<p style="margin:0;font-size:16px;line-height:1.6;">&mdash; The Marta team</p>
-</td></tr>
-</table>
-</td></tr>
-</table>
-</body>
-</html>`;
-}
-
-function welcomeText(): string {
-	return [
-		'Hi,',
-		'',
-		"You're on the Marta waitlist. Thanks for your patience while we get ready.",
-		'',
-		"We'll write to you as soon as we're live in your city. In the meantime, if you want to tell us more about your search — or just say hi — hit reply. A real person reads these.",
-		'',
-		'— The Marta team',
-	].join('\n');
 }
 
 export async function handleWaitlist(request: Request, env: Env): Promise<Response> {
@@ -88,6 +47,8 @@ export async function handleWaitlist(request: Request, env: Env): Promise<Respon
 		'Content-Type': 'application/json',
 	};
 
+	// Contact upsert is best-effort bookkeeping for future broadcasts — it must not block
+	// the welcome email below, which is the part the user actually notices.
 	let contactId: string | undefined;
 
 	try {
@@ -110,15 +71,14 @@ export async function handleWaitlist(request: Request, env: Env): Promise<Respon
 				headers: resendHeaders,
 				body: JSON.stringify({ email }),
 			});
-			if (!createRes.ok) {
+			if (createRes.ok) {
+				const data = (await createRes.json()) as { id?: string };
+				contactId = data.id;
+			} else {
 				console.error('Resend contact create failed', createRes.status, await createRes.text());
-				return resendFailureResponse(createRes.status);
 			}
-			const data = (await createRes.json()) as { id?: string };
-			contactId = data.id;
 		} else {
 			console.error('Resend contact check failed', checkRes.status, await checkRes.text());
-			return resendFailureResponse(checkRes.status);
 		}
 
 		// Ensure segment membership regardless of which path above ran. Failure here is
@@ -135,7 +95,6 @@ export async function handleWaitlist(request: Request, env: Env): Promise<Respon
 		}
 	} catch (err) {
 		console.error('Resend contact upsert threw', err);
-		return json({ error: 'Something went wrong saving your details. Please try again.' }, 500);
 	}
 
 	// Welcome email — best effort. A failed send must not fail the request; the contact
@@ -153,9 +112,7 @@ export async function handleWaitlist(request: Request, env: Env): Promise<Respon
 				from: `Marta <${env.MAIL_FROM}>`,
 				to: [email],
 				reply_to: env.MAIL_FROM,
-				subject: "You're on the Marta waitlist",
-				html: welcomeHtml(),
-				text: welcomeText(),
+				template: { id: WELCOME_TEMPLATE_ID },
 			}),
 		});
 		if (!emailRes.ok) {
