@@ -1,16 +1,16 @@
 export interface Tier {
 	name: 'Blitz' | 'Hunter' | 'Concierge';
 	tagline: string;
-	/** Static caption under the Paddle-rendered price — billing timing, not the amount itself. */
+	/** Static caption under the FastSpring-rendered price — billing timing, not the amount itself. */
 	term: string;
 	features: string[];
-	priceId: string;
+	productPath: string;
 	ctaLabel: string;
 }
 
-// Paddle product/price IDs — created in the live Paddle catalog to match the flat-fee
+// FastSpring product paths — created in the live FastSpring catalog to match the flat-fee
 // tiers described on the homepage pricing section (src/components/Pricing.astro). Every
-// tier is a one-time price (no billing_cycle) — this business has no subscriptions.
+// tier is a one-time product (Catalog → One-Time Products) — this business has no subscriptions.
 export const PRICING_TIERS: Tier[] = [
 	{
 		name: 'Blitz',
@@ -26,7 +26,7 @@ export const PRICING_TIERS: Tier[] = [
 			'Real humans step in when needed',
 			'Money-back guarantee',
 		],
-		priceId: 'pri_01kzbcpbt2ezwbhxajg0q2mbyp',
+		productPath: 'blitz',
 		ctaLabel: 'Buy Blitz',
 	},
 	{
@@ -41,7 +41,7 @@ export const PRICING_TIERS: Tier[] = [
 			'Retries + WhatsApp follow-up when nobody picks up',
 			'Reschedule or confirm viewings anytime',
 		],
-		priceId: 'pri_01kzbcpc2anaqpsth3b0z2he6j',
+		productPath: 'hunter',
 		ctaLabel: 'Buy Hunter',
 	},
 	{
@@ -56,7 +56,7 @@ export const PRICING_TIERS: Tier[] = [
 			'Scam check on every listing',
 			'Support until you sign',
 		],
-		priceId: 'pri_01kzbcpcc60ynpsyf11rf9rrb1',
+		productPath: 'concierge',
 		ctaLabel: 'Buy Concierge',
 	},
 ];

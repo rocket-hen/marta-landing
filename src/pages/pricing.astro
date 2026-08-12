@@ -3,11 +3,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PricingCheckout from '../components/PricingCheckout.astro';
 
 const title = 'Pricing — Marta';
-const description = 'Choose Blitz, Hunter or Concierge and pay securely with Paddle. One flat fee, no subscriptions.';
+const description = 'Choose Blitz, Hunter or Concierge and pay securely with FastSpring. One flat fee, no subscriptions.';
+
+const storefront = import.meta.env.PUBLIC_FASTSPRING_STOREFRONT;
+if (!storefront) {
+	throw new Error('PUBLIC_FASTSPRING_STOREFRONT is not set. Copy .env.example to .env and fill it in.');
+}
 ---
 
 <BaseLayout title={title} description={description}>
 	<PricingCheckout />
 </BaseLayout>
 
+<script id="fsc-api" src="https://sbl.onfastspring.com/sbl/1.0.7/fastspring-builder.min.js" data-storefront={storefront}
+></script>
 <script src="../scripts/pricing-checkout.ts"></script>

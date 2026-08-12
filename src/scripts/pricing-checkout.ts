@@ -1,95 +1,90 @@
-// Paddle.js integration for the /pricing checkout page. Loaded only there — the
-// homepage's Pricing.astro section still opens the waitlist modal (src/scripts/landing.ts).
+// FastSpring Store Builder Library (SBL) wiring for the /pricing embedded checkout. Loaded
+// only there — the homepage's Pricing.astro section still opens the waitlist modal
+// (src/scripts/landing.ts). The SBL script itself (id="fsc-api") is loaded via a plain
+// <script> tag in pricing.astro, not an npm package — FastSpring has no JS SDK to import.
+//
+// Price display is handled declaratively by SBL's own directives (data-fsc-item-path /
+// data-fsc-item-price on the price spans in PricingCheckout.astro) — no JS needed for that,
+// unlike the old Paddle.PricePreview() call.
 
-import { initializePaddle, type Environments, type Paddle } from '@paddle/paddle-js';
-import { PRICING_TIERS } from '../lib/pricingCheckout';
-
-// Read at module load, not inside a try/catch — an unset or misspelled environment
-// must fail loudly (console error visible on every page load) rather than silently
-// falling back to sandbox or production, which would risk running against the wrong
-// Paddle account.
-const clientToken = import.meta.env.PUBLIC_PADDLE_CLIENT_TOKEN;
-const environment = import.meta.env.PUBLIC_PADDLE_ENVIRONMENT as Environments | undefined;
-
-if (!clientToken) {
-	throw new Error('PUBLIC_PADDLE_CLIENT_TOKEN is not set. Copy .env.example to .env and fill it in.');
-}
-if (environment !== 'sandbox' && environment !== 'production') {
-	throw new Error(
-		`PUBLIC_PADDLE_ENVIRONMENT must be "sandbox" or "production", got: ${JSON.stringify(environment ?? null)}`,
-	);
-}
-
-async function detectCountry(): Promise<string | undefined> {
-	try {
-		const res = await fetch('/api/geo');
-		if (!res.ok) return undefined;
-		const data = (await res.json()) as { country?: string | null };
-		return data.country ?? undefined;
-	} catch {
-		// Worker route unreachable (e.g. plain `astro dev`, which doesn't run worker/) —
-		// Paddle.PricePreview() still auto-detects location from the visitor's IP.
-		return undefined;
+declare global {
+	interface Window {
+		fastspring?: {
+			builder: {
+				reset(): void;
+				add(productPath: string, callback?: () => void): void;
+			};
+		};
 	}
 }
 
+const LOAD_TIMEOUT_MS = 8000;
+const LOAD_POLL_INTERVAL_MS = 100;
+
 function showLoadError() {
 	document.querySelector<HTMLElement>('[data-checkout-error]')?.removeAttribute('hidden');
-	document.querySelectorAll<HTMLButtonElement>('[data-subscribe]').forEach((btn) => {
+	document.querySelectorAll<HTMLButtonElement>('[data-buy]').forEach((btn) => {
 		btn.disabled = true;
 	});
 }
 
-async function renderPrices(paddle: Paddle) {
-	const priceEls = Array.from(document.querySelectorAll<HTMLElement>('[data-price-id]'));
-	if (priceEls.length === 0) return;
-
-	const country = await detectCountry();
-
-	const preview = await paddle.PricePreview({
-		items: PRICING_TIERS.map((tier) => ({ priceId: tier.priceId, quantity: 1 })),
-		...(country ? { address: { countryCode: country } } : {}),
+function waitForFastSpring(): Promise<Window['fastspring']> {
+	return new Promise((resolve, reject) => {
+		const start = Date.now();
+		const poll = () => {
+			if (window.fastspring?.builder) {
+				resolve(window.fastspring);
+				return;
+			}
+			if (Date.now() - start > LOAD_TIMEOUT_MS) {
+				reject(new Error('FastSpring SBL did not load in time'));
+				return;
+			}
+			setTimeout(poll, LOAD_POLL_INTERVAL_MS);
+		};
+		poll();
 	});
-
-	for (const item of preview.data.details.lineItems) {
-		const el = document.querySelector<HTMLElement>(`[data-price-id="${item.price.id}"]`);
-		// Display only what Paddle returns — no re-formatting, no price math.
-		if (el) el.textContent = item.formattedTotals.total;
-	}
 }
 
-function wireSubscribeButtons(paddle: Paddle) {
-	document.querySelectorAll<HTMLButtonElement>('[data-subscribe]').forEach((btn) => {
+function wireBuyButtons(fastspring: NonNullable<Window['fastspring']>) {
+	const grid = document.querySelector<HTMLElement>('[data-pricing-grid]');
+	const panel = document.querySelector<HTMLElement>('[data-checkout-panel]');
+	const backBtn = document.querySelector<HTMLButtonElement>('[data-checkout-back]');
+
+	document.querySelectorAll<HTMLButtonElement>('[data-buy]').forEach((btn) => {
 		btn.addEventListener('click', () => {
-			const priceId = btn.dataset.subscribe;
-			if (!priceId) return;
-			paddle.Checkout.open({
-				items: [{ priceId, quantity: 1 }],
-				settings: {
-					displayMode: 'overlay',
-					variant: 'one-page',
-					successUrl: `${window.location.origin}/welcome`,
-				},
-			});
+			const productPath = btn.dataset.buy;
+			if (!productPath) return;
+
+			fastspring.builder.reset();
+			fastspring.builder.add(productPath);
+
+			grid?.setAttribute('hidden', '');
+			panel?.removeAttribute('hidden');
+			panel?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 		});
+	});
+
+	backBtn?.addEventListener('click', () => {
+		fastspring.builder.reset();
+		panel?.setAttribute('hidden', '');
+		grid?.removeAttribute('hidden');
+		grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 	});
 }
 
 async function init() {
-	if (document.querySelectorAll('[data-price-id]').length === 0) return;
-
-	const paddle = await initializePaddle({ token: clientToken, environment });
-	if (!paddle) {
-		showLoadError();
-		return;
-	}
-
-	wireSubscribeButtons(paddle);
+	if (document.querySelectorAll('[data-buy]').length === 0) return;
 
 	try {
-		await renderPrices(paddle);
+		const fastspring = await waitForFastSpring();
+		if (!fastspring) {
+			showLoadError();
+			return;
+		}
+		wireBuyButtons(fastspring);
 	} catch (err) {
-		console.error('Paddle PricePreview failed', err);
+		console.error('FastSpring SBL failed to load', err);
 		showLoadError();
 	}
 }

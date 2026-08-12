@@ -10,7 +10,7 @@ import { PRICING_TIERS } from '../lib/pricingCheckout';
 			<p>One flat fee covers your whole search. No subscriptions, nothing to cancel.</p>
 		</div>
 
-		<div class="grid">
+		<div class="grid" data-pricing-grid>
 			{
 				PRICING_TIERS.map((tier) => (
 					<div class:list={['tier', 'card-hover', { highlight: tier.name === 'Hunter' }]}>
@@ -18,7 +18,7 @@ import { PRICING_TIERS } from '../lib/pricingCheckout';
 						<div class="tier-name">{tier.name}</div>
 						<p class="tagline">{tier.tagline}</p>
 						<div class="price-row">
-							<span class="price" data-price-id={tier.priceId} aria-live="polite">
+							<span class="price" data-fsc-item-path={tier.productPath} data-fsc-item-price aria-live="polite">
 								···
 							</span>
 						</div>
@@ -36,7 +36,7 @@ import { PRICING_TIERS } from '../lib/pricingCheckout';
 						<button
 							type="button"
 							class:list={['btn-slide-gradient', 'tier-btn', tier.name === 'Hunter' ? 'solid' : 'btn-slide-outline outline']}
-							data-subscribe={tier.priceId}
+							data-buy={tier.productPath}
 							data-gtm-id={`checkout_${tier.name.toLowerCase()}_cta`}
 						>
 							{tier.ctaLabel}
@@ -49,6 +49,13 @@ import { PRICING_TIERS } from '../lib/pricingCheckout';
 		<p class="fine-print" data-checkout-error hidden role="alert">
 			Couldn't load live prices right now. Please refresh, or reach out if this keeps happening.
 		</p>
+
+		<div class="checkout-panel" data-checkout-panel hidden>
+			<button type="button" class="back-link" data-checkout-back>
+				<span aria-hidden="true">←</span> Back to plans
+			</button>
+			<div id="fsc-embedded-checkout-container"></div>
+		</div>
 	</div>
 </section>
 
@@ -101,6 +108,9 @@ import { PRICING_TIERS } from '../lib/pricingCheckout';
 		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		gap: 24px;
 		align-items: stretch;
+	}
+	.grid[hidden] {
+		display: none;
 	}
 
 	.tier {
@@ -228,5 +238,34 @@ import { PRICING_TIERS } from '../lib/pricingCheckout';
 	}
 	.fine-print[hidden] {
 		display: none;
+	}
+
+	.checkout-panel {
+		max-width: 560px;
+		margin: 0 auto;
+		border: 1px solid var(--border);
+		background: var(--bg);
+		padding: 32px;
+	}
+	.checkout-panel[hidden] {
+		display: none;
+	}
+
+	.back-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		margin-bottom: 24px;
+		padding: 0;
+		border: none;
+		background: none;
+		font-family: 'Inter', sans-serif;
+		font-size: 13px;
+		font-weight: 500;
+		color: var(--muted);
+		cursor: pointer;
+	}
+	.back-link:hover {
+		color: var(--accent);
 	}
 </style>

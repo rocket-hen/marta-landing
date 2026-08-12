@@ -31,9 +31,9 @@ own beyond the one `/api/waitlist` route.
 - `src/styles/global.css` — design tokens (colors, fonts, shared button/link states) shared by
   every page.
 - `src/pages/pricing.astro` — real checkout page (`src/components/PricingCheckout.astro` for the
-  tier cards, `src/scripts/pricing-checkout.ts` for the Paddle.js wiring, `src/lib/pricingCheckout.ts`
-  for the tier content + Paddle price IDs). See "Pricing / Paddle checkout" below. The homepage's
-  `src/components/Pricing.astro` section is unrelated — it still just opens the waitlist modal.
+  tier cards, `src/scripts/pricing-checkout.ts` for the FastSpring SBL wiring, `src/lib/pricingCheckout.ts`
+  for the tier content + FastSpring product paths). See "Pricing / FastSpring checkout" below. The
+  homepage's `src/components/Pricing.astro` section is unrelated — it still just opens the waitlist modal.
 - `worker/` — the Cloudflare Worker that fronts the deployed site (see "Waitlist backend" and
   "Deploying" below). Not part of the Astro build; has its own `tsconfig.json` since it runs on
   the Workers runtime, not a browser, and needs different global types than `src/`.
@@ -118,26 +118,28 @@ dashboard → Workers & Pages → KV → create a namespace, then your Worker �
 - **KV namespace** (if bound) — raw JSON per submission, useful as a backup or for bulk export;
   browse via Cloudflare dashboard → Workers & Pages → KV → the namespace, or `wrangler kv key list`.
 
-## Pricing / Paddle checkout
+## Pricing / FastSpring checkout
 
 `/pricing` is a real checkout page (`src/pages/pricing.astro`), separate from the waitlist flow —
 the homepage's pricing section (`src/components/Pricing.astro`) is untouched and still opens the
-waitlist modal. Tiers (Blitz, Hunter, Concierge) are one-time prices — no subscriptions, no
-monthly/yearly toggle — matching the copy on the homepage. Tier content and Paddle price IDs live
-in `src/lib/pricingCheckout.ts`; edit that file to change features, taglines, or swap in different
-Paddle price IDs.
+waitlist modal. Tiers (Blitz, Hunter, Concierge) are one-time products — no subscriptions, no
+monthly/yearly toggle — matching the copy on the homepage. Tier content and FastSpring product
+paths live in `src/lib/pricingCheckout.ts`; edit that file to change features, taglines, or swap
+in different product paths. The products themselves (name, price, tax category) are managed in
+the FastSpring dashboard (Catalog → One-Time Products), not in this repo.
 
-Client-side, `src/scripts/pricing-checkout.ts` uses `@paddle/paddle-js`:
-`Paddle.PricePreview()` fills in the displayed price per tier (only `formattedTotals.total` from
-the response is shown — no price math or re-formatting on the frontend), and `Paddle.Checkout.open()`
-opens the one-page overlay checkout for the clicked tier's price, redirecting to `/welcome` on
-success.
-
-Country for price localization comes from Cloudflare's `request.cf.country` via a small Worker
-route, `worker/geo.ts` (`GET /api/geo` → `{ "country": "ES" }` or `{ "country": null }`). If that
-route is unreachable — e.g. plain `astro dev`, which doesn't run `worker/` at all, see "Local
-development" above — `PricePreview()` still auto-detects location from the visitor's IP, just
-without the head start of an already-known country.
+We switched from Paddle to FastSpring after Paddle declined the account. FastSpring has no npm
+SDK — its Store Builder Library (SBL) is a plain `<script>` tag (`id="fsc-api"`, loaded directly
+in `pricing.astro`) that self-initializes as `window.fastspring`. Price display is handled
+declaratively by SBL's own directives (`data-fsc-item-path` + `data-fsc-item-price` on each price
+span in `PricingCheckout.astro` — no JS involved, SBL fills them in and keeps them localized to
+the visitor automatically). Client-side, `src/scripts/pricing-checkout.ts` only wires the buy
+buttons: `fastspring.builder.reset()` + `.add(productPath)` populates the embedded checkout
+container (`#fsc-embedded-checkout-container`, hidden until a tier is picked), which then renders
+FastSpring's own payment form and order-complete state inline — there's no `successUrl`/redirect
+step like Paddle had, because **FastSpring's docs are explicit that redirects aren't supported for
+embedded checkouts** (only popup checkouts); the container's own inline confirmation is the
+completion UI.
 
 ### Environment variables
 
@@ -145,32 +147,36 @@ Copy `.env.example` to `.env` (gitignored) and fill in:
 
 | Variable | Value |
 | :-- | :-- |
-| `PUBLIC_PADDLE_CLIENT_TOKEN` | A **client-side token** (`live_...` or `test_...`) from Paddle Dashboard → Developer Tools → Authentication → Client-side tokens. This is meant to be public — it's fine in client bundles — but still isn't hardcoded, so switching tokens never means editing code. |
-| `PUBLIC_PADDLE_ENVIRONMENT` | Exactly `production` or `sandbox`. `pricing-checkout.ts` throws at load if this is unset or misspelled — it must never silently default, since that risks running against the wrong Paddle account. |
+| `PUBLIC_FASTSPRING_STOREFRONT` | The storefront + embedded checkout path, e.g. `callmarta.test.onfastspring.com/embedded-pricing` (test store) or `callmarta.onfastspring.com/embedded-pricing` (live, once verified). Find it under Checkouts → Embedded Checkouts → your checkout → "Place on your website". |
 
 Astro/Vite only expose `PUBLIC_`-prefixed vars to client-side code — that prefix is required, not
 a style choice. These are inlined into the client bundle at **build time** (`npm run build`), not
 read from the Worker's runtime `env` — so they must be set under Cloudflare's Worker
 **Settings → Build → Variables and secrets** (the build-time ones), *not* the top-level
 **Settings → Variables and secrets** section (that one is runtime-only and Vite never sees it —
-setting the vars there silently does nothing for `PUBLIC_`-prefixed values). Plain variables, not
-secrets — the client token is designed to be public. Setting or changing them doesn't rebuild
-automatically; trigger a new build (push a commit) afterwards for the change to take effect.
+setting the vars there silently does nothing for `PUBLIC_`-prefixed values). Setting or changing
+them doesn't rebuild automatically; trigger a new build (push a commit) afterwards for the change
+to take effect.
 
-The Paddle **API key** used to create the product catalog and this client-side token is a
-separate, genuinely secret credential — it was only ever used from the local machine / a script
-to call the Paddle REST API, and never belongs in this repo, the Worker, or client code.
+There's no separate secret API key involved on the client side — FastSpring's embedded checkout
+doesn't need one. If a server-side integration (webhooks, the Contacts/Orders REST API) is added
+later, that key is a genuinely secret credential and never belongs in this repo, the Worker, or
+client code — same rule as the Resend API key in the waitlist backend above.
 
 ### Before this goes live
 
-- **Approved domains**: Paddle Dashboard → Checkout → Checkout settings → add the production
-  domain (`callmarta.com`). Live overlay checkout refuses to open on unapproved domains —
-  `localhost` never works on live, only on sandbox.
-- **Default payment link**: same Checkout settings screen — set it to the live `/pricing` URL.
-  This can only be set in the dashboard, there's no API for it.
-- **Account verification**: live transactions can't complete until Paddle's verification passes
-  for the account — see Paddle Dashboard → "Test and go live" for status. Until then, checkout
-  opens and shows real prices, but a real payment won't complete.
+- **Whitelisted website domains**: FastSpring Dashboard → Checkouts → Embedded Checkouts → your
+  checkout → domain whitelist. Embedded checkout refuses to load on domains not listed here —
+  `callmarta.com` and `localhost:4321` are both whitelisted for the test store; add the production
+  domain again on the live store once it exists. Domain changes take 15–20 minutes to propagate.
+- **Store verification / going live**: the store starts in test mode (checklist item "Go Live!" in
+  the FastSpring dashboard home). Real payments can't complete until that verification passes —
+  until then, checkout renders and shows real prices, but a real payment won't complete. Once live,
+  `PUBLIC_FASTSPRING_STOREFRONT` needs to be repointed from the `*.test.onfastspring.com` domain to
+  the live one.
+- **Product tax category**: all three tiers are set to `SW054002 Cloud Services - SaaS - Services
+  agreement` — the closest fit for a calling/booking service with no better-matching category.
+  Revisit if FastSpring flags it during verification.
 
 ## Deploying
 
