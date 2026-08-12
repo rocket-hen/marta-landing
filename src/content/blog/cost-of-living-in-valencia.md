@@ -7,6 +7,15 @@ pubDate: 2026-08-12
 image: "/og/blog/cost-of-living-in-valencia.jpg"
 imageAlt: "Cost of living in Valencia by district — Marta blog"
 imageSmall: "/og/blog/cost-of-living-in-valencia-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for"
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat"
+    - title: "Spain Rental Guarantees Explained"
+      href: "/blog/spain-rental-guarantees-explained"
 faq:
   - q: "How much do I need to live comfortably in Valencia, Spain?"
     a: "A single person can live comfortably on €1,600-1,800 a month including rent. A family of four should budget €3,700-4,100 a month all-in — noticeably less than the same household would need in Barcelona."
@@ -72,6 +81,8 @@ These are estimates built from each district's average €/m² asking price (55m
 
 Eixample is the 19th-century grid, and its best-known name is **Ruzafa** — every source from Uniplaces to US News independently calls it Valencia's main expat and young-professional neighborhood. What most of that coverage skips: Ruzafa is also the most expensive rental zone in the city, not the affordable hipster pick people assume from the write-ups. **El Pla del Remei**, in the same district, is upscale and quiet, built around Colón Market's high-end shopping. **Gran Vía** is wide, elegant boulevards, more residential and institutional than Ruzafa's bar-and-café density.
 
+A popular district like Ruzafa also means competition for listings, and a common frustration once you start calling: [here's why so many messages on Idealista never get a reply](/blog/why-nobody-replies-to-idealista-messages), and what to do differently.
+
 ## Just outside the walls: Extramurs and El Pla del Real
 
 **Extramurs** (€15.6/m²) and **El Pla del Real** (€14.9/m²) sit just beyond the old center — quieter, still walkable in, and meaningfully cheaper than either historic district. Extramurs centers on **El Botànic**, next to the university's botanical garden, with **La Roqueta**, **La Petxina**, and **Arrancapins** as underrated, largely residential value plays.
@@ -108,4 +119,4 @@ Groceries run €200-300 a person a month, depending on whether you're shopping 
 Ruzafa isn't a toll you pay to have a social life in Valencia. Benimaclet and Patraix are a fifteen-minute bike ride from the same bars and restaurants, for noticeably less rent — the premium buys proximity and reputation, not access to the city itself.
 :::
 
-None of this changes much district to district — which is exactly why, once you've picked a few districts within budget, the real bottleneck becomes finding an available apartment before someone else does, not shaving euros off groceries. [The full process — documents, guarantees, and how to move fast once you've narrowed it down — is covered here](/blog/how-to-rent-an-apartment-in-spain-as-an-expat).
+None of this changes much district to district — which is exactly why, once you've picked a few districts within budget, the real bottleneck becomes finding an available apartment before someone else does, not shaving euros off groceries. [The full process — documents, guarantees, and how to move fast once you've narrowed it down — is covered here](/blog/how-to-rent-an-apartment-in-spain-as-an-expat), and it's worth knowing [the red flags of a fake listing](/blog/red-flags-fake-listings) before you start calling, not after you've paid something you shouldn't have.
