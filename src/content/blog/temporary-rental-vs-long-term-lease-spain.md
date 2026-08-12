@@ -36,6 +36,14 @@ A long-term lease in Spain comes with a mandatory minimum stay — the tenant ca
 Already resigned to every decent flat offering only a short-term contract? Let's call more of them together — Marta can help you find the lease you actually want.
 :::
 
+## If You're Actually Only Here for a Year
+
+If the stay really is around a year — a work contract, a sabbatical, testing out a city before committing to it — a temporada contract is the right tool, not a compromise. The real risk isn't picking short-term when you should have gone long. It's the opposite: signing a full long-term lease "just in case it works out," then finding out what "just in case" costs if it doesn't.
+
+A long-term lease in Spain runs up to five years by default, and you can leave after the first six months — but only with 30 days' notice, and often with a penalty attached if it's written into the contract. One renter's account that circulated online lays out exactly how that plays out: they signed a 5+3 year lease in Barcelona, moved in, and found the apartment too noisy to live in. They could leave after six months under the law, but the contract's exit clause charged one month's rent for every year left unfulfilled — **four to five months of rent, as a penalty, on top of six months already paid, for an apartment they never intended to keep for five years in the first place.**
+
+That clause is legal under LAU Article 11 — landlords can write in compensation for early exit — but it's not automatic, and it's not always this steep. Before signing anything you're not certain you want for the full stretch, find this clause and read the actual number, not just whether it exists. A year of genuine short-term need is exactly what a temporada contract is for; a long-term lease is a five-year bet you're making on both the apartment and yourself.
+
 ## Don't Let Friday Decide Your Lease
 
 Signing whichever contract gets you out of the Airbnb fastest is how people end up in a lease they didn't actually want, for reasons that had nothing to do with the apartment itself. Temporary accommodation is expensive. Desperation is usually more expensive — a twelve-month lease signed because checkout was Friday can cost far more than another week of nightly rates ever would.
