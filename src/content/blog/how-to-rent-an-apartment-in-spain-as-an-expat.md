@@ -86,8 +86,6 @@ The listed rent isn't always final, either. [There's often real room to negotiat
 
 Picking a city isn't the end of this decision — it's the start of a second one. Spain's major cities can look small on a map next to London, New York, or Toronto, which makes it tempting to assume any neighborhood is close enough to any other. It isn't: the city average is close to useless once you're actually choosing where to live. In Barcelona, rent runs from around €14-16/m² in Nou Barris to €21-24/m² in Sarrià-Sant Gervasi — more than a 40% swing inside the same city. Málaga has the same pattern between La Malagueta and Teatinos. The neighborhood decision usually matters more than the city decision, once you've picked the city.
 
-[Our neighborhood-by-neighborhood breakdowns are here for Barcelona](/blog/cost-of-living-in-barcelona/) and [here for Málaga](/blog/cost-of-living-in-malaga/) — safety, what's nearby, who actually lives there, rather than treating "Barcelona" or "Málaga" as one number.
-
 ## The contract and the red flags
 
 ::img[lease contract signing]
