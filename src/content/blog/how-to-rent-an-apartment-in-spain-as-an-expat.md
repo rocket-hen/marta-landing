@@ -21,6 +21,8 @@ guides:
 faq:
   - q: "Can a US citizen rent an apartment in Spain?"
     a: "Yes. There's no citizenship requirement to sign a lease — a passport is enough for a short stay, and most landlords will ask for a NIE for anything longer than a few months, which any foreigner can apply for regardless of visa status."
+  - q: "Can a UK citizen rent an apartment in Spain?"
+    a: "Yes — renting itself works exactly the same as for any other foreigner. Brexit changed the 90/180-day Schengen rule for how long you can stay without a visa, not the rental process; a NIE and proof of income get you a lease regardless of that status."
   - q: "How much is the average rent for an apartment in Spain?"
     a: "It varies enormously by city — Madrid and Barcelona run €22-24/m², while Málaga and Valencia sit closer to €16/m². There's no single national number worth budgeting around; check the city-specific figure instead."
   - q: "Can you live on $1,000 a month in Spain?"
@@ -47,7 +49,9 @@ Renting in Spain as a foreigner isn't complicated once you know the shape of it 
 
 ## What you need before you start looking
 
-You need less than most guides imply: a passport gets you through a short lease, and a NIE — Spain's foreigner tax ID, not tied to any visa type — covers you for anything longer, since landlords need it to register a proper contract. Alongside that, bring proof of income. The informal rule most agencies use is annual income at least 40 times the monthly rent, roughly 3.3 times the rent per month, though it's a convention, not a law.
+Renting in Spain is a landlord's market before it's anything else — with far more applicants than available apartments in every major city, a landlord isn't picking the first acceptable tenant, they're choosing between several who all showed up the same week. That changes what this section actually is: not a bureaucratic checklist, but the case you're making for yourself before anyone's met you.
+
+Once you see it that way, the actual list is short. A passport gets you through a short lease, and a NIE — Spain's foreigner tax ID, not tied to any visa type — covers you for anything longer, since landlords need it to register a proper contract. Alongside that, bring proof you can actually pay: the informal rule most agencies use is annual income at least 40 times the monthly rent, roughly 3.3 times the rent per month. For an expat specifically, that usually means a work contract plus a bank statement showing the money actually landing each month, not just a job title on paper — landlords and agencies want to see the pattern, not take your word for it. If that's not something you can show yet — a new job, income in a foreign currency, self-employed without much of a track record yet — that's when a guarantee enters the conversation instead of proof of income alone.
 
 > Almost none of this paperwork is legally required to rent in Spain. Almost all of it is practically required to get a callback.
 
@@ -80,7 +84,7 @@ The listed rent isn't always final, either. [There's often real room to negotiat
 
 ## Choosing a neighborhood
 
-The city average is close to useless once you're actually choosing where to live: in Barcelona, rent runs from around €14-16/m² in Nou Barris to €21-24/m² in Sarrià-Sant Gervasi — more than a 40% swing inside the same city. Málaga has the same pattern between La Malagueta and Teatinos. The neighborhood decision usually matters more than the city decision, once you've picked the city.
+Picking a city isn't the end of this decision — it's the start of a second one. Spain's major cities can look small on a map next to London, New York, or Toronto, which makes it tempting to assume any neighborhood is close enough to any other. It isn't: the city average is close to useless once you're actually choosing where to live. In Barcelona, rent runs from around €14-16/m² in Nou Barris to €21-24/m² in Sarrià-Sant Gervasi — more than a 40% swing inside the same city. Málaga has the same pattern between La Malagueta and Teatinos. The neighborhood decision usually matters more than the city decision, once you've picked the city.
 
 [Our neighborhood-by-neighborhood breakdowns are here for Barcelona](/blog/cost-of-living-in-barcelona/) and [here for Málaga](/blog/cost-of-living-in-malaga/) — safety, what's nearby, who actually lives there, rather than treating "Barcelona" or "Málaga" as one number.
 
@@ -89,6 +93,8 @@ The city average is close to useless once you're actually choosing where to live
 ::img[lease contract signing]
 
 A standard long-term lease in Spain runs up to five years by default if your landlord is an individual, seven if it's a company — you're not locked in for that whole stretch, though: you can leave after six months with 30 days' notice. The deposit is capped at three months total, one month legal plus up to two more as guarantee. Anyone asking for more than that, upfront, in cash, is outside the law.
+
+Read the contract itself before you sign anything, clause by clause, not just the price and the dates. A lawyer or a gestor is the real answer if the lease is unusual or the numbers are large enough to justify it — but if that's not in the budget, at minimum paste the whole document into ChatGPT, Gemini, or Claude and ask it to flag anything unusual against standard Spanish tenancy terms. It won't replace a professional reading Spanish contract law for a living, but it catches far more than skimming a legal document once in a language that isn't your first.
 
 :::highlight
 **Never send money to anyone before you've seen the apartment in person, or by a live video call where you can ask them to walk the space.** A price that looks too good, a landlord who's conveniently "out of the country" right when payment comes up, and pressure to pay today or lose the flat — that combination is the single most common rental scam pattern in Spain, and it works because the market is tight enough that hesitating feels like the risk. [More red flags, and how to check a listing before you commit to anything, are here](/blog/red-flags-fake-listings/).
