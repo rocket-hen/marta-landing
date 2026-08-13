@@ -7,6 +7,15 @@ pubDate: 2026-08-01
 image: "/og/blog/la-carpeta-del-inquilino.jpg"
 imageAlt: "Requisitos para alquilar un piso en España — Marta blog"
 imageSmall: "/og/blog/la-carpeta-del-inquilino-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
+    - title: "Cómo preparar una visita para decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
 faq:
   - q: "¿Qué documentos necesito para alquilar un piso en España?"
     a: "Nómina o contrato de trabajo (o los últimos tres meses de facturación si eres autónomo), DNI o NIE, y una fecha clara de cuándo puedes entrar a vivir."

@@ -7,6 +7,17 @@ pubDate: 2026-07-29
 image: "/og/blog/el-primer-cuarto-de-hora.jpg"
 imageAlt: "El primer cuarto de hora decide quién ve el piso — Marta blog"
 imageSmall: "/og/blog/el-primer-cuarto-de-hora-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
+    - title: "Cuándo (y cómo) negociar la renta"
+      href: "/es/blog/negociar-la-renta/"
+    - title: "Cómo preparar una visita para decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Cuánto tarda un piso en alquilarse en España?"
     a: "En zonas con alta demanda, un piso bien ubicado y bien de precio puede recibir entre 20 y 40 interesados en las dos primeras horas tras publicarse. Muchos dejan de estar disponibles el mismo día."

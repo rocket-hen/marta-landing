@@ -7,6 +7,15 @@ pubDate: 2026-08-05
 image: "/og/blog/como-preparar-visita-piso-alquiler.jpg"
 imageAlt: "Qué preguntar al visitar un piso de alquiler — Marta blog"
 imageSmall: "/og/blog/como-preparar-visita-piso-alquiler-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Qué preguntar cuando visitas un piso para alquilar?"
     a: "Lo que solo se puede saber en persona: luz natural, ruido real de la zona, olores, cobertura móvil y estado de las cosas. El resto —transporte, colegios, supermercados— se investiga antes, desde casa."

@@ -7,6 +7,17 @@ pubDate: 2026-08-02
 image: "/og/blog/negociar-la-renta.jpg"
 imageAlt: "Cuándo y cómo negociar la renta sin perder el piso — Marta blog"
 imageSmall: "/og/blog/negociar-la-renta-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino/"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
+    - title: "Cómo preparar una visita para decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
 faq:
   - q: "¿Se puede negociar el precio de un alquiler en España?"
     a: "Sí, pero solo en ciertas condiciones. Un anuncio publicado hace más de dos o tres semanas, o un piso que necesita reforma visible, suele tener margen real."

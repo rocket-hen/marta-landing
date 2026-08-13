@@ -7,6 +7,17 @@ pubDate: 2026-07-29
 image: "/og/blog/alquilar-con-mascota.jpg"
 imageAlt: "Alquilar un piso con mascota — Marta blog"
 imageSmall: "/og/blog/alquilar-con-mascota-800.jpg"
+guides:
+  title: "Nuestras guías"
+  links:
+    - title: "Requisitos para Alquilar un Piso en España"
+      href: "/es/blog/la-carpeta-del-inquilino/"
+    - title: "Guía del Inquilino: Consejos para Alquilar un Piso"
+      href: "/es/blog/guia-del-inquilino-consejos-alquilar-piso/"
+    - title: "Cómo preparar una visita para decidir el piso allí mismo"
+      href: "/es/blog/como-preparar-visita-piso-alquiler/"
+    - title: "El primer cuarto de hora decide quién ve el piso"
+      href: "/es/blog/el-primer-cuarto-de-hora/"
 faq:
   - q: "¿Me pueden echar del piso de alquiler por tener un perro o un gato?"
     a: "Solo si el contrato prohíbe expresamente las mascotas y tú metiste una igualmente. Si el contrato no dice nada sobre mascotas, no pueden echarte por eso."
