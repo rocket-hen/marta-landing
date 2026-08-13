@@ -7,6 +7,17 @@ pubDate: 2026-08-13
 image: "/og/blog/renting-in-spain-with-a-pet.jpg"
 imageAlt: "Renting in Spain with a dog or cat — Marta blog"
 imageSmall: "/og/blog/renting-in-spain-with-a-pet-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "Can landlords ban pets in Spain?"
     a: "Yes, but only if it's written explicitly into the contract. Spain's LAU gives landlords and tenants freedom to agree on terms, so an express no-pets clause is fully legal — but it has to be in writing, not assumed."

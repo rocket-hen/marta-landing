@@ -7,6 +7,17 @@ pubDate: 2026-07-25
 image: "/og/blog/what-to-say-when-the-agent-only-speaks-spanish.jpg"
 imageAlt: "What to say when the agent only speaks Spanish — Marta blog"
 imageSmall: "/og/blog/what-to-say-when-the-agent-only-speaks-spanish-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "Do I need to speak fluent Spanish to rent an apartment in Spain?"
     a: "No — a dozen memorized phrases covering the opening, the qualifying questions, and booking a viewing get you through nearly every rental call."

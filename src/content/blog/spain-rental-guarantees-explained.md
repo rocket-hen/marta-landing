@@ -7,6 +7,17 @@ pubDate: 2026-08-12
 image: "/og/blog/spain-rental-guarantees-explained.jpg"
 imageAlt: "Aval bancario vs seguro de impago in Spain — Marta blog"
 imageSmall: "/og/blog/spain-rental-guarantees-explained-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "What's the difference between an aval bancario and a seguro de impago?"
     a: "An aval bancario is a guarantee your own bank issues to the landlord, backed by your money or your standing with the bank. A seguro de impago is a rent-default insurance policy the landlord takes out with an insurer — you don't pay the premium, but you do have to pass the insurer's screening."

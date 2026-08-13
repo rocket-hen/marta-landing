@@ -7,6 +7,17 @@ pubDate: 2026-08-13
 image: "/og/blog/how-to-prepare-for-a-rental-viewing-in-spain.jpg"
 imageAlt: "How to prepare for a rental viewing in Spain — Marta blog"
 imageSmall: "/og/blog/how-to-prepare-for-a-rental-viewing-in-spain-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "Spain Rental Guarantees Explained"
+      href: "/blog/spain-rental-guarantees-explained/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "What should I check before a rental viewing in Spain?"
     a: "Commute time at the actual hour you'd travel, not an off-peak Google Maps estimate, plus schools, supermarkets, gyms, and anything else that matters to your routine. All of it is a ten-minute phone check before you leave the house — none of it needs the viewing itself."

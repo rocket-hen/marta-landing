@@ -7,6 +7,17 @@ pubDate: 2026-07-30
 image: "/og/blog/why-nobody-replies-to-idealista-messages.jpg"
 imageAlt: "Why nobody replies to your Idealista messages — Marta blog"
 imageSmall: "/og/blog/why-nobody-replies-to-idealista-messages-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "Why doesn't anyone reply to my messages on Idealista?"
     a: "They're not being read in order, or often at all. A decent flat gets 40 to 99 contacts on its first day, and the agent works the phone first — messages sit in a pile that may not open until the viewings are already booked."

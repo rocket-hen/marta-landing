@@ -7,6 +7,17 @@ pubDate: 2026-08-13
 image: "/og/blog/negotiate-rent-and-fees-in-spain.jpg"
 imageAlt: "How to negotiate rent and fees in Spain — Marta blog"
 imageSmall: "/og/blog/negotiate-rent-and-fees-in-spain-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "Can you negotiate rent in Spain?"
     a: "Sometimes — a listing that's been up more than two or three weeks almost always has margin, since the landlord already knows it hasn't rented at the asking price. A fresh, high-demand listing is the wrong moment to try."

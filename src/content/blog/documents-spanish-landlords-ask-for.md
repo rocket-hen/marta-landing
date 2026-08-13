@@ -7,6 +7,17 @@ pubDate: 2026-07-29
 image: "/og/blog/documents-spanish-landlords-ask-for.jpg"
 imageAlt: "Documents Spanish landlords ask for — Marta blog"
 imageSmall: "/og/blog/documents-spanish-landlords-ask-for-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Negotiate the Price and Fees You Shouldn't Pay"
+      href: "/blog/negotiate-rent-and-fees-in-spain/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "What documents do I need to rent an apartment in Spain as a foreigner?"
     a: "An NIE or TIE (or passport while it's processing), your last few payslips or tax returns, and an aval bancario or seguro de impago if you don't have Spanish income history. A reference from a previous landlord helps but isn't required."

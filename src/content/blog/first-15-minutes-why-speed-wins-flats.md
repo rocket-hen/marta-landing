@@ -7,6 +7,17 @@ pubDate: 2026-07-27
 image: "/og/blog/first-15-minutes-why-speed-wins-flats.jpg"
 imageAlt: "The first 15 minutes: why speed wins flats — Marta blog"
 imageSmall: "/og/blog/first-15-minutes-why-speed-wins-flats-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "Negotiate the Price and Fees You Shouldn't Pay"
+      href: "/blog/negotiate-rent-and-fees-in-spain/"
 faq:
   - q: "Do I really need to call within 15 minutes of a new listing going live?"
     a: "Not literally. What matters is being among the first two to four credible callers — sometimes that's five minutes, sometimes it's forty, depending on how hot the listing is. The clock is a rough proxy, not the rule."

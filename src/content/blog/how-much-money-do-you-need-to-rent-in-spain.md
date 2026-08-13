@@ -7,6 +7,17 @@ pubDate: 2026-08-13
 image: "/og/blog/how-much-money-do-you-need-to-rent-in-spain.jpg"
 imageAlt: "How much money you need to rent in Spain — Marta blog"
 imageSmall: "/og/blog/how-much-money-do-you-need-to-rent-in-spain-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "How much money do I need to rent an apartment in Spain?"
     a: "On a €1,000/month apartment, realistically €2,000-4,000 to get the keys — first month's rent, a one-month deposit at minimum, and up to two more months if the landlord asks for the full legal maximum. Agency fees usually aren't part of that total."
