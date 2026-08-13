@@ -7,6 +7,17 @@ pubDate: 2026-08-04
 image: "/og/blog/luxury-suburbs-near-madrid.jpg"
 imageAlt: "Luxury suburbs near Madrid — Marta blog"
 imageSmall: "/og/blog/luxury-suburbs-near-madrid-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "What is the most expensive suburb near Madrid?"
     a: "La Moraleja, inside Alcobendas, where villa listings average around €4.4 million and can reach €25.6 million for the largest estates."

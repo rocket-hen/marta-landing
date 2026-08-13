@@ -10,10 +10,12 @@ imageSmall: "/og/blog/cost-of-living-in-barcelona-800.jpg"
 guides:
   title: "Our guides"
   links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
     - title: "Documents Spanish Landlords Ask For"
       href: "/blog/documents-spanish-landlords-ask-for/"
-    - title: "Why Nobody Replies to Your Idealista Messages"
-      href: "/blog/why-nobody-replies-to-idealista-messages/"
     - title: "The First 15 Minutes: Why Speed Wins Flats"
       href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:

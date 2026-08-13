@@ -7,6 +7,17 @@ pubDate: 2026-07-26
 image: "/og/blog/red-flags-fake-listings.jpg"
 imageAlt: "Red flags: spotting fake rental listings before you pay — Marta blog"
 imageSmall: "/og/blog/red-flags-fake-listings-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "How can I tell if a rental listing in Spain is fake?"
     a: "The price sits 20-30% under market, the photos look suspiciously professional, and the landlord is always conveniently unavailable to show the flat in person. Any one of those alone is a coincidence; two together is a pattern."

@@ -7,6 +7,17 @@ pubDate: 2026-08-03
 image: "/og/blog/affordable-housing-near-madrid.jpg"
 imageAlt: "Affordable housing near Madrid — Marta blog"
 imageSmall: "/og/blog/affordable-housing-near-madrid-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "What is the cheapest area to live near Madrid?"
     a: "Fuenlabrada, at roughly €13.2/m², though it comes with the longest commute of the group — about 52 minutes to Atocha by Cercanías."

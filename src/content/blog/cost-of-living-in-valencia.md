@@ -10,12 +10,14 @@ imageSmall: "/og/blog/cost-of-living-in-valencia-800.jpg"
 guides:
   title: "Our guides"
   links:
-    - title: "Documents Spanish Landlords Ask For"
-      href: "/blog/documents-spanish-landlords-ask-for/"
     - title: "How to Rent an Apartment in Spain as an Expat"
       href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
-    - title: "Spain Rental Guarantees Explained"
-      href: "/blog/spain-rental-guarantees-explained/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "How much do I need to live comfortably in Valencia, Spain?"
     a: "A single person can live comfortably on €1,600-1,800 a month including rent. A family of four should budget €3,700-4,100 a month all-in — noticeably less than the same household would need in Barcelona."

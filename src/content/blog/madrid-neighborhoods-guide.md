@@ -7,6 +7,17 @@ pubDate: 2026-08-01
 image: "/og/blog/madrid-neighborhoods-guide.jpg"
 imageAlt: "Best neighborhoods in Madrid — Marta blog"
 imageSmall: "/og/blog/madrid-neighborhoods-guide-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "What is the best neighborhood to live in Madrid?"
     a: "It depends on the trade-off you're optimizing for. Chamberí and Retiro suit people who want quiet and safety close to the center; Malasaña and Chueca suit people who want nightlife and walkability; Salamanca suits people prioritizing safety and space over budget."

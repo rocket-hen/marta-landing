@@ -7,6 +7,17 @@ pubDate: 2026-08-05
 image: "/og/blog/temporary-rental-vs-long-term-lease-spain.jpg"
 imageAlt: "Temporary rental vs long-term lease in Spain — Marta blog"
 imageSmall: "/og/blog/temporary-rental-vs-long-term-lease-spain-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "What's the difference between a temporada rental and a long-term lease in Spain?"
     a: "The label doesn't decide it — the reason does. A temporada contract only applies when there's a real, statable cause for the stay being temporary, like a work posting or a course of study. If the flat is genuinely your only home, it's a vivienda habitual rental under Spanish law, regardless of what the contract calls itself."

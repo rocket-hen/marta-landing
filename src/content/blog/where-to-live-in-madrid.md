@@ -7,6 +7,17 @@ pubDate: 2026-08-02
 image: "/og/blog/where-to-live-in-madrid.jpg"
 imageAlt: "Where to live in Madrid — Marta blog"
 imageSmall: "/og/blog/where-to-live-in-madrid-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "Where should I live in Madrid as a foreigner?"
     a: "It depends on what you're optimizing for. Families tend to land in Retiro or Chamartín, solo expats and freelancers in Malasaña or Chamberí, students in Lavapiés or Tetuán, and Chueca specifically for LGBTQ+ residents."

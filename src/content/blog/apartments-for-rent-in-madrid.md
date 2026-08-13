@@ -7,6 +7,17 @@ pubDate: 2026-07-31
 image: "/og/blog/apartments-for-rent-in-madrid.jpg"
 imageAlt: "Apartments for rent in Madrid — Marta blog"
 imageSmall: "/og/blog/apartments-for-rent-in-madrid-800.jpg"
+guides:
+  title: "Our guides"
+  links:
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Documents Spanish Landlords Ask For"
+      href: "/blog/documents-spanish-landlords-ask-for/"
+    - title: "The First 15 Minutes: Why Speed Wins Flats"
+      href: "/blog/first-15-minutes-why-speed-wins-flats/"
 faq:
   - q: "How much does it cost to rent an apartment in Madrid?"
     a: "A 70 m² apartment averages €1,250–1,400 a month citywide, according to Idealista's rental index. Prices range from €800–1,050 in Villaverde up to €1,600–2,200 in Salamanca, depending on the district."
