@@ -1,5 +1,5 @@
 ---
-title: "Piso compartido: las preguntas que hay que hacer antes de firmar"
+title: "Piso compartido: qué preguntar antes de firmar"
 excerpt: "Gastos, visitas, silencio a las 2 de la madrugada: lo que un anuncio nunca cuenta sobre tus futuros compañeros de piso."
 category: "Piso compartido"
 minutes: 5
