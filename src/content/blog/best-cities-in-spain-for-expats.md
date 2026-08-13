@@ -60,7 +60,7 @@ That gap between reputation and lived experience is the whole reason this piece 
 
 Madrid wins on the thing the ranking doesn't fully capture: career. It has Spain's largest job market, the highest salaries, the biggest and most established global expat network, and a genuinely fast-paced urban rhythm if that's what you're looking for. If the reason you're moving to Spain is professional — a transfer, a promotion, a specific industry that clusters here — Madrid is very often still the right answer regardless of where it lands on a satisfaction ranking.
 
-The honest drawbacks: rent runs among the highest in the country, and Madrid sits inland, which means summer heat with no coastal relief — no sea breeze coming to save you in August, just the heat and the (excellent) air conditioning bill.
+The honest drawbacks: rent price runs among the highest in the country, and Madrid sits inland, which means summer heat with no coastal relief — no sea breeze coming to save you in August, just the heat and the (excellent) air conditioning bill.
 
 ## Barcelona: beach and startups, at a price
 
