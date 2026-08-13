@@ -12,12 +12,12 @@ guides:
   links:
     - title: "Documents Spanish Landlords Ask For"
       href: "/blog/documents-spanish-landlords-ask-for/"
-    - title: "Aval Bancario vs Seguro de Impago in Spain"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "Spain Rental Guarantees Explained"
       href: "/blog/spain-rental-guarantees-explained/"
-    - title: "Cost of Living in Barcelona, by Neighborhood"
-      href: "/blog/cost-of-living-in-barcelona/"
-    - title: "Red Flags: Spotting Fake Listings Before You Pay"
-      href: "/blog/red-flags-fake-listings/"
+    - title: "How Much Money Do You Actually Need to Rent in Spain?"
+      href: "/blog/how-much-money-do-you-need-to-rent-in-spain/"
 faq:
   - q: "Can a US citizen rent an apartment in Spain?"
     a: "Yes. There's no citizenship requirement to sign a lease — a passport is enough for a short stay, and most landlords will ask for a NIE for anything longer than a few months, which any foreigner can apply for regardless of visa status."
@@ -63,15 +63,26 @@ If your income doesn't clear that 40-times convention, or you don't have Spanish
 
 ## Budgeting: what rent actually costs by city
 
-A one-bedroom in Barcelona runs €1,100-1,600+ depending on the neighborhood; in Málaga, €650-1,400. Neither number is "the" Spain rental price — the two cities alone span nearly the full range most expats will encounter, and Madrid runs higher still.
+Rent is the single biggest swing factor in any Spain relocation budget, and it varies more by city than almost anything else on this list. Here's the current asking-rent benchmark across the country's biggest rental markets:
 
-[Full monthly budgets, broken down by neighborhood, are here for Barcelona](/blog/cost-of-living-in-barcelona/) and [here for Málaga](/blog/cost-of-living-in-malaga/) — both cover rent, groceries, transport, and going out, not just a single average that hides more than it tells you.
+| City | 1BR | 2BR | 3-4BR |
+|---|---:|---:|---:|
+| Madrid | €1,300 | €1,900 | €2,600 |
+| Barcelona | €1,250 | €1,850 | €2,500 |
+| Valencia | €900 | €1,300 | €1,800 |
+| Málaga | €900 | €1,300 | €1,750 |
+| Alicante | €750 | €1,100 | €1,500 |
+| Sevilla | €750 | €1,100 | €1,500 |
+
+These are budgeting benchmarks built from each city's average asking rent per m² (55m² for a 1BR, 80m² for a 2BR, 110m² for a 3-4BR), not an official average for a specific apartment — a starting point for planning, not a quote.
+
+The listed rent isn't always final, either. [There's often real room to negotiate the price, plus fees a landlord or agency simply isn't allowed to charge you in the first place](/blog/negotiate-rent-and-fees-in-spain/) — worth knowing before you accept a number as fixed.
 
 ## Choosing a neighborhood
 
 The city average is close to useless once you're actually choosing where to live: in Barcelona, rent runs from around €14-16/m² in Nou Barris to €21-24/m² in Sarrià-Sant Gervasi — more than a 40% swing inside the same city. Málaga has the same pattern between La Malagueta and Teatinos. The neighborhood decision usually matters more than the city decision, once you've picked the city.
 
-Both cost-of-living guides linked above include a dedicated section per neighborhood — safety, what's nearby, who actually lives there — rather than treating "Barcelona" or "Málaga" as one number.
+[Our neighborhood-by-neighborhood breakdowns are here for Barcelona](/blog/cost-of-living-in-barcelona/) and [here for Málaga](/blog/cost-of-living-in-malaga/) — safety, what's nearby, who actually lives there, rather than treating "Barcelona" or "Málaga" as one number.
 
 ## The contract and the red flags
 
