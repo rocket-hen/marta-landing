@@ -1,0 +1,16 @@
+[
+	{
+		"file": "cost-of-living-in-madrid-1.jpg",
+		"fileSmall": "cost-of-living-in-madrid-1-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Plaza Mayor in Madrid"
+	},
+	{
+		"file": "cost-of-living-in-madrid-2.jpg",
+		"fileSmall": "cost-of-living-in-madrid-2-800.jpg",
+		"width": 1600,
+		"height": 1066,
+		"alt": "Tree-lined path in a Madrid park"
+	}
+]
