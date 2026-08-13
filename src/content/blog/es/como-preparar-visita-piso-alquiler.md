@@ -39,6 +39,8 @@ Antes de ir a ver el piso, revisa desde casa lo que no requiere estar allí: tra
 
 Llega a la visita lista para decidir, no para empezar a decidir: antes de cruzar la puerta, deberías poder decir que sí en el sitio, o llegar con una lista corta y concreta de lo único que falta por resolver. Anota esa lista antes de salir de casa — improvisarla de pie, dentro del piso, con el agente esperando una respuesta, es la forma más fácil de olvidar la mitad.
 
+Hay una parte de esta investigación que sí requiere estar allí, y conviene hacerla antes de que empiece la visita: llega entre media hora y una hora antes, y date una vuelta por varias calles alrededor. Mira la zona a la hora en la que de verdad vivirías allí, no a la hora en la que se hicieron las fotos del anuncio — qué comercios están abiertos, si el bar de la esquina pinta a problema un martes por la noche, cómo se siente el camino al metro una vez que lo caminas y no solo lo miras en el mapa. Diez minutos con el móvil recortan la lista. Media hora caminando te dice si sigues queriendo el piso antes incluso de que el agente abra la puerta.
+
 ## Las preguntas que solo se pueden responder en persona
 
 ::img[persona visitando piso vacío]
