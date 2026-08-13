@@ -57,7 +57,7 @@ That clause is legal under LAU Article 11 — landlords can write in compensatio
 
 ## Don't Let Friday Decide Your Lease
 
-Signing whichever contract gets you out of the Airbnb fastest is how people end up in a lease they didn't actually want, for reasons that had nothing to do with the apartment itself. Temporary accommodation is expensive. Desperation is usually more expensive — a twelve-month lease signed because checkout was Friday can cost far more than another week of nightly rates ever would.
+Signing whichever contract gets you out of the Airbnb fastest is how people end up in a lease they didn't actually want, for reasons that had nothing to do with the apartment itself. Temporary accommodation is expensive. Desperation is usually more expensive — a twelve-month lease signed because checkout was Friday can cost far more than another week of nightly rates ever would. The same rushed-decision trap shows up with pets, too — [presenting one upfront matters more than which contract type you end up signing](/blog/renting-in-spain-with-a-pet/).
 
 :::highlight
 If a landlord offers you a "de temporada" contract for what is clearly going to be your only home in Spain — no return date, no work posting, no course ending in June — that's not a shorter lease. **It's a habitual-residence rental wearing a temporada label to sit outside the LAU's five-year protection and deposit cap**, and the real use of the flat decides which law applies, not the title on the page.

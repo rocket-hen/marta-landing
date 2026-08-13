@@ -49,7 +49,7 @@ Yes, but only under one specific condition: the refusal has to be written into t
 
 > A landlord who never writes down "no pets" has, legally speaking, said nothing at all.
 
-That distinction matters more than most tenants realize going in.
+That distinction matters more than most tenants realize going in — and it's worth checking alongside [what kind of contract you're actually signing](/blog/temporary-rental-vs-long-term-lease-spain/), since a temporada lease and a standard long-term one don't offer identical protection on this either.
 
 ## What happens if you already have a pet
 
