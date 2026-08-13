@@ -1,6 +1,6 @@
 ---
 title: "Ley de Vivienda en España: Guía Completa"
-excerpt: "La Ley 12/2023 cambió reglas clave del alquiler: limita precios en zona tensionada, traslada los gastos de gestión al propietario, y protege más en un desahucio."
+excerpt: "La Ley 12/2023 cambió reglas clave del alquiler: limita precios en zona tensionada, traslada los gastos de gestión al propietario y protege en desahucios."
 category: "Legal"
 minutes: 7
 pubDate: 2026-08-03

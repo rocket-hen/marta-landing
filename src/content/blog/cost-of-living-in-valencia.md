@@ -1,6 +1,6 @@
 ---
 title: "Cost of Living in Valencia, by District"
-excerpt: "A single person spends €720-850 a month excluding rent, less than Barcelona, and this covers all 19 of Valencia's official districts, not just the famous five."
+excerpt: "A single person spends €720-850 a month excluding rent, less than Barcelona. Covers all 19 of Valencia's official districts, not just the famous five."
 category: "Neighborhoods"
 minutes: 11
 pubDate: 2026-08-12

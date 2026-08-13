@@ -1,6 +1,6 @@
 ---
 title: "Precio Alquiler España 2026: Por Comunidades"
-excerpt: "El alquiler en España ronda los 14,5-14,8€/m², pero en Barcelona se lleva hasta el 65% de un sueldo medio. Precio nacional, por comunidad autónoma y qué pesa sobre el sueldo."
+excerpt: "El alquiler en España ronda los 14,5-14,8€/m², pero en Barcelona se lleva hasta el 65% de un sueldo medio. Precio por comunidad autónoma y su peso real."
 category: "Precios"
 minutes: 7
 pubDate: 2026-08-06

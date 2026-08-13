@@ -1,6 +1,6 @@
 ---
 title: "Aval Bancario Alquiler o Seguro de Impago"
-excerpt: "Cuando no tienes nómina fija, el casero suele pedir una de estas dos garantías. Casi toda la información que existe está escrita para el propietario, no para ti."
+excerpt: "Cuando no tienes nómina fija, el casero suele pedir una de estas dos garantías. Casi toda la información existente está escrita para el propietario."
 category: "Documentos"
 minutes: 7
 pubDate: 2026-07-26

@@ -1,6 +1,6 @@
 ---
 title: "Derechos del Inquilino en España: Guía Completa"
-excerpt: "El contrato dura hasta 5-7 años, puedes irte a los 6 meses avisando con 30 días, y el propietario paga las reparaciones. Tus derechos como inquilino, uno por uno."
+excerpt: "El contrato dura hasta 5-7 años, puedes irte a los 6 meses avisando con 30 días, y el propietario paga las reparaciones. Tus derechos, uno por uno."
 category: "Legal"
 minutes: 7
 pubDate: 2026-08-04

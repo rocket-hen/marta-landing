@@ -1,6 +1,6 @@
 ---
 title: "Aval Bancario vs Seguro de Impago in Spain"
-excerpt: "Both are guarantees against a landlord's risk, but only one actually asks anything of you directly. What each costs, how the screening works, and which fits your situation."
+excerpt: "Both are guarantees against a landlord's risk, but only one actually asks anything of you directly. What each costs and which fits your situation."
 category: "Documents"
 minutes: 7
 pubDate: 2026-08-12

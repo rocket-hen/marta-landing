@@ -1,6 +1,6 @@
 ---
 title: "The First 15 Minutes: Why Speed Wins Flats"
-excerpt: "It was never really about a 15-minute clock — it's about being caller two, three, or four. A saved search with instant alerts beats checking manually, every time."
+excerpt: "It was never about a 15-minute clock — it's about being caller two, three, or four. A saved search with instant alerts beats checking manually."
 category: "Strategy"
 minutes: 3
 pubDate: 2026-07-27

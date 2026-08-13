@@ -1,6 +1,6 @@
 ---
 title: "Apartments for Rent in Madrid: A Guide for Expats"
-excerpt: "What documents you need, what apartments actually cost by neighborhood, how long the search takes, and when a long-term lease beats parking on Airbnb while you look."
+excerpt: "What documents you need, what apartments cost by neighborhood, how long the search takes, and when a long-term lease beats parking on Airbnb."
 category: "Guides"
 minutes: 7
 pubDate: 2026-07-31

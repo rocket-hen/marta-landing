@@ -1,6 +1,6 @@
 ---
 title: "Where to Live in Madrid, by Who You Are"
-excerpt: "Where to actually live in Madrid if you're a family, student, solo expat, freelancer, runner, tennis player, golfer, gay, or an artist — real neighborhoods, real numbers."
+excerpt: "Real Madrid neighborhoods for families, students, expats, freelancers, runners, tennis players, golfers, gay renters, and artists — with real numbers."
 category: "Neighborhoods"
 minutes: 10
 pubDate: 2026-08-02
