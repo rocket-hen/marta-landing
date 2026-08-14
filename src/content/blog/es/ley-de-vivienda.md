@@ -78,6 +78,6 @@ Desde la entrada en vigor de la ley, los gastos de gestión inmobiliaria y de fo
 
 ## Qué pasa en un desahucio con la nueva ley
 
-La ley añade pasos de intermediación obligatoria antes de un desahucio para personas en situación de vulnerabilidad, con plazos que buscan dar margen para encontrar una solución antes de llegar al lanzamiento. No sustituye el proceso judicial, pero sí lo ralentiza y añade una capa de protección que antes no existía de forma sistemática.
+La ley añade pasos de intermediación obligatoria antes de un desahucio para personas en situación de vulnerabilidad, con plazos que buscan dar margen para encontrar una solución antes de llegar al lanzamiento. No sustituye el proceso judicial, pero sí lo ralentiza y añade una capa de protección que antes no existía de forma sistemática. Esta protección se suma al resto de derechos que ya tiene cualquier inquilino durante el contrato — [aquí los repasamos uno por uno](/es/blog/derechos-del-inquilino/).
 
 Conocer la ley ayuda a detectar cuándo te están cobrando algo que ya no es legal — pero no cambia el resultado de una negociación en un mercado tan tensionado como el español ahora mismo. Si tienes un problema activo con tu casero actual —un desahucio en marcha, una reparación desatendida—, lo que necesitas es un abogado, no una llamada a agencias inmobiliarias; eso se sale de lo que hacemos. Donde sí ayudamos es en la parte de antes: llegar rápido a la llamada cuando ya has decidido el piso.

@@ -35,7 +35,7 @@ Un piso compartido se elige dos veces: primero el piso, después a las personas 
 
 > El 80% de las broncas de piso compartido no son por el piso — son por dinero que nadie habló claro antes de firmar.
 
-¿Cómo se reparten los gastos — a partes iguales o según metros de cada habitación? ¿Hay una cuenta común o cada uno paga su parte por separado? ¿Qué pasa si alguien se va antes de tiempo: quién busca al sustituto, y quién sigue pagando mientras tanto? Estas tres preguntas, hechas antes de firmar, evitan la mayoría de las tensiones que aparecen más adelante.
+¿Cómo se reparten los gastos — a partes iguales o según metros de cada habitación? ¿Hay una cuenta común o cada uno paga su parte por separado? ¿Qué pasa si alguien se va antes de tiempo: quién busca al sustituto, y quién sigue pagando mientras tanto? Estas tres preguntas, hechas antes de firmar, evitan la mayoría de las tensiones que aparecen más adelante. Y antes de aceptar el precio que te propongan, conviene saber [cuánto cuesta realmente alquilar en cada zona de España](/es/blog/precio-alquiler-espana/) — el reparto solo es justo si el total de partida también lo es.
 
 ## Convivencia: lo que el anuncio nunca dice
 

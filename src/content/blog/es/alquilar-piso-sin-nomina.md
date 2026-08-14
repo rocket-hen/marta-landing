@@ -29,7 +29,7 @@ faq:
     a: "Sí. Autónomos, freelancers y quienes cobran por proyecto alquilan constantemente sin contrato laboral fijo, siempre que puedan demostrar ingresos con otros documentos y, en algunos casos, un aval o seguro de impago adicional."
 ---
 
-No tener nómina fija no te descarta legalmente para alquilar. Pedir nómina es una costumbre del propietario para reducir riesgo, no un requisito legal — autónomos y freelancers lo demuestran cada día con otros documentos. Esta guía cubre qué aceptan las agencias en su lugar y cómo presentarlo antes de la visita.
+No tener nómina fija no te descarta legalmente para alquilar. Pedir nómina es una costumbre del propietario para reducir riesgo, no un requisito legal — autónomos y freelancers lo demuestran cada día con otros documentos. Esta guía cubre qué aceptan las agencias en su lugar y cómo presentarlo antes de la visita. Antes de preparar la documentación, conviene saber [cuánto cuesta realmente alquilar en España](/es/blog/precio-alquiler-espana/), ya que ese número es el que determina qué ingresos vas a tener que demostrar.
 
 ## Índice
 

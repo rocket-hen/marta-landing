@@ -79,7 +79,7 @@ El [Sindicat de Llogateres](https://sindicatdellogateres.org/es/recurso/actualiz
 
 Pide el desglose por escrito: qué índice ha aplicado y de dónde sale el porcentaje. Si la cifra no cuadra con el cálculo — como en el ejemplo de antes, aplicar IPC en vez de IRAV por error o por costumbre —, tienes motivo de sobra para rechazarla y proponer la cifra correcta en su lugar. [Gibobs calcula un ejemplo real](https://www.gibobs.com/blog/cuanto-puede-subir-alquiler/) que vale la pena revisar si quieres ver los números aplicados a un caso concreto antes de discutir el tuyo.
 
-Si el propietario insiste en una cifra que no se sostiene con el cálculo, y no hay margen de negociación directa, puedes acudir a una oficina de vivienda o a un sindicato de inquilinos de tu zona. No hace falta llegar ahí en la mayoría de los casos — pero saber que existe esa opción quita presión a la primera conversación. (Nadie negocia mejor con miedo a quedarse sin argumentos.)
+Si el propietario insiste en una cifra que no se sostiene con el cálculo, y no hay margen de negociación directa, puedes acudir a una oficina de vivienda o a un sindicato de inquilinos de tu zona. No hace falta llegar ahí en la mayoría de los casos — pero saber que existe esa opción quita presión a la primera conversación. (Nadie negocia mejor con miedo a quedarse sin argumentos.) Esto es solo una de las protecciones que tienes como inquilino durante el contrato — [aquí repasamos el resto](/es/blog/derechos-del-inquilino/).
 
 ## Cuándo esto no aplica
 
