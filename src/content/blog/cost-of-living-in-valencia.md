@@ -32,7 +32,7 @@ faq:
   - q: "Where should I avoid staying in Valencia?"
     a: "Nowhere is unsafe by Western European standards, but the outer villages (Poblados del Norte, del Oeste, and del Sur) barely have a formal rental market — most housing there is owner-occupied or seasonal, so apartment-hunting there specifically is likely to be a dead end."
   - q: "What's the cheapest district to live in Valencia?"
-    a: "Among districts with an active rental market, Patraix, Benimaclet, and Rascanya consistently come in lowest, around €13-14/m² — well below Ciutat Vella or Eixample's €18-19/m²."
+    a: "Among districts with an active rental market, Patraix, Benimaclet, and Jesús consistently come in lowest, around €15/m² — well below Ciutat Vella or Eixample's €18-19/m²."
 ---
 
 Valencia gets pitched as the "cheaper Barcelona" — beach city, same Mediterranean lifestyle, lower price tag — but most guides to where to live stop at the same four or five Instagram-famous names and never mention the other fifteen districts where most of the city actually lives. This breaks down what a single person or a family actually spends, then walks through Valencia's full district map.
@@ -55,23 +55,23 @@ Excluding rent, a single person spends €720-850 a month in Valencia, and a fam
 
 > The same four neighborhood names show up in every Valencia guide. The other fifteen districts are where most of the city actually lives — and rents for meaningfully less.
 
-A one-bedroom in the city center runs €1,100-1,450 a month; outside the center, €800-1,050. A three-bedroom in the center runs €1,750-2,250. Which end of any of these ranges you land on depends almost entirely on which of Valencia's 19 official districts you're in — here's the estimated monthly rent by district and apartment size:
+A one-bedroom in the city center runs €1,100-1,450 a month; outside the center, €850-900. A three-bedroom in the center runs €1,750-2,250. Which end of any of these ranges you land on depends almost entirely on which of Valencia's 19 official districts you're in — here's the estimated monthly rent by district and apartment size:
 
 | District | 1BR | 2BR | 3-4BR |
 |---|---:|---:|---:|
 | Ciutat Vella | €1,050 | €1,550 | €2,100 |
 | Eixample | €1,000 | €1,450 | €2,000 |
+| El Pla del Real | €900 | €1,350 | €1,850 |
+| Benicalap | €900 | €1,300 | €1,800 |
+| L'Olivereta | €900 | €1,300 | €1,800 |
 | Poblats Marítims | €900 | €1,300 | €1,800 |
+| Algirós | €850 | €1,250 | €1,700 |
 | Extramurs | €850 | €1,250 | €1,700 |
+| Rascanya | €850 | €1,250 | €1,700 |
 | Quatre Carreres | €850 | €1,200 | €1,700 |
-| El Pla del Real | €800 | €1,200 | €1,650 |
-| Benicalap | €800 | €1,200 | €1,600 |
-| L'Olivereta | €800 | €1,150 | €1,550 |
-| Algirós | €750 | €1,100 | €1,500 |
-| Rascanya | €750 | €1,100 | €1,550 |
-| Patraix | €750 | €1,050 | €1,450 |
-| Jesús | €750 | €1,050 | €1,450 |
-| Benimaclet | €750 | €1,050 | €1,450 |
+| Benimaclet | €850 | €1,200 | €1,650 |
+| Jesús | €850 | €1,200 | €1,650 |
+| Patraix | €850 | €1,200 | €1,650 |
 
 These are estimates built from each district's average €/m² asking price (55m² for a 1BR, 80m² for a 2BR, 110m² for a 3-4BR), not listings-based averages — treat them as a starting point for budgeting, not a quote. Campanar, La Zaidía, Camins al Grau, and the three Poblados groups aren't in this table because there isn't enough formal rental-market data to estimate them reliably — itself a signal about how thin the rental market is out there.
 
@@ -87,7 +87,7 @@ A popular district like Ruzafa also means competition for listings, and a common
 
 ## Just outside the walls: Extramurs and El Pla del Real
 
-**Extramurs** (€15.6/m²) and **El Pla del Real** (€14.9/m²) sit just beyond the old center — quieter, still walkable in, and meaningfully cheaper than either historic district. Extramurs centers on **El Botànic**, next to the university's botanical garden, with **La Roqueta**, **La Petxina**, and **Arrancapins** as underrated, largely residential value plays.
+**Extramurs** (€15.6/m²) and **El Pla del Real** (€16.7/m²) sit just beyond the old center — quieter, still walkable in, and meaningfully cheaper than either historic district. Extramurs centers on **El Botànic**, next to the university's botanical garden, with **La Roqueta**, **La Petxina**, and **Arrancapins** as underrated, largely residential value plays.
 
 El Pla del Real is leafy and upper-middle-class: **Mestalla** (the football stadium's namesake neighborhood), the Jardines del Real park, and a population skewed toward academics and families near the Blasco Ibáñez university campus.
 
@@ -95,11 +95,11 @@ El Pla del Real is leafy and upper-middle-class: **Mestalla** (the football stad
 
 ::img[bicycle quiet residential street]
 
-**Benimaclet**, at €13.3/m², is the cheapest of Valencia's well-known district names — a former standalone village that kept its small-town feel, a large student population, and a reputation that comes up repeatedly as one of the safest parts of the city. **Algirós** (€13.7/m²) borders the university on the other side, laid out as a genuine garden city (Ciutat Jardí literally means exactly that) — quiet and family-oriented rather than a nightlife destination.
+**Benimaclet**, at €15.1/m², is the cheapest of Valencia's well-known district names — a former standalone village that kept its small-town feel, a large student population, and a reputation that comes up repeatedly as one of the safest parts of the city. **Algirós** (€15.5/m²) borders the university on the other side, laid out as a genuine garden city (Ciutat Jardí literally means exactly that) — quiet and family-oriented rather than a nightlife destination.
 
 ## Southwest, working city: L'Olivereta, Patraix, and Jesús
 
-This is the most affordable cluster with real urban infrastructure, €13.3-14.3/m², and it's where a lot of ordinary renting happens with essentially zero guidebook presence. **L'Olivereta** mixes industrial and residential around Nou Moles and Tres Forques. **Patraix**, a former village like Benimaclet, connects to the new Parque Central extension and is quietly gentrifying without the attention that's driven up Ruzafa's prices. **Jesús** is well-connected to the southern access roads — practical rather than picturesque, and priced accordingly.
+This is the most affordable cluster with real urban infrastructure, €15.1-16.2/m², and it's where a lot of ordinary renting happens with essentially zero guidebook presence. **L'Olivereta** mixes industrial and residential around Nou Moles and Tres Forques. **Patraix**, a former village like Benimaclet, connects to the new Parque Central extension and is quietly gentrifying without the attention that's driven up Ruzafa's prices. **Jesús** is well-connected to the southern access roads — practical rather than picturesque, and priced accordingly.
 
 ## East to the sea: Quatre Carreres, Camins al Grau, and Poblats Marítims
 
