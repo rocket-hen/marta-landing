@@ -70,7 +70,7 @@ Eixample and Gràcia are Barcelona's two most-searched central neighborhoods for
 
 ## Which city fits your situation
 
-If budget is tight, Valencia's lower rents and slightly less frantic pace help more than they sound like they should. If you need to be in Barcelona specifically — for work, for a partner, for the ocean-meets-mountains combination nothing else in Spain quite matches — plan for both a higher price ceiling and a faster response time. Remote workers and freelancers tend to land more comfortably in Valencia's calmer market; people chasing Barcelona's tech and startup scene rarely have the option to pick the cheaper city anyway.
+If budget is tight, Valencia's lower rents and slightly less frantic pace help more than they sound like they should. If you need to be in Barcelona specifically — for work, for a partner, for the ocean-meets-mountains combination nothing else in Spain quite matches — plan for both a higher price ceiling and a faster response time. Remote workers and freelancers tend to land more comfortably in Valencia's calmer market; people chasing Barcelona's tech and startup scene rarely have the option to pick the cheaper city anyway. If Valencia's own rents still don't fit, [the towns just outside it push the budget further](/blog/affordable-housing-near-valencia/) without giving up the metro connection.
 
 Neither city is objectively right, and the choice rewards moving, not agonizing over it for another week. Once you've picked one, don't make the same mistake a level down: **search by probability, not by perfection** — put enough acceptable listings in front of an agent in whichever city you land in, and let the market narrow it down, rather than spending a second week deciding between two flats that were both fine.
 

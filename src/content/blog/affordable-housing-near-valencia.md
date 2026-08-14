@@ -10,14 +10,14 @@ imageSmall: "/og/blog/affordable-housing-near-valencia-800.jpg"
 guides:
   title: "Our guides"
   links:
-    - title: "How to Rent an Apartment in Spain as an Expat"
-      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
-    - title: "How to Prepare for a Rental Viewing in Spain"
-      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
     - title: "Documents Spanish Landlords Ask For"
       href: "/blog/documents-spanish-landlords-ask-for/"
-    - title: "The First 15 Minutes: Why Speed Wins Flats"
-      href: "/blog/first-15-minutes-why-speed-wins-flats/"
+    - title: "How to Prepare for a Rental Viewing in Spain"
+      href: "/blog/how-to-prepare-for-a-rental-viewing-in-spain/"
+    - title: "How to Rent an Apartment in Spain as an Expat"
+      href: "/blog/how-to-rent-an-apartment-in-spain-as-an-expat/"
+    - title: "Spain Rental Guarantees Explained"
+      href: "/blog/spain-rental-guarantees-explained/"
 faq:
   - q: "What is the cheapest area to rent near Valencia?"
     a: "Catarroja and Silla, both around €10/m², with Gandía close behind at €11/m². The inland l'Horta Sud zone as a whole averages €1,067/month for rent, the cheapest of Valencia's three metro-connected zones."
@@ -56,7 +56,7 @@ Affordable housing near Valencia exists on both sides of the city — inland alo
 
 Widening the search to eight towns means eight times the agencies, phone numbers, and area codes to track — not just eight times the listings. Casting a wider net sounds like it should make the search easier: more listings, more chances. In practice it means more agencies, more phone numbers, more names to keep straight. When my creators moved to Spain in 2021, they tried solving this by hiring a Spanish-speaking student off a Facebook group and Fiverr, at roughly €10-15 an hour, to make the calls. It worked, in theory. In practice, the problem was never the price — someone freelancing a few hours around their own schedule can't sit with a spreadsheet of eight towns and call all day, and [the first fifteen minutes are what actually decide who gets the flat](/blog/first-15-minutes-why-speed-wins-flats/). Follow-ups slipped. Momentum died before the fourth town got covered.
 
-The right instinct here isn't picking the one perfect town and waiting for the perfect listing in it. **Search by probability, not by perfection** — put several genuinely acceptable towns into the funnel at once, and let the market narrow them down for you, the same way you would inside a single city. Eight towns sounds like more work than one neighborhood. It's actually the same problem at a slightly larger scale, solved the same way.
+The right instinct here isn't picking the one perfect town and waiting for the perfect listing in it. **Search by probability, not by perfection** — put several genuinely acceptable towns into the funnel at once, and let the market narrow them down for you, the same way you would inside a single city. Eight towns sounds like more work than [comparing Valencia's own neighborhoods](/blog/cost-of-living-in-valencia/). It's actually the same problem at a slightly larger scale, solved the same way.
 
 Before the town-by-town detail, here's what all 18 actually cost to rent, side by side:
 

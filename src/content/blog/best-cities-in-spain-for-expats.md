@@ -74,7 +74,7 @@ It's also the most expensive of the five, and InterNations' 21st-place ranking i
 
 Valencia takes the top spot for a reason that shows up in almost every source, not just InterNations: it's the best cost-to-quality balance of any major Spanish city. Relaxed Mediterranean pace, genuinely strong parks and bike infrastructure, a beach that doesn't require a metro transfer to reach, all at a price that hasn't (yet) caught up to Madrid or Barcelona.
 
-The caveat worth knowing before you assume "cheap": rent has risen meaningfully here, driven largely by remote-worker demand discovering the same thing this ranking just told you. [The real numbers, district by district, are here](/blog/cost-of-living-in-valencia/) — "cheaper than Barcelona" is still true, "cheap" on its own is starting to be a stretch.
+The caveat worth knowing before you assume "cheap": rent has risen meaningfully here, driven largely by remote-worker demand discovering the same thing this ranking just told you. [The real numbers, district by district, are here](/blog/cost-of-living-in-valencia/) — "cheaper than Barcelona" is still true, "cheap" on its own is starting to be a stretch. [The towns just outside the city](/blog/affordable-housing-near-valencia/) are where that stretch snaps back.
 
 ## Málaga: sun and a soft landing
 
