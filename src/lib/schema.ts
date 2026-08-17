@@ -18,7 +18,9 @@ export function organizationSchema(lang: Lang) {
 export function serviceSchema(lang: Lang) {
 	const p = copy[lang].pricing;
 	const prices = ['49', '99', '399'];
-	const offers = p.tiers.map((tier, i) => ({
+	// Only tiers with a fixed price become Offers — Scale is priced per
+	// conversation with sales, and an Offer without a price is invalid.
+	const offers = p.tiers.slice(0, prices.length).map((tier, i) => ({
 		'@type': 'Offer',
 		name: tier.name,
 		price: prices[i],

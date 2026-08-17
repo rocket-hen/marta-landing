@@ -7,8 +7,8 @@ interface Props {
 
 const { lang = 'en' } = Astro.props;
 const t = copy[lang].pricing;
-const prices = ['€49', '€99', '€399'];
-const outlines = [true, false, true];
+const prices = ['€49', '€99', '€399', lang === 'es' ? 'A medida' : 'Custom'];
+const outlines = [true, false, true, true];
 const tiers = t.tiers.map((tier, i) => ({
 	...tier,
 	price: prices[i],

@@ -45,13 +45,13 @@ You are responsible for what you ask us to say. You may not use Marta to contact
 
 | Plan | Price | What it includes |
 | --- | --- | --- |
-| **Blitz** | €49, one payment, valid for 1 month | Up to 10 listings you send us, called within hours, with a written report |
-| **Marathon** | €99, one payment, valid for up to 90 days | Unlimited listings you send us, plus calls and reports, subject to the fair use provision below |
+| **Blitz** | €49, one payment, valid for 1 month | Up to 15 listings you send us, called within hours, with a written report |
+| **Marathon** | €99, one payment, valid for up to 90 days | Up to 100 listings you send us, plus calls and reports |
 | **Concierge** | €399, payable per signed contract | Hands-on search managed by our team, with a scope agreed with you in writing before we start |
 
 Prices are in euros and include applicable taxes unless stated otherwise at checkout. We may change prices; a change never affects an order already paid for.
 
-**Fair use (Marathon).** Listings are unlimited within reasonable personal use for one search. If your usage is far outside what one person's apartment search requires, we will tell you and agree next steps rather than stopping without warning.
+**Beyond 100 listings.** If your search needs more than Marathon's 100 listings — for example, an agency or a relocation team — write to [support@callmarta.com](mailto:support@callmarta.com) and we will agree custom terms in writing before you commit.
 
 **Coverage.** Calling listings you send us works anywhere in Spain.
 
