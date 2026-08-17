@@ -1,5 +1,13 @@
+import { PLAN_REFS } from './plans';
+
+const price = (key: 'blitz' | 'marathon' | 'concierge') =>
+	'€' + PLAN_REFS.find((p) => p.key === key)!.priceEur;
+const name = (key: 'blitz' | 'marathon' | 'concierge') =>
+	PLAN_REFS.find((p) => p.key === key)!.name;
+
 export interface Tier {
-	name: 'Blitz' | 'Marathon' | 'Concierge';
+	key: 'blitz' | 'marathon' | 'concierge';
+	name: string;
 	tagline: string;
 	/** Static caption under the price — billing timing, not the amount itself. */
 	term: string;
@@ -18,8 +26,9 @@ export interface Tier {
 // no subscriptions.
 export const PRICING_TIERS: Tier[] = [
 	{
-		name: 'Blitz',
-		priceDisplay: '€49',
+		key: 'blitz',
+		name: name('blitz'),
+		priceDisplay: price('blitz'),
 		tagline: 'You found the listings. Marta gets you inside.',
 		term: 'One-time fee — for 15 results',
 		features: [
@@ -31,11 +40,12 @@ export const PRICING_TIERS: Tier[] = [
 			'Money-back guarantee',
 		],
 		productPath: 'blitz',
-		ctaLabel: 'Buy Blitz',
+		ctaLabel: 'Get started',
 	},
 	{
-		name: 'Marathon',
-		priceDisplay: '€99',
+		key: 'marathon',
+		name: name('marathon'),
+		priceDisplay: price('marathon'),
 		tagline: 'The whole hunt, until you move in.',
 		term: 'One-time fee — for 100 results',
 		features: [
@@ -47,11 +57,12 @@ export const PRICING_TIERS: Tier[] = [
 		// The FastSpring catalog still knows this product by its original slug;
 		// renaming the path there would break existing checkout links.
 		productPath: 'hunter',
-		ctaLabel: 'Buy Marathon',
+		ctaLabel: 'Get started',
 	},
 	{
-		name: 'Concierge',
-		priceDisplay: '€399',
+		key: 'concierge',
+		name: name('concierge'),
+		priceDisplay: price('concierge'),
 		tagline: 'A human by your side until the contract is signed.',
 		term: 'One-time fee — charged once you sign a contract',
 		features: [
@@ -64,6 +75,6 @@ export const PRICING_TIERS: Tier[] = [
 			'Support until you sign',
 		],
 		productPath: 'concierge',
-		ctaLabel: 'Buy Concierge',
+		ctaLabel: 'Talk to us',
 	},
 ];

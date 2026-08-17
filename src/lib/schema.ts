@@ -1,4 +1,5 @@
 import { copy, type Lang } from '../i18n/copy';
+import { PLAN_REFS } from './plans';
 
 const SITE_URL = 'https://callmarta.com';
 
@@ -17,7 +18,7 @@ export function organizationSchema(lang: Lang) {
 
 export function serviceSchema(lang: Lang) {
 	const p = copy[lang].pricing;
-	const prices = ['49', '99', '399'];
+	const prices = PLAN_REFS.map((p) => String(p.priceEur));
 	// Only tiers with a fixed price become Offers — Scale is priced per
 	// conversation with sales, and an Offer without a price is invalid.
 	const offers = p.tiers.slice(0, prices.length).map((tier, i) => ({

@@ -1,5 +1,6 @@
 ---
 import { PRICING_TIERS } from '../lib/pricingCheckout';
+import { registerUrl } from '../lib/plans';
 ---
 
 <section class="checkout-pricing">
@@ -31,22 +32,18 @@ import { PRICING_TIERS } from '../lib/pricingCheckout';
 								</li>
 							))}
 						</ul>
-						<button
-							type="button"
+						<a
+							href={registerUrl(tier.key)}
 							class:list={['btn-slide-gradient', 'tier-btn', tier.name === 'Marathon' ? 'solid' : 'btn-slide-outline outline']}
-							data-buy={tier.productPath}
 							data-gtm-id={`checkout_${tier.name.toLowerCase()}_cta`}
 						>
 							{tier.ctaLabel}
-						</button>
+						</a>
 					</div>
 				))
 			}
 		</div>
 
-		<p class="fine-print" data-checkout-error hidden role="alert">
-			Couldn't load checkout right now. Please refresh, or reach out if this keeps happening.
-		</p>
 
 		<div class="checkout-panel" data-checkout-panel hidden>
 			<button type="button" class="back-link" data-checkout-back>
