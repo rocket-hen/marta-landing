@@ -20,7 +20,7 @@ Marta calls landlords and estate agents **on your behalf**, in Spanish, about re
 - where a viewing is agreed and the landlord or agent consents, send a written confirmation of the appointment by WhatsApp — to you, and to them — including the details each side needs to reach the other;
 - report the outcome back to you.
 
-Calls are made by an AI voice assistant, supported by human operators who monitor quality and step in where the assistant cannot handle a conversation. The assistant discloses at the start of every call that it is an AI assistant acting for a named prospective tenant.
+Calls are made by an AI voice assistant, supported by human operators who monitor quality. On Marathon and Concierge, an operator steps in where the assistant cannot handle a conversation; on Blitz, anything that needs a person is flagged on your dashboard for you to act on. The assistant discloses at the start of every call that it is an AI assistant acting for a named prospective tenant.
 
 ## 2. What Marta is not
 

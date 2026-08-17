@@ -84,7 +84,7 @@ export const copy = {
 						'Full report on every listing: available or gone, recording and transcript of every call',
 						'Viewing confirmations on WhatsApp — for you and for the agency, with each other\'s contacts',
 						'We present you as a reliable tenant (nómina, insurance, pets)',
-						'A real person steps in when a call needs one',
+						'Anything that needs a human shows up on your dashboard — you take it from there',
 						'Money-back guarantee',
 					],
 					btnText: 'Try free',
@@ -97,6 +97,7 @@ export const copy = {
 					features: [
 						'Everything in Blitz',
 						'Unlimited listings — send them as you find them, every day',
+						'A real person steps in where a call needs one — stubborn agents, tricky cases',
 						'Runs until you\'ve found your home — up to 90 days',
 					],
 					btnText: 'Try free',
@@ -295,7 +296,7 @@ export const copy = {
 						'Informe completo de cada anuncio: disponible o no, con grabación y transcripción de cada llamada',
 						'Confirmación de las visitas por WhatsApp — para ti y para la agencia, con los contactos de ambos',
 						'Te presentamos como inquilino fiable (nómina, seguro, mascotas)',
-						'Una persona real interviene cuando la llamada lo pide',
+						'Lo que necesite una persona aparece en tu panel — tú decides el siguiente paso',
 						'Garantía de devolución',
 					],
 					btnText: 'Pruébalo gratis',
@@ -308,6 +309,7 @@ export const copy = {
 					features: [
 						'Todo lo de Blitz',
 						'Anuncios ilimitados — envíalos según los encuentres, cada día',
+						'Una persona real interviene donde la llamada lo pide — agentes difíciles, casos complicados',
 						'Activo hasta que encuentres tu casa — hasta 90 días',
 					],
 					btnText: 'Pruébalo gratis',

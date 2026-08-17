@@ -22,7 +22,7 @@ export const PRICING_TIERS: Tier[] = [
 			'Full report on every listing: available or gone, recording and transcript of every call',
 			"Viewing confirmations on WhatsApp — for you and for the agency, with each other's contacts",
 			'We present you as a reliable tenant (nómina, insurance, pets)',
-			'A real person steps in when a call needs one',
+			'Anything that needs a human shows up on your dashboard — you take it from there',
 			'Money-back guarantee',
 		],
 		productPath: 'blitz',
@@ -35,6 +35,7 @@ export const PRICING_TIERS: Tier[] = [
 		features: [
 			'Everything in Blitz',
 			'Unlimited listings — send them as you find them, every day',
+			'A real person steps in where a call needs one — stubborn agents, tricky cases',
 			"Runs until you've found your home — up to 90 days",
 		],
 		// The FastSpring catalog still knows this product by its original slug;
