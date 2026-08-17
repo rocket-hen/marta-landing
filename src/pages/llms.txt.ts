@@ -22,7 +22,7 @@ export const GET: APIRoute = async () => {
 - [Homepage (English)](https://callmarta.com/): how it works, pricing, FAQ, demo call
 - [Homepage (Español)](https://callmarta.com/es/): lo mismo, en español
 - [How it works](https://callmarta.com/#how): send listings → Marta calls → viewings in your calendar
-- [Pricing](https://callmarta.com/#pricing): Blitz €49 (up to 15 listings), Hunter €99 (unlimited + monitoring), Concierge €399 (full service)
+- [Pricing](https://callmarta.com/#pricing): Blitz €49 (up to 10 listings, 1 month), Marathon €99 (unlimited listings, up to 90 days), Concierge €399 (full service until the contract is signed)
 - [Blog (English)](https://callmarta.com/blog/): guides on renting in Spain as a foreigner
 - [Blog (Español)](https://callmarta.com/es/blog/): guías sobre alquilar en España
 

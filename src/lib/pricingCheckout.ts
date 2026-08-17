@@ -1,5 +1,5 @@
 export interface Tier {
-	name: 'Blitz' | 'Hunter' | 'Concierge';
+	name: 'Blitz' | 'Marathon' | 'Concierge';
 	tagline: string;
 	/** Static caption under the FastSpring-rendered price — billing timing, not the amount itself. */
 	term: string;
@@ -15,41 +15,39 @@ export const PRICING_TIERS: Tier[] = [
 	{
 		name: 'Blitz',
 		tagline: 'You found the listings. Marta gets you inside.',
-		term: 'One-time fee — active for 3 months',
+		term: 'One-time fee — active for 1 month',
 		features: [
-			'Send up to 15 listings (one by one or as a list)',
-			'Calls in Spanish within hours',
-			'Full report within hours: status of every listing',
-			'Recordings & transcripts of every call',
-			'Viewings booked straight into your calendar',
+			'Up to 10 listings — send them one by one, or drop a whole file',
+			'Calls in Spanish within hours, retrying until someone picks up',
+			'Full report on every listing: available or gone, recording and transcript of every call',
+			"Viewing confirmations on WhatsApp — for you and for the agency, with each other's contacts",
 			'We present you as a reliable tenant (nómina, insurance, pets)',
-			'Real humans step in when needed',
+			'A real person steps in when a call needs one',
 			'Money-back guarantee',
 		],
 		productPath: 'blitz',
 		ctaLabel: 'Buy Blitz',
 	},
 	{
-		name: 'Hunter',
-		tagline: 'New listings get called in minutes — before anyone else replies.',
+		name: 'Marathon',
+		tagline: 'The whole hunt, until you move in.',
 		term: 'One-time fee — active until you find your home, up to 90 days',
 		features: [
 			'Everything in Blitz',
-			'Unlimited listings',
-			'Set a search filter — new listings enter the call queue automatically',
-			'Calls within minutes of publication',
-			'Retries + WhatsApp follow-up when nobody picks up',
-			'Reschedule or confirm viewings anytime',
+			'Unlimited listings — send them as you find them, every day',
+			"Runs until you've found your home — up to 90 days",
 		],
+		// The FastSpring catalog still knows this product by its original slug;
+		// renaming the path there would break existing checkout links.
 		productPath: 'hunter',
-		ctaLabel: 'Buy Hunter',
+		ctaLabel: 'Buy Marathon',
 	},
 	{
 		name: 'Concierge',
 		tagline: 'A human by your side until the contract is signed.',
 		term: 'One-time fee — charged once you sign a contract',
 		features: [
-			'Everything in Hunter',
+			'Everything in Marathon',
 			'Personal manager, priority queue',
 			'Price negotiation on your behalf',
 			'Help with documents & requisitos',

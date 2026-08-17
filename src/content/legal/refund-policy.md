@@ -26,9 +26,9 @@ If we miss that window, email us and **we refund your payment in full.**
 
 The guarantee covers delivery of the report. It does not guarantee that a viewing gets arranged, or that a landlord answers, responds, or accepts you as a tenant — those depend on people we don't control. It doesn't apply where the delay is caused by information you haven't given us, listings that turn out to be unusable (expired, duplicated, no contactable number), or a request outside the plan's scope.
 
-## 3. Hunter and Concierge
+## 3. Marathon and Concierge
 
-Hunter and Concierge don't carry the 24-hour guarantee above — Hunter runs for up to 90 days and Concierge is scoped individually, so a fixed delivery window doesn't apply the same way. Both are covered by the general case-by-case policy in Section 4 below.
+Marathon and Concierge don't carry the 24-hour guarantee above — Marathon runs for up to 90 days and Concierge is scoped individually, so a fixed delivery window doesn't apply the same way. Both are covered by the general case-by-case policy in Section 4 below.
 
 ## 4. Refunds outside the guarantee
 
@@ -43,4 +43,4 @@ Email [support@callmarta.com](mailto:support@callmarta.com) with your order deta
 
 ## 6. No subscriptions to cancel
 
-Blitz and Hunter are one-time purchases, not subscriptions — nothing renews automatically, so there's no recurring charge to cancel. Each plan simply runs until its term ends or you've found your home, whichever comes first.
+Blitz and Marathon are one-time purchases, not subscriptions — nothing renews automatically, so there's no recurring charge to cancel. Each plan simply runs until its term ends or you've found your home, whichever comes first.

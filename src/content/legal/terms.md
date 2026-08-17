@@ -44,19 +44,19 @@ You are responsible for what you ask us to say. You may not use Marta to contact
 
 | Plan | Price | What it includes |
 | --- | --- | --- |
-| **Blitz** | €49, one payment, valid for 3 months | Up to 15 listings you send us, called within hours, with a written report |
-| **Hunter** | €99, one payment, valid for 3 months | Unlimited listings and monitoring of new listings matching your brief, plus calls and reports, subject to the fair use provision below |
+| **Blitz** | €49, one payment, valid for 1 month | Up to 10 listings you send us, called within hours, with a written report |
+| **Marathon** | €99, one payment, valid for up to 90 days | Unlimited listings you send us, plus calls and reports, subject to the fair use provision below |
 | **Concierge** | €399, payable per signed contract | Hands-on search managed by our team, with a scope agreed with you in writing before we start |
 
 Prices are in euros and include applicable taxes unless stated otherwise at checkout. We may change prices; a change never affects an order already paid for.
 
-**Fair use (Hunter).** Listings are unlimited within reasonable personal use for one search. If your usage is far outside what one person's apartment search requires, we will tell you and agree next steps rather than stopping without warning.
+**Fair use (Marathon).** Listings are unlimited within reasonable personal use for one search. If your usage is far outside what one person's apartment search requires, we will tell you and agree next steps rather than stopping without warning.
 
-**Monitoring availability.** Automatic monitoring of new listings covers the major Spanish portals. Calling to listings you send us works anywhere in Spain.
+**Coverage.** Calling listings you send us works anywhere in Spain.
 
 ## 5. Plan duration — no subscriptions
 
-Blitz and Hunter are one-time purchases, not subscriptions. Nothing renews and there is nothing to cancel. Each plan runs for 3 months from purchase or until you have found your home, whichever comes first. If you find a flat yourself, congratulations — the plan simply ends with the search.
+Blitz and Marathon are one-time purchases, not subscriptions. Nothing renews and there is nothing to cancel. Each plan runs for its stated term from purchase — 1 month for Blitz, up to 90 days for Marathon — or until you have found your home, whichever comes first. If you find a flat yourself, congratulations — the plan simply ends with the search.
 
 ## 6. Right of withdrawal (consumers in the EU / EEA)
 

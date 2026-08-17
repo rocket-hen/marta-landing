@@ -13,8 +13,8 @@ import { PRICING_TIERS } from '../lib/pricingCheckout';
 		<div class="grid" data-pricing-grid>
 			{
 				PRICING_TIERS.map((tier) => (
-					<div class:list={['tier', 'card-hover', { highlight: tier.name === 'Hunter' }]}>
-						{tier.name === 'Hunter' && <div class="badge">Most Popular</div>}
+					<div class:list={['tier', 'card-hover', { highlight: tier.name === 'Marathon' }]}>
+						{tier.name === 'Marathon' && <div class="badge">Most Popular</div>}
 						<div class="tier-name">{tier.name}</div>
 						<p class="tagline">{tier.tagline}</p>
 						<div class="price-row">
@@ -35,7 +35,7 @@ import { PRICING_TIERS } from '../lib/pricingCheckout';
 						</ul>
 						<button
 							type="button"
-							class:list={['btn-slide-gradient', 'tier-btn', tier.name === 'Hunter' ? 'solid' : 'btn-slide-outline outline']}
+							class:list={['btn-slide-gradient', 'tier-btn', tier.name === 'Marathon' ? 'solid' : 'btn-slide-outline outline']}
 							data-buy={tier.productPath}
 							data-gtm-id={`checkout_${tier.name.toLowerCase()}_cta`}
 						>
