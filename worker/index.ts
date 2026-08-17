@@ -1,6 +1,5 @@
 import type { Env } from './env';
 import { handleWaitlist } from './waitlist';
-import { handleCreateCheckoutSession, handleStripeWebhook } from './stripe';
 import { maybeRedirectForLang, setLangCookie } from './lang';
 
 export default {
@@ -9,14 +8,6 @@ export default {
 
 		if (url.pathname === '/api/waitlist') {
 			return handleWaitlist(request, env);
-		}
-
-		if (url.pathname === '/api/create-checkout-session') {
-			return handleCreateCheckoutSession(request, env);
-		}
-
-		if (url.pathname === '/api/stripe-webhook') {
-			return handleStripeWebhook(request, env);
 		}
 
 		if (url.pathname === '/' || url.pathname === '/es/') {

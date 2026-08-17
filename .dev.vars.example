@@ -6,8 +6,3 @@
 RESEND_API_KEY=
 RESEND_SEGMENT_ID=
 MAIL_FROM=
-
-# See README.md "Pricing / Stripe checkout" for how to get these from the Stripe
-# Dashboard (Developers → API keys, Developers → Webhooks).
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
