@@ -7,14 +7,16 @@ interface Props {
 
 const { lang = 'en' } = Astro.props;
 const t = copy[lang].pricing;
-const prices = ['€49', '€99', '€399', lang === 'es' ? 'A medida' : 'Custom'];
-const outlines = [true, false, true, true];
-const tiers = t.tiers.map((tier, i) => ({
+const prices = ['€49', '€99', '€399'];
+const outlines = [true, false, true];
+const tiers = t.tiers.slice(0, 3).map((tier, i) => ({
 	...tier,
 	price: prices[i],
 	highlight: i === 1,
 	outline: outlines[i],
 }));
+const scale = t.tiers[3];
+const scaleChip = lang === 'es' ? 'Para equipos' : 'For teams';
 ---
 
 <section id="pricing" data-screen-label="Pricing" class="pricing">
@@ -58,6 +60,32 @@ const tiers = t.tiers.map((tier, i) => ({
 					</div>
 				))
 			}
+		</div>
+
+		<div class="reveal scale-bar card-hover">
+			<div class="scale-head">
+				<div class="scale-name-row">
+					<span class="scale-name">{scale.name}</span>
+					<span class="scale-chip">{scaleChip}</span>
+				</div>
+				<p class="scale-tagline">{scale.tagline}</p>
+			</div>
+			<ul class="scale-features">
+				{scale.features.map((f) => (
+					<li>
+						<span class="dash" aria-hidden="true">—</span>
+						<span>{f}</span>
+					</li>
+				))}
+			</ul>
+			<a
+				href="#pricing"
+				data-open-waitlist
+				data-gtm-id="pricing_scale_cta"
+				class="btn-slide-gradient btn-slide-outline scale-btn"
+			>
+				{scale.btnText}
+			</a>
 		</div>
 
 		<div class="reveal promise">
@@ -254,6 +282,77 @@ const tiers = t.tiers.map((tier, i) => ({
 		background: linear-gradient(to top, #000 50%, var(--accent) 50%);
 		border: 1px solid var(--accent);
 		color: var(--bg);
+	}
+
+	.scale-bar {
+		margin-top: 24px;
+		border: 1px solid var(--border);
+		background: var(--white);
+		padding: 30px 32px;
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		flex-wrap: wrap;
+	}
+
+	.scale-head {
+		flex: 0 1 240px;
+		min-width: 200px;
+	}
+
+	.scale-name-row {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 8px;
+	}
+
+	.scale-name {
+		font-size: 18px;
+	}
+
+	.scale-chip {
+		font-size: 11px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--muted);
+		border: 1px solid var(--border);
+		padding: 3px 8px;
+	}
+
+	.scale-tagline {
+		font-size: 14px;
+		line-height: 1.5;
+		color: var(--muted);
+		margin: 0;
+		text-wrap: pretty;
+	}
+
+	.scale-features {
+		flex: 1 1 340px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+		gap: 12px 28px;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 0;
+	}
+	.scale-features li {
+		font-size: 14px;
+	}
+
+	.scale-btn {
+		flex: 0 0 auto;
+		display: block;
+		text-align: center;
+		background: linear-gradient(to top, var(--ink) 50%, transparent 50%);
+		border: 1px solid var(--ink);
+		color: var(--ink);
+		padding: 12px 28px;
+		font-size: 14px;
+		font-weight: 500;
+		border-radius: 4px;
 	}
 
 	.promise {
