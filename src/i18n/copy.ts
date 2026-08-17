@@ -108,8 +108,8 @@ export const copy = {
 					note: '',
 					features: [
 						'Everything in Marathon',
-						'Personal manager, priority queue',
-						'Portal messages written by a person — for listings that hide their phone',
+						'A personal manager runs your search end to end — every call supervised, every viewing booked by a person',
+						'Priority queue',
 						'Price negotiation on your behalf',
 						'Help with documents & requisitos',
 						'Scam check on every listing',
@@ -319,8 +319,8 @@ export const copy = {
 					note: '',
 					features: [
 						'Todo lo de Marathon',
-						'Gestor personal, cola prioritaria',
-						'Mensajes al portal escritos por una persona — para anuncios sin teléfono',
+						'Un gestor personal lleva tu búsqueda de principio a fin — supervisa cada llamada y agenda las visitas',
+						'Cola prioritaria',
 						'Negociación del precio en tu nombre',
 						'Ayuda con documentos y requisitos',
 						'Comprobación de estafas en cada anuncio',

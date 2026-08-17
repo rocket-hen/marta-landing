@@ -48,7 +48,8 @@ export const PRICING_TIERS: Tier[] = [
 		term: 'One-time fee — charged once you sign a contract',
 		features: [
 			'Everything in Marathon',
-			'Personal manager, priority queue',
+			'A personal manager runs your search end to end — every call supervised, every viewing booked by a person',
+			'Priority queue',
 			'Price negotiation on your behalf',
 			'Help with documents & requisitos',
 			'Scam check on every listing',
