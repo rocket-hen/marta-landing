@@ -75,11 +75,11 @@ export const copy = {
 			tiers: [
 				{
 					name: 'Blitz',
-					term: 'for 1 month',
+					term: 'for 15 results',
 					tagline: 'You found the listings. Marta gets you inside.',
 					note: '',
 					features: [
-						'Up to 15 listings — send them one by one, or drop a whole file',
+						'Send listings one by one, or drop a whole file',
 						'Calls in Spanish within hours, retrying until someone picks up',
 						'Full report on every listing: available or gone, recording and transcript of every call',
 						'Viewing confirmations on WhatsApp — for you and for the agency, with each other\'s contacts',
@@ -90,14 +90,14 @@ export const copy = {
 				},
 				{
 					name: 'Marathon',
-					term: 'for 3 months',
+					term: 'for 100 results',
 					tagline: 'The whole hunt, until you move in.',
 					note: '',
 					features: [
 						'Everything in Blitz',
-						'Up to 100 listings — send them as you find them, every day',
+						'Send listings as you find them, every day',
 						'A real person steps in where a call needs one — stubborn agents, tricky cases',
-						'Runs until you\'ve found your home — up to 90 days',
+						'Runs until you\'ve found your home — no time limit',
 					],
 					btnText: 'Try free',
 				},
@@ -120,11 +120,11 @@ export const copy = {
 				{
 					name: 'Scale',
 					term: 'tailored to your volume',
-					tagline: 'Need more than 100 listings? Let\'s talk.',
+					tagline: 'Need more than 100 results? Let\'s talk.',
 					note: '',
 					features: [
 						'Everything in Marathon',
-						'Volume beyond 100 listings',
+						'Volume beyond 100 results',
 						'Custom terms for agencies and relocation teams',
 						'A direct line to our team',
 					],
@@ -164,7 +164,7 @@ export const copy = {
 			},
 			{
 				q: 'What if I find a flat myself?',
-				a: "Congrats — that's the goal! Blitz runs for 1 month and Marathon for up to 90 days — or until you're moved in, whichever comes first. Nothing to cancel, no strings.",
+				a: "Congrats — that's the goal! Plans are tied to results, not time: Blitz covers 15, Marathon 100 — and both run until you're moved in. Nothing to cancel, no strings.",
 			},
 		],
 		blog: {
@@ -299,11 +299,11 @@ export const copy = {
 			tiers: [
 				{
 					name: 'Blitz',
-					term: 'por 1 mes',
+					term: 'por 15 resultados',
 					tagline: 'Tú encontraste los anuncios. Marta te abre la puerta.',
 					note: '',
 					features: [
-						'Hasta 15 anuncios — envíalos uno a uno o sube un archivo entero',
+						'Envía los anuncios uno a uno o sube un archivo entero',
 						'Llamadas en español en cuestión de horas, con reintentos hasta que alguien conteste',
 						'Informe completo de cada anuncio: disponible o no, con grabación y transcripción de cada llamada',
 						'Confirmación de las visitas por WhatsApp — para ti y para la agencia, con los contactos de ambos',
@@ -314,14 +314,14 @@ export const copy = {
 				},
 				{
 					name: 'Marathon',
-					term: 'por 3 meses',
+					term: 'por 100 resultados',
 					tagline: 'Toda la búsqueda, hasta que te mudas.',
 					note: '',
 					features: [
 						'Todo lo de Blitz',
-						'Hasta 100 anuncios — envíalos según los encuentres, cada día',
+						'Envía anuncios según los encuentres, cada día',
 						'Una persona real interviene donde la llamada lo pide — agentes difíciles, casos complicados',
-						'Activo hasta que encuentres tu casa — hasta 90 días',
+						'Activo hasta que encuentres tu casa — sin límite de tiempo',
 					],
 					btnText: 'Pruébalo gratis',
 				},
@@ -344,11 +344,11 @@ export const copy = {
 				{
 					name: 'Scale',
 					term: 'según tu volumen',
-					tagline: '¿Necesitas más de 100 anuncios? Hablemos.',
+					tagline: '¿Necesitas más de 100 resultados? Hablemos.',
 					note: '',
 					features: [
 						'Todo lo de Marathon',
-						'Volumen por encima de 100 anuncios',
+						'Volumen por encima de 100 resultados',
 						'Condiciones a medida para agencias y equipos de relocation',
 						'Línea directa con nuestro equipo',
 					],
@@ -388,7 +388,7 @@ export const copy = {
 			},
 			{
 				q: '¿Y si encuentro piso por mi cuenta?',
-				a: '¡Enhorabuena — ese es el objetivo! Blitz dura 1 mes y Marathon hasta 90 días — o hasta que te mudes, lo que llegue antes. Nada que cancelar, sin ataduras.',
+				a: '¡Enhorabuena — ese es el objetivo! Los planes van por resultados, no por tiempo: Blitz cubre 15 y Marathon 100 — y ambos siguen activos hasta que te mudes. Nada que cancelar, sin ataduras.',
 			},
 		],
 		blog: {

@@ -21,9 +21,9 @@ export const PRICING_TIERS: Tier[] = [
 		name: 'Blitz',
 		priceDisplay: '€49',
 		tagline: 'You found the listings. Marta gets you inside.',
-		term: 'One-time fee — active for 1 month',
+		term: 'One-time fee — for 15 results',
 		features: [
-			'Up to 15 listings — send them one by one, or drop a whole file',
+			'Send listings one by one, or drop a whole file',
 			'Calls in Spanish within hours, retrying until someone picks up',
 			'Full report on every listing: available or gone, recording and transcript of every call',
 			"Viewing confirmations on WhatsApp — for you and for the agency, with each other's contacts",
@@ -37,12 +37,12 @@ export const PRICING_TIERS: Tier[] = [
 		name: 'Marathon',
 		priceDisplay: '€99',
 		tagline: 'The whole hunt, until you move in.',
-		term: 'One-time fee — active until you find your home, up to 90 days',
+		term: 'One-time fee — for 100 results',
 		features: [
 			'Everything in Blitz',
-			'Up to 100 listings — send them as you find them, every day',
+			'Send listings as you find them, every day',
 			'A real person steps in where a call needs one — stubborn agents, tricky cases',
-			"Runs until you've found your home — up to 90 days",
+			"Runs until you've found your home — no time limit",
 		],
 		// The FastSpring catalog still knows this product by its original slug;
 		// renaming the path there would break existing checkout links.
