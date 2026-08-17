@@ -1,19 +1,25 @@
 export interface Tier {
 	name: 'Blitz' | 'Marathon' | 'Concierge';
 	tagline: string;
-	/** Static caption under the FastSpring-rendered price — billing timing, not the amount itself. */
+	/** Static caption under the price — billing timing, not the amount itself. */
 	term: string;
 	features: string[];
+	/** Fixed display price. Stripe has no PricePreview-style directive — we're not
+	 *  running automatic_tax (no active Stripe Tax registration yet), so this is the
+	 *  literal, final amount, not a placeholder for a localized/computed one. */
+	priceDisplay: string;
 	productPath: string;
 	ctaLabel: string;
 }
 
-// FastSpring product paths — created in the live FastSpring catalog to match the flat-fee
-// tiers described on the homepage pricing section (src/components/Pricing.astro). Every
-// tier is a one-time product (Catalog → One-Time Products) — this business has no subscriptions.
+// Stripe product paths — match the `lookup_key` set on each Price in the Stripe catalog
+// (Products → one-time Prices) and the productPath the client sends to
+// POST /api/create-checkout-session. Every tier is a one-time Price — this business has
+// no subscriptions.
 export const PRICING_TIERS: Tier[] = [
 	{
 		name: 'Blitz',
+		priceDisplay: '€49',
 		tagline: 'You found the listings. Marta gets you inside.',
 		term: 'One-time fee — active for 1 month',
 		features: [
@@ -29,6 +35,7 @@ export const PRICING_TIERS: Tier[] = [
 	},
 	{
 		name: 'Marathon',
+		priceDisplay: '€99',
 		tagline: 'The whole hunt, until you move in.',
 		term: 'One-time fee — active until you find your home, up to 90 days',
 		features: [
@@ -44,6 +51,7 @@ export const PRICING_TIERS: Tier[] = [
 	},
 	{
 		name: 'Concierge',
+		priceDisplay: '€399',
 		tagline: 'A human by your side until the contract is signed.',
 		term: 'One-time fee — charged once you sign a contract',
 		features: [

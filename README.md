@@ -31,8 +31,9 @@ own beyond the one `/api/waitlist` route.
 - `src/styles/global.css` — design tokens (colors, fonts, shared button/link states) shared by
   every page.
 - `src/pages/pricing.astro` — real checkout page (`src/components/PricingCheckout.astro` for the
-  tier cards, `src/scripts/pricing-checkout.ts` for the FastSpring SBL wiring, `src/lib/pricingCheckout.ts`
-  for the tier content + FastSpring product paths). See "Pricing / FastSpring checkout" below. The
+  tier cards, `src/scripts/pricing-checkout.ts` for the Stripe.js embedded-checkout wiring,
+  `src/lib/pricingCheckout.ts` for the tier content + product paths, `worker/stripe.ts` for the
+  server-side Checkout Session + webhook routes). See "Pricing / Stripe checkout" below. The
   homepage's `src/components/Pricing.astro` section is unrelated — it still just opens the waitlist modal.
 - `worker/` — the Cloudflare Worker that fronts the deployed site (see "Waitlist backend" and
   "Deploying" below). Not part of the Astro build; has its own `tsconfig.json` since it runs on
@@ -118,28 +119,46 @@ dashboard → Workers & Pages → KV → create a namespace, then your Worker �
 - **KV namespace** (if bound) — raw JSON per submission, useful as a backup or for bulk export;
   browse via Cloudflare dashboard → Workers & Pages → KV → the namespace, or `wrangler kv key list`.
 
-## Pricing / FastSpring checkout
+## Pricing / Stripe checkout
 
 `/pricing` is a real checkout page (`src/pages/pricing.astro`), separate from the waitlist flow —
 the homepage's pricing section (`src/components/Pricing.astro`) is untouched and still opens the
-waitlist modal. Tiers (Blitz, Hunter, Concierge) are one-time products — no subscriptions, no
-monthly/yearly toggle — matching the copy on the homepage. Tier content and FastSpring product
-paths live in `src/lib/pricingCheckout.ts`; edit that file to change features, taglines, or swap
-in different product paths. The products themselves (name, price, tax category) are managed in
-the FastSpring dashboard (Catalog → One-Time Products), not in this repo.
+waitlist modal. Tiers (Blitz, Marathon, Concierge) are one-time Stripe Prices — no subscriptions,
+no monthly/yearly toggle — matching the copy on the homepage. Tier content + `productPath` values
+live in `src/lib/pricingCheckout.ts`; `priceDisplay` there is a **fixed, literal string** (`€49`
+etc.), not a placeholder — see "Tax" below for why. The Stripe Products/Prices themselves are
+managed in the Stripe Dashboard (Catalog), keyed by matching `lookup_key` = `productPath`; this
+repo never hardcodes a Price ID.
 
-We switched from Paddle to FastSpring after Paddle declined the account. FastSpring has no npm
-SDK — its Store Builder Library (SBL) is a plain `<script>` tag (`id="fsc-api"`, loaded directly
-in `pricing.astro`) that self-initializes as `window.fastspring`. Price display is handled
-declaratively by SBL's own directives (`data-fsc-item-path` + `data-fsc-item-price` on each price
-span in `PricingCheckout.astro` — no JS involved, SBL fills them in and keeps them localized to
-the visitor automatically). Client-side, `src/scripts/pricing-checkout.ts` only wires the buy
-buttons: `fastspring.builder.reset()` + `.add(productPath)` populates the embedded checkout
-container (`#fsc-embedded-checkout-container`, hidden until a tier is picked), which then renders
-FastSpring's own payment form and order-complete state inline — there's no `successUrl`/redirect
-step like Paddle had, because **FastSpring's docs are explicit that redirects aren't supported for
-embedded checkouts** (only popup checkouts); the container's own inline confirmation is the
-completion UI.
+We switched Paddle → FastSpring → Stripe (Paddle declined the account; FastSpring worked but the
+team wanted Stripe). Unlike FastSpring's all-client-side SBL widget, Stripe Checkout needs a
+server-side step: `worker/stripe.ts` exposes `POST /api/create-checkout-session` (looks up the
+Price by `lookup_key`, creates a `mode: 'payment', ui_mode: 'embedded_page'` Checkout Session, and
+returns its `client_secret` — never the secret key) and `POST /api/stripe-webhook` (signature-
+verified fulfillment). Client-side, `src/scripts/pricing-checkout.ts` loads Stripe.js
+(`<script is:inline src="https://js.stripe.com/dahlia/stripe.js">` in `pricing.astro` — there's no
+npm package for the vanilla-JS client, only server-side), calls `stripe.createEmbeddedCheckoutPage()`
+with a `fetchClientSecret` that POSTs to `/api/create-checkout-session`, and mounts the result into
+`#checkout`. Switching tiers destroys the previous embedded-checkout instance and creates a fresh
+Session — a Session is tied to the line item it was created with, Stripe.js can't reuse one.
+
+**Fulfillment is webhook-driven, not page-driven** — `checkout.session.completed` and
+`checkout.session.async_payment_succeeded` (gated on `payment_status !== 'unpaid'`) trigger a
+best-effort team notification email via Resend (same pattern as the waitlist welcome email; there's
+no order/CRM backend in this repo, Stripe's own Dashboard is the order system of record). Never
+move that logic to the `/welcome` return page — Stripe's own docs are explicit that a customer can
+pay successfully and never load the return page, silently dropping the order.
+
+**Tax**: Stripe is *not* a merchant of record here — unlike Paddle/FastSpring, VAT/sales-tax
+compliance is on us, not Stripe. `automatic_tax` is deliberately **off** (no active Stripe Tax
+registration exists yet — turning it on without one silently collects $0 tax while looking
+correctly configured). Prices are fixed, tax-inclusive-by-assumption amounts until that changes.
+Relatedly, **Managed Payments is explicitly disabled** (`managed_payments: { enabled: false }` in
+`worker/stripe.ts`) — it's a separate, newer Stripe feature that also makes Stripe the merchant of
+record ("Sold through Link", tax/disputes/support all handled by Stripe) and is *enabled by default*
+on new accounts; leaving it on would silently reintroduce the same MoR situation the fixed-price
+decision was meant to opt out of, and Checkout Session creation fails outright without it unless
+every Product has a `tax_code` set.
 
 ### Environment variables
 
@@ -147,36 +166,40 @@ Copy `.env.example` to `.env` (gitignored) and fill in:
 
 | Variable | Value |
 | :-- | :-- |
-| `PUBLIC_FASTSPRING_STOREFRONT` | The storefront + embedded checkout path, e.g. `callmarta.test.onfastspring.com/embedded-pricing` (test store) or `callmarta.onfastspring.com/embedded-pricing` (live, once verified). Find it under Checkouts → Embedded Checkouts → your checkout → "Place on your website". |
+| `PUBLIC_STRIPE_PUBLISHABLE_KEY` | Client-side, safe to expose — Stripe Dashboard → Developers → API keys. `pk_test_...` for sandbox, `pk_live_...` once live. |
+
+`.dev.vars` (gitignored, for `npm run preview`/`wrangler dev`) also needs:
+
+| Variable | Value |
+| :-- | :-- |
+| `STRIPE_SECRET_KEY` | Server-side only, genuinely secret — Dashboard → Developers → API keys. `sk_test_...` / `sk_live_...`. |
+| `STRIPE_WEBHOOK_SECRET` | Server-side only — Dashboard → Developers → Webhooks → your endpoint → "Signing secret" (`whsec_...`). Required to create/verify a webhook endpoint pointed at `https://<your-domain>/api/stripe-webhook` first; see "Before this goes live" below. |
 
 Astro/Vite only expose `PUBLIC_`-prefixed vars to client-side code — that prefix is required, not
-a style choice. These are inlined into the client bundle at **build time** (`npm run build`), not
-read from the Worker's runtime `env` — so they must be set under Cloudflare's Worker
-**Settings → Build → Variables and secrets** (the build-time ones), *not* the top-level
-**Settings → Variables and secrets** section (that one is runtime-only and Vite never sees it —
-setting the vars there silently does nothing for `PUBLIC_`-prefixed values). Setting or changing
-them doesn't rebuild automatically; trigger a new build (push a commit) afterwards for the change
-to take effect.
-
-There's no separate secret API key involved on the client side — FastSpring's embedded checkout
-doesn't need one. If a server-side integration (webhooks, the Contacts/Orders REST API) is added
-later, that key is a genuinely secret credential and never belongs in this repo, the Worker, or
-client code — same rule as the Resend API key in the waitlist backend above.
+a style choice. `PUBLIC_STRIPE_PUBLISHABLE_KEY` is inlined into the client bundle at **build time**
+(`npm run build`), not read from the Worker's runtime `env` — so it must be set under Cloudflare's
+Worker **Settings → Build → Variables and secrets** (the build-time ones), *not* the top-level
+**Settings → Variables and secrets** section (that one is runtime-only and Vite never sees it).
+`STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` are the opposite: genuine runtime secrets, read via
+`env.X` inside the Worker, and belong in the top-level **Settings → Variables and secrets** as
+**Secrets**, alongside `RESEND_API_KEY` — never in `wrangler.jsonc` (that file is committed).
+Setting or changing the build variable doesn't rebuild automatically; trigger a new build (push a
+commit) afterwards for the change to take effect.
 
 ### Before this goes live
 
-- **Whitelisted website domains**: FastSpring Dashboard → Checkouts → Embedded Checkouts → your
-  checkout → domain whitelist. Embedded checkout refuses to load on domains not listed here —
-  `callmarta.com` and `localhost:4321` are both whitelisted for the test store; add the production
-  domain again on the live store once it exists. Domain changes take 15–20 minutes to propagate.
-- **Store verification / going live**: the store starts in test mode (checklist item "Go Live!" in
-  the FastSpring dashboard home). Real payments can't complete until that verification passes —
-  until then, checkout renders and shows real prices, but a real payment won't complete. Once live,
-  `PUBLIC_FASTSPRING_STOREFRONT` needs to be repointed from the `*.test.onfastspring.com` domain to
-  the live one.
-- **Product tax category**: all three tiers are set to `SW054002 Cloud Services - SaaS - Services
-  agreement` — the closest fit for a calling/booking service with no better-matching category.
-  Revisit if FastSpring flags it during verification.
+- **Live-mode Products/Prices**: the Stripe Dashboard's test/live modes have separate catalogs —
+  the test-mode Products created for sandbox testing don't carry over. Recreate them in live mode
+  (or use the Dashboard's "Copy to live mode" action on each test Product), matching the same
+  `lookup_key` values (`blitz`, `hunter`, `concierge` — the FastSpring-era slug is kept for
+  `hunter`/Marathon to avoid touching checkout code for a rename).
+- **Live webhook endpoint**: `POST /api/stripe-webhook` needs its own live-mode registration
+  (Dashboard → Developers → Webhooks → Add endpoint → the production URL), which generates a
+  separate `whsec_...` — swap `STRIPE_WEBHOOK_SECRET` in Cloudflare when switching to live.
+- **Live secret/publishable keys**: swap `sk_test_.../pk_test_...` for `sk_live_.../pk_live_...`
+  in both Cloudflare's runtime secrets and the Build variable.
+- **Tax**: register for Stripe Tax (or handle VAT/sales-tax compliance some other way) before
+  relying on the fixed prices being correct for every buyer's jurisdiction — see "Tax" above.
 
 ## Deploying
 

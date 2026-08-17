@@ -28,3 +28,8 @@ pnpm-debug.log*
 
 # local-only blog writing rules/references — not for the repo
 blog-writing/
+
+# Claude Code skill cache (npx skills add) — local dev tooling, not site code
+.agents/
+.claude/skills/
+skills-lock.json
