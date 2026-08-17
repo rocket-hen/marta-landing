@@ -93,7 +93,7 @@ This section matters, so we set it out plainly.
 - **Recording.** Calls may be recorded and transcribed so that we can report the outcome to our customer accurately, resolve disputes about what was agreed, and maintain quality. Where required, the recipient is informed at the start of the call and may ask us not to record or to end the call.
 - **Retention.** Audio recordings are kept for 30 days and then deleted. Transcripts and structured outcome notes are kept for 12 months.
 - **No sale of data.** We do not sell, rent or share call data or landlord contact details with third parties for their own marketing.
-- **Opting out.** A landlord or agent who does not wish to be contacted again can tell the assistant during the call, or email us at privacy@callmarta.com. We will add the number to an internal suppression list and will not call it again on behalf of any customer. The suppression list stores only the number and the date of the request.
+- **Opting out.** A landlord or agent who does not wish to be contacted again can tell the assistant during the call, or email us at privacy@callmarta.com. We will add the number to an internal suppression list and will not call or message it again on behalf of any customer. The suppression list stores only the number and the date of the request.
 
 ## 6. Who we share data with
 
@@ -106,7 +106,7 @@ We use a small number of service providers who process data only on our document
 - **Hosting and workflow infrastructure** — running our website and internal automation
 - **Listing data retrieval** — obtaining publicly advertised property details
 - **Payment processing** — handled by a PCI-DSS compliant provider; we never receive your full card number
-- **Email and messaging delivery** — sending reports, receipts and service notices
+- **Email and messaging delivery** — sending reports, receipts and service notices, including viewing confirmations sent over WhatsApp (operated by Meta Platforms), which contain the appointment details and the contact name and phone number each party needs to reach the other
 - **Calendar services** — only where you choose to connect a calendar
 - **Analytics and advertising measurement** — see Section 11
 
