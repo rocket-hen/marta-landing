@@ -20,3 +20,13 @@ Consult these guides before working on related tasks:
 - [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
 - [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
 - [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+
+## Pricing & the app
+
+The landing sells nothing. `/pricing` cards deep-link to
+`app.callmarta.com/register?plan=<key>`; purchases happen inside the app
+(Stripe embedded checkout + webhook fulfillment live in the `marta` repo).
+The homepage's pricing section opens the waitlist modal instead — two
+different CTAs on purpose. Names/prices/limits live in `src/lib/plans.ts`,
+the display mirror of `marta/app/domain/plans.py` — change one, check the
+other.
