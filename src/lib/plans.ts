@@ -13,13 +13,21 @@ export interface PlanRef {
 	key: 'blitz' | 'marathon' | 'concierge';
 	name: string;
 	priceEur: number;
+	/** How many results the plan covers — mirror of the app catalog's limit. */
+	resultLimit: number;
 }
 
 export const PLAN_REFS: PlanRef[] = [
-	{ key: 'blitz', name: 'Blitz', priceEur: 49 },
-	{ key: 'marathon', name: 'Marathon', priceEur: 99 },
-	{ key: 'concierge', name: 'Concierge', priceEur: 399 },
+	{ key: 'blitz', name: 'Blitz', priceEur: 49, resultLimit: 15 },
+	{ key: 'marathon', name: 'Marathon', priceEur: 99, resultLimit: 100 },
+	{ key: 'concierge', name: 'Concierge', priceEur: 399, resultLimit: 100 },
 ];
+
+export const planRef = (key: PlanRef['key']): PlanRef => {
+	const ref = PLAN_REFS.find((p) => p.key === key);
+	if (!ref) throw new Error(`unknown plan ${key}`);
+	return ref;
+};
 
 /** Where a pricing card sends people: registration, remembering their pick. */
 export const registerUrl = (key: PlanRef['key']) => `${APP_URL}/register?plan=${key}`;

@@ -8,7 +8,7 @@ interface Props {
 
 const { lang = 'en' } = Astro.props;
 const t = copy[lang].pricing;
-const prices = ['€49', '€99', '€399'];
+const prices = PLAN_REFS.map((p) => `€${p.priceEur}`);
 const outlines = [true, false, true];
 const tiers = t.tiers.slice(0, 3).map((tier, i) => ({
 	...tier,

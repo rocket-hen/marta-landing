@@ -1,3 +1,4 @@
+import { PLAN_REFS } from '../lib/plans';
 import type { APIRoute } from 'astro';
 import { getPostsForLang, postSlug } from '../lib/blog';
 
@@ -22,7 +23,7 @@ export const GET: APIRoute = async () => {
 - [Homepage (English)](https://callmarta.com/): how it works, pricing, FAQ, demo call
 - [Homepage (Español)](https://callmarta.com/es/): lo mismo, en español
 - [How it works](https://callmarta.com/#how): send listings → Marta calls → viewings in your calendar
-- [Pricing](https://callmarta.com/#pricing): Blitz €49 (up to 15 listings, 1 month), Marathon €99 (up to 100 listings, up to 90 days), Concierge €399 (full service until the contract is signed), Scale (custom volume — contact sales)
+- [Pricing](https://callmarta.com/#pricing): ${PLAN_REFS.map((p) => `${p.name} €${p.priceEur}`).join(', ')}, Scale (custom volume — contact sales)
 - [Blog (English)](https://callmarta.com/blog/): guides on renting in Spain as a foreigner
 - [Blog (Español)](https://callmarta.com/es/blog/): guías sobre alquilar en España
 

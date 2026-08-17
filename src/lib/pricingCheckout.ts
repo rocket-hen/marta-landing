@@ -1,9 +1,8 @@
-import { PLAN_REFS } from './plans';
+import { planRef } from './plans';
 
-const price = (key: 'blitz' | 'marathon' | 'concierge') =>
-	'€' + PLAN_REFS.find((p) => p.key === key)!.priceEur;
-const name = (key: 'blitz' | 'marathon' | 'concierge') =>
-	PLAN_REFS.find((p) => p.key === key)!.name;
+const price = (key: 'blitz' | 'marathon' | 'concierge') => '€' + planRef(key).priceEur;
+const name = (key: 'blitz' | 'marathon' | 'concierge') => planRef(key).name;
+const results = (key: 'blitz' | 'marathon' | 'concierge') => planRef(key).resultLimit;
 
 export interface Tier {
 	key: 'blitz' | 'marathon' | 'concierge';
@@ -12,25 +11,19 @@ export interface Tier {
 	/** Static caption under the price — billing timing, not the amount itself. */
 	term: string;
 	features: string[];
-	/** Fixed display price. Stripe has no PricePreview-style directive — we're not
-	 *  running automatic_tax (no active Stripe Tax registration yet), so this is the
-	 *  literal, final amount, not a placeholder for a localized/computed one. */
 	priceDisplay: string;
-	productPath: string;
 	ctaLabel: string;
 }
 
-// Stripe product paths — match the `lookup_key` set on each Price in the Stripe catalog
-// (Products → one-time Prices) and the productPath the client sends to
-// POST /api/create-checkout-session. Every tier is a one-time Price — this business has
-// no subscriptions.
+// Display content only: purchases happen in the app (the cards deep-link to
+// registration), so nothing here names a payment product.
 export const PRICING_TIERS: Tier[] = [
 	{
 		key: 'blitz',
 		name: name('blitz'),
 		priceDisplay: price('blitz'),
 		tagline: 'You found the listings. Marta gets you inside.',
-		term: 'One-time fee — for 15 results',
+		term: `One-time fee — for ${results('blitz')} results`,
 		features: [
 			'Send listings one by one, or drop a whole file',
 			'Calls in Spanish within hours, retrying until someone picks up',
@@ -39,7 +32,6 @@ export const PRICING_TIERS: Tier[] = [
 			'We present you as a reliable tenant (nómina, insurance, pets)',
 			'Money-back guarantee',
 		],
-		productPath: 'blitz',
 		ctaLabel: 'Get started',
 	},
 	{
@@ -47,16 +39,13 @@ export const PRICING_TIERS: Tier[] = [
 		name: name('marathon'),
 		priceDisplay: price('marathon'),
 		tagline: 'The whole hunt, until you move in.',
-		term: 'One-time fee — for 100 results',
+		term: `One-time fee — for ${results('marathon')} results`,
 		features: [
 			'Everything in Blitz',
 			'Send listings as you find them, every day',
 			'A real person steps in where a call needs one — stubborn agents, tricky cases',
 			"Runs until you've found your home — no time limit",
 		],
-		// The FastSpring catalog still knows this product by its original slug;
-		// renaming the path there would break existing checkout links.
-		productPath: 'hunter',
 		ctaLabel: 'Get started',
 	},
 	{
@@ -74,7 +63,6 @@ export const PRICING_TIERS: Tier[] = [
 			'Scam check on every listing',
 			'Support until you sign',
 		],
-		productPath: 'concierge',
 		ctaLabel: 'Talk to us',
 	},
 ];

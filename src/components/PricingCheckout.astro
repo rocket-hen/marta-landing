@@ -44,13 +44,6 @@ import { registerUrl } from '../lib/plans';
 			}
 		</div>
 
-
-		<div class="checkout-panel" data-checkout-panel hidden>
-			<button type="button" class="back-link" data-checkout-back>
-				<span aria-hidden="true">←</span> Back to plans
-			</button>
-			<div id="checkout"></div>
-		</div>
 	</div>
 	<p class="sales-note">
 		Need more than 100 listings — an agency or a relocation team?
@@ -239,34 +232,7 @@ import { registerUrl } from '../lib/plans';
 		display: none;
 	}
 
-	.checkout-panel {
-		max-width: 560px;
-		margin: 0 auto;
-		border: 1px solid var(--border);
-		background: var(--bg);
-		padding: 32px;
-	}
-	.checkout-panel[hidden] {
-		display: none;
-	}
 
-	.back-link {
-		display: inline-flex;
-		align-items: center;
-		gap: 6px;
-		margin-bottom: 24px;
-		padding: 0;
-		border: none;
-		background: none;
-		font-family: 'Inter', sans-serif;
-		font-size: 13px;
-		font-weight: 500;
-		color: var(--muted);
-		cursor: pointer;
-	}
-	.back-link:hover {
-		color: var(--accent);
-	}
 </style>
 
 <style>
