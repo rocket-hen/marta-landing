@@ -19,7 +19,7 @@ export interface PlanRef {
 
 export const PLAN_REFS: PlanRef[] = [
 	{ key: 'blitz', name: 'Blitz', priceEur: 49, resultLimit: 15 },
-	{ key: 'marathon', name: 'Marathon', priceEur: 99, resultLimit: 100 },
+	{ key: 'marathon', name: 'Marathon', priceEur: 99, resultLimit: 50 },
 	{ key: 'concierge', name: 'Concierge', priceEur: 399, resultLimit: 100 },
 ];
 
