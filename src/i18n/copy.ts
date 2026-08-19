@@ -90,7 +90,7 @@ export const copy = {
 				},
 				{
 					name: 'Marathon',
-					term: 'for 100 results',
+					term: 'for 50 results',
 					tagline: 'The whole hunt, until you move in.',
 					note: '',
 					features: [
@@ -164,7 +164,7 @@ export const copy = {
 			},
 			{
 				q: 'What if I find a flat myself?',
-				a: "Congrats — that's the goal! Plans are tied to results, not time: Blitz covers 15, Marathon 100 — and both run until you're moved in. Nothing to cancel, no strings.",
+				a: "Congrats — that's the goal! Plans are tied to results, not time: Blitz covers 15, Marathon 50 — and both run until you're moved in. Nothing to cancel, no strings.",
 			},
 		],
 		blog: {
@@ -314,7 +314,7 @@ export const copy = {
 				},
 				{
 					name: 'Marathon',
-					term: 'por 100 resultados',
+					term: 'por 50 resultados',
 					tagline: 'Toda la búsqueda, hasta que te mudas.',
 					note: '',
 					features: [
@@ -388,7 +388,7 @@ export const copy = {
 			},
 			{
 				q: '¿Y si encuentro piso por mi cuenta?',
-				a: '¡Enhorabuena — ese es el objetivo! Los planes van por resultados, no por tiempo: Blitz cubre 15 y Marathon 100 — y ambos siguen activos hasta que te mudes. Nada que cancelar, sin ataduras.',
+				a: '¡Enhorabuena — ese es el objetivo! Los planes van por resultados, no por tiempo: Blitz cubre 15 y Marathon 50 — y ambos siguen activos hasta que te mudes. Nada que cancelar, sin ataduras.',
 			},
 		],
 		blog: {
