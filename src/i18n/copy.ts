@@ -283,17 +283,7 @@ export const copy = {
 			realCall: {
 				eyebrow: 'Hear a real call',
 				h2: "Don't take my word for it. Listen.",
-				p: "One of my calls from last week, anonymised and recorded with the agent's permission. Spanish on the left, English on the right.",
-				listingLabel: 'Piso en Ruzafa, Valencia · Agencia Mediterráneo',
-				resultNote: 'Result: I booked the viewing for Thursday 17:30. Recording and transcript are in your dashboard.',
-				transcript: [
-					{ who: 'Marta', es: 'Buenas tardes, soy Marta, una asistente de inteligencia artificial. Llamo de parte de un inquilino interesado en el piso de la calle Sueca.', en: "Good afternoon, I'm Marta, an AI assistant. I'm calling on behalf of a tenant interested in the flat on Calle Sueca." },
-					{ who: 'Agente / Agent', es: '¿De parte de quién? Ah, vale. Sí, sigue disponible.', en: "On whose behalf? Ah, fine. Yes, it's still available." },
-					{ who: 'Marta', es: 'Perfecto. Antes de nada, ¿aceptan mascotas? Mi cliente tiene un perro pequeño.', en: 'Perfect. First of all, do you accept pets? My client has a small dog.' },
-					{ who: 'Agente / Agent', es: 'Perro pequeño sí, sin problema. Lo que pedimos es nómina y un aval o seguro de impago.', en: 'A small dog is fine, no problem. What we ask for is a payslip and a guarantor or rent insurance.' },
-					{ who: 'Marta', es: 'Lo tiene: contrato indefinido y seguro de impago contratado. ¿Le viene bien el jueves a partir de las 17:00?', en: 'He has both: a permanent contract and rent insurance in place. Does Thursday from 5pm work for you?' },
-					{ who: 'Agente / Agent', es: 'El jueves a las 17:30 perfecto. ¿Me pasa su nombre y teléfono?', en: 'Thursday at 5:30 is perfect. Can I take his name and phone number?' },
-				],
+				p: "Recorded with the agent's permission. I introduce myself as an AI assistant on every call.",
 			},
 			about: {
 				kicker: 'About me',
@@ -816,17 +806,7 @@ export const copy = {
 			realCall: {
 				eyebrow: 'Escucha una llamada real',
 				h2: 'No me creas: escúchalo.',
-				p: 'Una de mis llamadas de la semana pasada, anonimizada y grabada con permiso del agente.',
-				listingLabel: 'Piso en Ruzafa, Valencia · Agencia Mediterráneo',
-				resultNote: 'Resultado: reservé la visita para el jueves a las 17:30. La grabación y la transcripción están en tu panel.',
-				transcript: [
-					{ who: 'Marta', es: 'Buenas tardes, soy Marta, una asistente de inteligencia artificial. Llamo de parte de un inquilino interesado en el piso de la calle Sueca.', en: "Good afternoon, I'm Marta, an AI assistant. I'm calling on behalf of a tenant interested in the flat on Calle Sueca." },
-					{ who: 'Agente / Agent', es: '¿De parte de quién? Ah, vale. Sí, sigue disponible.', en: "On whose behalf? Ah, fine. Yes, it's still available." },
-					{ who: 'Marta', es: 'Perfecto. Antes de nada, ¿aceptan mascotas? Mi cliente tiene un perro pequeño.', en: 'Perfect. First of all, do you accept pets? My client has a small dog.' },
-					{ who: 'Agente / Agent', es: 'Perro pequeño sí, sin problema. Lo que pedimos es nómina y un aval o seguro de impago.', en: 'A small dog is fine, no problem. What we ask for is a payslip and a guarantor or rent insurance.' },
-					{ who: 'Marta', es: 'Lo tiene: contrato indefinido y seguro de impago contratado. ¿Le viene bien el jueves a partir de las 17:00?', en: 'He has both: a permanent contract and rent insurance in place. Does Thursday from 5pm work for you?' },
-					{ who: 'Agente / Agent', es: 'El jueves a las 17:30 perfecto. ¿Me pasa su nombre y teléfono?', en: 'Thursday at 5:30 is perfect. Can I take his name and phone number?' },
-				],
+				p: 'Grabada con permiso del agente. Me presento como asistente de IA en todas las llamadas.',
 			},
 			about: {
 				kicker: 'Sobre mí',

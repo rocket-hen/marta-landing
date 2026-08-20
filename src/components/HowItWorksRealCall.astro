@@ -1,5 +1,6 @@
 ---
 import { copy, type Lang } from '../i18n/copy';
+import { TRANSCRIPTS } from '../i18n/transcripts';
 
 interface Props {
 	lang?: Lang;
@@ -7,36 +8,75 @@ interface Props {
 
 const { lang = 'en' } = Astro.props;
 const t = copy[lang].howItWorksPage.realCall;
+const demoCopy = copy[lang].demo;
+
+function mm(seconds: number): string {
+	const m = Math.floor(seconds / 60);
+	const s = Math.floor(seconds % 60);
+	return `${m}:${String(s).padStart(2, '0')}`;
+}
 ---
 
-<section id="real-call" data-screen-label="Real call" class="call">
+<section id="real-call" data-screen-label="Live demo" class="call">
 	<div class="wrap">
-		<div class="head">
-			<div class="reveal intro">
-				<div class="eyebrow">{t.eyebrow}</div>
-				<h2>{t.h2}</h2>
-				<p>{t.p}</p>
-			</div>
+		<div class="reveal intro">
+			<div class="eyebrow">{t.eyebrow}</div>
+			<h2>{t.h2}</h2>
+			<p>{t.p}</p>
 		</div>
 
-		<div class="reveal panel">
-			<div class="panel-head">
-				<span>{t.listingLabel}</span>
+		<div class="reveal player">
+			<div class="player-row">
+				<button type="button" class="play-btn" data-play data-gtm-id="how_it_works_demo_play" aria-label="Play call">▶</button>
+				<div class="wave-col">
+					<div class="wave-meta">
+						<span>Chalet en Calle Creta</span>
+						<span class="wave-time" data-time>0:00 / 3:28</span>
+					</div>
+					<div
+						class="wave"
+						data-wave
+						role="slider"
+						tabindex="0"
+						aria-label="Seek playback position"
+						aria-valuemin="0"
+						aria-valuemax="208"
+						aria-valuenow="0"
+					>
+					</div>
+					<audio data-audio preload="metadata">
+						<source src="/audio/call.ogg" type="audio/ogg; codecs=opus" />
+						<source src="/audio/call.mp3" type="audio/mpeg" />
+					</audio>
+				</div>
 			</div>
-			<div class="lines">
+
+			<div class="transcript-panel">
+				<div class="transcript-head">
+					<div class="eyebrow small">{demoCopy.transcriptLabel}</div>
+					<div class="lang-switch">
+						<button type="button" data-transcript-lang="es" data-gtm-id="how_it_works_transcript_lang_es">ES</button>
+						<button type="button" data-transcript-lang="en" data-gtm-id="how_it_works_transcript_lang_en">EN</button>
+					</div>
+				</div>
+				<div class="transcript" data-transcript></div>
+			</div>
+
+			<details class="full-transcript">
+				<summary>{demoCopy.readFullTranscript}</summary>
 				{
-					t.transcript.map((line) => (
-						<div class="line">
-							<div class="who">{line.who}</div>
-							<div class="tline">
-								<div class="text es">{line.es}</div>
-								<div class="text en">{line.en}</div>
-							</div>
+					(['es', 'en'] as const).map((transcriptLang) => (
+						<div class="full-transcript-block">
+							<div class="full-transcript-lang">{demoCopy.transcriptLangLabels[transcriptLang]}</div>
+							{TRANSCRIPTS[transcriptLang].map((line) => (
+								<p>
+									<span class="full-transcript-time">[{mm(line.time)}]</span> <strong>{line.who}:</strong> {line.text}
+								</p>
+							))}
 						</div>
 					))
 				}
-			</div>
-			<div class="result-note">{t.resultNote}</div>
+			</details>
 		</div>
 	</div>
 </section>
@@ -53,12 +93,9 @@ const t = copy[lang].howItWorksPage.realCall;
 		padding: 100px 24px;
 	}
 
-	.head {
-		margin-bottom: 48px;
-	}
-
 	.intro {
-		flex: 1 1 420px;
+		max-width: 620px;
+		margin-bottom: 48px;
 	}
 
 	.eyebrow {
@@ -70,6 +107,13 @@ const t = copy[lang].howItWorksPage.realCall;
 		margin-bottom: 16px;
 		font-weight: 500;
 	}
+	.eyebrow.small {
+		font-size: 11px;
+		letter-spacing: 0.18em;
+		margin-bottom: 0;
+		opacity: 1;
+		color: var(--border);
+	}
 
 	h2 {
 		font-family: var(--font-display);
@@ -78,7 +122,6 @@ const t = copy[lang].howItWorksPage.realCall;
 		line-height: 1.05;
 		letter-spacing: -0.04em;
 		margin: 0 0 20px;
-		max-width: 620px;
 	}
 
 	.intro p {
@@ -90,63 +133,192 @@ const t = copy[lang].howItWorksPage.realCall;
 		text-wrap: pretty;
 	}
 
-	.panel {
+	.player {
 		border: 1px solid rgba(250, 250, 248, 0.18);
 		border-radius: 12px;
 		background: rgba(250, 250, 248, 0.04);
 		overflow: hidden;
+	}
+
+	.player-row {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		padding: 24px 28px;
+		border-bottom: 1px solid rgba(250, 250, 248, 0.14);
+		flex-wrap: wrap;
+	}
+
+	.play-btn {
+		background: linear-gradient(to top, #6e2f19 50%, var(--accent) 50%);
+		width: 56px;
+		height: 56px;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+		font-size: 14px;
+		color: var(--bg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: none;
+	}
+
+	.wave-col {
+		flex: 1 1 260px;
+		min-width: 220px;
+	}
+
+	.wave-meta {
+		font-size: 14px;
+		margin-bottom: 8px;
+		display: flex;
+		justify-content: space-between;
+		gap: 16px;
+		color: var(--border);
+	}
+
+	.wave-time {
+		font-family: var(--font-mono);
+		font-size: 12px;
+	}
+
+	.wave {
+		--wave-off: rgba(250, 250, 248, 0.28);
+		height: 44px;
+		display: flex;
+		align-items: center;
+		gap: 3px;
+		width: 100%;
+		cursor: pointer;
+		outline: none;
+	}
+	.wave:focus-visible {
+		box-shadow: 0 0 0 2px rgba(176, 81, 46, 0.6);
+	}
+
+	.wave :global(.bar) {
+		flex: 1 1 0;
+		min-height: 3px;
+		background: rgba(250, 250, 248, 0.28);
+		border-radius: 2px;
+		transform-origin: center bottom;
+		transition: background 0.25s linear;
+		pointer-events: none;
+	}
+
+	.transcript-panel {
 		padding: 28px;
 	}
 
-	.panel-head {
-		font-size: 14px;
-		color: var(--border);
+	.transcript-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		margin-bottom: 22px;
 	}
 
-	.lines {
+	.lang-switch {
+		display: flex;
+		gap: 2px;
+		border: 1px solid rgba(250, 250, 248, 0.25);
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	.lang-switch button {
+		border: none;
+		background: transparent;
+		color: var(--border);
+		font-size: 11px;
+		letter-spacing: 0.08em;
+		padding: 8px 14px;
+		cursor: pointer;
+		font-family: 'Inter', sans-serif;
+	}
+	.lang-switch button[data-active='true'] {
+		background: var(--bg);
+		color: var(--ink);
+	}
+
+	.transcript {
 		display: flex;
 		flex-direction: column;
 		gap: 22px;
+		max-height: 260px;
+		overflow-y: auto;
+		scroll-behavior: smooth;
 	}
 
-	.who {
+	.transcript :global(.line) {
+		display: flex;
+		gap: 14px;
+		align-items: baseline;
+		transition: opacity 0.35s ease;
+	}
+	.transcript :global(.who) {
 		font-size: 10px;
-		letter-spacing: 0.16em;
+		letter-spacing: 0.14em;
 		text-transform: uppercase;
-		color: var(--accent);
-		margin-bottom: 8px;
+		flex: none;
+		width: 64px;
+	}
+	.transcript :global(.text) {
+		font-size: 14px;
+		line-height: 1.55;
+		color: var(--bg);
+		transition: font-weight 0.2s ease;
 	}
 
-	.tline {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 28px;
-	}
-	@media (max-width: 640px) {
-		.tline {
-			grid-template-columns: 1fr;
-			gap: 6px;
-		}
+	.full-transcript {
+		border-top: 1px solid rgba(250, 250, 248, 0.14);
+		padding: 16px 28px;
 	}
 
-	.text {
-		font-size: 15px;
-		line-height: 1.6;
+	.full-transcript summary {
+		cursor: pointer;
+		font-size: 13px;
+		color: var(--border);
+		list-style: none;
 	}
-	.text.es {
+	.full-transcript summary::-webkit-details-marker {
+		display: none;
+	}
+	.full-transcript summary:hover {
 		color: var(--bg);
 	}
-	.text.en {
-		color: #a8a39a;
-		font-weight: 300;
+
+	.full-transcript-block {
+		margin-top: 16px;
+	}
+	.full-transcript-block + .full-transcript-block {
+		margin-top: 24px;
+		padding-top: 16px;
+		border-top: 1px solid rgba(250, 250, 248, 0.14);
 	}
 
-	.result-note {
-		margin-top: 28px;
-		padding-top: 22px;
-		border-top: 1px solid rgba(250, 250, 248, 0.14);
+	.full-transcript-lang {
+		font-size: 11px;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--accent);
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+
+	.full-transcript p {
 		font-size: 13px;
-		color: #a8a39a;
+		line-height: 1.6;
+		color: var(--border);
+		margin: 0 0 8px;
+	}
+	.full-transcript p strong {
+		color: var(--bg);
+	}
+
+	.full-transcript-time {
+		font-family: var(--font-mono);
+		font-size: 11px;
+		color: var(--accent);
 	}
 </style>

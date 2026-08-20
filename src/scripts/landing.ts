@@ -253,6 +253,11 @@ function initDemoPlayer(getLang: () => Lang) {
 		return audioEl!.duration > 0 && Number.isFinite(audioEl!.duration) ? audioEl!.duration : FALLBACK_DUR;
 	}
 
+	// Sections can theme the unplayed wave bars (e.g. a dark section wants a
+	// translucent white instead of the default light-mode grey) by setting
+	// --wave-off on the .wave element itself.
+	const waveOffColor = waveEl ? getComputedStyle(waveEl).getPropertyValue('--wave-off').trim() || '#D8D4CC' : '#D8D4CC';
+
 	function renderWave() {
 		const t = audioEl!.currentTime;
 		const dur = duration();
@@ -260,7 +265,7 @@ function initDemoPlayer(getLang: () => Lang) {
 		barEls.forEach((bar, i) => {
 			const b = audioBars[i];
 			const on = dur > 0 && (i + 0.5) / audioBars.length <= t / dur;
-			bar.style.background = on ? ACCENT : '#D8D4CC';
+			bar.style.background = on ? ACCENT : waveOffColor;
 			bar.style.animation = playing
 				? `audioBounce ${b.dur}s ease-in-out ${b.del}s infinite alternate`
 				: 'none';
