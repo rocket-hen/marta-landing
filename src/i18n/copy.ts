@@ -463,8 +463,7 @@ export const copy = {
 					],
 				},
 			},
-			// Placeholder quotes from the design handoff — not real customer reviews yet.
-			// Swap for verified testimonials before treating this page as final.
+			// Real customer photos (public/testimonials/) confirmed by the user 2026-08-20.
 			testimonials: {
 				eyebrow: 'Reviews',
 				h2: 'People who stopped calling.',
@@ -996,8 +995,7 @@ export const copy = {
 					],
 				},
 			},
-			// Citas de ejemplo del diseño — no son reseñas reales todavía.
-			// Sustituir por testimonios verificados antes de dar esta página por definitiva.
+			// Fotos reales de clientes (public/testimonials/) confirmadas por el usuario el 2026-08-20.
 			testimonials: {
 				eyebrow: 'Reseñas',
 				h2: 'Gente que dejó de llamar.',

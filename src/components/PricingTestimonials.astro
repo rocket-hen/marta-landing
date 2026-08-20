@@ -18,11 +18,9 @@ const t = copy[lang].pricingPage.testimonials;
 		<div class="strip" data-review-strip>
 			<div class="track">
 				{
-					t.reviews.map((r) => (
+					t.reviews.map((r, i) => (
 						<div class="card">
-							<div class="avatar" aria-hidden="true">
-								{r.name.charAt(0)}
-							</div>
+							<img class="avatar" src={`/testimonials/${lang}-${i}.webp`} alt="" width="44" height="44" loading="lazy" />
 							<div class="who">
 								<div class="name">{r.name}</div>
 								<div class="city">{r.city}</div>
@@ -103,14 +101,7 @@ const t = copy[lang].pricingPage.testimonials;
 		width: 44px;
 		height: 44px;
 		border-radius: 50%;
-		background: var(--accent);
-		color: var(--bg);
-		font-family: var(--font-display);
-		font-size: 17px;
-		font-weight: 800;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		object-fit: cover;
 	}
 
 	.who {
