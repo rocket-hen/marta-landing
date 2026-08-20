@@ -227,6 +227,10 @@ function initDemoPlayer(getLang: () => Lang) {
 	const playBtn = demo.querySelector<HTMLButtonElement>('[data-play]');
 	const timeEl = demo.querySelector<HTMLElement>('[data-time]');
 	const transcriptEl = demo.querySelector<HTMLElement>('[data-transcript]');
+	// Dual mode shows Spanish and English side by side on every line instead of
+	// a single language behind a toggle — the two transcripts are index-aligned
+	// (same order, same `time` per line), so they can be zipped directly.
+	const dualTranscript = transcriptEl?.hasAttribute('data-transcript-dual') ?? false;
 	if (!audioEl) return null;
 
 	// Fallback shown until the browser reports the real duration (metadata load).
@@ -304,16 +308,58 @@ function initDemoPlayer(getLang: () => Lang) {
 		});
 	}
 
+	function buildDualTranscriptRows() {
+		if (!transcriptEl) return;
+		transcriptEl.innerHTML = '';
+		const esLines = TRANSCRIPTS.es;
+		const enLines = TRANSCRIPTS.en;
+		rowEls = esLines.map((esLine, i) => {
+			const enLine = enLines[i];
+			const row = document.createElement('div');
+			row.className = 'line';
+
+			const who = document.createElement('div');
+			who.className = 'who';
+			who.style.color = esLine.color;
+			who.textContent = esLine.who;
+
+			const tline = document.createElement('div');
+			tline.className = 'tline';
+
+			const esText = document.createElement('div');
+			esText.className = 'text text-es';
+			esText.textContent = esLine.text;
+
+			const enText = document.createElement('div');
+			enText.className = 'text text-en';
+			enText.textContent = enLine?.text ?? '';
+
+			tline.append(esText, enText);
+			row.append(who, tline);
+			transcriptEl!.appendChild(row);
+			return row;
+		});
+	}
+
 	function renderTranscript(autoScroll = true) {
 		if (!transcriptEl) return;
 		const t = audioEl!.currentTime;
-		const lang = getLang();
-		const lines = TRANSCRIPTS[lang];
+		// Both languages share the same timing, so either array works for the
+		// active-line lookup in dual mode.
+		const lines = dualTranscript ? TRANSCRIPTS.es : TRANSCRIPTS[getLang()];
 
-		if (builtForLang !== lang) {
-			buildTranscriptRows(lines);
-			builtForLang = lang;
-			lastScrolledLine = -1; // rows are fresh (scrollTop is back to 0) — force a re-scroll
+		if (dualTranscript) {
+			if (builtForLang === null) {
+				buildDualTranscriptRows();
+				builtForLang = 'es';
+			}
+		} else {
+			const lang = getLang();
+			if (builtForLang !== lang) {
+				buildTranscriptRows(lines);
+				builtForLang = lang;
+				lastScrolledLine = -1; // rows are fresh (scrollTop is back to 0) — force a re-scroll
+			}
 		}
 
 		// Lines carry their own real start time (matches /audio/call.mp3) — the
@@ -326,7 +372,12 @@ function initDemoPlayer(getLang: () => Lang) {
 
 		rowEls.forEach((row, i) => {
 			row.style.opacity = activeLine === -1 ? '1' : i === activeLine ? '1' : '0.4';
-			(row.querySelector('.text') as HTMLElement).style.fontWeight = activeLine === i ? '500' : '300';
+			const weight = activeLine === i ? '500' : '300';
+			if (dualTranscript) {
+				row.querySelectorAll<HTMLElement>('.text').forEach((el) => (el.style.fontWeight = weight));
+			} else {
+				(row.querySelector('.text') as HTMLElement).style.fontWeight = weight;
+			}
 		});
 
 		// Scroll only the transcript box itself — never scrollIntoView(), which walks
