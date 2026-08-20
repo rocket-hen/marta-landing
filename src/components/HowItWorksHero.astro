@@ -1,0 +1,211 @@
+---
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].howItWorksPage.hero;
+
+const icons = [
+	'<path d="M22 2 11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path>',
+	'<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path>',
+	'<rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><polyline points="8 14 10.5 16.5 15.5 12"></polyline>',
+];
+---
+
+<section data-screen-label="How It Works Hero" class="hero">
+	<div class="orb" aria-hidden="true"></div>
+	<div class="wrap">
+		<div class="reveal eyebrow">{t.eyebrow}</div>
+		<h1 class="reveal">{t.h1}</h1>
+		<p class="reveal lede" style="transition-delay: 0.1s;">{t.p}</p>
+		<div class="reveal cta-row" style="transition-delay: 0.2s;">
+			<button type="button" class="btn-slide-gradient btn-hero-cta cta-btn" data-open-waitlist data-gtm-id="how_it_works_hero_cta">
+				{t.cta}
+			</button>
+			<a href="#real-call" class="link-snap demo-link">{t.demoLink}</a>
+		</div>
+
+		<div class="reveal rail" style="transition-delay: 0.3s;">
+			{
+				t.steps.map((st, i) => (
+					<>
+						<div class="rail-step">
+							<div class:list={['circle', { dark: i === 1 }]}>
+								<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke={i === 1 ? 'var(--bg)' : 'var(--ink)'} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" set:html={icons[i]} />
+							</div>
+							<div class="step-label">{st.label}</div>
+							<div class="step-title">{st.title}</div>
+						</div>
+						{i < t.steps.length - 1 && (
+							<div class="rail-arrow">
+								<div class="line" />
+								<svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#B0A99F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 4 17 12 7 20" /></svg>
+							</div>
+						)}
+					</>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		border-bottom: 1px solid var(--border);
+		position: relative;
+		overflow: hidden;
+		background: var(--white);
+	}
+
+	.orb {
+		position: absolute;
+		top: -30%;
+		right: -10%;
+		width: 46vw;
+		height: 46vw;
+		background: radial-gradient(circle, rgba(176, 81, 46, 0.13) 0%, rgba(255, 255, 255, 0) 70%);
+		border-radius: 50%;
+		filter: blur(60px);
+		pointer-events: none;
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 152px 24px 88px;
+		position: relative;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 28px;
+		font-weight: 500;
+	}
+
+	h1 {
+		font-family: var(--font-display);
+		font-size: clamp(42px, 6.4vw, 68px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 28px;
+		max-width: 880px;
+		text-wrap: pretty;
+	}
+
+	.lede {
+		font-size: 18px;
+		line-height: 1.6;
+		color: var(--fmuted);
+		max-width: 520px;
+		margin: 0 0 40px;
+		text-wrap: pretty;
+	}
+
+	.cta-row {
+		display: flex;
+		gap: 24px;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.cta-btn {
+		background: linear-gradient(to top, #6e2f19 50%, var(--accent) 50%);
+		color: var(--bg);
+		font-size: 16px;
+		font-weight: 500;
+		padding: 14px 28px;
+		border: none;
+		cursor: pointer;
+		border-radius: 4px;
+	}
+
+	.demo-link {
+		font-size: 14px;
+		color: var(--ink);
+		border-bottom: 1px solid var(--accent);
+		padding-bottom: 2px;
+	}
+
+	.rail {
+		margin-top: 72px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 8px;
+		flex-wrap: wrap;
+	}
+	@media (max-width: 780px) {
+		.rail {
+			flex-direction: column;
+			align-items: center;
+			gap: 0;
+			max-width: 260px;
+		}
+		.rail-arrow {
+			width: 60px !important;
+			margin: 14px 0 !important;
+			transform: rotate(90deg);
+		}
+	}
+
+	.rail-step {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 16px;
+		width: 190px;
+	}
+
+	.circle {
+		width: 116px;
+		height: 116px;
+		border-radius: 50%;
+		border: 1px solid #dcd8d0;
+		background: var(--bg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.circle.dark {
+		border-color: var(--ink);
+		background: var(--ink);
+	}
+
+	.step-label {
+		font-family: var(--font-mono);
+		font-size: 10px;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: #a8a39a;
+		margin-bottom: -8px;
+	}
+
+	.step-title {
+		font-size: 14px;
+		line-height: 1.45;
+		color: var(--ink);
+		text-wrap: pretty;
+	}
+
+	.rail-arrow {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		width: 90px;
+		margin-top: 58px;
+	}
+
+	.line {
+		flex: 1;
+		height: 1px;
+		background: #dcd8d0;
+	}
+</style>

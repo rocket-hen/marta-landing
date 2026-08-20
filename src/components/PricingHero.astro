@@ -1,0 +1,93 @@
+---
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].pricingPage.hero;
+---
+
+<section data-screen-label="Pricing hero" class="hero">
+	<div class="orb orb-a" aria-hidden="true"></div>
+	<div class="orb orb-b" aria-hidden="true"></div>
+	<div class="wrap">
+		<div class="reveal eyebrow">{t.eyebrow}</div>
+		<h1 class="reveal">{t.h1}</h1>
+		<p class="reveal lede" style="transition-delay: 0.1s;">
+			{t.p}
+			<br /><br />
+			{t.p2}
+		</p>
+	</div>
+</section>
+
+<style>
+	.hero {
+		position: relative;
+		overflow: hidden;
+		border-bottom: 1px solid var(--border);
+		background: var(--bg);
+	}
+
+	.orb {
+		position: absolute;
+		border-radius: 50%;
+		z-index: 0;
+		pointer-events: none;
+	}
+	.orb-a {
+		top: -25%;
+		left: -8%;
+		width: 46vw;
+		height: 46vw;
+		background: radial-gradient(circle, rgba(176, 81, 46, 0.15) 0%, rgba(250, 250, 248, 0) 70%);
+		filter: blur(60px);
+	}
+	.orb-b {
+		bottom: -35%;
+		right: -10%;
+		width: 54vw;
+		height: 54vw;
+		background: radial-gradient(circle, rgba(107, 124, 74, 0.15) 0%, rgba(250, 250, 248, 0) 70%);
+		filter: blur(80px);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 149px 24px 84px;
+		position: relative;
+		z-index: 1;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 28px;
+		font-weight: 500;
+	}
+
+	h1 {
+		font-family: var(--font-display);
+		font-size: clamp(44px, 6.4vw, 68px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 28px;
+		max-width: 760px;
+		color: var(--ink);
+	}
+
+	.lede {
+		font-size: 18px;
+		line-height: 1.6;
+		color: var(--fmuted);
+		max-width: 560px;
+		margin: 0;
+		text-wrap: pretty;
+	}
+</style>

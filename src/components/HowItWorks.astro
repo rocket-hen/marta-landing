@@ -8,6 +8,7 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const t = copy[lang].howItWorks;
 const steps = t.steps;
+const howItWorksHref = lang === 'es' ? '/es/how-it-works/' : '/how-it-works/';
 ---
 
 <section id="how" data-screen-label="How it works" class="how">
@@ -24,6 +25,12 @@ const steps = t.steps;
 					</div>
 				))
 			}
+		</div>
+		<div class="reveal closing">
+			<div class="closing-text">{t.closingText}</div>
+			<a href={howItWorksHref} class="btn-slide-gradient btn-slide-outline closing-cta" data-gtm-id="how_it_works_see_more">
+				{t.closingCta}
+			</a>
 		</div>
 	</div>
 </section>
@@ -92,5 +99,35 @@ const steps = t.steps;
 		color: var(--muted);
 		margin: 0;
 		text-wrap: pretty;
+	}
+
+	.closing {
+		margin-top: 56px;
+		padding-top: 32px;
+		border-top: 1px solid var(--border);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 24px;
+	}
+
+	.closing-text {
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--muted);
+		max-width: 480px;
+		text-wrap: pretty;
+	}
+
+	.closing-cta {
+		background: linear-gradient(to top, var(--ink) 50%, transparent 50%);
+		border: 1px solid var(--ink);
+		border-radius: 4px;
+		padding: 14px 26px;
+		color: var(--ink);
+		font-size: 15px;
+		font-weight: 500;
+		flex: none;
 	}
 </style>

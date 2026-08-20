@@ -20,6 +20,26 @@ const t = copy[lang].humanTeam;
 				{t.p}
 			</p>
 		</div>
+		<div class="reveal visual">
+			<div class="chips">
+				<div class="chip">
+					<div class="chip-label">{t.aiLabel}</div>
+					<div class="chip-text">{t.aiText}</div>
+				</div>
+				<div class="chip">
+					<div class="chip-label">{t.humanLabel}</div>
+					<div class="chip-text">{t.humanText}</div>
+				</div>
+			</div>
+			<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow"><line x1="12" y1="4" x2="12" y2="20"></line><polyline points="6 14 12 20 18 14"></polyline></svg>
+			<div class="result">
+				<div class="result-row">
+					<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B7CE8A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+					<span class="result-label">{t.resultLabel}</span>
+				</div>
+				<div class="result-text">{t.resultText}</div>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -70,5 +90,74 @@ const t = copy[lang].humanTeam;
 		margin: 0;
 		max-width: 480px;
 		text-wrap: pretty;
+	}
+
+	.visual {
+		flex: 1 1 420px;
+		min-width: 300px;
+		transition-delay: 0.1s;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.chips {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		gap: 14px;
+	}
+
+	.chip {
+		border: 1px solid rgba(250, 250, 248, 0.22);
+		background: rgba(250, 250, 248, 0.05);
+		padding: 18px 20px;
+	}
+
+	.chip-label {
+		font-size: 10px;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
+		color: #a8a39a;
+		margin-bottom: 6px;
+	}
+
+	.chip-text {
+		font-size: 15px;
+		line-height: 1.45;
+		color: var(--bg);
+	}
+
+	.arrow {
+		flex: none;
+		align-self: center;
+	}
+
+	.result {
+		border: 1px solid rgba(90, 124, 45, 0.55);
+		background: rgba(90, 124, 45, 0.16);
+		padding: 22px 20px;
+	}
+
+	.result-row {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-bottom: 8px;
+	}
+
+	.result-label {
+		font-size: 10px;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
+		color: #b7ce8a;
+	}
+
+	.result-text {
+		font-family: var(--font-display);
+		font-size: 22px;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		line-height: 1.15;
+		color: var(--bg);
 	}
 </style>

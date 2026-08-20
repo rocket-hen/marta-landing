@@ -1,0 +1,265 @@
+---
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].pricingPage.statuses;
+
+const toneClass = (tone: string | undefined) =>
+	tone === 'green' ? 'green' : tone === 'red' ? 'red' : 'grey';
+---
+
+<section id="statuses" data-screen-label="Statuses" class="statuses">
+	<div class="wrap">
+		<div class="reveal intro">
+			<div class="eyebrow">{t.eyebrow}</div>
+			<h2>{t.h2}</h2>
+			<p>{t.p1}</p>
+			<p>{t.p2}</p>
+		</div>
+
+		<div class="groups">
+			{
+				t.groups.map((g, i) => (
+					<div class="reveal group" style={`transition-delay: ${i * 0.05}s;`}>
+						<div class="group-kicker">{g.kicker}</div>
+						<div class="group-title">{g.title}</div>
+						<p class="group-body">{g.body}</p>
+						<div class="group-charge">{g.charge}</div>
+					</div>
+				))
+			}
+		</div>
+
+		<div class="reveal table-wrap">
+			<table>
+				<thead>
+					<tr>
+						{t.table.headers.map((h) => <th>{h}</th>)}
+					</tr>
+				</thead>
+				<tbody>
+					{
+						t.table.rows.map((r) =>
+							'group' in r ? (
+								<tr class="row-group">
+									<td colspan="3">{r.group}</td>
+								</tr>
+							) : (
+								<tr>
+									<td class="outcome-cell">{r.outcome}</td>
+									<td>
+										{r.chip && <span class:list={['chip', toneClass(r.tone)]}>{r.chip}</span>}
+									</td>
+									<td class:list={['result-cell', r.result === 'Yes' || r.result === 'Sí' ? 'yes' : 'no']}>{r.result}</td>
+								</tr>
+							),
+						)
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
+
+<style>
+	.statuses {
+		border-bottom: 1px solid var(--border);
+		background: var(--white);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 100px 24px;
+	}
+
+	.intro {
+		max-width: 640px;
+		margin-bottom: 56px;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-family: var(--font-display);
+		font-size: clamp(34px, 4.6vw, 52px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 24px;
+	}
+
+	.intro p {
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0 0 16px;
+		text-wrap: pretty;
+	}
+	.intro p:last-child {
+		margin-bottom: 0;
+	}
+
+	.groups {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 24px;
+	}
+
+	.group {
+		border: 1px solid var(--border);
+		background: var(--bg);
+		padding: 28px;
+		display: flex;
+		flex-direction: column;
+	}
+	.group:nth-child(1) {
+		border-color: rgba(90, 124, 45, 0.35);
+		background: rgba(90, 124, 45, 0.08);
+	}
+
+	.group-kicker {
+		font-family: var(--font-mono);
+		font-size: 11px;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		margin-bottom: 14px;
+	}
+	.group:nth-child(1) .group-kicker {
+		color: #3f6216;
+	}
+	.group:nth-child(2) .group-kicker {
+		color: #8a3d22;
+	}
+	.group:nth-child(3) .group-kicker {
+		color: var(--fmuted);
+	}
+
+	.group-title {
+		font-size: 19px;
+		font-weight: 500;
+		letter-spacing: -0.01em;
+		margin-bottom: 10px;
+	}
+
+	.group-body {
+		font-size: 14px;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0 0 20px;
+		text-wrap: pretty;
+	}
+
+	.group-charge {
+		margin-top: auto;
+		padding-top: 16px;
+		border-top: 1px solid var(--border);
+		font-size: 13px;
+		font-weight: 500;
+	}
+	.group:nth-child(1) .group-charge {
+		border-top-color: rgba(90, 124, 45, 0.3);
+		color: #3f6216;
+	}
+	.group:nth-child(2) .group-charge {
+		color: #8a3d22;
+	}
+	.group:nth-child(3) .group-charge {
+		color: var(--fmuted);
+	}
+
+	.table-wrap {
+		margin-top: 64px;
+		border: 1px solid var(--border);
+		background: var(--white);
+		overflow-x: auto;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 14px;
+		min-width: 640px;
+	}
+
+	th {
+		text-align: left;
+		font-family: var(--font-display);
+		font-size: 11px;
+		font-weight: 800;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: var(--muted);
+		padding: 16px 20px;
+		border-bottom: 1px solid var(--border);
+		background: var(--bg);
+	}
+
+	td {
+		padding: 16px 20px;
+		border-bottom: 1px solid #f0eee9;
+		vertical-align: top;
+		line-height: 1.5;
+	}
+
+	.outcome-cell {
+		color: var(--fmuted);
+	}
+
+	.row-group td {
+		font-family: var(--font-display);
+		font-size: 11px;
+		font-weight: 800;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: var(--ink);
+		background: var(--bg);
+		padding: 14px 20px;
+	}
+
+	.chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		padding: 5px 10px;
+		border-radius: 999px;
+		white-space: nowrap;
+	}
+	.chip.green {
+		background: rgba(90, 124, 45, 0.18);
+		color: #3f6216;
+	}
+	.chip.red {
+		background: rgba(176, 81, 46, 0.14);
+		color: #8a3d22;
+	}
+	.chip.grey {
+		background: #f0eee9;
+		color: var(--fmuted);
+	}
+
+	.result-cell {
+		font-weight: 500;
+		white-space: nowrap;
+	}
+	.result-cell.yes {
+		color: #3f6216;
+	}
+	.result-cell.no {
+		color: #8a3d22;
+	}
+</style>

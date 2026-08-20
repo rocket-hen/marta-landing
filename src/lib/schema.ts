@@ -18,16 +18,27 @@ export function organizationSchema(lang: Lang) {
 
 export function serviceSchema(lang: Lang) {
 	const p = copy[lang].pricing;
-	const prices = PLAN_REFS.map((p) => String(p.priceEur));
-	// Only tiers with a fixed price become Offers — Scale is priced per
+	// Only the fixed-price plans become Offers — Scale is priced per
 	// conversation with sales, and an Offer without a price is invalid.
-	const offers = p.tiers.slice(0, prices.length).map((tier, i) => ({
-		'@type': 'Offer',
-		name: tier.name,
-		price: prices[i],
-		priceCurrency: 'EUR',
-		description: `${tier.tagline} ${tier.features.slice(0, 3).join('. ')}. ${tier.term}.`,
-	}));
+	const offers = [
+		...p.cols.map((col, i) => {
+			const ref = PLAN_REFS[i];
+			return {
+				'@type': 'Offer',
+				name: ref.name,
+				price: String(ref.priceEur),
+				priceCurrency: 'EUR',
+				description: `${col.blurb} ${p.shared.slice(0, 2).join('. ')}.`,
+			};
+		}),
+		{
+			'@type': 'Offer',
+			name: PLAN_REFS[2].name,
+			price: String(PLAN_REFS[2].priceEur),
+			priceCurrency: 'EUR',
+			description: `${p.concierge.blurb} ${p.concierge.features.slice(0, 3).join('. ')}.`,
+		},
+	];
 	return {
 		'@context': 'https://schema.org',
 		'@type': 'Service',

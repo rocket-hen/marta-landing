@@ -1,5 +1,6 @@
 ---
 import { copy, type Lang } from '../i18n/copy';
+import { APP_URL } from '../lib/plans';
 
 interface Props {
 	activeNav?: 'blog';
@@ -12,6 +13,9 @@ const t = copy[lang].nav;
 const home = lang === 'es' ? '/es/' : '/';
 const prefix = isHome ? '' : home;
 const blogHref = lang === 'es' ? '/es/blog/' : '/blog/';
+const howItWorksHref = lang === 'es' ? '/es/how-it-works/' : '/how-it-works/';
+const howHref = isHome ? '#how' : howItWorksHref;
+const signInHref = `${APP_URL}/login`;
 ---
 
 <header id="site-header">
@@ -19,10 +23,11 @@ const blogHref = lang === 'es' ? '/es/blog/' : '/blog/';
 		<a href={home} class="logo">marta<span class="dot"></span></a>
 		<input type="checkbox" id="nav-toggle" class="nav-toggle" />
 		<div class="links">
-			<a href={`${prefix}#how`} class="nav-link">{t.how}</a>
+			<a href={howHref} class="nav-link">{t.how}</a>
 			<a href={`${prefix}#pricing`} class="nav-link">{t.pricing}</a>
 			<a href={`${prefix}#faq`} class="nav-link">FAQ</a>
 			<a href={blogHref} class="nav-link" class:list={[{ blog: activeNav === 'blog' }]}>Blog</a>
+			<a href={signInHref} class="nav-link">{t.signIn}</a>
 		</div>
 		<div class="actions">
 			{

@@ -1,10 +1,15 @@
 /**
  * The landing's plan catalog — names, prices, and where each card sends
- * people. One place: Pricing.astro, PricingCheckout.astro, schema.ts and
- * pricingCheckout.ts all draw from here, so a price change edits one line.
+ * people. One place: Pricing.astro, PricingGrid.astro and schema.ts all
+ * draw from here, so a price change edits one line.
  *
  * The app keeps the operational mirror in marta/app/domain/plans.py (limits,
  * Stripe lookup keys, the trial) — when this file changes, check that one.
+ *
+ * `key` is the app-side identifier (goes in the registration URL) and stays
+ * stable. `name` is display-only and can drift from the app's own naming —
+ * as of the 2026-08 redesign it reads "Focus"/"Full Hunt" here while the app
+ * repo may still say "Blitz"/"Marathon" until that repo is updated too.
  */
 
 export const APP_URL = 'https://app.callmarta.com';
@@ -18,8 +23,8 @@ export interface PlanRef {
 }
 
 export const PLAN_REFS: PlanRef[] = [
-	{ key: 'blitz', name: 'Blitz', priceEur: 49, resultLimit: 15 },
-	{ key: 'marathon', name: 'Marathon', priceEur: 99, resultLimit: 50 },
+	{ key: 'blitz', name: 'Focus', priceEur: 49, resultLimit: 15 },
+	{ key: 'marathon', name: 'Full Hunt', priceEur: 99, resultLimit: 50 },
 	{ key: 'concierge', name: 'Concierge', priceEur: 399, resultLimit: 100 },
 ];
 

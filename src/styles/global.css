@@ -96,6 +96,7 @@ svg[hidden] {
 .btn-slide-gradient:hover { background-position: bottom !important; }
 .btn-slide-gradient:active { transform: scale(0.96) !important; }
 .btn-slide-outline:hover { color: var(--bg) !important; }
+.btn-slide-invert:hover { color: var(--ink) !important; }
 
 .link-snap {
 	transition: transform 0.15s ease-out, opacity 0.2s ease !important;

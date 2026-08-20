@@ -1,0 +1,200 @@
+---
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].howItWorksPage.resolved;
+const pricingHref = lang === 'es' ? '/es/pricing/#statuses' : '/pricing/#statuses';
+
+const toneChip = (tone: string) =>
+	tone === 'green' ? { bg: 'rgba(90,124,45,0.18)', color: '#3F6216' } : { bg: 'rgba(176,81,46,0.14)', color: '#8A3D22' };
+---
+
+<section data-screen-label="Resolved listing" class="resolved">
+	<div class="wrap">
+		<div class="reveal copy">
+			<div class="kicker">{t.kicker}</div>
+			<h2>{t.h2}</h2>
+			<p>{t.p1}</p>
+			<p>{t.p2}</p>
+			<a href={pricingHref} class="link-snap link">{lang === 'es' ? 'Qué es un Resultado y cómo cobro ▸' : 'What is a Result, and how I charge ▸'}</a>
+		</div>
+		<div class="reveal panel" style="transition-delay: 0.1s;">
+			<div class="panel-inner">
+				<div class="panel-head">{t.panelTitle}</div>
+				{
+					t.outcomes.map((o) => {
+						const c = o.status === 'In progress' || o.status === 'En curso' ? { bg: '#F0EEE9', color: '#4A463F' } : toneChip(o.tone);
+						return (
+							<div class="row">
+								<div class="row-main">
+									<div class="row-title">{o.title}</div>
+									<div class="row-note">{o.note}</div>
+								</div>
+								<span class="chip" style={`background:${c.bg};color:${c.color};`}>
+									{o.tone !== 'plain' && (
+										<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+									)}
+									{o.status}
+								</span>
+							</div>
+						);
+					})
+				}
+				<div class="totals">
+					<span><strong>{t.counts.sent}</strong>{t.sentLabel}</span>
+					<span class="arrow">→</span>
+					<span><strong>{t.counts.results}</strong>{t.resultsLabel}</span>
+					<span class="arrow">→</span>
+					<span class="green"><strong>{t.counts.booked}</strong>{t.bookedLabel}</span>
+					<span class="arrow">→</span>
+					<span><strong>{t.counts.progress}</strong>{t.progressLabel}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.resolved {
+		border-bottom: 1px solid var(--border);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 96px 24px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 56px;
+	}
+
+	.copy {
+		flex: 1 1 340px;
+		min-width: 300px;
+	}
+
+	.kicker {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-family: var(--font-display);
+		font-size: clamp(34px, 4.6vw, 52px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 24px;
+		max-width: 460px;
+	}
+
+	.copy p {
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--muted);
+		max-width: 420px;
+		margin: 0 0 20px;
+		text-wrap: pretty;
+	}
+
+	.link {
+		display: inline-block;
+		margin-top: 2px;
+		font-size: 14px;
+		color: var(--ink);
+		border-bottom: 1px solid var(--accent);
+		padding-bottom: 2px;
+	}
+
+	.panel {
+		flex: 1 1 400px;
+		min-width: 300px;
+	}
+
+	.panel-inner {
+		border: 1px solid var(--border);
+		border-radius: 10px;
+		background: var(--white);
+		overflow: hidden;
+	}
+
+	.panel-head {
+		padding: 18px 22px;
+		border-bottom: 1px solid var(--border);
+		font-size: 11px;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
+		color: var(--muted);
+	}
+
+	.row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+		padding: 16px 22px;
+		border-bottom: 1px solid #f0eee9;
+	}
+
+	.row-main {
+		min-width: 0;
+	}
+
+	.row-title {
+		font-size: 15px;
+		font-weight: 500;
+		margin-bottom: 3px;
+	}
+
+	.row-note {
+		font-size: 13px;
+		color: var(--muted);
+	}
+
+	.chip {
+		flex: none;
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		padding: 5px 10px;
+		border-radius: 999px;
+	}
+
+	.totals {
+		padding: 16px 22px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 10px;
+		font-size: 13px;
+		color: var(--muted);
+	}
+	.totals span {
+		display: flex;
+		align-items: baseline;
+		gap: 6px;
+	}
+	.totals strong {
+		font-family: var(--font-display);
+		font-size: 15px;
+		font-weight: 800;
+		color: var(--ink);
+	}
+	.totals .green strong {
+		color: #4e5c36;
+	}
+	.totals .arrow {
+		color: #c4bfb5;
+	}
+</style>

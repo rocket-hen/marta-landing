@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HowItWorksHero from '../../components/HowItWorksHero.astro';
+import HowItWorksProvide from '../../components/HowItWorksProvide.astro';
+import HowItWorksProcess from '../../components/HowItWorksProcess.astro';
+import HowItWorksResolved from '../../components/HowItWorksResolved.astro';
+import HowItWorksTryBand from '../../components/HowItWorksTryBand.astro';
+import HowItWorksRealCall from '../../components/HowItWorksRealCall.astro';
+import HowItWorksAbout from '../../components/HowItWorksAbout.astro';
+import HowItWorksPrivacy from '../../components/HowItWorksPrivacy.astro';
+import HowItWorksLadder from '../../components/HowItWorksLadder.astro';
+import HowItWorksFaq from '../../components/HowItWorksFaq.astro';
+import HowItWorksFinalCta from '../../components/HowItWorksFinalCta.astro';
+import WaitlistModal from '../../components/WaitlistModal.astro';
+import { copy } from '../../i18n/copy';
+import { organizationSchema, faqSchema } from '../../lib/schema';
+
+const lang = 'es';
+const t = copy[lang].howItWorksPage.meta;
+const schema = [organizationSchema(lang), faqSchema(copy[lang].howItWorksPage.faq.items)];
+---
+
+<BaseLayout title={t.title} description={t.description} lang={lang} showLangSwitch schema={schema}>
+	<HowItWorksHero lang={lang} />
+	<HowItWorksProvide lang={lang} />
+	<HowItWorksProcess lang={lang} />
+	<HowItWorksResolved lang={lang} />
+	<HowItWorksTryBand lang={lang} />
+	<HowItWorksRealCall lang={lang} />
+	<HowItWorksAbout lang={lang} />
+	<HowItWorksPrivacy lang={lang} />
+	<HowItWorksLadder lang={lang} />
+	<HowItWorksFaq lang={lang} />
+	<HowItWorksFinalCta lang={lang} />
+	<WaitlistModal lang={lang} />
+</BaseLayout>
+
+<script src="../../scripts/landing.ts"></script>

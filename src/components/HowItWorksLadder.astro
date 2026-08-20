@@ -1,0 +1,134 @@
+---
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].howItWorksPage.ladder;
+---
+
+<section data-screen-label="Human ladder" class="ladder">
+	<div class="wrap">
+		<div class="reveal intro">
+			<div class="kicker">{t.kicker}</div>
+			<h2>{t.h2}</h2>
+			<p>{t.p}</p>
+		</div>
+		<div class="grid">
+			{
+				t.steps.map((s, i) => (
+					<div class:list={['reveal step', { final: i === t.steps.length - 1 }]} style={`transition-delay: ${i * 0.05}s;`}>
+						<div class="level">{s.level}</div>
+						<div class="who">{s.who}</div>
+						<p class="body">{s.body}</p>
+						<div class="note">{s.note}</div>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<style>
+	.ladder {
+		border-bottom: 1px solid var(--border);
+		background: var(--white);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 96px 24px;
+	}
+
+	.intro {
+		max-width: 640px;
+		margin-bottom: 56px;
+	}
+
+	.kicker {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 16px;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-family: var(--font-display);
+		font-size: clamp(34px, 4.6vw, 52px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin: 0 0 24px;
+	}
+
+	.intro p {
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0;
+		text-wrap: pretty;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 24px;
+		align-items: stretch;
+	}
+
+	.step {
+		border: 1px solid var(--border);
+		border-radius: 10px;
+		background: var(--white);
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+	.step.final {
+		border-color: rgba(90, 124, 45, 0.35);
+		background: rgba(90, 124, 45, 0.08);
+	}
+
+	.level {
+		font-family: var(--font-mono);
+		font-size: 12px;
+		color: var(--accent);
+		margin-bottom: 18px;
+	}
+	.step.final .level {
+		color: #3f6216;
+	}
+
+	.who {
+		font-size: 20px;
+		font-weight: 500;
+		letter-spacing: -0.01em;
+		margin-bottom: 10px;
+	}
+
+	.body {
+		font-size: 14px;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0 0 22px;
+		text-wrap: pretty;
+	}
+
+	.note {
+		margin-top: auto;
+		font-size: 13px;
+		line-height: 1.5;
+		color: var(--fmuted);
+		border-top: 1px solid var(--border);
+		padding-top: 16px;
+	}
+	.step.final .note {
+		color: #3f6216;
+		border-top-color: rgba(90, 124, 45, 0.3);
+	}
+</style>

@@ -1,0 +1,143 @@
+---
+import { copy, type Lang } from '../i18n/copy';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy[lang].pricingPage.testimonials;
+---
+
+<section id="reviews" data-screen-label="Reviews" class="reviews">
+	<div class="wrap">
+		<div class="reveal head">
+			<div class="eyebrow">{t.eyebrow}</div>
+			<h2>{t.h2}</h2>
+		</div>
+		<div class="strip" data-review-strip>
+			<div class="track">
+				{
+					t.reviews.map((r) => (
+						<div class="card">
+							<div class="avatar" aria-hidden="true">
+								{r.name.charAt(0)}
+							</div>
+							<div class="who">
+								<div class="name">{r.name}</div>
+								<div class="city">{r.city}</div>
+							</div>
+							<p class="quote">{r.quote}</p>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.reviews {
+		border-bottom: 1px solid var(--border);
+		background: var(--bg);
+	}
+
+	.wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 72px 24px 76px;
+	}
+
+	.head {
+		margin-bottom: 32px;
+	}
+
+	.eyebrow {
+		font-size: 11px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		color: var(--muted);
+		margin-bottom: 14px;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-family: var(--font-display);
+		font-size: clamp(28px, 3.4vw, 38px);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.03em;
+		margin: 0;
+	}
+
+	.strip {
+		overflow-x: auto;
+		overflow-y: hidden;
+		margin: 0 -24px;
+		padding: 0 24px 14px;
+		scroll-snap-type: x proximity;
+	}
+
+	.track {
+		display: flex;
+		gap: 20px;
+		width: max-content;
+	}
+
+	.card {
+		flex: none;
+		width: 300px;
+		border: 1px solid var(--border);
+		background: var(--white);
+		padding: 22px 24px 24px;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-template-rows: auto auto;
+		gap: 4px 16px;
+		scroll-snap-align: start;
+	}
+
+	.avatar {
+		grid-row: 1;
+		grid-column: 1;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		background: var(--accent);
+		color: var(--bg);
+		font-family: var(--font-display);
+		font-size: 17px;
+		font-weight: 800;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.who {
+		grid-row: 1;
+		grid-column: 2;
+		align-self: center;
+	}
+
+	.name {
+		font-size: 13px;
+		font-weight: 500;
+		color: var(--ink);
+	}
+
+	.city {
+		font-size: 12px;
+		color: var(--muted);
+		margin-top: 2px;
+	}
+
+	.quote {
+		grid-row: 2;
+		grid-column: 1 / -1;
+		font-size: 14px;
+		line-height: 1.6;
+		color: var(--ink);
+		margin: 12px 0 0;
+		text-wrap: pretty;
+	}
+</style>
