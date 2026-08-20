@@ -27,7 +27,7 @@ function mm(seconds: number): string {
 
 		<div class="reveal player">
 			<div class="player-row">
-				<button type="button" class="play-btn" data-play data-gtm-id="how_it_works_demo_play" aria-label="Play call">▶</button>
+				<button type="button" class="btn-simple play-btn" data-play data-gtm-id="how_it_works_demo_play" aria-label="Play call">▶</button>
 				<div class="wave-col">
 					<div class="wave-meta">
 						<span>Chalet en Calle Creta</span>
@@ -55,13 +55,13 @@ function mm(seconds: number): string {
 				<div class="transcript-head">
 					<div class="eyebrow small">{demoCopy.transcriptLabel}</div>
 				</div>
-				<div class="transcript" data-transcript data-transcript-dual></div>
+				<div class="transcript" data-transcript data-transcript-dual={lang === 'en'}></div>
 			</div>
 
 			<details class="full-transcript">
 				<summary>{demoCopy.readFullTranscript}</summary>
 				{
-					(['es', 'en'] as const).map((transcriptLang) => (
+					(lang === 'en' ? (['es', 'en'] as const) : (['es'] as const)).map((transcriptLang) => (
 						<div class="full-transcript-block">
 							<div class="full-transcript-lang">{demoCopy.transcriptLangLabels[transcriptLang]}</div>
 							{TRANSCRIPTS[transcriptLang].map((line) => (
@@ -146,7 +146,7 @@ function mm(seconds: number): string {
 	}
 
 	.play-btn {
-		background: linear-gradient(to top, #6e2f19 50%, var(--accent) 50%);
+		background: var(--accent);
 		width: 56px;
 		height: 56px;
 		border: none;

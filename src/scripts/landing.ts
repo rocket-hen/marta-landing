@@ -230,7 +230,10 @@ function initDemoPlayer(getLang: () => Lang) {
 	// Dual mode shows Spanish and English side by side on every line instead of
 	// a single language behind a toggle — the two transcripts are index-aligned
 	// (same order, same `time` per line), so they can be zipped directly.
-	const dualTranscript = transcriptEl?.hasAttribute('data-transcript-dual') ?? false;
+	// Astro serializes a boolean attribute expression as the literal string
+	// "true"/"false" (it keeps the attribute either way for custom data-*
+	// attributes) — so this checks the value, not just presence.
+	const dualTranscript = transcriptEl?.getAttribute('data-transcript-dual') === 'true';
 	if (!audioEl) return null;
 
 	// Fallback shown until the browser reports the real duration (metadata load).
