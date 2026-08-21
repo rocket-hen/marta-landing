@@ -185,7 +185,8 @@ export const copy = {
 				steps: [
 					{ label: 'Step 1', title: 'You add listings and your info' },
 					{ label: 'Step 2', title: 'I call every agency, check availability and present your profile' },
-					{ label: 'Step 3', title: 'You get booked viewings and clear answers' },
+					{ label: 'Step 3 · if needed', title: 'A person from my team steps in — only when a call needs one', optional: true },
+					{ label: 'Step 4', title: 'You get booked viewings and clear answers' },
 				],
 			},
 			provide: {
@@ -708,7 +709,8 @@ export const copy = {
 				steps: [
 					{ label: 'Paso 1', title: 'Añades anuncios y tus datos' },
 					{ label: 'Paso 2', title: 'Llamo a cada agencia, compruebo disponibilidad y presento tu perfil' },
-					{ label: 'Paso 3', title: 'Recibes visitas reservadas y respuestas claras' },
+					{ label: 'Paso 3 · si hace falta', title: 'Una persona de mi equipo entra — solo cuando una llamada lo necesita', optional: true },
+					{ label: 'Paso 4', title: 'Recibes visitas reservadas y respuestas claras' },
 				],
 			},
 			provide: {

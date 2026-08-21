@@ -509,6 +509,32 @@ function initFaqAccordion() {
 	});
 }
 
+function initHowItWorksHeroRail() {
+	const rail = document.querySelector<HTMLElement>('[data-hiw-rail]');
+	if (!rail) return;
+	const steps = Array.from(rail.querySelectorAll<HTMLElement>('[data-rail-step]'));
+	const arrows = Array.from(rail.querySelectorAll<HTMLElement>('[data-rail-arrow]'));
+	if (!steps.length) return;
+
+	let current = 0;
+	const total = steps.length;
+
+	const render = () => {
+		steps.forEach((step, i) => {
+			step.dataset.state = i === current ? 'active' : i < current ? 'done' : 'idle';
+		});
+		arrows.forEach((arrow, i) => {
+			arrow.dataset.state = i < current ? 'done' : 'idle';
+		});
+	};
+
+	render();
+	setInterval(() => {
+		current = (current + 1) % (total + 1);
+		render();
+	}, 1700);
+}
+
 function initResultsTooltip() {
 	const tips = document.querySelectorAll<HTMLElement>('[data-results-tip]');
 	if (!tips.length) return;
@@ -691,6 +717,7 @@ function init() {
 	initWaitlistModal();
 	initResultsTooltip();
 	initReviewsCarousel();
+	initHowItWorksHeroRail();
 
 	// Lang state is shared between the hero caption and the demo transcript.
 	let heroApi: ReturnType<typeof initHeroCard>;
