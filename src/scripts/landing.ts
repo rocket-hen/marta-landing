@@ -516,23 +516,47 @@ function initHowItWorksHeroRail() {
 	const arrows = Array.from(rail.querySelectorAll<HTMLElement>('[data-rail-arrow]'));
 	if (!steps.length) return;
 
-	let current = 0;
-	const total = steps.length;
+	const delay = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
 
-	const render = () => {
-		steps.forEach((step, i) => {
-			step.dataset.state = i <= current ? 'revealed' : 'idle';
+	// Waits for el's transition to actually finish (not a guessed duration), with a
+	// timeout as a safety net in case transitionend never fires for some reason.
+	const waitTransition = (el: Element | null, timeoutMs: number): Promise<void> =>
+		new Promise((resolve) => {
+			if (!el) {
+				resolve();
+				return;
+			}
+			let done = false;
+			const finish = () => {
+				if (done) return;
+				done = true;
+				el.removeEventListener('transitionend', finish);
+				resolve();
+			};
+			el.addEventListener('transitionend', finish);
+			setTimeout(finish, timeoutMs);
 		});
-		arrows.forEach((arrow, i) => {
-			arrow.dataset.state = i <= current ? 'revealed' : 'idle';
-		});
-	};
 
-	render();
-	setInterval(() => {
-		current = current >= total ? -1 : current + 1;
-		render();
-	}, 1500);
+	async function playCycle() {
+		steps.forEach((step) => (step.dataset.state = 'idle'));
+		arrows.forEach((arrow) => (arrow.dataset.state = 'idle'));
+		await delay(1500);
+
+		for (let i = 0; i < steps.length; i++) {
+			steps[i].dataset.state = 'revealed';
+			await waitTransition(steps[i].querySelector('.step-title'), 1600);
+			const arrow = arrows[i];
+			if (arrow) {
+				arrow.dataset.state = 'revealed';
+				await waitTransition(arrow.querySelector('.line'), 900);
+			}
+		}
+
+		await delay(1500);
+		playCycle();
+	}
+
+	playCycle();
 }
 
 function initResultsTooltip() {
