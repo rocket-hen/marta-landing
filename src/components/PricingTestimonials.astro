@@ -20,10 +20,12 @@ const t = copy[lang].pricingPage.testimonials;
 				{
 					t.reviews.map((r, i) => (
 						<div class="card">
-							<img class="avatar" src={`/testimonials/${lang}-${i}.webp`} alt="" width="44" height="44" loading="lazy" />
-							<div class="who">
-								<div class="name">{r.name}</div>
-								<div class="city">{r.city}</div>
+							<div class="who-row">
+								<img class="avatar" src={`/testimonials/${lang}-${i}.webp`} alt="" width="44" height="44" loading="lazy" />
+								<div class="who">
+									<div class="name">{r.name}</div>
+									<div class="city">{r.city}</div>
+								</div>
 							</div>
 							<p class="quote">{r.quote}</p>
 						</div>
@@ -79,6 +81,8 @@ const t = copy[lang].pricingPage.testimonials;
 		margin: 0 -24px;
 		padding: 0 24px 14px;
 		scroll-snap-type: x proximity;
+		-webkit-mask-image: linear-gradient(to right, transparent, black 56px, black calc(100% - 56px), transparent);
+		mask-image: linear-gradient(to right, transparent, black 56px, black calc(100% - 56px), transparent);
 	}
 
 	.track {
@@ -89,51 +93,50 @@ const t = copy[lang].pricingPage.testimonials;
 
 	.card {
 		flex: none;
-		width: 300px;
+		width: 360px;
 		border: 1px solid var(--border);
 		background: var(--white);
-		padding: 22px 24px 24px;
-		display: grid;
-		grid-template-columns: auto 1fr;
-		grid-template-rows: auto auto;
-		gap: 4px 16px;
+		padding: 26px 28px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		min-height: 210px;
+		box-sizing: border-box;
 		scroll-snap-align: start;
 	}
 
+	.who-row {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
 	.avatar {
-		grid-row: 1;
-		grid-column: 1;
+		flex: none;
 		width: 44px;
 		height: 44px;
 		border-radius: 50%;
 		object-fit: cover;
 	}
 
-	.who {
-		grid-row: 1;
-		grid-column: 2;
-		align-self: center;
-	}
-
 	.name {
 		font-size: 13px;
-		font-weight: 500;
+		font-weight: 600;
 		color: var(--ink);
 	}
 
 	.city {
 		font-size: 12px;
 		color: var(--muted);
-		margin-top: 2px;
+		margin-top: 1px;
 	}
 
 	.quote {
-		grid-row: 2;
-		grid-column: 1 / -1;
-		font-size: 14px;
-		line-height: 1.6;
+		flex: 1;
+		font-size: 15px;
+		line-height: 1.65;
 		color: var(--ink);
-		margin: 12px 0 0;
+		margin: 0;
 		text-wrap: pretty;
 	}
 
