@@ -85,6 +85,7 @@ export const copy = {
 			noCard: 'No credit card needed',
 			resultsTooltip:
 				'A listing becomes a Result when I got through to the agent and have a definite status — positive or negative. If nobody ever answers or the line is always busy, you do not pay for it.',
+			resultsTipMore: 'Learn more →',
 			cols: [
 				{
 					key: 'focus',
@@ -609,6 +610,7 @@ export const copy = {
 			noCard: 'Sin tarjeta de crédito',
 			resultsTooltip:
 				'Un anuncio se convierte en Resultado cuando conseguí hablar con el agente y tengo un estado definitivo — positivo o negativo. Si nunca contestan o la línea está siempre ocupada, no lo pagas.',
+			resultsTipMore: 'Saber más →',
 			cols: [
 				{
 					key: 'focus',

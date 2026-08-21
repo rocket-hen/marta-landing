@@ -72,7 +72,10 @@ const scaleHref = ctaMode === 'register' ? 'mailto:support@callmarta.com' : '#pr
 							{lang === 'es' ? 'Por' : 'For'} {c.count}{' '}
 							<span class="results-tip" data-results-tip tabindex="0">
 								{t.resultsWord}
-								<span class="tip-bubble" role="tooltip">{t.resultsTooltip}</span>
+								<span class="tip-bubble" role="tooltip">
+									{t.resultsTooltip}
+									<a class="tip-more" href="#statuses">{t.resultsTipMore}</a>
+								</span>
 							</span>
 							, {c.perResult} {t.perResultSuffix}
 						</span>
@@ -369,6 +372,21 @@ const scaleHref = ctaMode === 'register' ? 'mailto:support@callmarta.com' : '#pr
 	.results-tip.open .tip-bubble {
 		opacity: 1;
 		visibility: visible;
+		/* The bubble now carries a link — a visible bubble must be clickable
+		   (the base state keeps pointer-events: none so a hidden bubble never
+		   swallows hovers). */
+		pointer-events: auto;
+	}
+
+	.tip-bubble .tip-more {
+		display: block;
+		margin-top: 8px;
+		color: var(--bg);
+		font-weight: 500;
+		border-bottom: none;
+		text-decoration: underline;
+		text-underline-offset: 3px;
+		text-decoration-color: var(--accent);
 	}
 
 	.col-btn {
