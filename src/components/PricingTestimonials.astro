@@ -24,7 +24,7 @@ const t = copy[lang].pricingPage.testimonials;
 								<img class="avatar" src={`/testimonials/${lang}-${i}.webp`} alt="" width="44" height="44" loading="lazy" />
 								<div class="who">
 									<div class="name">{r.name}</div>
-									<div class="city">{r.city}</div>
+									<div class="meta">{r.flag} {r.country} · {r.found}</div>
 								</div>
 							</div>
 							<p class="quote">{r.quote}</p>
@@ -125,7 +125,7 @@ const t = copy[lang].pricingPage.testimonials;
 		color: var(--ink);
 	}
 
-	.city {
+	.meta {
 		font-size: 12px;
 		color: var(--muted);
 		margin-top: 1px;
