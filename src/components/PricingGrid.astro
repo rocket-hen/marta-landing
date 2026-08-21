@@ -14,17 +14,17 @@ const { lang = 'en', ctaMode, startCtaLabel } = Astro.props;
 const t = copy[lang].pricing;
 const startLabel = startCtaLabel ?? t.startFree;
 
-const blitz = planRef('blitz');
-const marathon = planRef('marathon');
+const focus = planRef('focus');
+const fullHunt = planRef('full_hunt');
 const concierge = planRef('concierge');
 
 const perResult = (priceEur: number, resultLimit: number) => priceEur / resultLimit;
 const fmt = (n: number) => '€' + n.toFixed(2);
-const savePct = Math.round((1 - perResult(marathon.priceEur, marathon.resultLimit) / perResult(blitz.priceEur, blitz.resultLimit)) * 100);
+const savePct = Math.round((1 - perResult(fullHunt.priceEur, fullHunt.resultLimit) / perResult(focus.priceEur, focus.resultLimit)) * 100);
 
 const cols = [
-	{ ref: blitz, ...t.cols[0] },
-	{ ref: marathon, ...t.cols[1] },
+	{ ref: focus, ...t.cols[0] },
+	{ ref: fullHunt, ...t.cols[1] },
 ].map((c) => ({
 	name: c.ref.name,
 	price: `€${c.ref.priceEur}`,

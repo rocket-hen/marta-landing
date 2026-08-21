@@ -15,7 +15,7 @@
 export const APP_URL = 'https://app.callmarta.com';
 
 export interface PlanRef {
-	key: 'blitz' | 'marathon' | 'concierge';
+	key: 'focus' | 'full_hunt' | 'concierge';
 	name: string;
 	priceEur: number;
 	/** How many results the plan covers — mirror of the app catalog's limit. */
@@ -23,8 +23,8 @@ export interface PlanRef {
 }
 
 export const PLAN_REFS: PlanRef[] = [
-	{ key: 'blitz', name: 'Focus', priceEur: 49, resultLimit: 15 },
-	{ key: 'marathon', name: 'Full Hunt', priceEur: 99, resultLimit: 50 },
+	{ key: 'focus', name: 'Focus', priceEur: 49, resultLimit: 15 },
+	{ key: 'full_hunt', name: 'Full Hunt', priceEur: 99, resultLimit: 50 },
 	{ key: 'concierge', name: 'Concierge', priceEur: 399, resultLimit: 100 },
 ];
 

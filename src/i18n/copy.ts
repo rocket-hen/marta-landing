@@ -87,11 +87,11 @@ export const copy = {
 				'A listing becomes a Result when I got through to the agent and have a definite status — positive or negative. If nobody ever answers or the line is always busy, you do not pay for it.',
 			cols: [
 				{
-					key: 'blitz',
+					key: 'focus',
 					blurb: 'For a market where competition is not that high. You found the listings — I get you inside.',
 				},
 				{
-					key: 'marathon',
+					key: 'full_hunt',
 					blurb:
 						'For a brutal market where flats go in hours and you need to call a lot of listings to get any viewings at all.',
 					saveBadge: true,
@@ -611,11 +611,11 @@ export const copy = {
 				'Un anuncio se convierte en Resultado cuando conseguí hablar con el agente y tengo un estado definitivo — positivo o negativo. Si nunca contestan o la línea está siempre ocupada, no lo pagas.',
 			cols: [
 				{
-					key: 'blitz',
+					key: 'focus',
 					blurb: 'Para un mercado donde la competencia no es tan alta. Tú encuentras los anuncios — yo te meto dentro.',
 				},
 				{
-					key: 'marathon',
+					key: 'full_hunt',
 					blurb:
 						'Para un mercado brutal donde los pisos vuelan en horas y hay que llamar a muchos anuncios para conseguir alguna visita.',
 					saveBadge: true,
