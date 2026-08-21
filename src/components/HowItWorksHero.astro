@@ -46,7 +46,6 @@ const icons = [
 						{i < t.steps.length - 1 && (
 							<div class="rail-arrow" data-rail-arrow data-state="idle">
 								<div class="line" />
-								<svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#B0A99F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 4 17 12 7 20" /></svg>
 							</div>
 						)}
 					</>
@@ -178,6 +177,15 @@ const icons = [
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		opacity: 0;
+		transform: scale(0.82);
+		transition:
+			opacity 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.05s,
+			transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.05s;
+	}
+	.rail-step[data-state='revealed'] .circle {
+		opacity: 1;
+		transform: scale(1);
 	}
 
 	/* Step 3's circle fills terracotta once it fires. */
@@ -223,6 +231,7 @@ const icons = [
 	.rail-icon :global(*) {
 		stroke-dasharray: 100;
 		stroke-dashoffset: 100;
+		stroke-linecap: butt;
 		transition: stroke-dashoffset 0.5s cubic-bezier(0.65, 0, 0.35, 1);
 	}
 	.rail-icon :global(*:nth-child(1)) {
@@ -241,7 +250,7 @@ const icons = [
 		transition-delay: 0.97s;
 	}
 	.rail-step[data-state='revealed'] .rail-icon :global(*) {
-		stroke-dashoffset: 0;
+		stroke-dashoffset: -1;
 	}
 
 	.step-label {
@@ -285,7 +294,8 @@ const icons = [
 		display: flex;
 		align-items: center;
 		gap: 4px;
-		width: 75px;
+		flex: 1 1 40px;
+		min-width: 40px;
 		margin-top: 58px;
 	}
 
@@ -303,7 +313,7 @@ const icons = [
 		opacity: 0.75;
 		transform: scaleX(0);
 		transform-origin: left;
-		transition: transform 0.75s cubic-bezier(0.65, 0, 0.35, 1) 2.2s;
+		transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1) 0.1s;
 	}
 	.rail-arrow[data-state='revealed'] .line::after {
 		transform: scaleX(1);

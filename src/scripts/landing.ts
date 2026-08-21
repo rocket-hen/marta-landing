@@ -524,7 +524,7 @@ function initHowItWorksHeroRail() {
 			step.dataset.state = i <= current ? 'revealed' : 'idle';
 		});
 		arrows.forEach((arrow, i) => {
-			arrow.dataset.state = i < current ? 'revealed' : 'idle';
+			arrow.dataset.state = i <= current ? 'revealed' : 'idle';
 		});
 	};
 
