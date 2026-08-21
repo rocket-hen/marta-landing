@@ -397,6 +397,17 @@ const scaleHref = ctaMode === 'register' ? 'mailto:support@callmarta.com' : '#pr
 		text-decoration-color: var(--accent);
 	}
 
+	/* Invisible bridge over the gap between word and bubble, so hovering
+	   into the bubble doesn't drop the :hover chain half-way. */
+	.tip-bubble::after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		height: 14px;
+	}
+
 	.col-btn {
 		margin-top: 20px;
 		text-align: center;
