@@ -428,7 +428,7 @@ export const copy = {
 					{
 						kicker: 'Not a result',
 						title: 'No human reached',
-						body: 'Nobody picks up after ten attempts, voicemail every time, or the number in the listing is dead. I retry across hours and days, then close it out with the attempt log.',
+						body: 'Nobody picks up after 20 attempts, voicemail every time, or the number in the listing is dead. I retry across hours and days, then close it out with the attempt log.',
 						charge: 'Free — you are not charged',
 					},
 				],
@@ -950,7 +950,7 @@ export const copy = {
 					{
 						kicker: 'No es Resultado',
 						title: 'Nadie contestó',
-						body: 'Nadie coge el teléfono tras diez intentos, siempre el buzón, o el número del anuncio está muerto. Reintento a distintas horas y días, y lo cierro con el registro de intentos.',
+						body: 'Nadie coge el teléfono tras 20 intentos, siempre el buzón, o el número del anuncio está muerto. Reintento a distintas horas y días, y lo cierro con el registro de intentos.',
 						charge: 'Gratis — no se te cobra',
 					},
 				],
