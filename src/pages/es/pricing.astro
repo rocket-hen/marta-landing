@@ -5,6 +5,7 @@ import PricingGrid from '../../components/PricingGrid.astro';
 import PricingGuarantee from '../../components/PricingGuarantee.astro';
 import PricingStatuses from '../../components/PricingStatuses.astro';
 import PricingTestimonials from '../../components/PricingTestimonials.astro';
+import WaitlistModal from '../../components/WaitlistModal.astro';
 import { copy } from '../../i18n/copy';
 import { organizationSchema, serviceSchema } from '../../lib/schema';
 
@@ -17,12 +18,13 @@ const schema = [organizationSchema(lang), serviceSchema(lang)];
 	<PricingHero lang={lang} />
 	<section id="pricing" data-screen-label="Pricing" class="pricing-section">
 		<div class="wrap">
-			<PricingGrid lang={lang} ctaMode="register" />
+			<PricingGrid lang={lang} ctaMode="waitlist" startCtaLabel={copy[lang].nav.cta} />
 		</div>
 	</section>
 	<PricingGuarantee lang={lang} />
 	<PricingStatuses lang={lang} />
 	<PricingTestimonials lang={lang} />
+	<WaitlistModal lang={lang} />
 </BaseLayout>
 
 <style>

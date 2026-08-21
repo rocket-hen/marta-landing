@@ -6,10 +6,13 @@ interface Props {
 	lang?: Lang;
 	/** 'waitlist' opens the waitlist modal (landing); 'register' deep-links into the app (dedicated /pricing page). */
 	ctaMode: 'waitlist' | 'register';
+	/** Overrides the Blitz/Marathon button label (defaults to t.startFree). */
+	startCtaLabel?: string;
 }
 
-const { lang = 'en', ctaMode } = Astro.props;
+const { lang = 'en', ctaMode, startCtaLabel } = Astro.props;
 const t = copy[lang].pricing;
+const startLabel = startCtaLabel ?? t.startFree;
 
 const blitz = planRef('blitz');
 const marathon = planRef('marathon');
@@ -74,7 +77,7 @@ const scaleHref = ctaMode === 'register' ? 'mailto:support@callmarta.com' : '#pr
 							data-gtm-id={`pricing_${c.name.toLowerCase().replace(/\s+/g, '_')}_cta`}
 							class:list={['btn-slide-gradient', 'col-btn', c.highlight ? '' : 'btn-slide-outline outline']}
 						>
-							{t.startFree}
+							{startLabel}
 						</a>
 						<span class="col-note">{t.noCard}</span>
 					</div>
