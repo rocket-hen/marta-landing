@@ -8,11 +8,19 @@ interface Props {
 	ctaMode: 'waitlist' | 'register';
 	/** Overrides the Blitz/Marathon button label (defaults to t.startFree). */
 	startCtaLabel?: string;
+	/**
+	 * Where the tooltip's "Learn more" lands. The grid renders on pages with
+	 * and without the Transparency section — the pricing pages pass their own
+	 * "#statuses" anchor; everywhere else defaults to the pricing page's.
+	 */
+	statusesHref?: string;
 }
 
 const { lang = 'en', ctaMode, startCtaLabel } = Astro.props;
 const t = copy[lang].pricing;
 const startLabel = startCtaLabel ?? t.startFree;
+const statusesHref =
+	Astro.props.statusesHref ?? (lang === 'es' ? '/es/pricing/#statuses' : '/pricing/#statuses');
 
 const focus = planRef('focus');
 const fullHunt = planRef('full_hunt');
@@ -74,7 +82,7 @@ const scaleHref = ctaMode === 'register' ? 'mailto:support@callmarta.com' : '#pr
 								{t.resultsWord}
 								<span class="tip-bubble" role="tooltip">
 									{t.resultsTooltip}
-									<a class="tip-more" href="#statuses">{t.resultsTipMore}</a>
+									<a class="tip-more" href={statusesHref}>{t.resultsTipMore}</a>
 								</span>
 							</span>
 							, {c.perResult} {t.perResultSuffix}
