@@ -516,7 +516,7 @@ function initHowItWorksHeroRail() {
 	const arrows = Array.from(rail.querySelectorAll<HTMLElement>('[data-rail-arrow]'));
 	if (!steps.length) return;
 
-	let current = 0;
+	let current = -1;
 	const total = steps.length;
 
 	const render = () => {
@@ -530,7 +530,7 @@ function initHowItWorksHeroRail() {
 
 	render();
 	setInterval(() => {
-		current = (current + 1) % (total + 1);
+		current = current >= total ? -1 : current + 1;
 		render();
 	}, 3000);
 }

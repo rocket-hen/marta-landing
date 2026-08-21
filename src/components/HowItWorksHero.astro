@@ -156,6 +156,11 @@ const icons = [
 			margin: 14px 0 !important;
 			transform: rotate(90deg);
 		}
+		.rail-step:first-child,
+		.rail-step:last-child {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 
 	.rail-step {
@@ -165,6 +170,12 @@ const icons = [
 		text-align: center;
 		gap: 16px;
 		width: 175px;
+	}
+	.rail-step:first-child {
+		margin-left: -29.5px;
+	}
+	.rail-step:last-child {
+		margin-right: -29.5px;
 	}
 
 	.circle {
@@ -250,7 +261,7 @@ const icons = [
 		transition-delay: 0.97s;
 	}
 	.rail-step[data-state='revealed'] .rail-icon :global(*) {
-		stroke-dashoffset: -1;
+		stroke-dashoffset: -4;
 	}
 
 	.step-label {
