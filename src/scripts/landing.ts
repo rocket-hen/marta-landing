@@ -521,10 +521,10 @@ function initHowItWorksHeroRail() {
 
 	const render = () => {
 		steps.forEach((step, i) => {
-			step.dataset.state = i === current ? 'active' : i < current ? 'done' : 'idle';
+			step.dataset.state = i <= current ? 'revealed' : 'idle';
 		});
 		arrows.forEach((arrow, i) => {
-			arrow.dataset.state = i < current ? 'done' : 'idle';
+			arrow.dataset.state = i < current ? 'revealed' : 'idle';
 		});
 	};
 
@@ -532,7 +532,7 @@ function initHowItWorksHeroRail() {
 	setInterval(() => {
 		current = (current + 1) % (total + 1);
 		render();
-	}, 1700);
+	}, 3000);
 }
 
 function initResultsTooltip() {
