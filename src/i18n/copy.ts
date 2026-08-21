@@ -184,7 +184,7 @@ export const copy = {
 				demoLink: 'Hear a real call ▸',
 				steps: [
 					{ label: 'Step 1', title: 'You add listings and your info' },
-					{ label: 'Step 2', title: 'I call every agency, check availability and ask your questions' },
+					{ label: 'Step 2', title: 'I call every agency, check availability and present your profile' },
 					{ label: 'Step 3', title: 'You get booked viewings and clear answers' },
 				],
 			},
@@ -333,7 +333,7 @@ export const copy = {
 					{
 						level: 'STEP 1',
 						who: 'I call first',
-						body: 'I make the call in Spanish, ask your questions and try to agree a viewing. This is what happens on almost every listing.',
+						body: 'I make the call in Spanish, present your profile and try to agree a viewing. This is what happens on almost every listing.',
 						note: 'Fast, and at the scale a person cannot match.',
 					},
 					{
@@ -707,7 +707,7 @@ export const copy = {
 				demoLink: 'Escucha una llamada real ▸',
 				steps: [
 					{ label: 'Paso 1', title: 'Añades anuncios y tus datos' },
-					{ label: 'Paso 2', title: 'Llamo a cada agencia, compruebo disponibilidad y hago tus preguntas' },
+					{ label: 'Paso 2', title: 'Llamo a cada agencia, compruebo disponibilidad y presento tu perfil' },
 					{ label: 'Paso 3', title: 'Recibes visitas reservadas y respuestas claras' },
 				],
 			},
@@ -855,7 +855,7 @@ export const copy = {
 					{
 						level: 'PASO 1',
 						who: 'Llamo yo primero',
-						body: 'Hago la llamada, hago tus preguntas e intento acordar una visita. Esto es lo que pasa en casi todos los anuncios.',
+						body: 'Hago la llamada, presento tu perfil e intento acordar una visita. Esto es lo que pasa en casi todos los anuncios.',
 						note: 'Rápido y a una escala que una persona no puede igualar.',
 					},
 					{
