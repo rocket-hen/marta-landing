@@ -69,7 +69,12 @@ const scaleHref = ctaMode === 'register' ? 'mailto:support@callmarta.com' : '#pr
 						<p class="col-blurb">{c.blurb}</p>
 						<span class="col-price">{c.price}</span>
 						<span class="col-term">
-							{lang === 'es' ? 'Por' : 'For'} {c.count} {t.resultsWord}, {c.perResult} {t.perResultSuffix}
+							{lang === 'es' ? 'Por' : 'For'} {c.count}{' '}
+							<span class="results-tip" data-results-tip tabindex="0">
+								{t.resultsWord}
+								<span class="tip-bubble" role="tooltip">{t.resultsTooltip}</span>
+							</span>
+							, {c.perResult} {t.perResultSuffix}
 						</span>
 						<a
 							href={c.href}
@@ -331,6 +336,39 @@ const scaleHref = ctaMode === 'register' ? 'mailto:support@callmarta.com' : '#pr
 		font-size: 14px;
 		color: var(--muted);
 		margin-top: 10px;
+	}
+
+	.results-tip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px solid #b0a99b;
+		cursor: help;
+	}
+
+	.tip-bubble {
+		position: absolute;
+		bottom: 160%;
+		left: 0;
+		width: min(270px, calc(100vw - 64px));
+		background: var(--ink);
+		color: var(--border);
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.55;
+		padding: 13px 15px;
+		box-shadow: 0 12px 28px rgba(26, 25, 23, 0.22);
+		z-index: 30;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.15s ease;
+		pointer-events: none;
+	}
+
+	.results-tip:hover .tip-bubble,
+	.results-tip:focus .tip-bubble,
+	.results-tip.open .tip-bubble {
+		opacity: 1;
+		visibility: visible;
 	}
 
 	.col-btn {

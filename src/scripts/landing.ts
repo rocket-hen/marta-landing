@@ -509,6 +509,83 @@ function initFaqAccordion() {
 	});
 }
 
+function initResultsTooltip() {
+	const tips = document.querySelectorAll<HTMLElement>('[data-results-tip]');
+	if (!tips.length) return;
+	tips.forEach((tip) => {
+		tip.addEventListener('click', (e) => {
+			e.stopPropagation();
+			const isOpen = tip.classList.contains('open');
+			tips.forEach((other) => other.classList.remove('open'));
+			if (!isOpen) tip.classList.add('open');
+		});
+	});
+	document.addEventListener('click', () => {
+		tips.forEach((tip) => tip.classList.remove('open'));
+	});
+}
+
+function initReviewsCarousel() {
+	document.querySelectorAll<HTMLElement>('[data-review-strip]').forEach((strip) => {
+		const track = strip.querySelector<HTMLElement>('.track');
+		const dotsContainer = strip.parentElement?.querySelector<HTMLElement>('[data-review-dots]');
+		if (!track || !dotsContainer) return;
+
+		const cards = Array.from(track.children) as HTMLElement[];
+		const dots = Array.from(dotsContainer.children) as HTMLButtonElement[];
+		if (!cards.length || !dots.length) return;
+
+		let active = 0;
+		let timer: ReturnType<typeof setInterval> | undefined;
+
+		const setActive = (i: number) => {
+			active = i;
+			dots.forEach((dot, idx) => dot.classList.toggle('active', idx === i));
+		};
+
+		const scrollToCard = (i: number) => {
+			const card = cards[i];
+			if (!card) return;
+			const delta = card.getBoundingClientRect().left - strip.getBoundingClientRect().left;
+			strip.scrollTo({ left: strip.scrollLeft + delta, behavior: 'smooth' });
+		};
+
+		const startAutoplay = () => {
+			clearInterval(timer);
+			timer = setInterval(() => {
+				const next = (active + 1) % cards.length;
+				scrollToCard(next);
+			}, 5000);
+		};
+
+		dots.forEach((dot, i) => {
+			dot.addEventListener('click', () => {
+				scrollToCard(i);
+				setActive(i);
+				startAutoplay();
+			});
+		});
+
+		strip.addEventListener('pointerdown', () => clearInterval(timer));
+		strip.addEventListener('pointerup', startAutoplay);
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (!entry.isIntersecting) return;
+					const idx = cards.indexOf(entry.target as HTMLElement);
+					if (idx !== -1) setActive(idx);
+				});
+			},
+			{ root: strip, threshold: 0.6 },
+		);
+		cards.forEach((card) => observer.observe(card));
+
+		setActive(0);
+		startAutoplay();
+	});
+}
+
 function initWaitlistModal() {
 	const overlay = document.querySelector<HTMLElement>('[data-modal-overlay]');
 	const modal = document.querySelector<HTMLElement>('[data-modal]');
@@ -612,6 +689,8 @@ function init() {
 	initHeaderScroll(revealInView);
 	initFaqAccordion();
 	initWaitlistModal();
+	initResultsTooltip();
+	initReviewsCarousel();
 
 	// Lang state is shared between the hero caption and the demo transcript.
 	let heroApi: ReturnType<typeof initHeroCard>;

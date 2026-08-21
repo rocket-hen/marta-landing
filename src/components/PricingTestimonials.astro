@@ -31,6 +31,11 @@ const t = copy[lang].pricingPage.testimonials;
 				}
 			</div>
 		</div>
+		<div class="dots" data-review-dots>
+			{t.reviews.map((_, i) => (
+				<button type="button" class="dot" aria-label={lang === 'es' ? 'Ver reseña' : 'View review'} data-index={i} />
+			))}
+		</div>
 	</div>
 </section>
 
@@ -130,5 +135,26 @@ const t = copy[lang].pricingPage.testimonials;
 		color: var(--ink);
 		margin: 12px 0 0;
 		text-wrap: pretty;
+	}
+
+	.dots {
+		display: flex;
+		gap: 8px;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.dot {
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		background: var(--border);
+		transition: background 0.2s ease;
+	}
+	.dot.active {
+		background: var(--ink);
 	}
 </style>
