@@ -4,9 +4,11 @@ import { copy, type Lang } from '../i18n/copy';
 interface Props {
 	lang?: Lang;
 	showSwitch?: boolean;
+	enHref?: string;
+	esHref?: string;
 }
 
-const { lang = 'en', showSwitch = false } = Astro.props;
+const { lang = 'en', showSwitch = false, enHref = '/', esHref = '/es/' } = Astro.props;
 const t = copy[lang].footer;
 ---
 
@@ -20,12 +22,12 @@ const t = copy[lang].footer;
 				{lang === 'en' ? (
 					<span class="btn-simple" data-active="true">EN</span>
 				) : (
-					<a href="/" class="btn-simple" data-gtm-id="footer_lang_en">EN</a>
+					<a href={enHref} class="btn-simple" data-gtm-id="footer_lang_en">EN</a>
 				)}
 				{lang === 'es' ? (
 					<span class="btn-simple" data-active="true">ES</span>
 				) : (
-					<a href="/es/" class="btn-simple" data-gtm-id="footer_lang_es">ES</a>
+					<a href={esHref} class="btn-simple" data-gtm-id="footer_lang_es">ES</a>
 				)}
 			</div>
 		)
