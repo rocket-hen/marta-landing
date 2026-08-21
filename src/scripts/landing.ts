@@ -516,7 +516,7 @@ function initHowItWorksHeroRail() {
 	const arrows = Array.from(rail.querySelectorAll<HTMLElement>('[data-rail-arrow]'));
 	if (!steps.length) return;
 
-	let current = -1;
+	let current = 0;
 	const total = steps.length;
 
 	const render = () => {
@@ -532,7 +532,7 @@ function initHowItWorksHeroRail() {
 	setInterval(() => {
 		current = current >= total ? -1 : current + 1;
 		render();
-	}, 3000);
+	}, 1500);
 }
 
 function initResultsTooltip() {
