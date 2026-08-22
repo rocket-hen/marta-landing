@@ -2,7 +2,7 @@
 title: "Estafas al Alquilar un Piso: Cómo Detectarlas"
 excerpt: "Los patrones de estafa al alquilar un piso se repiten: precio imposible, casero que dice estar fuera del país, prisa por cobrar. Así se detectan a tiempo."
 category: "Estafas"
-minutes: 7
+minutes: 8
 pubDate: 2026-07-27
 image: "/og/blog/fianza-antes-de-ver-el-piso.jpg"
 imageAlt: "Estafas al alquilar un piso: cómo detectarlas — Marta blog"
@@ -20,13 +20,15 @@ guides:
       href: "/es/blog/la-carpeta-del-inquilino/"
 faq:
   - q: "¿Cómo saber si un anuncio de alquiler es falso?"
-    a: "Desconfía de un precio muy por debajo del resto de la zona, un propietario que dice estar fuera de España y no puede enseñar el piso en persona, y mensajes que meten prisa para cerrarlo hoy mismo. Los tres juntos son casi siempre el mismo patrón."
+    a: "Desconfía de un precio entre un 20% y un 40% por debajo del resto de la zona, un propietario que dice estar fuera de España con una excusa demasiado preparada (ingeniero o médico, viviendo en Alemania o Reino Unido), y las mismas fotos repetidas en más de un anuncio. Dos de estas señales juntas son casi siempre el mismo patrón."
   - q: "¿Es seguro pagar una señal antes de ver el piso?"
-    a: "No. Nunca pagues nada, ni siquiera una reserva simbólica, antes de haber entrado físicamente en el piso o comprobado por videollamada en directo que quien te atiende tiene control real sobre la vivienda."
+    a: "No. Nunca pagues nada, ni siquiera una reserva simbólica, antes de haber entrado físicamente en el piso o comprobado por videollamada en directo que quien te atiende tiene control real sobre la vivienda — y desconfía especialmente si insisten en cobrar por Wise, Revolut o cripto en vez de una transferencia bancaria normal."
   - q: "¿Qué debo comprobar antes de dar datos bancarios a un propietario?"
     a: "Confirma la dirección exacta en Google Maps y en la sede electrónica del catastro, y pide una videollamada en tiempo real desde dentro del piso, no un vídeo grabado."
   - q: "¿Qué hago si el propietario no puede enseñarme el piso en persona?"
     a: "Pide una videollamada en directo donde puedas indicar que giren la cámara. Si se niega o pone excusas, es la señal más clara de que algo no cuadra."
+  - q: "¿Puede una estafa de alquiler usar un piso que existe de verdad?"
+    a: "Sí. En una variante documentada, un inquilino con llaves reales del piso lo publica como si fuera suyo, lo enseña a varios interesados el mismo día y cobra una señal a cada uno antes de desaparecer. El piso es real — quien cobra no es el propietario."
   - q: "¿Por qué hay tantas estafas de alquiler en España ahora mismo?"
     a: "Cada anuncio recibe una media de 40 contactos antes de retirarse (segundo trimestre de 2026). Con ese nivel de competencia, la prisa se vuelve normal, y los estafadores explotan justo esa prisa."
   - q: "¿Qué hago si ya he pagado y sospecho que es una estafa?"
@@ -39,6 +41,8 @@ Una estafa de alquiler en España casi siempre sigue el mismo patrón: precio mu
 
 - [Por qué las estafas de alquiler funcionan tan bien ahora mismo](#por-qué-las-estafas-de-alquiler-funcionan-tan-bien-ahora-mismo)
 - [Las tres señales que casi nunca fallan](#las-tres-señales-que-casi-nunca-fallan)
+- [A veces el piso es real, y el propietario no](#a-veces-el-piso-es-real-y-el-propietario-no)
+- [El cambiazo: "ese ya está alquilado, pero mira este otro"](#el-cambiazo-ese-ya-está-alquilado-pero-mira-este-otro)
 - [Cómo comprobar que el piso y el propietario son reales](#cómo-comprobar-que-el-piso-y-el-propietario-son-reales)
 - [El precio y la prisa: los dos indicadores más fiables](#el-precio-y-la-prisa-los-dos-indicadores-más-fiables)
 - [Qué hacer si algo no cuadra en la llamada](#qué-hacer-si-algo-no-cuadra-en-la-llamada)
@@ -57,7 +61,17 @@ Los estafadores no necesitan ser sofisticados. Solo necesitan que tengas prisa (
 
 ::img[Persona haciendo una videollamada para ver un piso en alquiler]
 
-Un precio muy por debajo del resto de la zona, sin motivo aparente, es la primera señal — y la más fácil de comprobar: compara con dos o tres anuncios similares de la misma zona antes de escribir. Un propietario que "está fuera de España" y no puede enseñar el piso en persona es la segunda, sobre todo si la explicación llega antes de que preguntes tú. Y la tercera es la prisa: mensajes que insisten en cerrarlo "hoy mismo" porque "hay otras diez personas interesadas" — lo cual, dado que un piso real medio recibe 40 contactos, hasta podría ser verdad. La diferencia está en qué te piden a cambio de esa urgencia.
+Un precio entre un 20% y un 40% por debajo del resto de la zona, sin motivo aparente, es la primera señal — y la más fácil de comprobar: compara con dos o tres anuncios similares de la misma zona antes de escribir. Un propietario que "está fuera de España" es la segunda, y suele venir con una historia ya preparada antes de que preguntes tú: es ingeniero o médico, vive en Alemania o Reino Unido, y por eso todo tiene que hacerse a distancia. Y la tercera es la forma de pago que te proponen para la señal: en vez de una transferencia normal, insisten en Wise, Revolut o incluso criptomoneda — formas mucho más difíciles de recuperar una vez enviado el dinero.
+
+Las mismas fotos suelen repetirse en más de un anuncio a la vez — otra ciudad, otro nombre, a veces otro precio — publicadas en Idealista, Fotocasa y Milanuncios al mismo tiempo, lo cual es o una red organizada o el imperio inmobiliario internacional menos ambicioso de Europa.
+
+## A veces el piso es real, y el propietario no
+
+No todas las versiones de esta estafa se inventan el piso. En una variante documentada, [un inquilino actual con llaves reales del piso lo publica como si fuera suyo](https://how2spanish.com/en/blog/spain-rental-scams-and-safety-guide), lo enseña a varios interesados el mismo día, y cobra una señal o el primer mes a cada uno antes de desaparecer. La visita no da ninguna señal de alarma, porque el piso es de verdad. Lo que delata la estafa no es el piso — es que te pidan pagar antes de que exista un contrato por escrito y antes de haber confirmado, por tu cuenta, que quien cobra es realmente el propietario. El mismo truco del catastro de más abajo sirve aquí también: el nombre del inquilino no va a coincidir con el del propietario registrado.
+
+## El cambiazo: "ese ya está alquilado, pero mira este otro"
+
+A veces no hay ninguna transferencia de por medio, solo un empeoramiento. Quedas para ver un piso concreto, llegas, y te dicen que "se acaba de alquilar" — pero hay uno parecido, mismo precio, claramente peor. A veces es verdad y mala suerte. Cuando pasa en la primera visita del día, antes incluso de que hayas visto el piso original en persona, suele ser el guion, no la casualidad. Pide ver el piso exacto del anuncio, o vete.
 
 ## Cómo comprobar que el piso y el propietario son reales
 
